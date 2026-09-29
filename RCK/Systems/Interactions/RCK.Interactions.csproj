@@ -1,0 +1,12 @@
+<Project Sdk="Microsoft.NET.Sdk">
+
+  <PropertyGroup>
+    <AssemblyName>RCK.Interactions</AssemblyName>
+    <RootNamespace>RCK.Interactions</RootNamespace>
+  </PropertyGroup>
+
+  <ItemGroup>
+    <Reference Include="RCK"><HintPath>..\..\Core\bin\Release\RCK.dll</HintPath><Private>False</Private></Reference>
+  </ItemGroup>
+
+</Project>

@@ -1,0 +1,13 @@
+<Project Sdk="Microsoft.NET.Sdk">
+
+  <PropertyGroup>
+    <AssemblyName>RCK.Behavior</AssemblyName>
+    <RootNamespace>RCK.Behavior</RootNamespace>
+  </PropertyGroup>
+
+  <ItemGroup>
+    <Reference Remove="RCK" />
+    <Reference Include="RCK"><HintPath>..\..\Core\obj\$(Configuration)\RCK.dll</HintPath><Private>False</Private></Reference>
+  </ItemGroup>
+
+</Project>

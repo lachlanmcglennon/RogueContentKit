@@ -1,0 +1,10 @@
+# game/BepInEx DLLs (proprietary) and upstream clones - never commit
+.ref/
+upstream/
+tools/PatchVerifier/last-report.txt
+bin/
+obj/
+*.user
+.vs/
+__pycache__/
+/release/

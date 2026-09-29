@@ -1,0 +1,8 @@
+<Project Sdk="Microsoft.NET.Sdk">
+
+  <PropertyGroup>
+    <AssemblyName>RCK.Objects</AssemblyName>
+    <RootNamespace>RCK.Objects</RootNamespace>
+  </PropertyGroup>
+
+</Project>

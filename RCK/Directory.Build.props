@@ -1,0 +1,44 @@
+<Project>
+
+  <!-- Shared by RCK\Core and every RCK\Systems\* module project. -->
+  <PropertyGroup>
+    <TargetFramework>net471</TargetFramework>
+    <Nullable>enable</Nullable>
+    <LangVersion>latest</LangVersion>
+    <ImplicitUsings>disable</ImplicitUsings>
+    <Version>1.0.0</Version>
+    <Authors>RCK contributors</Authors>
+    <GenerateDocumentationFile>false</GenerateDocumentationFile>
+    <AppendTargetFrameworkToOutputPath>false</AppendTargetFrameworkToOutputPath>
+    <CopyLocalLockFileAssemblies>false</CopyLocalLockFileAssemblies>
+    <DebugType Condition="'$(Configuration)'=='Release'">none</DebugType>
+    <RefDir>$(MSBuildThisFileDirectory)..\.ref\</RefDir>
+    <RogueLibsPlusDir Condition="'$(RogueLibsPlusDir)'==''">$(MSBuildThisFileDirectory)..\RogueLibsPlus\bin\Release\</RogueLibsPlusDir>
+    <ImplicitlyExpandNETStandardFacades>false</ImplicitlyExpandNETStandardFacades>
+  </PropertyGroup>
+
+  <ItemGroup>
+    <Reference Include="0Harmony"><HintPath>$(RefDir)static\0Harmony.dll</HintPath><Private>False</Private></Reference>
+    <Reference Include="BepInEx"><HintPath>$(RefDir)static\BepInEx.dll</HintPath><Private>False</Private></Reference>
+    <Reference Include="Assembly-CSharp"><HintPath>$(RefDir)Assembly-CSharp.dll</HintPath><Private>False</Private></Reference>
+    <Reference Include="Assembly-CSharp-firstpass"><HintPath>$(RefDir)static\Assembly-CSharp-firstpass.dll</HintPath><Private>False</Private></Reference>
+    <Reference Include="Mirror"><HintPath>$(RefDir)static\Mirror.dll</HintPath><Private>False</Private></Reference>
+    <Reference Include="netstandard"><HintPath>$(RefDir)static\netstandard.dll</HintPath><Private>False</Private></Reference>
+    <Reference Include="UnityEngine"><HintPath>$(RefDir)static\UnityEngine.dll</HintPath><Private>False</Private></Reference>
+    <Reference Include="UnityEngine.CoreModule"><HintPath>$(RefDir)static\UnityEngine.CoreModule.dll</HintPath><Private>False</Private></Reference>
+    <Reference Include="UnityEngine.AudioModule"><HintPath>$(RefDir)static\UnityEngine.AudioModule.dll</HintPath><Private>False</Private></Reference>
+    <Reference Include="UnityEngine.Physics2DModule"><HintPath>$(RefDir)static\UnityEngine.Physics2DModule.dll</HintPath><Private>False</Private></Reference>
+    <Reference Include="UnityEngine.PhysicsModule"><HintPath>$(RefDir)static\UnityEngine.PhysicsModule.dll</HintPath><Private>False</Private></Reference>
+    <Reference Include="UnityEngine.UI"><HintPath>$(RefDir)static\UnityEngine.UI.dll</HintPath><Private>False</Private></Reference>
+    <Reference Include="UnityEngine.UIModule"><HintPath>$(RefDir)static\UnityEngine.UIModule.dll</HintPath><Private>False</Private></Reference>
+    <Reference Include="UnityEngine.TextRenderingModule"><HintPath>$(RefDir)static\UnityEngine.TextRenderingModule.dll</HintPath><Private>False</Private></Reference>
+    <Reference Include="UnityEngine.InputLegacyModule"><HintPath>$(RefDir)static\UnityEngine.InputLegacyModule.dll</HintPath><Private>False</Private></Reference>
+    <Reference Include="UnityEngine.IMGUIModule"><HintPath>$(RefDir)static\UnityEngine.IMGUIModule.dll</HintPath><Private>False</Private></Reference>
+    <Reference Include="UnityEngine.AnimationModule"><HintPath>$(RefDir)static\UnityEngine.AnimationModule.dll</HintPath><Private>False</Private></Reference>
+    <Reference Include="Unity.TextMeshPro"><HintPath>$(RefDir)static\Unity.TextMeshPro.dll</HintPath><Private>False</Private></Reference>
+    <!-- Dzhake's RogueLibs v4.0.0-rc.3, unmodified (tools\get-roguelibs.ps1), and our RogueLibsPlus add-on on top of it. -->
+    <Reference Include="RogueLibsCore"><HintPath>$(RefDir)roguelibs\RogueLibsCore.dll</HintPath><Private>False</Private></Reference>
+    <Reference Include="RogueLibsPlus"><HintPath>$(RogueLibsPlusDir)RogueLibsPlus.dll</HintPath><Private>False</Private></Reference>
+  </ItemGroup>
+
+</Project>

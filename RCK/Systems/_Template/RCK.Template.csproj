@@ -1,0 +1,9 @@
+<Project Sdk="Microsoft.NET.Sdk">
+
+  <!-- Copy this folder to RCK\Systems\<Name>\, rename the csproj to RCK.<Name>.csproj and set AssemblyName. -->
+  <PropertyGroup>
+    <AssemblyName>RCK.Template</AssemblyName>
+    <RootNamespace>RCK.Template</RootNamespace>
+  </PropertyGroup>
+
+</Project>

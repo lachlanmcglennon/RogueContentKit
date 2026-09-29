@@ -1,0 +1,3 @@
+# role	value	reason
+status_effect	RegenerateHealthWhenLow	Vanilla trait used as a timed Drug Warrior effect: AddStatusEffect adds the trait (StatusEffects.cs:4929), AddTrait starts its UpdateTrait regen (6453), RemoveStatusEffect removes it (5405)
+status_effect	RegenerateHealthWhenLow2	Vanilla trait used as a timed Drug Warrior effect: same AddStatusEffect/AddTrait/UpdateTrait path (StatusEffects.cs:4929, 6460, 5405)

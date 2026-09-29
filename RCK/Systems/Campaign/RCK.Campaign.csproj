@@ -1,0 +1,8 @@
+<Project Sdk="Microsoft.NET.Sdk">
+
+  <PropertyGroup>
+    <AssemblyName>RCK.Campaign</AssemblyName>
+    <RootNamespace>RCK.Campaign</RootNamespace>
+  </PropertyGroup>
+
+</Project>

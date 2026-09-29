@@ -1,0 +1,8 @@
+<Project Sdk="Microsoft.NET.Sdk">
+
+  <PropertyGroup>
+    <AssemblyName>RCK.Combat</AssemblyName>
+    <RootNamespace>RCK.Combat</RootNamespace>
+  </PropertyGroup>
+
+</Project>

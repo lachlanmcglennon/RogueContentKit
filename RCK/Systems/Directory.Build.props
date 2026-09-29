@@ -1,0 +1,11 @@
+<Project>
+
+  <!-- System modules: shared refs from RCK\Directory.Build.props, plus the prebuilt RCK.dll.
+       Modules reference the built DLL (not the project) so parallel module builds never rebuild Core. -->
+  <Import Project="$(MSBuildThisFileDirectory)..\Directory.Build.props" />
+
+  <ItemGroup>
+    <Reference Include="RCK"><HintPath>$(MSBuildThisFileDirectory)..\Core\bin\$(Configuration)\RCK.dll</HintPath><Private>False</Private></Reference>
+  </ItemGroup>
+
+</Project>
