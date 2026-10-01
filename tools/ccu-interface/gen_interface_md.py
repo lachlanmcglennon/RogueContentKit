@@ -426,6 +426,77 @@ def render(spec: dict, usage: dict | None, custom_names: list[dict[str, str]], i
     return "\n".join(lines) + "\n"
 
 
+FEATURE_SECTIONS = [
+    ("disguises", "Faction disguises"),
+    ("faction_names", "Faction names"),
+    ("quests", "Quests"),
+    ("gates", "Level gate switches"),
+    ("goals", "Patrol and wander goals"),
+    ("raids", "Faction raids"),
+    ("turf", "Turf capture"),
+    ("backup", "Faction backup"),
+    ("respawn", "Faction respawn"),
+    ("broker", "Brokers"),
+    ("no_infighting", "No in-fighting"),
+    ("expansion", "Turf expansion and rackets"),
+    ("control_points", "Control points"),
+    ("command", "Commander"),
+    ("war_panel", "War panel"),
+    ("medic", "Faction medics"),
+    ("racketeer", "Racketeers"),
+]
+# Fields of a feature section rendered as their own subsection.
+SUBSECTIONS = {"overlay"}
+
+
+def render_feature_sections(ext: dict, add) -> None:
+    """The RCK feature sections: prose (`rules`, `format`, `notes`) and tables of names (every other dict or list)."""
+    for key, title in FEATURE_SECTIONS:
+        section = ext.get(key)
+        if not section:
+            continue
+        render_feature(section, f"### {title}", add)
+
+
+def render_feature(section: dict, heading: str, add) -> None:
+    """One feature section; a field named in SUBSECTIONS becomes a subsection."""
+    add(heading)
+    add("")
+    for field in ("rules", "format"):
+        if section.get(field):
+            add(md(section[field]))
+            add("")
+    for field in ("mutator", "prefix", "trait"):
+        if section.get(field):
+            add(f"{field.capitalize()}: {code(section[field])}.")
+            add("")
+    subsections = []
+    for field, value in section.items():
+        if field in ("rules", "format", "mutator", "prefix", "trait"):
+            continue
+        label = field.replace("_", " ").capitalize()
+        if field in SUBSECTIONS and isinstance(value, dict):
+            subsections.append((label, value))
+        elif isinstance(value, dict) and value:
+            add(f"{label}:")
+            add("")
+            rows = [[code(k), md(v if isinstance(v, str) else json.dumps(v, ensure_ascii=False))] for k, v in value.items()]
+            for line in table(["Name", "Meaning"], rows):
+                add(line)
+            add("")
+        elif isinstance(value, list) and value:
+            add(f"{label}: " + ", ".join(code(v) if isinstance(v, str) else md(json.dumps(v, ensure_ascii=False)) for v in value) + ".")
+            add("")
+        elif isinstance(value, str):
+            add(f"{label}: {md(value)}")
+            add("")
+        elif isinstance(value, bool) and value:
+            add(f"{label}.")
+            add("")
+    for label, value in subsections:
+        render_feature(value, "#" + heading.split(" ", 1)[0] + " " + label, add)
+
+
 def render_extensions(spec: dict, extension_traits: dict, extension_mutators: dict, add) -> None:
     ext = spec.get("extensions") or {}
     factions = ext.get("factions") or {}
@@ -453,6 +524,21 @@ def render_extensions(spec: dict, extension_traits: dict, extension_mutators: di
         if member:
             add(f"`<key>_{member}` is a player trait, available in the character creator: it only makes the holder a member, so playable characters can start inside a faction. It can't be lost or swapped.")
             add("")
+        roles = factions.get("roles") or {}
+        if roles:
+            add("Each faction key also has one designer trait per role, `<key>_<Role>`. Roles aren't grades: they set no relationship at spawn, take no part in the precedence list, don't cancel the grades and don't make the holder a member.")
+            add("")
+            for line in table(["Role suffix", "Effect"], [[code(r), md(e)] for r, e in roles.items()]):
+                add(line)
+            add("")
+            for rule in ("vengeful", "leader"):
+                if factions.get(rule):
+                    add(md(factions[rule]))
+                    add("")
+        defector = factions.get("defector") or {}
+        if defector:
+            add(md(defector.get("rules") or ""))
+            add("")
         add("When several faction rules match one pair, the first relationship in this list wins: " + ", ".join(code(r) for r in factions.get("precedence") or []) + ".")
         add("")
         for line in table(["Named faction", "Members"], [[code(k), md(v)] for k, v in named.items()]):
@@ -461,13 +547,14 @@ def render_extensions(spec: dict, extension_traits: dict, extension_mutators: di
         add("Which IDs CCU already has (`CCU`) and which RCK adds (`added`):")
         add("")
         rows = []
+        suffixes = list(grades) + ([member] if member else []) + list(roles)
         for key in factions.get("keys") or []:
             row = [code(key)]
-            for grade in list(grades) + ([member] if member else []):
+            for grade in suffixes:
                 entry = all_traits.get(f"{key}_{grade}")
                 row.append("-" if entry is None else ("added" if entry.get("extension") else "CCU"))
             rows.append(row)
-        for line in table(["Key"] + list(grades) + ([member] if member else []), rows):
+        for line in table(["Key"] + suffixes, rows):
             add(line)
         add("")
         matrix = factions.get("matrix") or {}
@@ -496,6 +583,20 @@ def render_extensions(spec: dict, extension_traits: dict, extension_mutators: di
                 add(f"Campaign or level mutator {code(rmatrix.get('prefix'))}. " + (rmatrix.get("format") or ""))
                 add(f"Example: `{rmatrix.get('prefix')}Cop=Free;Crepe,Blahd=Paid;*=Off;`. CCU has no such mutator; the prefix is an RCK addition, with no older spelling.")
                 add("")
+        if factions.get("private_access"):
+            add("### Private areas of friendly factions")
+            add("")
+            add(md(factions["private_access"]))
+            add("")
+            add("Always on; there is no trait or mutator.")
+            add("")
+    if ext.get("party_peace"):
+        add("### Party peace")
+        add("")
+        add(md(ext["party_peace"]))
+        add("")
+        add("Always on; there is no trait or mutator.")
+        add("")
     innocence = ext.get("street_innocence") or {}
     if innocence:
         add("### Street innocence")
@@ -505,8 +606,9 @@ def render_extensions(spec: dict, extension_traits: dict, extension_mutators: di
         for line in table(["ID", "Kind"], [[code(innocence.get("trait")), "NPC trait"], [code(innocence.get("mutator")), "mutator"]]):
             add(line)
         add("")
+    render_feature_sections(ext, add)
     others = sorted(name for name, entry in extension_traits.items()
-                    if not entry.get("faction") and not entry.get("recruit") and not entry.get("street_innocence"))
+                    if not entry.get("faction") and not entry.get("recruit") and not entry.get("street_innocence") and not entry.get("defector"))
     if others:
         add("### Other extension traits")
         add("")

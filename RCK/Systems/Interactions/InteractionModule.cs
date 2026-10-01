@@ -1,4 +1,5 @@
 using System;
+using System.Collections;
 using System.Collections.Generic;
 using System.Linq;
 using HarmonyLib;
@@ -294,9 +295,82 @@ namespace RCK.Interactions
 
         internal static void SafeMinimap(Agent agent)
         {
-            if (agent.nonQuestObjectMarker != null) return;
-            try { agent.MinimapDisplay(); }
-            catch (Exception e) { Rck.Log.LogDebug($"MapMarker_Pilot failed for {agent.agentName}: {e.Message}"); }
+            if (agent.nonQuestObjectMarker == null)
+            {
+                try { agent.MinimapDisplay(); }
+                catch (Exception e) { Rck.Log.LogDebug($"MapMarker_Pilot failed for {agent.agentName}: {e.Message}"); return; }
+            }
+            PilotMarker.Watch(agent);
+        }
+    }
+
+    /// <summary>
+    ///   MapMarker_Pilot. Vanilla makes a map marker for any NPC but only shows it for shopkeepers, bartenders and the
+    ///   like. Once a player has seen this NPC, its marker shows on the big map as a blue arrow with the NPC's name, the
+    ///   way vanilla shows a shopkeeper. A marker something else has restyled (an RCK job) is left alone.
+    /// </summary>
+    internal static class PilotMarker
+    {
+        private const string Trait = "MapMarker_Pilot";
+        private const float CheckSeconds = 0.25f;
+
+        private sealed class Watcher { public float At; }
+
+        // Unity stops an agent's coroutines without running finally blocks when the agent goes back to the pool, so a
+        // watcher counts as gone once it hasn't checked in for a while.
+        private static readonly Dictionary<Agent, Watcher> watching = new Dictionary<Agent, Watcher>();
+
+        public static void Watch(Agent agent)
+        {
+            if (agent == null || !agent.isActiveAndEnabled) return;
+            float now = Time.time;
+            if (watching.TryGetValue(agent, out Watcher w) && now >= w.At && now - w.At < CheckSeconds * 4) return;
+            if (watching.Count > 64)
+                foreach (Agent gone in watching.Keys.Where(a => a == null).ToList()) watching.Remove(gone);
+            w = new Watcher { At = now };
+            watching[agent] = w;
+            agent.StartCoroutine(Run(agent, agent.agentID, w));
+        }
+
+        private static IEnumerator Run(Agent agent, int id, Watcher w)
+        {
+            var wait = new WaitForSeconds(CheckSeconds);
+            int remakes = 0;
+            while (agent != null && agent.agentID == id && !agent.dead && AgentTraits.Has(agent, Trait)
+                && watching.TryGetValue(agent, out Watcher current) && current == w)
+            {
+                w.At = Time.time;
+                QuestMarker m = agent.nonQuestObjectMarker;
+                if (m != null) remakes = 0;
+                // Something (a finished RCK job, a recycle) dropped the marker: make a fresh one.
+                if (m == null && remakes < 3 && agent.gameObject.activeInHierarchy)
+                {
+                    remakes++;
+                    try { agent.MinimapDisplay(); }
+                    catch (Exception e) { Rck.Log.LogDebug($"MapMarker_Pilot failed for {agent.agentName}: {e.Message}"); }
+                }
+                else if (m != null && m.reallyStarted && m.playerSeen && m.colorInvis && !m.isBigQuestMarker && m.questMarkerSmall2 != null)
+                {
+                    try { Show(m, agent); }
+                    catch (Exception e) { Rck.Log.LogDebug($"MapMarker_Pilot couldn't show {agent.agentName}: {e.Message}"); break; }
+                }
+                yield return wait;
+            }
+            if (agent != null && watching.TryGetValue(agent, out Watcher last) && last == w) watching.Remove(agent);
+        }
+
+        private static void Show(QuestMarker m, Agent agent)
+        {
+            string name = string.IsNullOrEmpty(agent.agentRealName) ? agent.agentName : agent.agentRealName;
+            if (m.smallImage2 != null)
+            {
+                if (m.targetSmallBlue != null) m.smallImage2.sprite = m.targetSmallBlue;
+                m.smallImage2.color = m.vis;
+            }
+            m.colorVis = true;
+            m.colorInvis = false;
+            m.questMarkerSmall2.markerName = name;
+            if (m.questMarkerSmall2.myText != null) m.questMarkerSmall2.myText.text = name;
         }
     }
 

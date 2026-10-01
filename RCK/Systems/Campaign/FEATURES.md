@@ -21,8 +21,8 @@ Use these IDs as default goals or scene-setter goals on spawned agents.
 | `Gibbed` | `Gibbed` | Immediately gibs spawned agent. |
 | `Knocked Out` | `KnockedOut` | Immediately neutralizes as tranquilized. |
 | `Panic` | `Panic` | Listed in the editor; it has no custom brain behavior on its own. |
-| `Random Patrol (Chunk)` | `Random_Patrol_Chunk` | Listed in editor; patrol selection not recreated. |
-| `Random Patrol (Map)` | `Random_Patrol_Map` | Listed in editor; patrol selection not recreated. |
+| `Random Patrol (Chunk)` | `Random_Patrol_Chunk` | Walks between random spots in its start chunk, pausing 2 to 4.5 s at each. See "Patrol and wander goals" below. |
+| `Random Patrol (Map)` | `Random_Patrol_Map` | Crosses the map between random public spots at least a chunk apart, pausing 1 to 2 s. Street-side for street innocence. |
 | `Random Teleport` | `RandomTeleport` | Legacy name accepted from older content; converted where possible. |
 | `Random Teleport (Duo)` | `Teleport_Duo` | Teleports like Public and spawns one follower of the leader's own kind. See "Followers" below. |
 | `Random Teleport (Gang)` | `Teleport_Gang` | Teleports like Public and spawns three followers of the leader's own kind. |
@@ -30,11 +30,11 @@ Use these IDs as default goals or scene-setter goals on spawned agents.
 | `Random Teleport (Private)` | `Teleport_Private` | Listed in editor; private tile picker not recreated. |
 | `Random Teleport (Public)` | `Teleport_Public` | Teleports to a random public tile at least 20 units (about 31 tiles) from the level start (the starting point, else the up elevator), as vanilla keeps its random events from the elevators. After 50 tries it takes the farthest spot found; with no spot it stays put. |
 | `RobotClean` | `RobotClean` | Listed in editor; custom robot-clean brain not implemented. |
-| `Wander Between Agents` | `WanderAgents` | Listed in editor; custom wander-target selection not implemented. |
-| `Wander Between Agents (Non-Owner)` | `WanderAgentsNonOwners` | Listed in the editor only. |
-| `Wander Between Agents (Owner)` | `WanderAgentsOwners` | Listed in the editor only. |
-| `Wander Between Objects (Non-Owner)` | `WanderObjects` | Listed in the editor only. |
-| `Wander Between Objects (Owner)` | `WanderObjectsOwned` | Listed in the editor only. |
+| `Wander Between Agents` | `WanderAgents` | Walks up to a random NPC within 2 chunks of its start, then another. |
+| `Wander Between Agents (Non-Owner)` | `WanderAgentsNonOwners` | The same, among NPCs within 2 chunks outside its owner group. |
+| `Wander Between Agents (Owner)` | `WanderAgentsOwners` | The same, among the NPCs of its owner group (same owner ID and start chunk), wherever they are. |
+| `Wander Between Objects (Non-Owner)` | `WanderObjects` | Walks between objects within 2 chunks that its owner group doesn't own. |
+| `Wander Between Objects (Owner)` | `WanderObjectsOwned` | Walks between the objects its owner group owns (same owner ID and chunk). |
 | `Zombified` | `Zombified` | Spawns as zombified/dead zombie setup. |
 
 ## Mutators, gates, and quest helpers
@@ -53,7 +53,7 @@ These IDs are accepted in campaign or level mutator lists. Level-gate strings ar
 | `No_Maps` | Accepted as a campaign mutator ID for compatibility. |
 | `No_Open_Carry` | Accepted as a campaign mutator ID for compatibility. |
 | `[CCU] Homesickness Mandatory` | Accepted from older content and converted when possible. |
-| `[CCU]LevelGate::...` | Parses Entry gates at exit elevators, integer/A-D labels, Agent switches, and AND/NAND/NOR/OR/XNOR/XOR. Agent switch trigger semantics are inferred from the compatibility data. `[RCK]LevelGate::...` is read too. The mutator list shows either as `[RCK] Level Gate`. |
+| `[CCU]LevelGate::...` | Parses Entry gates at exit elevators: integer/A-D labels, Agent switches, AND/NAND/NOR/OR/XNOR/XOR, plus RCK's `Count=N`, conditions (`Routed`, `TurfTaken`, `Destroyed`, `Holding`, `Quest`) and an `Open=` message. `[RCK]LevelGate::...` is read too. The mutator list shows either as `[RCK] Level Gate`. See "Level-gate strings" below. |
 | `LevelGateMenuHead` | Accepted as the level-gate configurator name; the configured data strings do the work. |
 | `Agent_Switch_A` | Hidden switch trait for label 1. True when the agent is resolved (dead, KO, hired/following, dismissed, arrested, zombified, or exited). |
 | `Agent_Switch_B` | Hidden switch trait for label 2. |
@@ -66,9 +66,39 @@ These IDs are accepted in campaign or level mutator lists. Level-gate strings ar
 
 ### Level-gate strings
 
-RCK reads both `[CCU]LevelGate::...` and `[RCK]LevelGate::...`. Entry gates can use integer labels or labels A-D, Agent switches, and AND, NAND, NOR, OR, XNOR, or XOR logic. A switch is true when its agent is resolved: dead, knocked out, hired or following, dismissed, arrested, zombified, or exited.
+RCK reads both `[CCU]LevelGate::...` and `[RCK]LevelGate::...`: `;`-separated `Key=value` pairs. Entry gates can use integer labels or labels A-D, Agent switches, and AND, NAND, NOR, OR, XNOR, or XOR logic. A switch is true when its agent is resolved: dead, knocked out, hired or following, dismissed, arrested, zombified, or exited.
 
 Example: `[CCU]LevelGate::Type=Entry;Label=1;Switch=Agent;Logic=AND;` with an `Agent_Switch_A` NPC blocks the exit until that NPC is resolved.
+
+RCK adds these to CCU's grammar. Labels are optional once there's a condition.
+
+| Key | Example | The exit opens when |
+| --- | --- | --- |
+| `Count` | `Label=A;Count=3;` | At least 3 of the label agents are resolved (3 of the 4 Summit bosses). Replaces `Logic`; 1 to 99. |
+| `Routed` | `Routed=Faction_2` or `Routed=Crepe+Blahd` | Every listed faction's last `<key>_Leader` fell this level (RCK.Social). |
+| `TurfTaken` | `TurfTaken=Blahd` or `TurfTaken=Blahd+Crepe` | Every listed faction held turf when the level loaded and holds none now (RCK.Social; see [turf capture](../Social/FEATURES.md#turf-capture)). |
+| `Destroyed` | `Destroyed=Generator` or `Destroyed=Generator+PowerBox` | At least one object of each name was destroyed this level and none of that name is left standing. |
+| `Holding` | `Holding=Briefcase`, `Holding=Briefcase*2+Key` | The player at the exit carries the items (stacks count). |
+| `Quest` | `Quest=loose-lips+the-drop` | Every listed RCK quest is done (RCK.Quests). |
+
+The label part (if any) and every condition must hold. A gate with an unknown condition stays shut; the BepInEx log warns once, the first time a player tries the exit. When the exit refuses, the log lists what isn't met yet (at most every 3 s). Gates are checked on the host: in multiplayer, the host's state decides.
+
+Example: `[RCK]LevelGate::Label=A,B,C,D;Count=3;Destroyed=Generator;` opens once 3 of the 4 label agents are resolved and every Generator is destroyed.
+
+`Open=text` shows a message the first time every condition of the gate holds, once per level, to the host's players, in the same style as the turf messages. The text is at most 120 characters (longer text is cut, with a log warning) and can't contain `;`, which ends the key. `=` is fine. A gate with only `Open=` and no conditions never opens, so it never shows.
+
+Example: `[RCK]LevelGate::Type=Entry;TurfTaken=Blahd+Mafia+Cop+Thief+Hacker;Open=The Crepes run the city. The exit is open.;`.
+
+## Patrol and wander goals
+
+The game runs each of these goals as its own `WanderFar`, so the NPC fights, flees, investigates and reacts like any wanderer; RCK picks every stop.
+
+- A stop is a spot 0.3 to 1.3 units from the target NPC or object; the NPC pauses 2 to 4.5 s there (1 to 2 s for Random Patrol (Map)). It never picks the same target twice in a row.
+- Targets: NPCs are living non-players that aren't ghosts or object agents, nor Hostile or Annoyed toward the walker. Objects skip doors, windows, bars, wire, lockdown walls, security, hazards, bushes, trees, plants, pipes and elevators.
+- Owner groups use the walker's owner ID (above 0) and start chunk. Non-owner and plain targets must be within 20 units (2 chunks) of the walker's start.
+- With no NPC or object to visit, a Wander Between goal patrols its start chunk instead.
+- Random Patrol (Map) stops are random public tiles, at least 10 units away when possible.
+- Home is where the NPC spawned. The host picks stops; clients follow the synced movement.
 
 ## Items and effects
 

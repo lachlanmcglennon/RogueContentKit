@@ -24,6 +24,15 @@ namespace RCK.Social
     {
         public ulong Aligned, Hostile, Territorial, Annoyed, Friendly, Neutral, Member;
 
+        /// <summary>
+        ///   The role traits (<c>&lt;key&gt;_Vengeful</c>, <c>&lt;key&gt;_Leader</c>, <c>&lt;key&gt;_Calls_Backup</c>,
+        ///   <c>&lt;key&gt;_Reinforcement</c>). They aren't rules and don't make the holder a member.
+        /// </summary>
+        public ulong Vengeful, Leader, Backup, Reinforcement;
+
+        /// <summary>The agent is sworn to the one faction in <see cref="Aligned"/> (a commanded recruit): no vanilla membership counts.</summary>
+        public bool Sworn;
+
         public ulong Rules => Aligned | Hostile | Territorial | Annoyed | Friendly | Neutral;
     }
 

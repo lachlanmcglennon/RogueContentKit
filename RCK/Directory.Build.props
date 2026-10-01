@@ -6,7 +6,10 @@
     <Nullable>enable</Nullable>
     <LangVersion>latest</LangVersion>
     <ImplicitUsings>disable</ImplicitUsings>
-    <Version>1.0.0</Version>
+    <!-- RCK's version, and the RCK Pack's: the only place it is written (tools\new-release.ps1 bumps it). The plugin's
+         constants come from it (build\BuildInfo.targets). -->
+    <Version>1.1.0</Version>
+    <BuildInfoNamespace Condition="'$(MSBuildProjectName)'=='RCK'">RCK</BuildInfoNamespace>
     <Authors>RCK contributors</Authors>
     <GenerateDocumentationFile>false</GenerateDocumentationFile>
     <AppendTargetFrameworkToOutputPath>false</AppendTargetFrameworkToOutputPath>
@@ -23,6 +26,7 @@
     <Reference Include="Assembly-CSharp"><HintPath>$(RefDir)Assembly-CSharp.dll</HintPath><Private>False</Private></Reference>
     <Reference Include="Assembly-CSharp-firstpass"><HintPath>$(RefDir)static\Assembly-CSharp-firstpass.dll</HintPath><Private>False</Private></Reference>
     <Reference Include="Mirror"><HintPath>$(RefDir)static\Mirror.dll</HintPath><Private>False</Private></Reference>
+    <Reference Include="Rewired_Core"><HintPath>$(RefDir)static\Rewired_Core.dll</HintPath><Private>False</Private></Reference>
     <Reference Include="netstandard"><HintPath>$(RefDir)static\netstandard.dll</HintPath><Private>False</Private></Reference>
     <Reference Include="UnityEngine"><HintPath>$(RefDir)static\UnityEngine.dll</HintPath><Private>False</Private></Reference>
     <Reference Include="UnityEngine.CoreModule"><HintPath>$(RefDir)static\UnityEngine.CoreModule.dll</HintPath><Private>False</Private></Reference>
@@ -40,5 +44,7 @@
     <Reference Include="RogueLibsCore"><HintPath>$(RefDir)roguelibs\RogueLibsCore.dll</HintPath><Private>False</Private></Reference>
     <Reference Include="RogueLibsPlus"><HintPath>$(RogueLibsPlusDir)RogueLibsPlus.dll</HintPath><Private>False</Private></Reference>
   </ItemGroup>
+
+  <Import Project="$(MSBuildThisFileDirectory)..\build\BuildInfo.targets" />
 
 </Project>

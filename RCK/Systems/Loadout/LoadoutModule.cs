@@ -72,11 +72,7 @@ namespace RCK.Loadout
                 uid = agent.UID;
             }
 
-            private static int CurrentLevel()
-            {
-                GameController gc = GameController.gameController;
-                return gc != null && gc.sessionDataBig != null ? gc.sessionDataBig.curLevelEndless : 0;
-            }
+            private static int CurrentLevel() => LevelScope.CurrentId();
         }
     }
 
@@ -604,82 +600,6 @@ namespace RCK.Loadout
             public string Name { get; }
             public LoadoutSlot Slot { get; }
             public int Value { get; }
-        }
-    }
-
-    internal struct StableRng
-    {
-        private uint state;
-
-        public StableRng(Agent agent, string salt)
-        {
-            state = 2166136261u;
-            Add(salt);
-            Add(agent.gc?.loadLevel?.randomSeedNum ?? 0);
-            Add(agent.gc?.sessionDataBig?.curLevelEndless ?? 0);
-            Add(agent.agentID);
-            Add(agent.streamingChunkObjectID);
-            Add(agent.startingChunk);
-            Add(agent.startingSector);
-            Add((int)Math.Round(agent.originalPosReal.x * 100f));
-            Add((int)Math.Round(agent.originalPosReal.y * 100f));
-            Add(agent.agentName);
-            Add(agent.agentRealName);
-            IReadOnlyCollection<string> traitNames = AgentTraits.Get(agent);
-            var sorted = new List<string>(traitNames);
-            sorted.Sort(StringComparer.Ordinal);
-            foreach (string trait in sorted)
-            {
-                Add(trait);
-            }
-        }
-
-        public string Pick(List<string> values) => values[Next(values.Count)];
-
-        public bool Chance(int percent) => percent >= 100 || (percent > 0 && Next(100) < percent);
-
-        public int RangeInclusive(int min, int max)
-        {
-            if (max <= min)
-            {
-                return min;
-            }
-            return min + Next(max - min + 1);
-        }
-
-        public int Next(int exclusiveMax)
-        {
-            if (exclusiveMax <= 1)
-            {
-                return 0;
-            }
-            state ^= state << 13;
-            state ^= state >> 17;
-            state ^= state << 5;
-            return (int)(state % (uint)exclusiveMax);
-        }
-
-        private void Add(string? text)
-        {
-            if (string.IsNullOrEmpty(text))
-            {
-                Add(0);
-                return;
-            }
-            for (int i = 0; i < text!.Length; i++)
-            {
-                state ^= text[i];
-                state *= 16777619u;
-            }
-        }
-
-        private void Add(int value)
-        {
-            unchecked
-            {
-                state ^= (uint)value;
-                state *= 16777619u;
-            }
         }
     }
 }

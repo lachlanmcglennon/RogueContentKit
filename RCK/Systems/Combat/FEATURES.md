@@ -140,3 +140,21 @@ Use these traits on custom NPCs or players as the character creator allows. Trai
 | `Wildcard` | When combat starts, this NPC gains a random vanilla drug-dealer effect. |
 | `Z_Infected` | This NPC uses vanilla zombie-on-death behavior. |
 | `Z_Infectious` | Victims damaged by this NPC become zombie-on-death targets. |
+
+## Vanilla fixes
+
+### Sniper Rifle
+
+The game ships a Sniper Rifle (its item, sprite, name and 10 rounds), and campaigns and RCK merchants hand it out, but
+the game never fires it: it played the shoot animation and nothing else, for players and NPCs alike. RCK makes it fire.
+It's always on and needs no trait.
+
+- Each shot fires one heavy bullet: 45 base damage (the Revolver's is 16), scaled by the shooter's Accuracy as for any
+  gun. At Accuracy 3 that's 54, enough to kill most ordinary NPCs with one body shot.
+- About 1.5 s between shots (less with higher Accuracy or a Rate of Fire Mod), one round per shot.
+- It aims as if the shooter's Accuracy were one higher, so NPC snipers miss less often.
+- It has the Revolver's bang and recoil and a bigger screen shake. A Silencer makes it quiet, and Accuracy, Ammo
+  Capacity and Rate of Fire Mods work as on other guns. The `Rubber_Bulleteer` trait makes its bullets rubber.
+- In multiplayer each machine fires the same shot, as with the other guns.
+- The item gets a description (EN, RU, ZH), which the game left empty.
+- If a game update makes the rifle fire by itself, RCK notices at startup, logs it and leaves the rifle to the game.

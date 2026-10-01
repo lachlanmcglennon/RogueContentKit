@@ -26,8 +26,13 @@ namespace RCK
     {
         public const string PluginGuid = "streetsofrogue.roguecontentkit";
         public const string PluginName = "RCK";
-        // Keep in step with <Version> in RCK\Directory.Build.props (tools\verify-ccu.ps1 checks).
-        public const string Version = "1.0.0";
+        /// <summary>RCK's numeric version, X.Y.Z, for BepInEx. Generated from &lt;Version&gt; in RCK\Directory.Build.props.</summary>
+        public const string Version = BuildInfo.PluginVersion;
+        /// <summary>
+        ///   The version the main menu and the log show: exactly X.Y.Z[-pre] for a build of the release tag, otherwise
+        ///   X.Y.Z[-pre]+N.g&lt;commit&gt; (N commits after the last release tag), with .dirty for uncommitted changes.
+        /// </summary>
+        public const string DisplayVersion = BuildInfo.DisplayVersion;
         public const string MenuLineId = "RCKVersion";
 
         public static RckPlugin Instance { get; private set; } = null!;
@@ -55,7 +60,7 @@ namespace RCK
             if (Rck.Config.LogTraitCount.Value)
             {
                 int head = RckData.Traits.Count(static t => t.InHead);
-                Logger.LogInfo($"{PluginName} {Version}: {TraitRegistry.Registered} traits registered ({head} current, "
+                Logger.LogInfo($"{PluginName} {DisplayVersion}: {TraitRegistry.Registered} traits registered ({head} current, "
                     + $"{RckData.Traits.Length - head} legacy, {RckData.Extensions.Count} extensions, {TraitRegistry.Failed} failed), "
                     + $"{patches} core patches, {sw.ElapsedMilliseconds} ms.");
                 foreach (ModuleLoader.Loaded r in ModuleLoader.Results)
@@ -64,12 +69,20 @@ namespace RCK
                         : $"  {r.File}: {r.Patches} patches{(r.FailedPatches > 0 ? $" ({r.FailedPatches} FAILED)" : "")}, "
                           + $"modules [{string.Join(", ", r.Modules)}]");
             }
+            else Logger.LogInfo($"{PluginName} {DisplayVersion} loaded.");
             UpdateMenuLine();
             Loaded = true;
         }
 
-        internal static void UpdateMenuLine()
-            => RogueLibsPlus.MenuLines.Set(MenuLineId, $"{PluginName} v{Version}" + (DesignerMode.On ? " (designer mode)" : ""));
+        public void Update()
+        {
+            if (Loaded) LevelScope.Check();
+        }
+
+        /// <summary>The main-menu line: "RCK v" and <see cref="DisplayVersion"/>.</summary>
+        internal static string MenuLineText => $"{PluginName} v{DisplayVersion}" + (DesignerMode.On ? " (designer mode)" : "");
+
+        internal static void UpdateMenuLine() => RogueLibsPlus.MenuLines.Set(MenuLineId, MenuLineText);
     }
 
     /// <summary>
@@ -138,7 +151,7 @@ namespace RCK
             foreach (BepInIncompatibility bad in typeof(RckPlugin).GetCustomAttributes(typeof(BepInIncompatibility), false))
             {
                 if (!Chainloader.PluginInfos.TryGetValue(bad.IncompatibilityGUID, out PluginInfo other)) continue;
-                Logger.LogError($"{RckPlugin.PluginName} {RckPlugin.Version} did not load because \"{other.Metadata.Name}\" "
+                Logger.LogError($"{RckPlugin.PluginName} {RckPlugin.DisplayVersion} did not load because \"{other.Metadata.Name}\" "
                     + $"{other.Metadata.Version} ({bad.IncompatibilityGUID}) is installed: {other.Location}. That is Custom Content "
                     + "Utilities, or an older build of this mod that used its ID, and it patches the same game code. Remove that "
                     + $"plugin's folder and restart the game. {RckPlugin.PluginName} reads the same campaigns and characters.");
@@ -153,14 +166,14 @@ namespace RCK
                 Report("RogueLibsPlus is missing", $"RCK did not load: RogueLibsPlus is missing, {reinstall}");
             if (problems.Count == before)
             {
-                Logger.LogError($"{RckPlugin.PluginName} {RckPlugin.Version} did not load. See the BepInEx errors above.");
+                Logger.LogError($"{RckPlugin.PluginName} {RckPlugin.DisplayVersion} did not load. See the BepInEx errors above.");
                 problems.Add("RCK did not load: see BepInEx\\LogOutput.log");
             }
         }
 
         private void Report(string log, string line)
         {
-            Logger.LogError($"{RckPlugin.PluginName} {RckPlugin.Version} did not load: {log}. Extract the RCK Pack into the game folder again.");
+            Logger.LogError($"{RckPlugin.PluginName} {RckPlugin.DisplayVersion} did not load: {log}. Extract the RCK Pack into the game folder again.");
             problems.Add(line);
         }
 

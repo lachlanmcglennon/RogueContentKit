@@ -1,0 +1,50 @@
+<Project>
+
+  <!-- Build identity for RCK and RogueLibsPlus. RCK\Directory.Build.props and RogueLibsPlus\RogueLibsPlus.csproj import
+       this after they set <Version>, each component's one version source (X.Y.Z or X.Y.Z-pre, SemVer 2.0).
+
+       RckBuildMetadata says which commit a build came from. RCK\deploy.ps1 sets it (tools\build-id.ps1); freeze.ps1 and
+       package-release.ps1 compute it from the real repository and pass it in, because they build a git archive:
+         release              a build of the release tag vX.Y.Z[-pre]: the display version is exactly $(Version)
+         N.g<sha7>[.dirty]    anything else, from git describe tags: $(Version)+N.g<sha7>
+         (not set)            built without the scripts: $(Version)+unknown
+       The display version is the DLL's AssemblyInformationalVersion. With BuildInfoNamespace set, it and the numeric
+       plugin version (X.Y.Z, which BepInEx 5 needs) are also generated as constants: internal static class BuildInfo. -->
+  <PropertyGroup>
+    <RckBuildMetadata Condition="'$(RckBuildMetadata)'==''">unknown</RckBuildMetadata>
+    <BuildInfoPluginVersion>$([System.Text.RegularExpressions.Regex]::Replace('$(Version)', '[-+].*$', ''))</BuildInfoPluginVersion>
+    <BuildInfoDisplayVersion Condition="'$(RckBuildMetadata)'=='release'">$(Version)</BuildInfoDisplayVersion>
+    <BuildInfoDisplayVersion Condition="'$(RckBuildMetadata)'!='release'">$(Version)+$(RckBuildMetadata)</BuildInfoDisplayVersion>
+    <InformationalVersion>$(BuildInfoDisplayVersion)</InformationalVersion>
+    <AssemblyVersion>$(BuildInfoPluginVersion).0</AssemblyVersion>
+    <FileVersion>$(BuildInfoPluginVersion).0</FileVersion>
+    <!-- Only the commit the scripts name goes into a build. Without these the SDK appends the HEAD of whatever git
+         repository encloses the build folder: archive builds under %TEMP% picked up a repository in the user profile,
+         so the pack's DLLs differed from a frozen build of the same commit. -->
+    <IncludeSourceRevisionInInformationalVersion>false</IncludeSourceRevisionInInformationalVersion>
+    <EnableSourceControlManagerQueries>false</EnableSourceControlManagerQueries>
+    <Deterministic>true</Deterministic>
+    <PathMap>$([MSBuild]::NormalizeDirectory('$(MSBuildThisFileDirectory)..'))=/_/</PathMap>
+  </PropertyGroup>
+
+  <Target Name="RckCheckBuildIdentity" BeforeTargets="CoreCompile">
+    <Error Condition="!$([System.Text.RegularExpressions.Regex]::IsMatch('$(Version)', '^(0|[1-9]\d*)\.(0|[1-9]\d*)\.(0|[1-9]\d*)(-[0-9A-Za-z-]+(\.[0-9A-Za-z-]+)*)?$'))"
+           Text="&lt;Version&gt; '$(Version)' is not X.Y.Z or X.Y.Z-pre (SemVer 2.0 without build metadata)." />
+    <Error Condition="'$(RckBuildMetadata)'!='release' and !$([System.Text.RegularExpressions.Regex]::IsMatch('$(RckBuildMetadata)', '^[0-9A-Za-z-]+(\.[0-9A-Za-z-]+)*$'))"
+           Text="RckBuildMetadata '$(RckBuildMetadata)' is not 'release' or SemVer build metadata such as 3.gabc1234." />
+  </Target>
+
+  <Target Name="RckWriteBuildInfo" BeforeTargets="CoreCompile" DependsOnTargets="PrepareForBuild" Condition="'$(BuildInfoNamespace)'!=''">
+    <PropertyGroup>
+      <_BuildInfoFile>$(IntermediateOutputPath)BuildInfo.g.cs</_BuildInfoFile>
+      <!-- One line per item; %3B is a literal semicolon. -->
+      <_BuildInfoText>// &lt;auto-generated/&gt; by build\BuildInfo.targets from &lt;Version&gt; and RckBuildMetadata. Do not edit.;namespace $(BuildInfoNamespace);{;internal static class BuildInfo;{;/// &lt;summary&gt;X.Y.Z, the numeric part of the version, for BepInPlugin (BepInEx 5 rejects anything else).&lt;/summary&gt;;internal const string PluginVersion = "$(BuildInfoPluginVersion)"%3B;/// &lt;summary&gt;X.Y.Z or X.Y.Z-pre, the project Version.&lt;/summary&gt;;internal const string Version = "$(Version)"%3B;/// &lt;summary&gt;What the menu and the log show: the version, plus +N.gSHA7 unless this is a build of the release tag.&lt;/summary&gt;;internal const string DisplayVersion = "$(BuildInfoDisplayVersion)"%3B;/// &lt;summary&gt;"release", N.gSHA7[.dirty] or "unknown".&lt;/summary&gt;;internal const string BuildMetadata = "$(RckBuildMetadata)"%3B;};}</_BuildInfoText>
+    </PropertyGroup>
+    <WriteLinesToFile File="$(_BuildInfoFile)" Lines="$(_BuildInfoText)" Overwrite="true" WriteOnlyWhenDifferent="true" />
+    <ItemGroup>
+      <Compile Include="$(_BuildInfoFile)" />
+      <FileWrites Include="$(_BuildInfoFile)" />
+    </ItemGroup>
+  </Target>
+
+</Project>

@@ -9,8 +9,16 @@
     <NoWarn>$(NoWarn);CS0649</NoWarn>
   </PropertyGroup>
   <ItemGroup>
-    <Compile Include="..\..\RCK\Systems\Social\FactionRules.cs" Link="Rck\FactionRules.cs" />
-    <Compile Include="..\..\RCK\Systems\Social\FactionMatrix.Rules.cs" Link="Rck\FactionMatrix.Rules.cs" />
-    <Compile Include="..\..\RCK\Systems\Social\FactionRecruit.Rules.cs" Link="Rck\FactionRecruit.Rules.cs" />
+    <Compile Include="..\..\RCK\Systems\Social\Factions\FactionRules.cs" Link="Rck\FactionRules.cs" />
+    <Compile Include="..\..\RCK\Systems\Social\Factions\FactionMatrix.Rules.cs" Link="Rck\FactionMatrix.Rules.cs" />
+    <Compile Include="..\..\RCK\Systems\Social\Relations\FactionRecruit.Rules.cs" Link="Rck\FactionRecruit.Rules.cs" />
+    <Compile Include="..\..\RCK\Systems\Social\Relations\Disguises.Rules.cs" Link="Rck\Disguises.Rules.cs" />
+    <Compile Include="..\..\RCK\Systems\Social\War\FactionRaids.Rules.cs" Link="Rck\FactionRaids.Rules.cs" />
+    <Compile Include="..\..\RCK\Systems\Social\War\FactionRespawn.Rules.cs" Link="Rck\FactionRespawn.Rules.cs" />
+    <Compile Include="..\..\RCK\Systems\Social\Factions\FactionDisplay.Rules.cs" Link="Rck\FactionDisplay.Rules.cs" />
+    <Compile Include="..\..\RCK\Systems\Social\War\FactionWar.Rules.cs" Link="Rck\FactionWar.Rules.cs" />
+    <Compile Include="..\..\RCK\Systems\Quests\Quests.Rules.cs" Link="Rck\Quests.Rules.cs" />
+    <Compile Include="..\..\RCK\Systems\Campaign\LevelGate.Rules.cs" Link="Rck\LevelGate.Rules.cs" />
+    <Compile Include="..\..\RCK\Core\LevelScope.Rules.cs" Link="Rck\LevelScope.Rules.cs" />
   </ItemGroup>
 </Project>

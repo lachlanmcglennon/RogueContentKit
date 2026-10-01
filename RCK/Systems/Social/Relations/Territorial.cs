@@ -21,29 +21,27 @@ namespace RCK.Social
         private sealed class Holder
         {
             public readonly HashSet<Agent> Targets = new HashSet<Agent>();
+            public Agent Agent;
             public float NextSweep;
         }
 
         private static readonly HashSet<long> pairs = new HashSet<long>();
         private static readonly Dictionary<int, Holder> holders = new Dictionary<int, Holder>();
         private static readonly List<Agent> seen = new List<Agent>();
-        private static int level = int.MinValue;
 
         /// <summary>True while any pair is registered, so the hooks cost one static read in levels without any.</summary>
         public static bool Active;
 
         private static long Key(Agent source, Agent target) => ((long)source.agentID << 32) | (uint)target.agentID;
 
-        // Agent IDs restart each level, so the registry is per level. A pair set up again (the same level restarted,
-        // or a new agent reusing an ID) is unregistered first by SocialRules.ApplyRelationshipRules, so an entry left
-        // over from an earlier load never applies to a pair it wasn't decided for; clearing on a level change only
-        // frees the memory.
-        private static void CheckLevel()
+        // Agent IDs restart each level, so the registry is per level. Pairs are registered while the level loads, so it's
+        // cleared when the level ends, not when it has loaded. A pair set up again (a new agent reusing an ID) is
+        // unregistered first by SocialRules.ApplyRelationshipRules, so an entry never applies to a pair it wasn't
+        // decided for.
+        static Territorial() => LevelScope.Ended += Reset;
+
+        private static void Reset()
         {
-            GameController gc = GameController.gameController;
-            int current = gc != null && gc.sessionDataBig != null ? gc.sessionDataBig.curLevelEndless : 0;
-            if (current == level) return;
-            level = current;
             pairs.Clear();
             holders.Clear();
             Active = false;
@@ -52,11 +50,20 @@ namespace RCK.Social
         /// <summary>Marks the direction <paramref name="source"/>→<paramref name="target"/> territorial (it was just set Annoyed).</summary>
         public static void Register(Agent source, Agent target)
         {
-            CheckLevel();
+            LevelScope.Check();
             if (!pairs.Add(Key(source, target))) return;
             if (!holders.TryGetValue(source.agentID, out Holder h)) holders[source.agentID] = h = new Holder();
+            h.Agent = source;
             h.Targets.Add(target);
             Active = true;
+        }
+
+        /// <summary>True if <paramref name="agent"/> is registered as territorial toward anyone this level.</summary>
+        public static bool HoldsTurf(Agent agent)
+        {
+            if (agent == null || !Active) return false;
+            LevelScope.Check();
+            return holders.TryGetValue(agent.agentID, out Holder h) && h.Agent == agent && h.Targets.Count > 0;
         }
 
         /// <summary>Forgets both directions of a pair, before its rules are applied again.</summary>
@@ -65,6 +72,13 @@ namespace RCK.Social
             if (!Active) return;
             if (pairs.Remove(Key(a, b)) && holders.TryGetValue(a.agentID, out Holder ha)) ha.Targets.Remove(b);
             if (pairs.Remove(Key(b, a)) && holders.TryGetValue(b.agentID, out Holder hb)) hb.Targets.Remove(a);
+        }
+
+        /// <summary>Forgets one direction (a truce made in play).</summary>
+        public static void UnregisterDirected(Agent source, Agent target)
+        {
+            if (!Active) return;
+            if (pairs.Remove(Key(source, target)) && holders.TryGetValue(source.agentID, out Holder h)) h.Targets.Remove(target);
         }
 
         public static bool IsTerritorial(Agent source, Agent target) => Active && pairs.Contains(Key(source, target));
@@ -83,7 +97,8 @@ namespace RCK.Social
         private static bool Exempt(Agent holder, Agent other)
             => (other.ownerID == holder.ownerID && other.startingChunk == holder.startingChunk)
             || other.dead || other.objectAgent || other.mechEmpty
-            || (other.inventory != null && other.inventory.HasItem("PropertyDeed"));
+            || (other.inventory != null && other.inventory.HasItem("PropertyDeed"))
+            || Disguises.Covers(holder, other);
 
         // The cached tile owner and chunk (updated every AI tick) rule out almost every pair before the tile is read.
         private static bool MaybeOnTurf(Agent holder, Agent other)
@@ -113,21 +128,19 @@ namespace RCK.Social
             float now = Time.time;
             if (now < h.NextSweep) return;
             h.NextSweep = now + SweepInterval;
-            CheckLevel();
+            LevelScope.Check();
             if (!Active || h.Targets.Count == 0 || !holder.notMovedSinceLastAIUpdate || holder.dead || holder.brain == null || !holder.brain.active) return;
             if ((holder.oma.rioter && holder.isPlayer == 0) || holder.warZoneAgent || holder.zombified || holder.prisoner != 0) return;
-            List<Relationship> rels = holder.relationships.RelList2;
             seen.Clear();
             foreach (Agent other in h.Targets)
             {
                 if (other == null || !other.notMovedSinceLastAIUpdate || !MaybeOnTurf(holder, other)) continue;
-                int id = other.agentID;
-                if (id < 0 || id >= rels.Count || !pairs.Contains(Key(holder, other))) continue;
-                Relationship rel = rels[id];
+                if (!pairs.Contains(Key(holder, other))) continue;
+                Relationship rel = RelOps.Of(holder, other);
                 if (rel != null && rel.relTypeCode == relStatus.Annoyed && CanSee(holder, other, rel)) seen.Add(other);
             }
             // Escalating runs vanilla relationship code, so it happens after the loop over Targets.
-            foreach (Agent other in seen) Escalate(holder, other, rels[other.agentID]);
+            foreach (Agent other in seen) Escalate(holder, other, RelOps.Of(holder, other));
             seen.Clear();
         }
 
@@ -145,9 +158,7 @@ namespace RCK.Social
             TileData tile = other.curTileData;
             if (!OnTurf(holder, tile) || Exempt(holder, other)) return;
             HostilityDiagnostics.ReportTerritorial(holder, other, rel, tile);
-            HostilityDiagnostics.Suppress = true;
-            try { holder.relationships.SetRelHate(other, 5); }
-            finally { HostilityDiagnostics.Suppress = false; }
+            using (RelOps.Quietly()) holder.relationships.SetRelHate(other, 5);
         }
     }
 

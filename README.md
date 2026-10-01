@@ -40,6 +40,8 @@ default, so players get a clean list. Turn it on to make campaigns or to edit a 
 ### Update
 
 Extract the new zip over the old one and choose **Replace**. Your settings are kept: the zip has no config files.
+What changed is in [CHANGELOG.md](CHANGELOG.md); what a version number means is in
+[docs/versioning.md](docs/versioning.md).
 
 ### Coming from CCU
 
@@ -208,16 +210,22 @@ BunnyLibs，也请删除（菜单会显示文件名）。为 CCU 制作的战役
 - What each RCK system does: [Appearance](RCK/Systems/Appearance/FEATURES.md),
   [Behavior](RCK/Systems/Behavior/FEATURES.md), [Campaign](RCK/Systems/Campaign/FEATURES.md),
   [Combat](RCK/Systems/Combat/FEATURES.md), [Interactions](RCK/Systems/Interactions/FEATURES.md),
-  [Loadout](RCK/Systems/Loadout/FEATURES.md), [Merchants](RCK/Systems/Merchants/FEATURES.md),
+  [Items](RCK/Systems/Items/FEATURES.md), [Loadout](RCK/Systems/Loadout/FEATURES.md),
+  [Merchants](RCK/Systems/Merchants/FEATURES.md),
   [Objects](RCK/Systems/Objects/FEATURES.md), [PlayerTraits](RCK/Systems/PlayerTraits/FEATURES.md),
-  [Social](RCK/Systems/Social/FEATURES.md).
+  [Quests](RCK/Systems/Quests/FEATURES.md), [Social](RCK/Systems/Social/FEATURES.md).
 - [Publishing a campaign that needs RCK](docs/publishing.md) (Steam Workshop and GameBanana).
+- [Versions and updates](docs/versioning.md): what a version change means for players and campaign makers,
+  pre-releases, and what an older RCK does with newer traits. Changes per release: [CHANGELOG.md](CHANGELOG.md).
 - [RogueLibsPlus](docs/roguelibsplus.md): the fixes and APIs RogueLibsPlus adds to RogueLibs.
 - [Names kept from CCU](docs/legacy-ccu-vocabulary.md) and the full [CCU interface](docs/ccu-interface.md).
 
 ## Credits and licence
 
 - RCK and RogueLibsPlus: RCK contributors, MIT licence (`LICENSE`, `RCK/LICENSE`, `RogueLibsPlus/LICENSE`).
+  The root `LICENSE` covers everything in this repository (RCK, RogueLibsPlus and the tools) except a folder with its
+  own `LICENSE` file, which then applies to that folder: `RCK/LICENSE` and `RogueLibsPlus/LICENSE`, both MIT as well.
+  The third-party components the pack ships keep their own licences (below).
 - RogueLibs by Chasmical (Abbysssal); the v4.0.0-rc.3 release by Dzhake. MIT. Shipped unmodified.
 - BepInEx by the BepInEx team, with UnityDoorstop, HarmonyX, MonoMod and Mono.Cecil. Shipped unmodified.
 - Custom Content Utilities (CCU) by Freiling87 (Ted Bunny) is the original custom-content mod and the idea RCK

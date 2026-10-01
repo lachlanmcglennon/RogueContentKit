@@ -15,6 +15,37 @@ namespace RCK.Social
             Factions.Initialize();
             FactionRecruit.Initialize();
             StreetInnocence.Initialize();
+            NoInfighting.Initialize();
+            FactionEvents.Initialize();
+            Disguises.Initialize();
+            TurfWar.Initialize();
+            WarConfig.Initialize();
+            FactionRaids.Initialize();
+            FactionRespawn.Initialize();
+            FactionBackup.Initialize();
+            Broker.Initialize();
+            FactionMedic.Initialize();
+            Racketeer.Initialize();
+            RckWorld.Factions = new SocialWorld();
+            RckWorld.RegisterGateSwitch("Routed", RoutedGate);
+            RckWorld.RegisterGateSwitch("TurfTaken", TurfWar.TakenGate);
+            WarPanel.Create();
+        }
+
+        /// <summary>Level gate <c>Routed=Crepe</c> (or <c>Crepe+Blahd</c>, all of them): the faction's last leader fell.</summary>
+        private static bool RoutedGate(string arg)
+        {
+            bool any = false;
+            ulong routed = FactionEvents.Routed;
+            foreach (string raw in arg.Split('+', ','))
+            {
+                string name = raw.Trim();
+                if (name.Length == 0) continue;
+                int i = Factions.KeyIndex(name);
+                if (i < 0 || (routed & (1UL << i)) == 0) return false;
+                any = true;
+            }
+            return any;
         }
     }
 
@@ -53,6 +84,13 @@ namespace RCK.Social
                 return;
             }
 
+            // Party-mates keep the Loyal, Aligned or Submissive links the game gave them: no own rules, faction rules,
+            // Guilty or trait gates between them, and street innocence never escalates them (see PartyPeace).
+            if (PartyPeace.ArePartyMates(agent, otherAgent)) return;
+
+            // A unit sworn to a commanded faction leaves its type's vanilla ties behind (see Factions.Swear).
+            if (!caughtMode) Factions.ResetSwornTies(agent, otherAgent);
+
             // The game sets up each pair from both sides, so both calls check the same fixed order and agree. Each
             // direction keeps the first rule that sets it: the lower-ID agent's own rules, then the other agent's own
             // rules, then faction traits.
@@ -71,6 +109,14 @@ namespace RCK.Social
             {
                 ruleA = ruleB = null;
             }
+            // Faction relationships changed in play this level (truces, frames, standing), then Vengeful grudges,
+            // defectors and routs from this level, then raid, backup and turf-guard squads, outrank the rules above (see
+            // LevelRelations, FactionEvents and Squads). A disguised player's calmed members stay calm (see Disguises).
+            LevelRelations.AfterPairSetup(first, second);
+            FactionEvents.AfterPairSetup(first, second);
+            Squads.AfterPairSetup(first, second);
+            TurfWar.AfterPairSetup(first, second);
+            Disguises.AfterPairSetup(first, second);
         }
 
         private static Agent ruleA, ruleB;
@@ -91,8 +137,14 @@ namespace RCK.Social
         {
             if (caught?.relationships == null || other?.relationships == null) return;
             caughtMode = true;
+            // The rules catching up with the caught agent aren't anyone noticing a disguise.
+            Disguises.Quiet++;
             try { ApplyRelationshipRules(caught.relationships, other); }
-            finally { caughtMode = false; }
+            finally
+            {
+                caughtMode = false;
+                Disguises.Quiet--;
+            }
         }
 
         private static bool ApplyOwnRules(Agent agent, Agent otherAgent)
@@ -407,6 +459,8 @@ namespace RCK.Social
         {
             try { HiringRules.ApplyDuration(__instance); }
             catch (Exception e) { SocialRules.LogOnce(__instance, "hire-duration", e); }
+            try { FactionEvents.OnEmployed(__instance); }
+            catch (Exception e) { SocialRules.LogOnce(__instance, "faction-defector", e); }
         }
     }
 }

@@ -68,11 +68,15 @@ namespace RCK.TraitTypes
     public sealed class Blacksmith : RckTrait { }
     public sealed class Blahd_Aligned : RckTrait { }
     public sealed class Blahd_Annoyed : RckTrait { }
+    public sealed class Blahd_Calls_Backup : RckTrait { }
     public sealed class Blahd_Friendly : RckTrait { }
     public sealed class Blahd_Hostile : RckTrait { }
+    public sealed class Blahd_Leader : RckTrait { }
     public sealed class Blahd_Member : RckTrait { }
     public sealed class Blahd_Neutral : RckTrait { }
+    public sealed class Blahd_Reinforcement : RckTrait { }
     public sealed class Blahd_Territorial : RckTrait { }
+    public sealed class Blahd_Vengeful : RckTrait { }
     public sealed class Blinker : RckTrait { }
     public sealed class Blonde_Hair : RckTrait { }
     public sealed class Blood : RckTrait { }
@@ -116,12 +120,16 @@ namespace RCK.TraitTypes
     public sealed class Cannibal_Annoyed : RckTrait { }
     public sealed class Cannibal_Body : RckTrait { }
     public sealed class Cannibal_Body_Greyscale : RckTrait { }
+    public sealed class Cannibal_Calls_Backup : RckTrait { }
     public sealed class Cannibal_Eyes : RckTrait { }
     public sealed class Cannibal_Friendly : RckTrait { }
     public sealed class Cannibal_Hostile : RckTrait { }
+    public sealed class Cannibal_Leader : RckTrait { }
     public sealed class Cannibal_Member : RckTrait { }
     public sealed class Cannibal_Neutral : RckTrait { }
+    public sealed class Cannibal_Reinforcement : RckTrait { }
     public sealed class Cannibal_Territorial : RckTrait { }
+    public sealed class Cannibal_Vengeful : RckTrait { }
     public sealed class Choochootations : RckTrait { }
     public sealed class Chunk_Key : RckTrait { }
     public sealed class Chunk_Mayor_Badge : RckTrait { }
@@ -137,11 +145,15 @@ namespace RCK.TraitTypes
     public sealed class Common_Folk : RckTrait { }
     public sealed class Common_Folk_Aligned : RckTrait { }
     public sealed class Common_Folk_Annoyed : RckTrait { }
+    public sealed class Common_Folk_Calls_Backup : RckTrait { }
     public sealed class Common_Folk_Friendly : RckTrait { }
     public sealed class Common_Folk_Hostile : RckTrait { }
+    public sealed class Common_Folk_Leader : RckTrait { }
     public sealed class Common_Folk_Member : RckTrait { }
     public sealed class Common_Folk_Neutral : RckTrait { }
+    public sealed class Common_Folk_Reinforcement : RckTrait { }
     public sealed class Common_Folk_Territorial : RckTrait { }
+    public sealed class Common_Folk_Vengeful : RckTrait { }
     public sealed class Computation_Noises : RckTrait { }
     public sealed class Concealed_Carrier : RckTrait { }
     public sealed class Conductive_d : RckTrait { }
@@ -159,25 +171,33 @@ namespace RCK.TraitTypes
     public sealed class Cop_Bot_Body_Greyscale : RckTrait { }
     public sealed class Cop_Bot_Head : RckTrait { }
     public sealed class Cop_Bot_Sound : RckTrait { }
+    public sealed class Cop_Calls_Backup : RckTrait { }
     public sealed class Cop_Contraband : RckTrait { }
     public sealed class Cop_Friendly : RckTrait { }
     public sealed class Cop_Hat : RckTrait { }
     public sealed class Cop_Hostile : RckTrait { }
+    public sealed class Cop_Leader : RckTrait { }
     public sealed class Cop_Member : RckTrait { }
     public sealed class Cop_Neutral : RckTrait { }
     public sealed class Cop_Patrol : RckTrait { }
+    public sealed class Cop_Reinforcement : RckTrait { }
     public sealed class Cop_SWAT : RckTrait { }
     public sealed class Cop_Territorial : RckTrait { }
+    public sealed class Cop_Vengeful : RckTrait { }
     public sealed class Courier_Body : RckTrait { }
     public sealed class Courier_Body_Greyscale : RckTrait { }
     public sealed class Coward : RckTrait { }
     public sealed class Crepe_Aligned : RckTrait { }
     public sealed class Crepe_Annoyed : RckTrait { }
+    public sealed class Crepe_Calls_Backup : RckTrait { }
     public sealed class Crepe_Friendly : RckTrait { }
     public sealed class Crepe_Hostile : RckTrait { }
+    public sealed class Crepe_Leader : RckTrait { }
     public sealed class Crepe_Member : RckTrait { }
     public sealed class Crepe_Neutral : RckTrait { }
+    public sealed class Crepe_Reinforcement : RckTrait { }
     public sealed class Crepe_Territorial : RckTrait { }
+    public sealed class Crepe_Vengeful : RckTrait { }
     public sealed class Critter_Hitter_d : RckTrait { }
     public sealed class Crushable : RckTrait { }
     public sealed class Crusty : RckTrait { }
@@ -226,144 +246,224 @@ namespace RCK.TraitTypes
     public sealed class Eyeless : RckTrait { }
     public sealed class Faction_10_Aligned : RckTrait { }
     public sealed class Faction_10_Annoyed : RckTrait { }
+    public sealed class Faction_10_Calls_Backup : RckTrait { }
     public sealed class Faction_10_Friendly : RckTrait { }
     public sealed class Faction_10_Hostile : RckTrait { }
+    public sealed class Faction_10_Leader : RckTrait { }
     public sealed class Faction_10_Member : RckTrait { }
     public sealed class Faction_10_Neutral : RckTrait { }
+    public sealed class Faction_10_Reinforcement : RckTrait { }
     public sealed class Faction_10_Territorial : RckTrait { }
+    public sealed class Faction_10_Vengeful : RckTrait { }
     public sealed class Faction_11_Aligned : RckTrait { }
     public sealed class Faction_11_Annoyed : RckTrait { }
+    public sealed class Faction_11_Calls_Backup : RckTrait { }
     public sealed class Faction_11_Friendly : RckTrait { }
     public sealed class Faction_11_Hostile : RckTrait { }
+    public sealed class Faction_11_Leader : RckTrait { }
     public sealed class Faction_11_Member : RckTrait { }
     public sealed class Faction_11_Neutral : RckTrait { }
+    public sealed class Faction_11_Reinforcement : RckTrait { }
     public sealed class Faction_11_Territorial : RckTrait { }
+    public sealed class Faction_11_Vengeful : RckTrait { }
     public sealed class Faction_12_Aligned : RckTrait { }
     public sealed class Faction_12_Annoyed : RckTrait { }
+    public sealed class Faction_12_Calls_Backup : RckTrait { }
     public sealed class Faction_12_Friendly : RckTrait { }
     public sealed class Faction_12_Hostile : RckTrait { }
+    public sealed class Faction_12_Leader : RckTrait { }
     public sealed class Faction_12_Member : RckTrait { }
     public sealed class Faction_12_Neutral : RckTrait { }
+    public sealed class Faction_12_Reinforcement : RckTrait { }
     public sealed class Faction_12_Territorial : RckTrait { }
+    public sealed class Faction_12_Vengeful : RckTrait { }
     public sealed class Faction_13_Aligned : RckTrait { }
     public sealed class Faction_13_Annoyed : RckTrait { }
+    public sealed class Faction_13_Calls_Backup : RckTrait { }
     public sealed class Faction_13_Friendly : RckTrait { }
     public sealed class Faction_13_Hostile : RckTrait { }
+    public sealed class Faction_13_Leader : RckTrait { }
     public sealed class Faction_13_Member : RckTrait { }
     public sealed class Faction_13_Neutral : RckTrait { }
+    public sealed class Faction_13_Reinforcement : RckTrait { }
     public sealed class Faction_13_Territorial : RckTrait { }
+    public sealed class Faction_13_Vengeful : RckTrait { }
     public sealed class Faction_14_Aligned : RckTrait { }
     public sealed class Faction_14_Annoyed : RckTrait { }
+    public sealed class Faction_14_Calls_Backup : RckTrait { }
     public sealed class Faction_14_Friendly : RckTrait { }
     public sealed class Faction_14_Hostile : RckTrait { }
+    public sealed class Faction_14_Leader : RckTrait { }
     public sealed class Faction_14_Member : RckTrait { }
     public sealed class Faction_14_Neutral : RckTrait { }
+    public sealed class Faction_14_Reinforcement : RckTrait { }
     public sealed class Faction_14_Territorial : RckTrait { }
+    public sealed class Faction_14_Vengeful : RckTrait { }
     public sealed class Faction_15_Aligned : RckTrait { }
     public sealed class Faction_15_Annoyed : RckTrait { }
+    public sealed class Faction_15_Calls_Backup : RckTrait { }
     public sealed class Faction_15_Friendly : RckTrait { }
     public sealed class Faction_15_Hostile : RckTrait { }
+    public sealed class Faction_15_Leader : RckTrait { }
     public sealed class Faction_15_Member : RckTrait { }
     public sealed class Faction_15_Neutral : RckTrait { }
+    public sealed class Faction_15_Reinforcement : RckTrait { }
     public sealed class Faction_15_Territorial : RckTrait { }
+    public sealed class Faction_15_Vengeful : RckTrait { }
     public sealed class Faction_16_Aligned : RckTrait { }
     public sealed class Faction_16_Annoyed : RckTrait { }
+    public sealed class Faction_16_Calls_Backup : RckTrait { }
     public sealed class Faction_16_Friendly : RckTrait { }
     public sealed class Faction_16_Hostile : RckTrait { }
+    public sealed class Faction_16_Leader : RckTrait { }
     public sealed class Faction_16_Member : RckTrait { }
     public sealed class Faction_16_Neutral : RckTrait { }
+    public sealed class Faction_16_Reinforcement : RckTrait { }
     public sealed class Faction_16_Territorial : RckTrait { }
+    public sealed class Faction_16_Vengeful : RckTrait { }
     public sealed class Faction_17_Aligned : RckTrait { }
     public sealed class Faction_17_Annoyed : RckTrait { }
+    public sealed class Faction_17_Calls_Backup : RckTrait { }
     public sealed class Faction_17_Friendly : RckTrait { }
     public sealed class Faction_17_Hostile : RckTrait { }
+    public sealed class Faction_17_Leader : RckTrait { }
     public sealed class Faction_17_Member : RckTrait { }
     public sealed class Faction_17_Neutral : RckTrait { }
+    public sealed class Faction_17_Reinforcement : RckTrait { }
     public sealed class Faction_17_Territorial : RckTrait { }
+    public sealed class Faction_17_Vengeful : RckTrait { }
     public sealed class Faction_18_Aligned : RckTrait { }
     public sealed class Faction_18_Annoyed : RckTrait { }
+    public sealed class Faction_18_Calls_Backup : RckTrait { }
     public sealed class Faction_18_Friendly : RckTrait { }
     public sealed class Faction_18_Hostile : RckTrait { }
+    public sealed class Faction_18_Leader : RckTrait { }
     public sealed class Faction_18_Member : RckTrait { }
     public sealed class Faction_18_Neutral : RckTrait { }
+    public sealed class Faction_18_Reinforcement : RckTrait { }
     public sealed class Faction_18_Territorial : RckTrait { }
+    public sealed class Faction_18_Vengeful : RckTrait { }
     public sealed class Faction_19_Aligned : RckTrait { }
     public sealed class Faction_19_Annoyed : RckTrait { }
+    public sealed class Faction_19_Calls_Backup : RckTrait { }
     public sealed class Faction_19_Friendly : RckTrait { }
     public sealed class Faction_19_Hostile : RckTrait { }
+    public sealed class Faction_19_Leader : RckTrait { }
     public sealed class Faction_19_Member : RckTrait { }
     public sealed class Faction_19_Neutral : RckTrait { }
+    public sealed class Faction_19_Reinforcement : RckTrait { }
     public sealed class Faction_19_Territorial : RckTrait { }
+    public sealed class Faction_19_Vengeful : RckTrait { }
     public sealed class Faction_1_Aligned : RckTrait { }
     public sealed class Faction_1_Annoyed : RckTrait { }
+    public sealed class Faction_1_Calls_Backup : RckTrait { }
     public sealed class Faction_1_Friendly : RckTrait { }
     public sealed class Faction_1_Hostile : RckTrait { }
+    public sealed class Faction_1_Leader : RckTrait { }
     public sealed class Faction_1_Member : RckTrait { }
     public sealed class Faction_1_Neutral : RckTrait { }
+    public sealed class Faction_1_Reinforcement : RckTrait { }
     public sealed class Faction_1_Territorial : RckTrait { }
+    public sealed class Faction_1_Vengeful : RckTrait { }
     public sealed class Faction_20_Aligned : RckTrait { }
     public sealed class Faction_20_Annoyed : RckTrait { }
+    public sealed class Faction_20_Calls_Backup : RckTrait { }
     public sealed class Faction_20_Friendly : RckTrait { }
     public sealed class Faction_20_Hostile : RckTrait { }
+    public sealed class Faction_20_Leader : RckTrait { }
     public sealed class Faction_20_Member : RckTrait { }
     public sealed class Faction_20_Neutral : RckTrait { }
+    public sealed class Faction_20_Reinforcement : RckTrait { }
     public sealed class Faction_20_Territorial : RckTrait { }
+    public sealed class Faction_20_Vengeful : RckTrait { }
     public sealed class Faction_2_Aligned : RckTrait { }
     public sealed class Faction_2_Annoyed : RckTrait { }
+    public sealed class Faction_2_Calls_Backup : RckTrait { }
     public sealed class Faction_2_Friendly : RckTrait { }
     public sealed class Faction_2_Hostile : RckTrait { }
+    public sealed class Faction_2_Leader : RckTrait { }
     public sealed class Faction_2_Member : RckTrait { }
     public sealed class Faction_2_Neutral : RckTrait { }
+    public sealed class Faction_2_Reinforcement : RckTrait { }
     public sealed class Faction_2_Territorial : RckTrait { }
+    public sealed class Faction_2_Vengeful : RckTrait { }
     public sealed class Faction_3_Aligned : RckTrait { }
     public sealed class Faction_3_Annoyed : RckTrait { }
+    public sealed class Faction_3_Calls_Backup : RckTrait { }
     public sealed class Faction_3_Friendly : RckTrait { }
     public sealed class Faction_3_Hostile : RckTrait { }
+    public sealed class Faction_3_Leader : RckTrait { }
     public sealed class Faction_3_Member : RckTrait { }
     public sealed class Faction_3_Neutral : RckTrait { }
+    public sealed class Faction_3_Reinforcement : RckTrait { }
     public sealed class Faction_3_Territorial : RckTrait { }
+    public sealed class Faction_3_Vengeful : RckTrait { }
     public sealed class Faction_4_Aligned : RckTrait { }
     public sealed class Faction_4_Annoyed : RckTrait { }
+    public sealed class Faction_4_Calls_Backup : RckTrait { }
     public sealed class Faction_4_Friendly : RckTrait { }
     public sealed class Faction_4_Hostile : RckTrait { }
+    public sealed class Faction_4_Leader : RckTrait { }
     public sealed class Faction_4_Member : RckTrait { }
     public sealed class Faction_4_Neutral : RckTrait { }
+    public sealed class Faction_4_Reinforcement : RckTrait { }
     public sealed class Faction_4_Territorial : RckTrait { }
+    public sealed class Faction_4_Vengeful : RckTrait { }
     public sealed class Faction_5_Aligned : RckTrait { }
     public sealed class Faction_5_Annoyed : RckTrait { }
+    public sealed class Faction_5_Calls_Backup : RckTrait { }
     public sealed class Faction_5_Friendly : RckTrait { }
     public sealed class Faction_5_Hostile : RckTrait { }
+    public sealed class Faction_5_Leader : RckTrait { }
     public sealed class Faction_5_Member : RckTrait { }
     public sealed class Faction_5_Neutral : RckTrait { }
+    public sealed class Faction_5_Reinforcement : RckTrait { }
     public sealed class Faction_5_Territorial : RckTrait { }
+    public sealed class Faction_5_Vengeful : RckTrait { }
     public sealed class Faction_6_Aligned : RckTrait { }
     public sealed class Faction_6_Annoyed : RckTrait { }
+    public sealed class Faction_6_Calls_Backup : RckTrait { }
     public sealed class Faction_6_Friendly : RckTrait { }
     public sealed class Faction_6_Hostile : RckTrait { }
+    public sealed class Faction_6_Leader : RckTrait { }
     public sealed class Faction_6_Member : RckTrait { }
     public sealed class Faction_6_Neutral : RckTrait { }
+    public sealed class Faction_6_Reinforcement : RckTrait { }
     public sealed class Faction_6_Territorial : RckTrait { }
+    public sealed class Faction_6_Vengeful : RckTrait { }
     public sealed class Faction_7_Aligned : RckTrait { }
     public sealed class Faction_7_Annoyed : RckTrait { }
+    public sealed class Faction_7_Calls_Backup : RckTrait { }
     public sealed class Faction_7_Friendly : RckTrait { }
     public sealed class Faction_7_Hostile : RckTrait { }
+    public sealed class Faction_7_Leader : RckTrait { }
     public sealed class Faction_7_Member : RckTrait { }
     public sealed class Faction_7_Neutral : RckTrait { }
+    public sealed class Faction_7_Reinforcement : RckTrait { }
     public sealed class Faction_7_Territorial : RckTrait { }
+    public sealed class Faction_7_Vengeful : RckTrait { }
     public sealed class Faction_8_Aligned : RckTrait { }
     public sealed class Faction_8_Annoyed : RckTrait { }
+    public sealed class Faction_8_Calls_Backup : RckTrait { }
     public sealed class Faction_8_Friendly : RckTrait { }
     public sealed class Faction_8_Hostile : RckTrait { }
+    public sealed class Faction_8_Leader : RckTrait { }
     public sealed class Faction_8_Member : RckTrait { }
     public sealed class Faction_8_Neutral : RckTrait { }
+    public sealed class Faction_8_Reinforcement : RckTrait { }
     public sealed class Faction_8_Territorial : RckTrait { }
+    public sealed class Faction_8_Vengeful : RckTrait { }
     public sealed class Faction_9_Aligned : RckTrait { }
     public sealed class Faction_9_Annoyed : RckTrait { }
+    public sealed class Faction_9_Calls_Backup : RckTrait { }
     public sealed class Faction_9_Friendly : RckTrait { }
     public sealed class Faction_9_Hostile : RckTrait { }
+    public sealed class Faction_9_Leader : RckTrait { }
     public sealed class Faction_9_Member : RckTrait { }
     public sealed class Faction_9_Neutral : RckTrait { }
+    public sealed class Faction_9_Reinforcement : RckTrait { }
     public sealed class Faction_9_Territorial : RckTrait { }
+    public sealed class Faction_9_Vengeful : RckTrait { }
     public sealed class Faction_Blahd_Aligned : RckTrait { }
     public sealed class Faction_Cannibal_Aligned : RckTrait { }
     public sealed class Faction_Crepe_Aligned : RckTrait { }
@@ -384,12 +484,16 @@ namespace RCK.TraitTypes
     public sealed class Firefighter_Annoyed : RckTrait { }
     public sealed class Firefighter_Body : RckTrait { }
     public sealed class Firefighter_Body_Greyscale : RckTrait { }
+    public sealed class Firefighter_Calls_Backup : RckTrait { }
     public sealed class Firefighter_Five_and_Dime : RckTrait { }
     public sealed class Firefighter_Friendly : RckTrait { }
     public sealed class Firefighter_Hostile : RckTrait { }
+    public sealed class Firefighter_Leader : RckTrait { }
     public sealed class Firefighter_Member : RckTrait { }
     public sealed class Firefighter_Neutral : RckTrait { }
+    public sealed class Firefighter_Reinforcement : RckTrait { }
     public sealed class Firefighter_Territorial : RckTrait { }
+    public sealed class Firefighter_Vengeful : RckTrait { }
     public sealed class Fireproofer : RckTrait { }
     public sealed class Flasher : RckTrait { }
     public sealed class Flat_Distribution : RckTrait { }
@@ -421,15 +525,19 @@ namespace RCK.TraitTypes
     public sealed class Gorilla_Annoyed : RckTrait { }
     public sealed class Gorilla_Body : RckTrait { }
     public sealed class Gorilla_Body_Greyscale : RckTrait { }
+    public sealed class Gorilla_Calls_Backup : RckTrait { }
     public sealed class Gorilla_Colored_Body : RckTrait { }
     public sealed class Gorilla_Friendly : RckTrait { }
     public sealed class Gorilla_Head : RckTrait { }
     public sealed class Gorilla_Hostile : RckTrait { }
+    public sealed class Gorilla_Leader : RckTrait { }
     public sealed class Gorilla_Legs : RckTrait { }
     public sealed class Gorilla_Member : RckTrait { }
     public sealed class Gorilla_Neutral : RckTrait { }
+    public sealed class Gorilla_Reinforcement : RckTrait { }
     public sealed class Gorilla_Skin : RckTrait { }
     public sealed class Gorilla_Territorial : RckTrait { }
+    public sealed class Gorilla_Vengeful : RckTrait { }
     public sealed class Grab_Alcohol : RckTrait { }
     public sealed class Grab_Drugs : RckTrait { }
     public sealed class Grab_Everything : RckTrait { }
@@ -458,11 +566,15 @@ namespace RCK.TraitTypes
     public sealed class Hacker_Annoyed : RckTrait { }
     public sealed class Hacker_Body : RckTrait { }
     public sealed class Hacker_Body_Greyscale : RckTrait { }
+    public sealed class Hacker_Calls_Backup : RckTrait { }
     public sealed class Hacker_Friendly : RckTrait { }
     public sealed class Hacker_Hostile : RckTrait { }
+    public sealed class Hacker_Leader : RckTrait { }
     public sealed class Hacker_Member : RckTrait { }
     public sealed class Hacker_Neutral : RckTrait { }
+    public sealed class Hacker_Reinforcement : RckTrait { }
     public sealed class Hacker_Territorial : RckTrait { }
+    public sealed class Hacker_Vengeful : RckTrait { }
     public sealed class Hardware_Store : RckTrait { }
     public sealed class Harshmellow : RckTrait { }
     public sealed class Hat_Blue : RckTrait { }
@@ -556,11 +668,15 @@ namespace RCK.TraitTypes
     public sealed class LyCANthrope_d : RckTrait { }
     public sealed class Mafia_Aligned : RckTrait { }
     public sealed class Mafia_Annoyed : RckTrait { }
+    public sealed class Mafia_Calls_Backup : RckTrait { }
     public sealed class Mafia_Friendly : RckTrait { }
     public sealed class Mafia_Hostile : RckTrait { }
+    public sealed class Mafia_Leader : RckTrait { }
     public sealed class Mafia_Member : RckTrait { }
     public sealed class Mafia_Neutral : RckTrait { }
+    public sealed class Mafia_Reinforcement : RckTrait { }
     public sealed class Mafia_Territorial : RckTrait { }
+    public sealed class Mafia_Vengeful : RckTrait { }
     public sealed class Mag_Dumper : RckTrait { }
     public sealed class Maimer : RckTrait { }
     public sealed class Male_Styles : RckTrait { }
@@ -708,8 +824,18 @@ namespace RCK.TraitTypes
     public sealed class Ragestart_d : RckTrait { }
     public sealed class Rate_of_Fire_Mod : RckTrait { }
     public sealed class Rate_of_Fire_Modder : RckTrait { }
+    public sealed class RCK_Broker : RckTrait { }
+    public sealed class RCK_Faction_Defector : RckTrait { }
+    public sealed class RCK_Faction_Medic : RckTrait { }
+    public sealed class RCK_Faction_Racketeer : RckTrait { }
     public sealed class RCK_Innocent_Until_Caught : RckTrait { }
+    public sealed class RCK_No_Quests : RckTrait { }
     public sealed class RCK_Not_Recruitable : RckTrait { }
+    public sealed class RCK_Quest_Target_A : RckTrait { }
+    public sealed class RCK_Quest_Target_B : RckTrait { }
+    public sealed class RCK_Quest_Target_C : RckTrait { }
+    public sealed class RCK_Quest_Target_D : RckTrait { }
+    public sealed class RCK_Radiant_Quest_Giver : RckTrait { }
     public sealed class RCK_Recruit_Free : RckTrait { }
     public sealed class RCK_Recruit_Paid : RckTrait { }
     public sealed class Recoverist : RckTrait { }
@@ -742,11 +868,15 @@ namespace RCK.TraitTypes
     public sealed class Scientist_Annoyed : RckTrait { }
     public sealed class Scientist_Body : RckTrait { }
     public sealed class Scientist_Body_Greyscale : RckTrait { }
+    public sealed class Scientist_Calls_Backup : RckTrait { }
     public sealed class Scientist_Friendly : RckTrait { }
     public sealed class Scientist_Hostile : RckTrait { }
+    public sealed class Scientist_Leader : RckTrait { }
     public sealed class Scientist_Member : RckTrait { }
     public sealed class Scientist_Neutral : RckTrait { }
+    public sealed class Scientist_Reinforcement : RckTrait { }
     public sealed class Scientist_Territorial : RckTrait { }
+    public sealed class Scientist_Vengeful : RckTrait { }
     public sealed class Scumbag : RckTrait { }
     public sealed class Seek_and_Destroy : RckTrait { }
     public sealed class Shadowless : RckTrait { }
@@ -795,12 +925,16 @@ namespace RCK.TraitTypes
     public sealed class Slavemaster_Annoyed : RckTrait { }
     public sealed class Slavemaster_Body : RckTrait { }
     public sealed class Slavemaster_Body_Greyscale : RckTrait { }
+    public sealed class Slavemaster_Calls_Backup : RckTrait { }
     public sealed class Slavemaster_Friendly : RckTrait { }
     public sealed class Slavemaster_Hostile : RckTrait { }
+    public sealed class Slavemaster_Leader : RckTrait { }
     public sealed class Slavemaster_Mask : RckTrait { }
     public sealed class Slavemaster_Member : RckTrait { }
     public sealed class Slavemaster_Neutral : RckTrait { }
+    public sealed class Slavemaster_Reinforcement : RckTrait { }
     public sealed class Slavemaster_Territorial : RckTrait { }
+    public sealed class Slavemaster_Vengeful : RckTrait { }
     public sealed class Slaves_Shop : RckTrait { }
     public sealed class Slayable : RckTrait { }
     public sealed class Slime : RckTrait { }
@@ -813,11 +947,15 @@ namespace RCK.TraitTypes
     public sealed class Soldier_Annoyed : RckTrait { }
     public sealed class Soldier_Body : RckTrait { }
     public sealed class Soldier_Body_Greyscale : RckTrait { }
+    public sealed class Soldier_Calls_Backup : RckTrait { }
     public sealed class Soldier_Friendly : RckTrait { }
     public sealed class Soldier_Hostile : RckTrait { }
+    public sealed class Soldier_Leader : RckTrait { }
     public sealed class Soldier_Member : RckTrait { }
     public sealed class Soldier_Neutral : RckTrait { }
+    public sealed class Soldier_Reinforcement : RckTrait { }
     public sealed class Soldier_Territorial : RckTrait { }
+    public sealed class Soldier_Vengeful : RckTrait { }
     public sealed class Some_Bark : RckTrait { }
     public sealed class Speaks_Binary : RckTrait { }
     public sealed class Speaks_Chthonic : RckTrait { }
@@ -871,12 +1009,16 @@ namespace RCK.TraitTypes
     public sealed class Thief_Annoyed : RckTrait { }
     public sealed class Thief_Body : RckTrait { }
     public sealed class Thief_Body_Greyscale : RckTrait { }
+    public sealed class Thief_Calls_Backup : RckTrait { }
     public sealed class Thief_Friendly : RckTrait { }
     public sealed class Thief_Hostile : RckTrait { }
+    public sealed class Thief_Leader : RckTrait { }
     public sealed class Thief_Master : RckTrait { }
     public sealed class Thief_Member : RckTrait { }
     public sealed class Thief_Neutral : RckTrait { }
+    public sealed class Thief_Reinforcement : RckTrait { }
     public sealed class Thief_Territorial : RckTrait { }
+    public sealed class Thief_Vengeful : RckTrait { }
     public sealed class Throwcery_Store : RckTrait { }
     public sealed class Tough : RckTrait { }
     public sealed class Tougher : RckTrait { }
@@ -896,11 +1038,15 @@ namespace RCK.TraitTypes
     public sealed class Upper_Cruster_Annoyed : RckTrait { }
     public sealed class Upper_Cruster_Body : RckTrait { }
     public sealed class Upper_Cruster_Body_Greyscale : RckTrait { }
+    public sealed class Upper_Cruster_Calls_Backup : RckTrait { }
     public sealed class Upper_Cruster_Friendly : RckTrait { }
     public sealed class Upper_Cruster_Hostile : RckTrait { }
+    public sealed class Upper_Cruster_Leader : RckTrait { }
     public sealed class Upper_Cruster_Member : RckTrait { }
     public sealed class Upper_Cruster_Neutral : RckTrait { }
+    public sealed class Upper_Cruster_Reinforcement : RckTrait { }
     public sealed class Upper_Cruster_Territorial : RckTrait { }
+    public sealed class Upper_Cruster_Vengeful : RckTrait { }
     public sealed class Upscaled_Distribution : RckTrait { }
     public sealed class Use_Blood_Bag : RckTrait { }
     public sealed class Vampire : RckTrait { }
@@ -908,12 +1054,16 @@ namespace RCK.TraitTypes
     public sealed class Vampire_Annoyed : RckTrait { }
     public sealed class Vampire_Body : RckTrait { }
     public sealed class Vampire_Body_Greyscale : RckTrait { }
+    public sealed class Vampire_Calls_Backup : RckTrait { }
     public sealed class Vampire_Friendly : RckTrait { }
     public sealed class Vampire_Hostile : RckTrait { }
+    public sealed class Vampire_Leader : RckTrait { }
     public sealed class Vampire_Member : RckTrait { }
     public sealed class Vampire_Neutral : RckTrait { }
+    public sealed class Vampire_Reinforcement : RckTrait { }
     public sealed class Vampire_Skin : RckTrait { }
     public sealed class Vampire_Territorial : RckTrait { }
+    public sealed class Vampire_Vengeful : RckTrait { }
     public sealed class Ventulations : RckTrait { }
     public sealed class Vigilant : RckTrait { }
     public sealed class Vigilanter : RckTrait { }
@@ -935,15 +1085,19 @@ namespace RCK.TraitTypes
     public sealed class Werewolf_Annoyed : RckTrait { }
     public sealed class Werewolf_Body : RckTrait { }
     public sealed class Werewolf_Body_Greyscale : RckTrait { }
+    public sealed class Werewolf_Calls_Backup : RckTrait { }
     public sealed class Werewolf_Colored_Body : RckTrait { }
     public sealed class Werewolf_Friendly : RckTrait { }
     public sealed class Werewolf_Head : RckTrait { }
     public sealed class Werewolf_Hostile : RckTrait { }
+    public sealed class Werewolf_Leader : RckTrait { }
     public sealed class Werewolf_Legs : RckTrait { }
     public sealed class Werewolf_Member : RckTrait { }
     public sealed class Werewolf_Neutral : RckTrait { }
+    public sealed class Werewolf_Reinforcement : RckTrait { }
     public sealed class Werewolf_Skin : RckTrait { }
     public sealed class Werewolf_Territorial : RckTrait { }
+    public sealed class Werewolf_Vengeful : RckTrait { }
     public sealed class Whhhhhhhh : RckTrait { }
     public sealed class White_Eyes : RckTrait { }
     public sealed class White_Hair : RckTrait { }
@@ -974,16 +1128,20 @@ namespace RCK.TraitTypes
     public sealed class Zombie_Annoyed : RckTrait { }
     public sealed class Zombie_Body_1 : RckTrait { }
     public sealed class Zombie_Body_2 : RckTrait { }
+    public sealed class Zombie_Calls_Backup : RckTrait { }
     public sealed class Zombie_Eyes : RckTrait { }
     public sealed class Zombie_Friendly : RckTrait { }
     public sealed class Zombie_Hostile : RckTrait { }
+    public sealed class Zombie_Leader : RckTrait { }
     public sealed class Zombie_Legs_1 : RckTrait { }
     public sealed class Zombie_Legs_2 : RckTrait { }
     public sealed class Zombie_Member : RckTrait { }
     public sealed class Zombie_Neutral : RckTrait { }
+    public sealed class Zombie_Reinforcement : RckTrait { }
     public sealed class Zombie_Skin : RckTrait { }
     public sealed class Zombie_Skin_1 : RckTrait { }
     public sealed class Zombie_Skin_2 : RckTrait { }
     public sealed class Zombie_Territorial : RckTrait { }
+    public sealed class Zombie_Vengeful : RckTrait { }
     public sealed class Zzzzzzzzzzzz : RckTrait { }
 }

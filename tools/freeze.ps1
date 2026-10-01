@@ -10,10 +10,12 @@ param(
 )
 $ErrorActionPreference = "Stop"
 $repo = Split-Path $PSScriptRoot -Parent
+. (Join-Path $PSScriptRoot "build-ref.ps1")
 if (-not $Out) { $Out = Join-Path (Split-Path $repo -Parent) "sor-ccu-frozen" }
-$hash = (git -C $repo rev-parse --short $Ref)
+# ^{commit}: a tag name gives the commit it points at, not the tag object.
+$hash = git -C $repo rev-parse --verify --quiet "$Ref^{commit}"
 if ($LASTEXITCODE -ne 0 -or -not $hash) { throw "Unknown ref '$Ref'" }
-$hash = $hash.Trim()
+$hash = "$hash".Trim().Substring(0, 7)
 $dir = Join-Path $Out $hash
 $dist = Join-Path $dir "dist"
 
@@ -27,28 +29,10 @@ if (Test-Path "$dist\FROZEN.txt") {
     Write-Host "Already frozen: $dist"
 } else {
     if (Test-Path $dir) { Remove-Item $dir -Recurse -Force }
-    New-Item -ItemType Directory $dir -Force | Out-Null
-    $tarball = Join-Path $Out "$hash.tar"
-    git -C $repo archive --format=tar -o $tarball $Ref
-    if ($LASTEXITCODE -ne 0) { throw "git archive failed" }
-    # Expand-Archive takes minutes on this tree; bsdtar takes seconds.
-    & "$env:SystemRoot\System32\tar.exe" -xf $tarball -C $dir
-    if ($LASTEXITCODE -ne 0) { throw "tar extract failed" }
-    Remove-Item $tarball
-    # .ref holds the game's DLLs (gitignored); the build compiles against them.
-    Copy-Item (Join-Path $repo ".ref") (Join-Path $dir ".ref") -Recurse
-
-    # deploy -BuildOnly re-checks the SHA256 of Dzhake's rc.3 DLL in .ref\roguelibs and of the RogueLibsPatcher.Gen2.dll
-    # extracted from it (downloading them if the copied .ref lacks them), then builds RogueLibsPlus and RCK.
+    # The same build as tools\package-release.ps1 (tools\build-ref.ps1), so a frozen RCK or RogueLibsPlus DLL has the
+    # same bytes as the pack's DLL for the same commit.
+    $build = Invoke-RefBuild -Repo $repo -Ref $hash -Dir $dir
     $rlDir = Join-Path $dir ".ref\roguelibs"
-    & (Join-Path $dir "RCK\deploy.ps1") -BuildOnly
-
-    # Checks RogueLibsCore, RogueLibsPlus and every RCK DLL.
-    & powershell -NoProfile -File (Join-Path $dir "tools\verify-ccu.ps1") -SkipPrivateAccess
-    if ($LASTEXITCODE -ne 0) { throw "RogueLibs, RogueLibsPlus or RCK has patch errors" }
-    # Code compiled against the publicized .ref can still touch private members, which Mono rejects at runtime.
-    & powershell -NoProfile -ExecutionPolicy Bypass -File (Join-Path $dir "tools\check-private-access.ps1")
-    if ($LASTEXITCODE -ne 0) { throw "private member access found (see above); the build would fail in game" }
 
     New-Item -ItemType Directory "$dist\BepInEx\patchers", "$dist\BepInEx\plugins\RCK", "$dist\BepInEx\plugins\RogueLibsPlus" -Force | Out-Null
     Copy-Item (Join-Path $rlDir "RogueLibsPatcher.Gen2.dll") "$dist\BepInEx\patchers"
@@ -61,10 +45,11 @@ if (Test-Path "$dist\FROZEN.txt") {
         Where-Object { $_.Directory.Name -eq "Release" -and $_.Directory.Parent.Name -eq "bin" -and $_.Directory.Parent.Parent.Name -ne "_Template" } |
         Copy-Item -Destination "$dist\BepInEx\plugins\RCK"
 
-    $subject = (git -C $repo log -1 --format="%h %ad %s" --date=short $Ref)
+    $subject = (git -C $repo log -1 --format="%h %ad %s" --date=short $hash)
     @(
         "Frozen RogueLibs rc.3 (Dzhake, unmodified) + RogueLibsPlus + RCK test build"
         "Commit: $subject"
+        "Version: RCK $($build.Display), RogueLibsPlus $($build.RlPlusDisplay)"
         "Built:  $(Get-Date -Format 'yyyy-MM-dd HH:mm')"
         ""
         "Files:"

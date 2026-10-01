@@ -9,7 +9,10 @@
     <Nullable>enable</Nullable>
     <LangVersion>latest</LangVersion>
     <ImplicitUsings>disable</ImplicitUsings>
-    <Version>1.0.0</Version>
+    <!-- RogueLibsPlus' own SemVer, independent of RCK's: the only place it is written (tools\new-release.ps1
+         -RlPlusVersion bumps it). The plugin's constants come from it (build\BuildInfo.targets). -->
+    <Version>1.1.0</Version>
+    <BuildInfoNamespace>RogueLibsPlus</BuildInfoNamespace>
     <Authors>RogueLibsPlus contributors</Authors>
     <GenerateDocumentationFile>true</GenerateDocumentationFile>
     <NoWarn>$(NoWarn);CS1591</NoWarn>
@@ -37,5 +40,7 @@
     <Reference Include="Unity.TextMeshPro"><HintPath>$(RefDir)static\Unity.TextMeshPro.dll</HintPath><Private>False</Private></Reference>
     <Reference Include="RogueLibsCore"><HintPath>$(RefDir)roguelibs\RogueLibsCore.dll</HintPath><Private>False</Private></Reference>
   </ItemGroup>
+
+  <Import Project="$(MSBuildThisFileDirectory)..\build\BuildInfo.targets" />
 
 </Project>

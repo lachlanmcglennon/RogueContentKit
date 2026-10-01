@@ -16,8 +16,7 @@ namespace RCK.Social
     /// </summary>
     internal sealed partial class FactionMatrix
     {
-        private static readonly List<string> cachedRaw = new List<string>();
-        private static FactionMatrix cached;
+        private static readonly MutatorCache<FactionMatrix> cache = new MutatorCache<FactionMatrix>(c => FindPrefix(c, out _) >= 0, Parse, null);
 
         /// <summary>Finds a matrix prefix (RCK's, then the legacy spellings) in a mutator name; returns its index, or -1.</summary>
         internal static int FindPrefix(string mutator, out int prefixLength)
@@ -42,32 +41,7 @@ namespace RCK.Social
         }
 
         /// <summary>The matrix for the running level, or null if no mutator sets one. Parsed again only when the mutators change.</summary>
-        public static FactionMatrix Current()
-        {
-            List<string> challenges = GameController.gameController == null ? null : GameController.gameController.challenges;
-            int found = 0;
-            bool same = true;
-            if (challenges != null)
-            {
-                for (int i = 0; i < challenges.Count; i++)
-                {
-                    string c = challenges[i];
-                    if (c == null || FindPrefix(c, out _) < 0) continue;
-                    if (found >= cachedRaw.Count || !string.Equals(cachedRaw[found], c, StringComparison.Ordinal)) same = false;
-                    found++;
-                }
-            }
-            if (same && found == cachedRaw.Count) return cached;
-
-            cachedRaw.Clear();
-            if (challenges != null)
-            {
-                foreach (string c in challenges)
-                    if (c != null && FindPrefix(c, out _) >= 0) cachedRaw.Add(c);
-            }
-            cached = Parse(cachedRaw);
-            return cached;
-        }
+        public static FactionMatrix Current() => cache.Current();
 
         private static FactionMatrix Parse(List<string> raws)
         {
@@ -93,6 +67,9 @@ namespace RCK.Social
             if (unlockName == null) return;
             if (FactionMatrix.FindPrefix(unlockName, out _) >= 0) __result = Rck.ExtensionTag + " Faction Relationships";
             else if (RecruitMatrix.IsRecruitMutator(unlockName)) __result = Rck.ExtensionTag + " Faction Recruiting (per faction)";
+            else if (unlockName.IndexOf(DisguiseRules.Prefix, System.StringComparison.Ordinal) >= 0) __result = Rck.ExtensionTag + " Faction Disguises (custom)";
+            else if (unlockName.IndexOf(RaidRules.Prefix, System.StringComparison.Ordinal) >= 0) __result = Rck.ExtensionTag + " Faction Raids (scheduled)";
+            else if (FactionDisplay.IsNameMutator(unlockName)) __result = Rck.ExtensionTag + " Faction Names";
         }
     }
 }

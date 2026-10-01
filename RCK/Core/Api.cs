@@ -117,9 +117,52 @@ namespace RCK
                 + "list switches it in game.");
             LogTraitCount = file.Bind("Debug", "LogRegistration", true,
                 "Log a summary of registered traits and loaded modules at startup.");
+            TurfOverlay = file.Bind("Map", "TurfOverlay", true,
+                "Show who holds each turf on the big map (host only). The toggle key switches it in game.");
+            TurfOverlayKey = file.Bind("Map", "TurfOverlayKey", UnityEngine.KeyCode.F8,
+                "The key that hides and shows the turf overlay (a Unity KeyCode name; F7 is UnityExplorer's).");
+            WarPanelKey = file.Bind("Map", "WarPanelKey", UnityEngine.KeyCode.G,
+                "The key that hides and shows the turf-war panel, each faction's share of the city (host only; None turns it off). "
+                + "G is free in SoR's default controls; RCK warns in the log and on the panel if your controls use the same key.");
+            CommandConsoleKey = file.Bind("Map", "CommandConsoleKey", UnityEngine.KeyCode.T,
+                "The key that hides and shows the commander console, in levels where you lead a faction (host only; None turns it "
+                + "off). T is free in SoR's default controls; RCK warns in the log and on the console if your controls use the same key.");
+            KeyDefaults = file.Bind("Map", "KeyDefaults", 0,
+                "Which set of default keys RCK last moved this file to (RCK sets it; leave it alone).");
+            FilePath = file.ConfigFilePath;
+            MoveOldDefaultKeys();
         }
 
+        // The war panel and the console were on F6 and F9 in earlier test builds. A config written then still says so,
+        // and BepInEx's defaults only apply to settings a file doesn't have yet, so the old defaults move once.
+        private void MoveOldDefaultKeys()
+        {
+            if (KeyDefaults.Value >= 1) return;
+            var moved = new List<string>();
+            if (WarPanelKey.Value == UnityEngine.KeyCode.F6)
+            {
+                WarPanelKey.Value = UnityEngine.KeyCode.G;
+                moved.Add("WarPanelKey F6 to G");
+            }
+            if (CommandConsoleKey.Value == UnityEngine.KeyCode.F9)
+            {
+                CommandConsoleKey.Value = UnityEngine.KeyCode.T;
+                moved.Add("CommandConsoleKey F9 to T");
+            }
+            KeyDefaults.Value = 1;
+            if (moved.Count > 0)
+                Rck.Log.LogInfo($"RCK: moved the old default keys to the new defaults ({string.Join(", ", moved.ToArray())}). "
+                    + $"Change them in the [Map] section of {FilePath}.");
+        }
+
+        /// <summary>The config file's path, for messages that tell the player where to change a setting.</summary>
+        public string FilePath { get; }
         public ConfigEntry<bool> DesignerEdition { get; }
         public ConfigEntry<bool> LogTraitCount { get; }
+        public ConfigEntry<bool> TurfOverlay { get; }
+        public ConfigEntry<UnityEngine.KeyCode> TurfOverlayKey { get; }
+        public ConfigEntry<UnityEngine.KeyCode> WarPanelKey { get; }
+        public ConfigEntry<UnityEngine.KeyCode> CommandConsoleKey { get; }
+        public ConfigEntry<int> KeyDefaults { get; }
     }
 }

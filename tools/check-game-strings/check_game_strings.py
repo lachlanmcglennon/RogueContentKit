@@ -273,7 +273,8 @@ def load_vanilla_vocab(vocab: Vocab, decomp: Path, data_dir: Path) -> None:
     audio = decomp / "AudioHandler.cs"
     harvest_regex_strings(vocab, audio, "audio_clip", r'audioClipDic\.Add\("([^"]+)"')
     harvest_regex_strings(vocab, audio, "audio_clip", r'LoadFile\("([^"]+)"')
-    harvest_cases(vocab, audio, "audio_clip", "Play")
+    # The 4-argument Play overload holds the switch of clip aliases ("RevolverFire" picks RevolverFire1-3).
+    harvest_cases(vocab, audio, "audio_clip", signature=r"public void Play\(PlayfieldObject playfieldObject, string clipName, uint cameFromClient, bool dontPlayOnClients\)")
 
     explosion = decomp / "Explosion.cs"
     harvest_cases(vocab, explosion, "explosion_type", "SetupExplosion")
@@ -560,6 +561,14 @@ def extract_ccu_uses(repo: Path) -> list[Use]:
             add(path, text, "item_name", value, line, "MotivationItems")
         for value, line in extract_array_values(text, "DangerousItems"):
             add(path, text, "item_name", value, line, "DangerousItems")
+        for value, line in extract_array_values(text, "QuestItems"):
+            add(path, text, "item_name", value, line, "QuestItems")
+        for table in ("SabotageObjects", "SkippedObjects"):
+            for value, line in extract_array_values(text, table):
+                add(path, text, "object_name", value, line, table)
+        for table in ("ShadyAgents", "RadiantExcluded"):
+            for value, line in extract_array_values(text, table):
+                add(path, text, "agent_name", value, line, table)
         for value, line in extract_array_values(text, "LanguageTraits"):
             add(path, text, "ccu_trait", value, line, "LanguageTraits")
             if value != "Polyglot":

@@ -1313,6 +1313,14 @@ internal static class Verifier
         string key = "M:" + elementMethod.FullName;
         if (!context.ImportedMembers.Add(key)) return;
 
+        // Multidimensional arrays get Get/Set/Address/.ctor from the runtime, so only the element type must exist.
+        if (elementMethod.DeclaringType is ArrayType array)
+        {
+            if (ResolveType(context, array.ElementType) is null)
+                context.Errors.Add($"ERROR imported Assembly-CSharp array element type does not resolve in game DLL: {array.ElementType.FullName} used by {Display.Method(source)}");
+            return;
+        }
+
         TypeDefinition? type = ResolveType(context, elementMethod.DeclaringType);
         MethodDefinition? method = type is null
             ? null

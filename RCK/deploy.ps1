@@ -7,7 +7,10 @@
 param(
     [string]$Game = "C:\Program Files (x86)\Steam\steamapps\common\Streets of Rogue",
     [switch]$NoBuild,
-    [switch]$BuildOnly
+    [switch]$BuildOnly,
+    # Which commit the build is (build\BuildInfo.targets). freeze.ps1 and package-release.ps1 pass it, because their git
+    # archives have no .git; otherwise it comes from this repository's working tree, or is "unknown" without one.
+    [string]$BuildMetadata
 )
 $ErrorActionPreference = "Stop"
 $root = $PSScriptRoot
@@ -17,17 +20,27 @@ $rl = Join-Path $repo ".ref\roguelibs"
 & powershell -NoProfile -ExecutionPolicy Bypass -File (Join-Path $repo "tools\get-roguelibs.ps1") -Dest $rl
 if ($LASTEXITCODE -ne 0) { throw "could not get RogueLibs rc.3" }
 if (-not $NoBuild) {
-    dotnet build (Join-Path $repo "RogueLibsPlus\RogueLibsPlus.csproj") -c Release -v q -nologo | Out-Host
+    if (-not $BuildMetadata) {
+        . (Join-Path $repo "tools\build-id.ps1")
+        if (Test-OwnRepository $repo) { $BuildMetadata = (Get-BuildId -Repo $repo -WorkingTree).Metadata } else { $BuildMetadata = "unknown" }
+    }
+    Write-Host "Build metadata: $BuildMetadata"
+    $props = @("-p:RckBuildMetadata=$BuildMetadata")
+    dotnet build (Join-Path $repo "RogueLibsPlus\RogueLibsPlus.csproj") -c Release -v q -nologo @props | Out-Host
     if ($LASTEXITCODE -ne 0) { throw "RogueLibsPlus build failed" }
-    dotnet build "$root\Core\RCK.csproj" -c Release -v q -nologo | Out-Host
+    dotnet build "$root\Core\RCK.csproj" -c Release -v q -nologo @props | Out-Host
     if ($LASTEXITCODE -ne 0) { throw "Core build failed" }
     foreach ($proj in Get-ChildItem "$root\Systems" -Recurse -Filter "RCK.*.csproj" | Where-Object { $_.Directory.Name -ne "_Template" }) {
-        dotnet build $proj.FullName -c Release -v q -nologo | Out-Host
+        dotnet build $proj.FullName -c Release -v q -nologo @props | Out-Host
         if ($LASTEXITCODE -ne 0) { $failed += $proj.BaseName }
     }
 }
 if ($failed) { Write-Warning ("Modules that failed to build (skipped): " + ($failed -join ", ")) }
-if ($BuildOnly) { return }
+# A build-only run is a check, so a module that fails fails it (an older DLL in bin\ would otherwise pass for the new one).
+if ($BuildOnly) {
+    if ($failed) { throw "modules failed to build: $($failed -join ', ')" }
+    return
+}
 
 if (Get-Process StreetsOfRogue -ErrorAction SilentlyContinue) { throw "Streets of Rogue is running; close it first." }
 $bep = Join-Path $Game "BepInEx"

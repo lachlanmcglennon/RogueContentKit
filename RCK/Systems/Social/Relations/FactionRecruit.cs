@@ -10,39 +10,13 @@ namespace RCK.Social
     /// </summary>
     internal sealed partial class RecruitMatrix
     {
-        private static readonly List<string> cachedRaw = new List<string>();
-        private static RecruitMatrix cached;
+        private static readonly MutatorCache<RecruitMatrix> cache = new MutatorCache<RecruitMatrix>(IsRecruitMutator, Parse, null);
 
         internal static bool IsRecruitMutator(string mutator)
             => mutator != null && mutator.IndexOf(RckData.FactionRecruitPrefix, StringComparison.Ordinal) >= 0;
 
         /// <summary>The recruit matrix for the running level, or null if no mutator sets one. Parsed again only when the mutators change.</summary>
-        public static RecruitMatrix Current()
-        {
-            List<string> challenges = GameController.gameController == null ? null : GameController.gameController.challenges;
-            int found = 0;
-            bool same = true;
-            if (challenges != null)
-            {
-                for (int i = 0; i < challenges.Count; i++)
-                {
-                    string c = challenges[i];
-                    if (!IsRecruitMutator(c)) continue;
-                    if (found >= cachedRaw.Count || !string.Equals(cachedRaw[found], c, StringComparison.Ordinal)) same = false;
-                    found++;
-                }
-            }
-            if (same && found == cachedRaw.Count) return cached;
-
-            cachedRaw.Clear();
-            if (challenges != null)
-            {
-                foreach (string c in challenges)
-                    if (IsRecruitMutator(c)) cachedRaw.Add(c);
-            }
-            cached = Parse(cachedRaw);
-            return cached;
-        }
+        public static RecruitMatrix Current() => cache.Current();
 
         private static RecruitMatrix Parse(List<string> raws)
         {
@@ -79,7 +53,7 @@ namespace RCK.Social
             foreach (string trait in new[] { TraitFree, TraitPaid, TraitNever })
                 if (!Rck.IsRckTrait(trait)) Rck.Log.LogError($"Factions: recruit trait {trait} is not registered.");
             foreach (string mutator in new[] { MutatorFree, MutatorPaid })
-                if (Array.FindIndex(RckData.ExtensionMutators, m => m.Name == mutator) < 0) Rck.Log.LogError($"Factions: recruit mutator {mutator} is not in the generated data.");
+                LevelMutators.Require(mutator, "Factions: recruit mutator");
         }
 
         public static void AddButtons(AgentInteractions interactions, Agent agent, Agent player, List<string> buttons)

@@ -1,18 +1,25 @@
 # Builds the player release: release\RCK-Pack-<version>.zip, which extracts straight into the Streets of Rogue folder.
-#   powershell -File tools\package-release.ps1 [-Ref HEAD] [-Out <folder>]
-# It builds from a clean `git archive` of the ref (uncommitted changes are not included), like tools\freeze.ps1, and
+#   powershell -File tools\package-release.ps1 -Ref vX.Y.Z [-Out <folder>]      a release: the tag of the version
+#   powershell -File tools\package-release.ps1 -Snapshot [-Ref <ref>]           a test build of any commit (default HEAD)
+# tools\new-release.ps1 runs the first form. A release must be the tag v<version> of the version in
+# RCK/Directory.Build.props at that tag; its DLLs report exactly that version. A snapshot's DLLs and zip name carry the
+# git describe version instead (RCK-Pack-1.0.0+3.gabc1234.zip), so it can't be mistaken for a release.
+# It builds from a clean `git archive` of the ref (uncommitted changes are not included) with tools\build-ref.ps1, like
+# tools\freeze.ps1, so the RCK and RogueLibsPlus DLLs are byte-identical to a frozen build of the same commit. It
 # packs the unmodified official BepInEx 5.4.23.5 files, Dzhake's unmodified RogueLibs v4.0.0-rc.3 (tools\get-roguelibs.ps1),
 # RogueLibsPlus, RCK, RCK-README.txt and RCK-licenses\. Every file must pass an allow-list, and game or reference DLLs
 # fail the build outright.
 # PDBs are left out: Release builds of RCK and RogueLibsPlus make none (DebugType none), and BepInEx's log already names
 # the method in every stack trace, which is what bug reports need.
 param(
-    [string]$Ref = "HEAD",
-    [string]$Out
+    [string]$Ref,
+    [string]$Out,
+    [switch]$Snapshot
 )
 $ErrorActionPreference = "Stop"
 Add-Type -AssemblyName System.IO.Compression, System.IO.Compression.FileSystem
 $repo = Split-Path $PSScriptRoot -Parent
+. (Join-Path $PSScriptRoot "build-ref.ps1")
 if (-not $Out) { $Out = Join-Path $repo "release" }
 
 $bepVersion = "5.4.23.5"
@@ -25,18 +32,27 @@ $bepRootFiles = @("winhttp.dll", "doorstop_config.ini", ".doorstop_version")
 
 function Get-Sha([string]$path) { (Get-FileHash -Algorithm SHA256 -LiteralPath $path).Hash.ToUpperInvariant() }
 
-$hash = (git -C $repo rev-parse --short $Ref)
-if ($LASTEXITCODE -ne 0 -or -not $hash) { throw "Unknown ref '$Ref'" }
-$hash = $hash.Trim()
-$props = (git -C $repo show "${Ref}:RCK/Directory.Build.props") -join "`n"
-$version = [regex]::Match($props, "<Version>([^<]+)</Version>").Groups[1].Value
-if (-not $version) { throw "No <Version> in RCK/Directory.Build.props at $Ref" }
-$rlpProj = (git -C $repo show "${Ref}:RogueLibsPlus/RogueLibsPlus.csproj") -join "`n"
-$rlpVersion = [regex]::Match($rlpProj, "<Version>([^<]+)</Version>").Groups[1].Value
-if (-not $rlpVersion) { throw "No <Version> in RogueLibsPlus/RogueLibsPlus.csproj at $Ref" }
+if (-not $Ref) {
+    if (-not $Snapshot) { throw "Give -Ref vX.Y.Z (a release tag) or -Snapshot (a test build of HEAD)" }
+    $Ref = "HEAD"
+}
+$id = Get-BuildId -Repo $repo -Ref $Ref
+$hash = $id.Short
+if (-not $Snapshot) {
+    $ErrorActionPreference = "Continue"
+    git -C $repo show-ref --verify --quiet "refs/tags/$Ref" 2>$null
+    $isTag = ($LASTEXITCODE -eq 0)
+    $ErrorActionPreference = "Stop"
+    if (-not $isTag -or $Ref -ne "v$($id.Version)" -or $id.Metadata -ne "release") {
+        throw "'$Ref' is not the release tag v$($id.Version) of the version at $hash. Release with tools\new-release.ps1, or pass -Snapshot for a test build."
+    }
+}
+# A release's zip name and DLLs say X.Y.Z[-pre]; a snapshot's say X.Y.Z[-pre]+N.g<sha7>.
+$version = $id.Display
+$rlpVersion = $id.RlPlusDisplay
 $dirty = git -C $repo status --porcelain
 if ($dirty) { Write-Warning "The working tree has uncommitted changes; the pack is built from $Ref ($hash) without them." }
-Write-Host "Packing RCK Pack $version from $hash"
+Write-Host "Packing RCK Pack $version from $hash$(if ($Snapshot) { ' (snapshot)' })"
 
 # The official BepInEx zip lives in .ref\bepinex (gitignored) and must match the pinned SHA256.
 $bepDir = Join-Path $repo ".ref\bepinex"
@@ -57,31 +73,10 @@ $work = Join-Path $env:TEMP ("rck-release-$hash-" + [guid]::NewGuid().ToString("
 $src = Join-Path $work "src"
 $stage = Join-Path $Out "stage"
 try {
-    New-Item -ItemType Directory $src -Force | Out-Null
-    $tarball = Join-Path $work "src.tar"
-    git -C $repo archive --format=tar -o $tarball $Ref
-    if ($LASTEXITCODE -ne 0) { throw "git archive failed" }
-    & "$env:SystemRoot\System32\tar.exe" -xf $tarball -C $src
-    if ($LASTEXITCODE -ne 0) { throw "tar extract failed" }
-    Remove-Item $tarball
     # .ref holds the game's DLLs the build compiles against; none of them go into the pack (see the gate below).
-    Copy-Item (Join-Path $repo ".ref") (Join-Path $src ".ref") -Recurse
-    # The temp build can't find the sorcampaigns checkout beside this repository on its own.
-    $scData = Join-Path (Split-Path $repo -Parent) "sorcampaigns\data"
-    if (-not $env:SORCAMPAIGNS_DATA -and (Test-Path $scData)) { $env:SORCAMPAIGNS_DATA = $scData }
     # The clean-room gate (no CCU description wording in RCK) is a licence blocker, so a release needs the CCU clone.
-    $ccuClone = Join-Path $repo "upstream\CCU"
-    if (-not (Test-Path $ccuClone)) { throw "upstream\CCU is missing; clone https://github.com/Freiling87/CCU there so the clean-room description check can run" }
-    $env:RCK_CCU_UPSTREAM = $ccuClone
-
-    & (Join-Path $src "RCK\deploy.ps1") -BuildOnly
-    $modules = @(Get-ChildItem (Join-Path $src "RCK\Systems") -Recurse -Filter "RCK.*.csproj" | Where-Object { $_.Directory.Name -ne "_Template" })
-    $missing = @($modules | Where-Object { -not (Test-Path (Join-Path $_.DirectoryName "bin\Release\$($_.BaseName).dll")) } | ForEach-Object BaseName)
-    if ($missing) { throw "modules failed to build: $($missing -join ', ')" }
-    & powershell -NoProfile -ExecutionPolicy Bypass -File (Join-Path $src "tools\verify-ccu.ps1") -SkipPrivateAccess
-    if ($LASTEXITCODE -ne 0) { throw "RogueLibs, RogueLibsPlus or RCK has patch errors" }
-    & powershell -NoProfile -ExecutionPolicy Bypass -File (Join-Path $src "tools\check-private-access.ps1")
-    if ($LASTEXITCODE -ne 0) { throw "private member access found; the build would fail in game" }
+    $build = Invoke-RefBuild -Repo $repo -Ref $id.Commit -Dir $src -RequireCcu
+    $modules = $build.Modules
 
     if (Test-Path $stage) { Remove-Item $stage -Recurse -Force }
     New-Item -ItemType Directory "$stage\BepInEx\core", "$stage\BepInEx\patchers", "$stage\BepInEx\plugins\RogueLibsPlus",
@@ -112,6 +107,14 @@ try {
     Copy-Item (Join-Path $src "RogueLibsPlus\bin\Release\RogueLibsPlus.dll") "$stage\BepInEx\plugins\RogueLibsPlus"
     Copy-Item (Join-Path $src "RCK\Core\bin\Release\RCK.dll") "$stage\BepInEx\plugins\RCK"
     foreach ($m in $modules) { Copy-Item (Join-Path $m.DirectoryName "bin\Release\$($m.BaseName).dll") "$stage\BepInEx\plugins\RCK" }
+    # The compiler copies the informational version (what the menu line shows) into the Win32 ProductVersion.
+    $wrong = @(Get-ChildItem "$stage\BepInEx\plugins\RCK", "$stage\BepInEx\plugins\RogueLibsPlus" -Filter "*.dll" | ForEach-Object {
+        $want = $(if ($_.Name -eq "RogueLibsPlus.dll") { $rlpVersion } else { $version })
+        $got = [Diagnostics.FileVersionInfo]::GetVersionInfo($_.FullName).ProductVersion
+        if ($got -ne $want) { "$($_.Name) reports '$got', expected '$want'" }
+    })
+    if ($wrong) { throw "Built DLLs report the wrong version:`n  " + ($wrong -join "`n  ") }
+    Write-Host "DLL versions: RCK $version, RogueLibsPlus $rlpVersion"
 
     # Notepad needs the BOM to show the Russian and Chinese text.
     $readme = [IO.File]::ReadAllText((Join-Path $src "tools\release\RCK-README.txt"), [Text.Encoding]::UTF8)

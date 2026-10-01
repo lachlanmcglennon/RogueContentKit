@@ -33,7 +33,7 @@ Other interaction traits add their named vanilla-style buttons or gates:
 | `Explode`, `Go_Haywire`, `Tamper_with_Aim` | Adds Hacking Tool outcomes for the named target. |
 | `Choochootations`, `Computation_Noises`, `Conveying_Noises`, `Cop_Bot_Sound`, `Fire_Noises`, `Generating_Overclocked_Sounds`, `Generating_Sounds`, `Movie_Screen_Sounds`, `Powering_Noises`, `Sawblade_Sound`, `Ventulations` | Starts a looping vanilla-style ambience sound on the NPC. |
 | `Squeakitations`, `Whhhhhhhh`, `Woof`, `Wummmmmm`, `Zzzzzzzzzzzz` (closest-match clips) | Starts a looping vanilla-style ambience sound on the NPC. |
-| `MapMarker_Pilot` | Forces a minimap marker for the NPC. |
+| `MapMarker_Pilot` | Once a player has seen the NPC, it shows on the map as a blue arrow with its name (hover or label), the way vanilla shows a shopkeeper. An RCK job marker on the same NPC takes over while the job runs. |
 
 `Teach_Languages` can teach the supported languages. `Offer_Motivation` uses RCK's custom motivation button. `Explode`, `Go_Haywire`, and `Tamper_with_Aim` are Hacking Tool outcomes.
 

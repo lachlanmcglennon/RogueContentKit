@@ -4,7 +4,9 @@ The RCK Pack ships the components below. Each one is unmodified and keeps its ow
 in `licenses/` in this repository and in `RCK-licenses\` in the RCK Pack zip.
 
 RCK itself (`RCK/`) and RogueLibsPlus (`RogueLibsPlus/`) are MIT, copyright (c) 2026 RCK contributors and RogueLibsPlus
-contributors: see `RCK/LICENSE`, `RogueLibsPlus/LICENSE` and the root `LICENSE`.
+contributors: see `RCK/LICENSE`, `RogueLibsPlus/LICENSE` and the root `LICENSE`. The root `LICENSE` covers everything in
+the repository (RCK, RogueLibsPlus and the tools) except a folder with its own `LICENSE` file, which then applies to that
+folder: `RCK/LICENSE` and `RogueLibsPlus/LICENSE`, both MIT as well. The components below are not covered by it.
 
 | Component | Version | Files in the pack | Licence | Licence text |
 |---|---|---|---|---|

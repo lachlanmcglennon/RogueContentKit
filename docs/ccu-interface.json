@@ -22113,6 +22113,38 @@
     "grade": "Annoyed"
    }
   },
+  "Blahd_Calls_Backup": {
+   "versions": [
+    "RCK"
+   ],
+   "kind": "designer",
+   "namespace": "RCK.Traits.Rel_Faction",
+   "bases": [
+    "T_Rel_Faction",
+    "T_Relationships",
+    "T_DesignerTrait",
+    "CustomTrait"
+   ],
+   "path": "RCK/Systems/Designer Traits/Relationships/Relationships - Faction/Blahd_Calls_Backup.cs",
+   "display_en": "[RCK+] Rel Faction - Blahd Calls Backup",
+   "unlock_class": "TU_DesignerUnlock",
+   "unlock": {
+    "Cancellations": [],
+    "CharacterCreationCost": 0,
+    "IsAvailable": false,
+    "IsAvailableInCC": {
+     "expr": "Core.designerEdition"
+    },
+    "UnlockCost": 0
+   },
+   "rolls": null,
+   "in_head": true,
+   "extension": true,
+   "faction": {
+    "key": "Blahd",
+    "role": "Calls_Backup"
+   }
+  },
   "Blahd_Friendly": {
    "versions": [
     "RCK"
@@ -22149,6 +22181,38 @@
    "faction": {
     "key": "Blahd",
     "grade": "Friendly"
+   }
+  },
+  "Blahd_Leader": {
+   "versions": [
+    "RCK"
+   ],
+   "kind": "designer",
+   "namespace": "RCK.Traits.Rel_Faction",
+   "bases": [
+    "T_Rel_Faction",
+    "T_Relationships",
+    "T_DesignerTrait",
+    "CustomTrait"
+   ],
+   "path": "RCK/Systems/Designer Traits/Relationships/Relationships - Faction/Blahd_Leader.cs",
+   "display_en": "[RCK+] Rel Faction - Blahd Leader",
+   "unlock_class": "TU_DesignerUnlock",
+   "unlock": {
+    "Cancellations": [],
+    "CharacterCreationCost": 0,
+    "IsAvailable": false,
+    "IsAvailableInCC": {
+     "expr": "Core.designerEdition"
+    },
+    "UnlockCost": 0
+   },
+   "rolls": null,
+   "in_head": true,
+   "extension": true,
+   "faction": {
+    "key": "Blahd",
+    "role": "Leader"
    }
   },
   "Blahd_Member": {
@@ -22221,6 +22285,38 @@
     "grade": "Neutral"
    }
   },
+  "Blahd_Reinforcement": {
+   "versions": [
+    "RCK"
+   ],
+   "kind": "designer",
+   "namespace": "RCK.Traits.Rel_Faction",
+   "bases": [
+    "T_Rel_Faction",
+    "T_Relationships",
+    "T_DesignerTrait",
+    "CustomTrait"
+   ],
+   "path": "RCK/Systems/Designer Traits/Relationships/Relationships - Faction/Blahd_Reinforcement.cs",
+   "display_en": "[RCK+] Rel Faction - Blahd Reinforcement",
+   "unlock_class": "TU_DesignerUnlock",
+   "unlock": {
+    "Cancellations": [],
+    "CharacterCreationCost": 0,
+    "IsAvailable": false,
+    "IsAvailableInCC": {
+     "expr": "Core.designerEdition"
+    },
+    "UnlockCost": 0
+   },
+   "rolls": null,
+   "in_head": true,
+   "extension": true,
+   "faction": {
+    "key": "Blahd",
+    "role": "Reinforcement"
+   }
+  },
   "Blahd_Territorial": {
    "versions": [
     "RCK"
@@ -22257,6 +22353,38 @@
    "faction": {
     "key": "Blahd",
     "grade": "Territorial"
+   }
+  },
+  "Blahd_Vengeful": {
+   "versions": [
+    "RCK"
+   ],
+   "kind": "designer",
+   "namespace": "RCK.Traits.Rel_Faction",
+   "bases": [
+    "T_Rel_Faction",
+    "T_Relationships",
+    "T_DesignerTrait",
+    "CustomTrait"
+   ],
+   "path": "RCK/Systems/Designer Traits/Relationships/Relationships - Faction/Blahd_Vengeful.cs",
+   "display_en": "[RCK+] Rel Faction - Blahd Vengeful",
+   "unlock_class": "TU_DesignerUnlock",
+   "unlock": {
+    "Cancellations": [],
+    "CharacterCreationCost": 0,
+    "IsAvailable": false,
+    "IsAvailableInCC": {
+     "expr": "Core.designerEdition"
+    },
+    "UnlockCost": 0
+   },
+   "rolls": null,
+   "in_head": true,
+   "extension": true,
+   "faction": {
+    "key": "Blahd",
+    "role": "Vengeful"
    }
   },
   "Cannibal_Annoyed": {
@@ -22297,6 +22425,38 @@
     "grade": "Annoyed"
    }
   },
+  "Cannibal_Calls_Backup": {
+   "versions": [
+    "RCK"
+   ],
+   "kind": "designer",
+   "namespace": "RCK.Traits.Rel_Faction",
+   "bases": [
+    "T_Rel_Faction",
+    "T_Relationships",
+    "T_DesignerTrait",
+    "CustomTrait"
+   ],
+   "path": "RCK/Systems/Designer Traits/Relationships/Relationships - Faction/Cannibal_Calls_Backup.cs",
+   "display_en": "[RCK+] Rel Faction - Cannibal Calls Backup",
+   "unlock_class": "TU_DesignerUnlock",
+   "unlock": {
+    "Cancellations": [],
+    "CharacterCreationCost": 0,
+    "IsAvailable": false,
+    "IsAvailableInCC": {
+     "expr": "Core.designerEdition"
+    },
+    "UnlockCost": 0
+   },
+   "rolls": null,
+   "in_head": true,
+   "extension": true,
+   "faction": {
+    "key": "Cannibal",
+    "role": "Calls_Backup"
+   }
+  },
   "Cannibal_Friendly": {
    "versions": [
     "RCK"
@@ -22333,6 +22493,38 @@
    "faction": {
     "key": "Cannibal",
     "grade": "Friendly"
+   }
+  },
+  "Cannibal_Leader": {
+   "versions": [
+    "RCK"
+   ],
+   "kind": "designer",
+   "namespace": "RCK.Traits.Rel_Faction",
+   "bases": [
+    "T_Rel_Faction",
+    "T_Relationships",
+    "T_DesignerTrait",
+    "CustomTrait"
+   ],
+   "path": "RCK/Systems/Designer Traits/Relationships/Relationships - Faction/Cannibal_Leader.cs",
+   "display_en": "[RCK+] Rel Faction - Cannibal Leader",
+   "unlock_class": "TU_DesignerUnlock",
+   "unlock": {
+    "Cancellations": [],
+    "CharacterCreationCost": 0,
+    "IsAvailable": false,
+    "IsAvailableInCC": {
+     "expr": "Core.designerEdition"
+    },
+    "UnlockCost": 0
+   },
+   "rolls": null,
+   "in_head": true,
+   "extension": true,
+   "faction": {
+    "key": "Cannibal",
+    "role": "Leader"
    }
   },
   "Cannibal_Member": {
@@ -22405,6 +22597,38 @@
     "grade": "Neutral"
    }
   },
+  "Cannibal_Reinforcement": {
+   "versions": [
+    "RCK"
+   ],
+   "kind": "designer",
+   "namespace": "RCK.Traits.Rel_Faction",
+   "bases": [
+    "T_Rel_Faction",
+    "T_Relationships",
+    "T_DesignerTrait",
+    "CustomTrait"
+   ],
+   "path": "RCK/Systems/Designer Traits/Relationships/Relationships - Faction/Cannibal_Reinforcement.cs",
+   "display_en": "[RCK+] Rel Faction - Cannibal Reinforcement",
+   "unlock_class": "TU_DesignerUnlock",
+   "unlock": {
+    "Cancellations": [],
+    "CharacterCreationCost": 0,
+    "IsAvailable": false,
+    "IsAvailableInCC": {
+     "expr": "Core.designerEdition"
+    },
+    "UnlockCost": 0
+   },
+   "rolls": null,
+   "in_head": true,
+   "extension": true,
+   "faction": {
+    "key": "Cannibal",
+    "role": "Reinforcement"
+   }
+  },
   "Cannibal_Territorial": {
    "versions": [
     "RCK"
@@ -22441,6 +22665,38 @@
    "faction": {
     "key": "Cannibal",
     "grade": "Territorial"
+   }
+  },
+  "Cannibal_Vengeful": {
+   "versions": [
+    "RCK"
+   ],
+   "kind": "designer",
+   "namespace": "RCK.Traits.Rel_Faction",
+   "bases": [
+    "T_Rel_Faction",
+    "T_Relationships",
+    "T_DesignerTrait",
+    "CustomTrait"
+   ],
+   "path": "RCK/Systems/Designer Traits/Relationships/Relationships - Faction/Cannibal_Vengeful.cs",
+   "display_en": "[RCK+] Rel Faction - Cannibal Vengeful",
+   "unlock_class": "TU_DesignerUnlock",
+   "unlock": {
+    "Cancellations": [],
+    "CharacterCreationCost": 0,
+    "IsAvailable": false,
+    "IsAvailableInCC": {
+     "expr": "Core.designerEdition"
+    },
+    "UnlockCost": 0
+   },
+   "rolls": null,
+   "in_head": true,
+   "extension": true,
+   "faction": {
+    "key": "Cannibal",
+    "role": "Vengeful"
    }
   },
   "Common_Folk_Aligned": {
@@ -22519,6 +22775,38 @@
     "grade": "Annoyed"
    }
   },
+  "Common_Folk_Calls_Backup": {
+   "versions": [
+    "RCK"
+   ],
+   "kind": "designer",
+   "namespace": "RCK.Traits.Rel_Faction",
+   "bases": [
+    "T_Rel_Faction",
+    "T_Relationships",
+    "T_DesignerTrait",
+    "CustomTrait"
+   ],
+   "path": "RCK/Systems/Designer Traits/Relationships/Relationships - Faction/Common_Folk_Calls_Backup.cs",
+   "display_en": "[RCK+] Rel Faction - Common Folk Calls Backup",
+   "unlock_class": "TU_DesignerUnlock",
+   "unlock": {
+    "Cancellations": [],
+    "CharacterCreationCost": 0,
+    "IsAvailable": false,
+    "IsAvailableInCC": {
+     "expr": "Core.designerEdition"
+    },
+    "UnlockCost": 0
+   },
+   "rolls": null,
+   "in_head": true,
+   "extension": true,
+   "faction": {
+    "key": "Common_Folk",
+    "role": "Calls_Backup"
+   }
+  },
   "Common_Folk_Friendly": {
    "versions": [
     "RCK"
@@ -22555,6 +22843,38 @@
    "faction": {
     "key": "Common_Folk",
     "grade": "Friendly"
+   }
+  },
+  "Common_Folk_Leader": {
+   "versions": [
+    "RCK"
+   ],
+   "kind": "designer",
+   "namespace": "RCK.Traits.Rel_Faction",
+   "bases": [
+    "T_Rel_Faction",
+    "T_Relationships",
+    "T_DesignerTrait",
+    "CustomTrait"
+   ],
+   "path": "RCK/Systems/Designer Traits/Relationships/Relationships - Faction/Common_Folk_Leader.cs",
+   "display_en": "[RCK+] Rel Faction - Common Folk Leader",
+   "unlock_class": "TU_DesignerUnlock",
+   "unlock": {
+    "Cancellations": [],
+    "CharacterCreationCost": 0,
+    "IsAvailable": false,
+    "IsAvailableInCC": {
+     "expr": "Core.designerEdition"
+    },
+    "UnlockCost": 0
+   },
+   "rolls": null,
+   "in_head": true,
+   "extension": true,
+   "faction": {
+    "key": "Common_Folk",
+    "role": "Leader"
    }
   },
   "Common_Folk_Member": {
@@ -22627,6 +22947,38 @@
     "grade": "Neutral"
    }
   },
+  "Common_Folk_Reinforcement": {
+   "versions": [
+    "RCK"
+   ],
+   "kind": "designer",
+   "namespace": "RCK.Traits.Rel_Faction",
+   "bases": [
+    "T_Rel_Faction",
+    "T_Relationships",
+    "T_DesignerTrait",
+    "CustomTrait"
+   ],
+   "path": "RCK/Systems/Designer Traits/Relationships/Relationships - Faction/Common_Folk_Reinforcement.cs",
+   "display_en": "[RCK+] Rel Faction - Common Folk Reinforcement",
+   "unlock_class": "TU_DesignerUnlock",
+   "unlock": {
+    "Cancellations": [],
+    "CharacterCreationCost": 0,
+    "IsAvailable": false,
+    "IsAvailableInCC": {
+     "expr": "Core.designerEdition"
+    },
+    "UnlockCost": 0
+   },
+   "rolls": null,
+   "in_head": true,
+   "extension": true,
+   "faction": {
+    "key": "Common_Folk",
+    "role": "Reinforcement"
+   }
+  },
   "Common_Folk_Territorial": {
    "versions": [
     "RCK"
@@ -22663,6 +23015,38 @@
    "faction": {
     "key": "Common_Folk",
     "grade": "Territorial"
+   }
+  },
+  "Common_Folk_Vengeful": {
+   "versions": [
+    "RCK"
+   ],
+   "kind": "designer",
+   "namespace": "RCK.Traits.Rel_Faction",
+   "bases": [
+    "T_Rel_Faction",
+    "T_Relationships",
+    "T_DesignerTrait",
+    "CustomTrait"
+   ],
+   "path": "RCK/Systems/Designer Traits/Relationships/Relationships - Faction/Common_Folk_Vengeful.cs",
+   "display_en": "[RCK+] Rel Faction - Common Folk Vengeful",
+   "unlock_class": "TU_DesignerUnlock",
+   "unlock": {
+    "Cancellations": [],
+    "CharacterCreationCost": 0,
+    "IsAvailable": false,
+    "IsAvailableInCC": {
+     "expr": "Core.designerEdition"
+    },
+    "UnlockCost": 0
+   },
+   "rolls": null,
+   "in_head": true,
+   "extension": true,
+   "faction": {
+    "key": "Common_Folk",
+    "role": "Vengeful"
    }
   },
   "Cop_Aligned": {
@@ -22741,6 +23125,38 @@
     "grade": "Annoyed"
    }
   },
+  "Cop_Calls_Backup": {
+   "versions": [
+    "RCK"
+   ],
+   "kind": "designer",
+   "namespace": "RCK.Traits.Rel_Faction",
+   "bases": [
+    "T_Rel_Faction",
+    "T_Relationships",
+    "T_DesignerTrait",
+    "CustomTrait"
+   ],
+   "path": "RCK/Systems/Designer Traits/Relationships/Relationships - Faction/Cop_Calls_Backup.cs",
+   "display_en": "[RCK+] Rel Faction - Cop Calls Backup",
+   "unlock_class": "TU_DesignerUnlock",
+   "unlock": {
+    "Cancellations": [],
+    "CharacterCreationCost": 0,
+    "IsAvailable": false,
+    "IsAvailableInCC": {
+     "expr": "Core.designerEdition"
+    },
+    "UnlockCost": 0
+   },
+   "rolls": null,
+   "in_head": true,
+   "extension": true,
+   "faction": {
+    "key": "Cop",
+    "role": "Calls_Backup"
+   }
+  },
   "Cop_Friendly": {
    "versions": [
     "RCK"
@@ -22817,6 +23233,38 @@
     "grade": "Hostile"
    }
   },
+  "Cop_Leader": {
+   "versions": [
+    "RCK"
+   ],
+   "kind": "designer",
+   "namespace": "RCK.Traits.Rel_Faction",
+   "bases": [
+    "T_Rel_Faction",
+    "T_Relationships",
+    "T_DesignerTrait",
+    "CustomTrait"
+   ],
+   "path": "RCK/Systems/Designer Traits/Relationships/Relationships - Faction/Cop_Leader.cs",
+   "display_en": "[RCK+] Rel Faction - Cop Leader",
+   "unlock_class": "TU_DesignerUnlock",
+   "unlock": {
+    "Cancellations": [],
+    "CharacterCreationCost": 0,
+    "IsAvailable": false,
+    "IsAvailableInCC": {
+     "expr": "Core.designerEdition"
+    },
+    "UnlockCost": 0
+   },
+   "rolls": null,
+   "in_head": true,
+   "extension": true,
+   "faction": {
+    "key": "Cop",
+    "role": "Leader"
+   }
+  },
   "Cop_Member": {
    "versions": [
     "RCK"
@@ -22887,6 +23335,38 @@
     "grade": "Neutral"
    }
   },
+  "Cop_Reinforcement": {
+   "versions": [
+    "RCK"
+   ],
+   "kind": "designer",
+   "namespace": "RCK.Traits.Rel_Faction",
+   "bases": [
+    "T_Rel_Faction",
+    "T_Relationships",
+    "T_DesignerTrait",
+    "CustomTrait"
+   ],
+   "path": "RCK/Systems/Designer Traits/Relationships/Relationships - Faction/Cop_Reinforcement.cs",
+   "display_en": "[RCK+] Rel Faction - Cop Reinforcement",
+   "unlock_class": "TU_DesignerUnlock",
+   "unlock": {
+    "Cancellations": [],
+    "CharacterCreationCost": 0,
+    "IsAvailable": false,
+    "IsAvailableInCC": {
+     "expr": "Core.designerEdition"
+    },
+    "UnlockCost": 0
+   },
+   "rolls": null,
+   "in_head": true,
+   "extension": true,
+   "faction": {
+    "key": "Cop",
+    "role": "Reinforcement"
+   }
+  },
   "Cop_Territorial": {
    "versions": [
     "RCK"
@@ -22923,6 +23403,38 @@
    "faction": {
     "key": "Cop",
     "grade": "Territorial"
+   }
+  },
+  "Cop_Vengeful": {
+   "versions": [
+    "RCK"
+   ],
+   "kind": "designer",
+   "namespace": "RCK.Traits.Rel_Faction",
+   "bases": [
+    "T_Rel_Faction",
+    "T_Relationships",
+    "T_DesignerTrait",
+    "CustomTrait"
+   ],
+   "path": "RCK/Systems/Designer Traits/Relationships/Relationships - Faction/Cop_Vengeful.cs",
+   "display_en": "[RCK+] Rel Faction - Cop Vengeful",
+   "unlock_class": "TU_DesignerUnlock",
+   "unlock": {
+    "Cancellations": [],
+    "CharacterCreationCost": 0,
+    "IsAvailable": false,
+    "IsAvailableInCC": {
+     "expr": "Core.designerEdition"
+    },
+    "UnlockCost": 0
+   },
+   "rolls": null,
+   "in_head": true,
+   "extension": true,
+   "faction": {
+    "key": "Cop",
+    "role": "Vengeful"
    }
   },
   "Crepe_Annoyed": {
@@ -22963,6 +23475,38 @@
     "grade": "Annoyed"
    }
   },
+  "Crepe_Calls_Backup": {
+   "versions": [
+    "RCK"
+   ],
+   "kind": "designer",
+   "namespace": "RCK.Traits.Rel_Faction",
+   "bases": [
+    "T_Rel_Faction",
+    "T_Relationships",
+    "T_DesignerTrait",
+    "CustomTrait"
+   ],
+   "path": "RCK/Systems/Designer Traits/Relationships/Relationships - Faction/Crepe_Calls_Backup.cs",
+   "display_en": "[RCK+] Rel Faction - Crepe Calls Backup",
+   "unlock_class": "TU_DesignerUnlock",
+   "unlock": {
+    "Cancellations": [],
+    "CharacterCreationCost": 0,
+    "IsAvailable": false,
+    "IsAvailableInCC": {
+     "expr": "Core.designerEdition"
+    },
+    "UnlockCost": 0
+   },
+   "rolls": null,
+   "in_head": true,
+   "extension": true,
+   "faction": {
+    "key": "Crepe",
+    "role": "Calls_Backup"
+   }
+  },
   "Crepe_Friendly": {
    "versions": [
     "RCK"
@@ -22999,6 +23543,38 @@
    "faction": {
     "key": "Crepe",
     "grade": "Friendly"
+   }
+  },
+  "Crepe_Leader": {
+   "versions": [
+    "RCK"
+   ],
+   "kind": "designer",
+   "namespace": "RCK.Traits.Rel_Faction",
+   "bases": [
+    "T_Rel_Faction",
+    "T_Relationships",
+    "T_DesignerTrait",
+    "CustomTrait"
+   ],
+   "path": "RCK/Systems/Designer Traits/Relationships/Relationships - Faction/Crepe_Leader.cs",
+   "display_en": "[RCK+] Rel Faction - Crepe Leader",
+   "unlock_class": "TU_DesignerUnlock",
+   "unlock": {
+    "Cancellations": [],
+    "CharacterCreationCost": 0,
+    "IsAvailable": false,
+    "IsAvailableInCC": {
+     "expr": "Core.designerEdition"
+    },
+    "UnlockCost": 0
+   },
+   "rolls": null,
+   "in_head": true,
+   "extension": true,
+   "faction": {
+    "key": "Crepe",
+    "role": "Leader"
    }
   },
   "Crepe_Member": {
@@ -23071,6 +23647,38 @@
     "grade": "Neutral"
    }
   },
+  "Crepe_Reinforcement": {
+   "versions": [
+    "RCK"
+   ],
+   "kind": "designer",
+   "namespace": "RCK.Traits.Rel_Faction",
+   "bases": [
+    "T_Rel_Faction",
+    "T_Relationships",
+    "T_DesignerTrait",
+    "CustomTrait"
+   ],
+   "path": "RCK/Systems/Designer Traits/Relationships/Relationships - Faction/Crepe_Reinforcement.cs",
+   "display_en": "[RCK+] Rel Faction - Crepe Reinforcement",
+   "unlock_class": "TU_DesignerUnlock",
+   "unlock": {
+    "Cancellations": [],
+    "CharacterCreationCost": 0,
+    "IsAvailable": false,
+    "IsAvailableInCC": {
+     "expr": "Core.designerEdition"
+    },
+    "UnlockCost": 0
+   },
+   "rolls": null,
+   "in_head": true,
+   "extension": true,
+   "faction": {
+    "key": "Crepe",
+    "role": "Reinforcement"
+   }
+  },
   "Crepe_Territorial": {
    "versions": [
     "RCK"
@@ -23107,6 +23715,38 @@
    "faction": {
     "key": "Crepe",
     "grade": "Territorial"
+   }
+  },
+  "Crepe_Vengeful": {
+   "versions": [
+    "RCK"
+   ],
+   "kind": "designer",
+   "namespace": "RCK.Traits.Rel_Faction",
+   "bases": [
+    "T_Rel_Faction",
+    "T_Relationships",
+    "T_DesignerTrait",
+    "CustomTrait"
+   ],
+   "path": "RCK/Systems/Designer Traits/Relationships/Relationships - Faction/Crepe_Vengeful.cs",
+   "display_en": "[RCK+] Rel Faction - Crepe Vengeful",
+   "unlock_class": "TU_DesignerUnlock",
+   "unlock": {
+    "Cancellations": [],
+    "CharacterCreationCost": 0,
+    "IsAvailable": false,
+    "IsAvailableInCC": {
+     "expr": "Core.designerEdition"
+    },
+    "UnlockCost": 0
+   },
+   "rolls": null,
+   "in_head": true,
+   "extension": true,
+   "faction": {
+    "key": "Crepe",
+    "role": "Vengeful"
    }
   },
   "Faction_10_Aligned": {
@@ -23185,6 +23825,38 @@
     "grade": "Annoyed"
    }
   },
+  "Faction_10_Calls_Backup": {
+   "versions": [
+    "RCK"
+   ],
+   "kind": "designer",
+   "namespace": "RCK.Traits.Rel_Faction",
+   "bases": [
+    "T_Rel_Faction",
+    "T_Relationships",
+    "T_DesignerTrait",
+    "CustomTrait"
+   ],
+   "path": "RCK/Systems/Designer Traits/Relationships/Relationships - Faction/Faction_10_Calls_Backup.cs",
+   "display_en": "[RCK+] Rel Faction - Faction 10 Calls Backup",
+   "unlock_class": "TU_DesignerUnlock",
+   "unlock": {
+    "Cancellations": [],
+    "CharacterCreationCost": 0,
+    "IsAvailable": false,
+    "IsAvailableInCC": {
+     "expr": "Core.designerEdition"
+    },
+    "UnlockCost": 0
+   },
+   "rolls": null,
+   "in_head": true,
+   "extension": true,
+   "faction": {
+    "key": "Faction_10",
+    "role": "Calls_Backup"
+   }
+  },
   "Faction_10_Friendly": {
    "versions": [
     "RCK"
@@ -23261,6 +23933,38 @@
     "grade": "Hostile"
    }
   },
+  "Faction_10_Leader": {
+   "versions": [
+    "RCK"
+   ],
+   "kind": "designer",
+   "namespace": "RCK.Traits.Rel_Faction",
+   "bases": [
+    "T_Rel_Faction",
+    "T_Relationships",
+    "T_DesignerTrait",
+    "CustomTrait"
+   ],
+   "path": "RCK/Systems/Designer Traits/Relationships/Relationships - Faction/Faction_10_Leader.cs",
+   "display_en": "[RCK+] Rel Faction - Faction 10 Leader",
+   "unlock_class": "TU_DesignerUnlock",
+   "unlock": {
+    "Cancellations": [],
+    "CharacterCreationCost": 0,
+    "IsAvailable": false,
+    "IsAvailableInCC": {
+     "expr": "Core.designerEdition"
+    },
+    "UnlockCost": 0
+   },
+   "rolls": null,
+   "in_head": true,
+   "extension": true,
+   "faction": {
+    "key": "Faction_10",
+    "role": "Leader"
+   }
+  },
   "Faction_10_Member": {
    "versions": [
     "RCK"
@@ -23331,6 +24035,38 @@
     "grade": "Neutral"
    }
   },
+  "Faction_10_Reinforcement": {
+   "versions": [
+    "RCK"
+   ],
+   "kind": "designer",
+   "namespace": "RCK.Traits.Rel_Faction",
+   "bases": [
+    "T_Rel_Faction",
+    "T_Relationships",
+    "T_DesignerTrait",
+    "CustomTrait"
+   ],
+   "path": "RCK/Systems/Designer Traits/Relationships/Relationships - Faction/Faction_10_Reinforcement.cs",
+   "display_en": "[RCK+] Rel Faction - Faction 10 Reinforcement",
+   "unlock_class": "TU_DesignerUnlock",
+   "unlock": {
+    "Cancellations": [],
+    "CharacterCreationCost": 0,
+    "IsAvailable": false,
+    "IsAvailableInCC": {
+     "expr": "Core.designerEdition"
+    },
+    "UnlockCost": 0
+   },
+   "rolls": null,
+   "in_head": true,
+   "extension": true,
+   "faction": {
+    "key": "Faction_10",
+    "role": "Reinforcement"
+   }
+  },
   "Faction_10_Territorial": {
    "versions": [
     "RCK"
@@ -23367,6 +24103,38 @@
    "faction": {
     "key": "Faction_10",
     "grade": "Territorial"
+   }
+  },
+  "Faction_10_Vengeful": {
+   "versions": [
+    "RCK"
+   ],
+   "kind": "designer",
+   "namespace": "RCK.Traits.Rel_Faction",
+   "bases": [
+    "T_Rel_Faction",
+    "T_Relationships",
+    "T_DesignerTrait",
+    "CustomTrait"
+   ],
+   "path": "RCK/Systems/Designer Traits/Relationships/Relationships - Faction/Faction_10_Vengeful.cs",
+   "display_en": "[RCK+] Rel Faction - Faction 10 Vengeful",
+   "unlock_class": "TU_DesignerUnlock",
+   "unlock": {
+    "Cancellations": [],
+    "CharacterCreationCost": 0,
+    "IsAvailable": false,
+    "IsAvailableInCC": {
+     "expr": "Core.designerEdition"
+    },
+    "UnlockCost": 0
+   },
+   "rolls": null,
+   "in_head": true,
+   "extension": true,
+   "faction": {
+    "key": "Faction_10",
+    "role": "Vengeful"
    }
   },
   "Faction_11_Aligned": {
@@ -23445,6 +24213,38 @@
     "grade": "Annoyed"
    }
   },
+  "Faction_11_Calls_Backup": {
+   "versions": [
+    "RCK"
+   ],
+   "kind": "designer",
+   "namespace": "RCK.Traits.Rel_Faction",
+   "bases": [
+    "T_Rel_Faction",
+    "T_Relationships",
+    "T_DesignerTrait",
+    "CustomTrait"
+   ],
+   "path": "RCK/Systems/Designer Traits/Relationships/Relationships - Faction/Faction_11_Calls_Backup.cs",
+   "display_en": "[RCK+] Rel Faction - Faction 11 Calls Backup",
+   "unlock_class": "TU_DesignerUnlock",
+   "unlock": {
+    "Cancellations": [],
+    "CharacterCreationCost": 0,
+    "IsAvailable": false,
+    "IsAvailableInCC": {
+     "expr": "Core.designerEdition"
+    },
+    "UnlockCost": 0
+   },
+   "rolls": null,
+   "in_head": true,
+   "extension": true,
+   "faction": {
+    "key": "Faction_11",
+    "role": "Calls_Backup"
+   }
+  },
   "Faction_11_Friendly": {
    "versions": [
     "RCK"
@@ -23521,6 +24321,38 @@
     "grade": "Hostile"
    }
   },
+  "Faction_11_Leader": {
+   "versions": [
+    "RCK"
+   ],
+   "kind": "designer",
+   "namespace": "RCK.Traits.Rel_Faction",
+   "bases": [
+    "T_Rel_Faction",
+    "T_Relationships",
+    "T_DesignerTrait",
+    "CustomTrait"
+   ],
+   "path": "RCK/Systems/Designer Traits/Relationships/Relationships - Faction/Faction_11_Leader.cs",
+   "display_en": "[RCK+] Rel Faction - Faction 11 Leader",
+   "unlock_class": "TU_DesignerUnlock",
+   "unlock": {
+    "Cancellations": [],
+    "CharacterCreationCost": 0,
+    "IsAvailable": false,
+    "IsAvailableInCC": {
+     "expr": "Core.designerEdition"
+    },
+    "UnlockCost": 0
+   },
+   "rolls": null,
+   "in_head": true,
+   "extension": true,
+   "faction": {
+    "key": "Faction_11",
+    "role": "Leader"
+   }
+  },
   "Faction_11_Member": {
    "versions": [
     "RCK"
@@ -23591,6 +24423,38 @@
     "grade": "Neutral"
    }
   },
+  "Faction_11_Reinforcement": {
+   "versions": [
+    "RCK"
+   ],
+   "kind": "designer",
+   "namespace": "RCK.Traits.Rel_Faction",
+   "bases": [
+    "T_Rel_Faction",
+    "T_Relationships",
+    "T_DesignerTrait",
+    "CustomTrait"
+   ],
+   "path": "RCK/Systems/Designer Traits/Relationships/Relationships - Faction/Faction_11_Reinforcement.cs",
+   "display_en": "[RCK+] Rel Faction - Faction 11 Reinforcement",
+   "unlock_class": "TU_DesignerUnlock",
+   "unlock": {
+    "Cancellations": [],
+    "CharacterCreationCost": 0,
+    "IsAvailable": false,
+    "IsAvailableInCC": {
+     "expr": "Core.designerEdition"
+    },
+    "UnlockCost": 0
+   },
+   "rolls": null,
+   "in_head": true,
+   "extension": true,
+   "faction": {
+    "key": "Faction_11",
+    "role": "Reinforcement"
+   }
+  },
   "Faction_11_Territorial": {
    "versions": [
     "RCK"
@@ -23627,6 +24491,38 @@
    "faction": {
     "key": "Faction_11",
     "grade": "Territorial"
+   }
+  },
+  "Faction_11_Vengeful": {
+   "versions": [
+    "RCK"
+   ],
+   "kind": "designer",
+   "namespace": "RCK.Traits.Rel_Faction",
+   "bases": [
+    "T_Rel_Faction",
+    "T_Relationships",
+    "T_DesignerTrait",
+    "CustomTrait"
+   ],
+   "path": "RCK/Systems/Designer Traits/Relationships/Relationships - Faction/Faction_11_Vengeful.cs",
+   "display_en": "[RCK+] Rel Faction - Faction 11 Vengeful",
+   "unlock_class": "TU_DesignerUnlock",
+   "unlock": {
+    "Cancellations": [],
+    "CharacterCreationCost": 0,
+    "IsAvailable": false,
+    "IsAvailableInCC": {
+     "expr": "Core.designerEdition"
+    },
+    "UnlockCost": 0
+   },
+   "rolls": null,
+   "in_head": true,
+   "extension": true,
+   "faction": {
+    "key": "Faction_11",
+    "role": "Vengeful"
    }
   },
   "Faction_12_Aligned": {
@@ -23705,6 +24601,38 @@
     "grade": "Annoyed"
    }
   },
+  "Faction_12_Calls_Backup": {
+   "versions": [
+    "RCK"
+   ],
+   "kind": "designer",
+   "namespace": "RCK.Traits.Rel_Faction",
+   "bases": [
+    "T_Rel_Faction",
+    "T_Relationships",
+    "T_DesignerTrait",
+    "CustomTrait"
+   ],
+   "path": "RCK/Systems/Designer Traits/Relationships/Relationships - Faction/Faction_12_Calls_Backup.cs",
+   "display_en": "[RCK+] Rel Faction - Faction 12 Calls Backup",
+   "unlock_class": "TU_DesignerUnlock",
+   "unlock": {
+    "Cancellations": [],
+    "CharacterCreationCost": 0,
+    "IsAvailable": false,
+    "IsAvailableInCC": {
+     "expr": "Core.designerEdition"
+    },
+    "UnlockCost": 0
+   },
+   "rolls": null,
+   "in_head": true,
+   "extension": true,
+   "faction": {
+    "key": "Faction_12",
+    "role": "Calls_Backup"
+   }
+  },
   "Faction_12_Friendly": {
    "versions": [
     "RCK"
@@ -23781,6 +24709,38 @@
     "grade": "Hostile"
    }
   },
+  "Faction_12_Leader": {
+   "versions": [
+    "RCK"
+   ],
+   "kind": "designer",
+   "namespace": "RCK.Traits.Rel_Faction",
+   "bases": [
+    "T_Rel_Faction",
+    "T_Relationships",
+    "T_DesignerTrait",
+    "CustomTrait"
+   ],
+   "path": "RCK/Systems/Designer Traits/Relationships/Relationships - Faction/Faction_12_Leader.cs",
+   "display_en": "[RCK+] Rel Faction - Faction 12 Leader",
+   "unlock_class": "TU_DesignerUnlock",
+   "unlock": {
+    "Cancellations": [],
+    "CharacterCreationCost": 0,
+    "IsAvailable": false,
+    "IsAvailableInCC": {
+     "expr": "Core.designerEdition"
+    },
+    "UnlockCost": 0
+   },
+   "rolls": null,
+   "in_head": true,
+   "extension": true,
+   "faction": {
+    "key": "Faction_12",
+    "role": "Leader"
+   }
+  },
   "Faction_12_Member": {
    "versions": [
     "RCK"
@@ -23851,6 +24811,38 @@
     "grade": "Neutral"
    }
   },
+  "Faction_12_Reinforcement": {
+   "versions": [
+    "RCK"
+   ],
+   "kind": "designer",
+   "namespace": "RCK.Traits.Rel_Faction",
+   "bases": [
+    "T_Rel_Faction",
+    "T_Relationships",
+    "T_DesignerTrait",
+    "CustomTrait"
+   ],
+   "path": "RCK/Systems/Designer Traits/Relationships/Relationships - Faction/Faction_12_Reinforcement.cs",
+   "display_en": "[RCK+] Rel Faction - Faction 12 Reinforcement",
+   "unlock_class": "TU_DesignerUnlock",
+   "unlock": {
+    "Cancellations": [],
+    "CharacterCreationCost": 0,
+    "IsAvailable": false,
+    "IsAvailableInCC": {
+     "expr": "Core.designerEdition"
+    },
+    "UnlockCost": 0
+   },
+   "rolls": null,
+   "in_head": true,
+   "extension": true,
+   "faction": {
+    "key": "Faction_12",
+    "role": "Reinforcement"
+   }
+  },
   "Faction_12_Territorial": {
    "versions": [
     "RCK"
@@ -23887,6 +24879,38 @@
    "faction": {
     "key": "Faction_12",
     "grade": "Territorial"
+   }
+  },
+  "Faction_12_Vengeful": {
+   "versions": [
+    "RCK"
+   ],
+   "kind": "designer",
+   "namespace": "RCK.Traits.Rel_Faction",
+   "bases": [
+    "T_Rel_Faction",
+    "T_Relationships",
+    "T_DesignerTrait",
+    "CustomTrait"
+   ],
+   "path": "RCK/Systems/Designer Traits/Relationships/Relationships - Faction/Faction_12_Vengeful.cs",
+   "display_en": "[RCK+] Rel Faction - Faction 12 Vengeful",
+   "unlock_class": "TU_DesignerUnlock",
+   "unlock": {
+    "Cancellations": [],
+    "CharacterCreationCost": 0,
+    "IsAvailable": false,
+    "IsAvailableInCC": {
+     "expr": "Core.designerEdition"
+    },
+    "UnlockCost": 0
+   },
+   "rolls": null,
+   "in_head": true,
+   "extension": true,
+   "faction": {
+    "key": "Faction_12",
+    "role": "Vengeful"
    }
   },
   "Faction_13_Aligned": {
@@ -23965,6 +24989,38 @@
     "grade": "Annoyed"
    }
   },
+  "Faction_13_Calls_Backup": {
+   "versions": [
+    "RCK"
+   ],
+   "kind": "designer",
+   "namespace": "RCK.Traits.Rel_Faction",
+   "bases": [
+    "T_Rel_Faction",
+    "T_Relationships",
+    "T_DesignerTrait",
+    "CustomTrait"
+   ],
+   "path": "RCK/Systems/Designer Traits/Relationships/Relationships - Faction/Faction_13_Calls_Backup.cs",
+   "display_en": "[RCK+] Rel Faction - Faction 13 Calls Backup",
+   "unlock_class": "TU_DesignerUnlock",
+   "unlock": {
+    "Cancellations": [],
+    "CharacterCreationCost": 0,
+    "IsAvailable": false,
+    "IsAvailableInCC": {
+     "expr": "Core.designerEdition"
+    },
+    "UnlockCost": 0
+   },
+   "rolls": null,
+   "in_head": true,
+   "extension": true,
+   "faction": {
+    "key": "Faction_13",
+    "role": "Calls_Backup"
+   }
+  },
   "Faction_13_Friendly": {
    "versions": [
     "RCK"
@@ -24041,6 +25097,38 @@
     "grade": "Hostile"
    }
   },
+  "Faction_13_Leader": {
+   "versions": [
+    "RCK"
+   ],
+   "kind": "designer",
+   "namespace": "RCK.Traits.Rel_Faction",
+   "bases": [
+    "T_Rel_Faction",
+    "T_Relationships",
+    "T_DesignerTrait",
+    "CustomTrait"
+   ],
+   "path": "RCK/Systems/Designer Traits/Relationships/Relationships - Faction/Faction_13_Leader.cs",
+   "display_en": "[RCK+] Rel Faction - Faction 13 Leader",
+   "unlock_class": "TU_DesignerUnlock",
+   "unlock": {
+    "Cancellations": [],
+    "CharacterCreationCost": 0,
+    "IsAvailable": false,
+    "IsAvailableInCC": {
+     "expr": "Core.designerEdition"
+    },
+    "UnlockCost": 0
+   },
+   "rolls": null,
+   "in_head": true,
+   "extension": true,
+   "faction": {
+    "key": "Faction_13",
+    "role": "Leader"
+   }
+  },
   "Faction_13_Member": {
    "versions": [
     "RCK"
@@ -24111,6 +25199,38 @@
     "grade": "Neutral"
    }
   },
+  "Faction_13_Reinforcement": {
+   "versions": [
+    "RCK"
+   ],
+   "kind": "designer",
+   "namespace": "RCK.Traits.Rel_Faction",
+   "bases": [
+    "T_Rel_Faction",
+    "T_Relationships",
+    "T_DesignerTrait",
+    "CustomTrait"
+   ],
+   "path": "RCK/Systems/Designer Traits/Relationships/Relationships - Faction/Faction_13_Reinforcement.cs",
+   "display_en": "[RCK+] Rel Faction - Faction 13 Reinforcement",
+   "unlock_class": "TU_DesignerUnlock",
+   "unlock": {
+    "Cancellations": [],
+    "CharacterCreationCost": 0,
+    "IsAvailable": false,
+    "IsAvailableInCC": {
+     "expr": "Core.designerEdition"
+    },
+    "UnlockCost": 0
+   },
+   "rolls": null,
+   "in_head": true,
+   "extension": true,
+   "faction": {
+    "key": "Faction_13",
+    "role": "Reinforcement"
+   }
+  },
   "Faction_13_Territorial": {
    "versions": [
     "RCK"
@@ -24147,6 +25267,38 @@
    "faction": {
     "key": "Faction_13",
     "grade": "Territorial"
+   }
+  },
+  "Faction_13_Vengeful": {
+   "versions": [
+    "RCK"
+   ],
+   "kind": "designer",
+   "namespace": "RCK.Traits.Rel_Faction",
+   "bases": [
+    "T_Rel_Faction",
+    "T_Relationships",
+    "T_DesignerTrait",
+    "CustomTrait"
+   ],
+   "path": "RCK/Systems/Designer Traits/Relationships/Relationships - Faction/Faction_13_Vengeful.cs",
+   "display_en": "[RCK+] Rel Faction - Faction 13 Vengeful",
+   "unlock_class": "TU_DesignerUnlock",
+   "unlock": {
+    "Cancellations": [],
+    "CharacterCreationCost": 0,
+    "IsAvailable": false,
+    "IsAvailableInCC": {
+     "expr": "Core.designerEdition"
+    },
+    "UnlockCost": 0
+   },
+   "rolls": null,
+   "in_head": true,
+   "extension": true,
+   "faction": {
+    "key": "Faction_13",
+    "role": "Vengeful"
    }
   },
   "Faction_14_Aligned": {
@@ -24225,6 +25377,38 @@
     "grade": "Annoyed"
    }
   },
+  "Faction_14_Calls_Backup": {
+   "versions": [
+    "RCK"
+   ],
+   "kind": "designer",
+   "namespace": "RCK.Traits.Rel_Faction",
+   "bases": [
+    "T_Rel_Faction",
+    "T_Relationships",
+    "T_DesignerTrait",
+    "CustomTrait"
+   ],
+   "path": "RCK/Systems/Designer Traits/Relationships/Relationships - Faction/Faction_14_Calls_Backup.cs",
+   "display_en": "[RCK+] Rel Faction - Faction 14 Calls Backup",
+   "unlock_class": "TU_DesignerUnlock",
+   "unlock": {
+    "Cancellations": [],
+    "CharacterCreationCost": 0,
+    "IsAvailable": false,
+    "IsAvailableInCC": {
+     "expr": "Core.designerEdition"
+    },
+    "UnlockCost": 0
+   },
+   "rolls": null,
+   "in_head": true,
+   "extension": true,
+   "faction": {
+    "key": "Faction_14",
+    "role": "Calls_Backup"
+   }
+  },
   "Faction_14_Friendly": {
    "versions": [
     "RCK"
@@ -24301,6 +25485,38 @@
     "grade": "Hostile"
    }
   },
+  "Faction_14_Leader": {
+   "versions": [
+    "RCK"
+   ],
+   "kind": "designer",
+   "namespace": "RCK.Traits.Rel_Faction",
+   "bases": [
+    "T_Rel_Faction",
+    "T_Relationships",
+    "T_DesignerTrait",
+    "CustomTrait"
+   ],
+   "path": "RCK/Systems/Designer Traits/Relationships/Relationships - Faction/Faction_14_Leader.cs",
+   "display_en": "[RCK+] Rel Faction - Faction 14 Leader",
+   "unlock_class": "TU_DesignerUnlock",
+   "unlock": {
+    "Cancellations": [],
+    "CharacterCreationCost": 0,
+    "IsAvailable": false,
+    "IsAvailableInCC": {
+     "expr": "Core.designerEdition"
+    },
+    "UnlockCost": 0
+   },
+   "rolls": null,
+   "in_head": true,
+   "extension": true,
+   "faction": {
+    "key": "Faction_14",
+    "role": "Leader"
+   }
+  },
   "Faction_14_Member": {
    "versions": [
     "RCK"
@@ -24371,6 +25587,38 @@
     "grade": "Neutral"
    }
   },
+  "Faction_14_Reinforcement": {
+   "versions": [
+    "RCK"
+   ],
+   "kind": "designer",
+   "namespace": "RCK.Traits.Rel_Faction",
+   "bases": [
+    "T_Rel_Faction",
+    "T_Relationships",
+    "T_DesignerTrait",
+    "CustomTrait"
+   ],
+   "path": "RCK/Systems/Designer Traits/Relationships/Relationships - Faction/Faction_14_Reinforcement.cs",
+   "display_en": "[RCK+] Rel Faction - Faction 14 Reinforcement",
+   "unlock_class": "TU_DesignerUnlock",
+   "unlock": {
+    "Cancellations": [],
+    "CharacterCreationCost": 0,
+    "IsAvailable": false,
+    "IsAvailableInCC": {
+     "expr": "Core.designerEdition"
+    },
+    "UnlockCost": 0
+   },
+   "rolls": null,
+   "in_head": true,
+   "extension": true,
+   "faction": {
+    "key": "Faction_14",
+    "role": "Reinforcement"
+   }
+  },
   "Faction_14_Territorial": {
    "versions": [
     "RCK"
@@ -24407,6 +25655,38 @@
    "faction": {
     "key": "Faction_14",
     "grade": "Territorial"
+   }
+  },
+  "Faction_14_Vengeful": {
+   "versions": [
+    "RCK"
+   ],
+   "kind": "designer",
+   "namespace": "RCK.Traits.Rel_Faction",
+   "bases": [
+    "T_Rel_Faction",
+    "T_Relationships",
+    "T_DesignerTrait",
+    "CustomTrait"
+   ],
+   "path": "RCK/Systems/Designer Traits/Relationships/Relationships - Faction/Faction_14_Vengeful.cs",
+   "display_en": "[RCK+] Rel Faction - Faction 14 Vengeful",
+   "unlock_class": "TU_DesignerUnlock",
+   "unlock": {
+    "Cancellations": [],
+    "CharacterCreationCost": 0,
+    "IsAvailable": false,
+    "IsAvailableInCC": {
+     "expr": "Core.designerEdition"
+    },
+    "UnlockCost": 0
+   },
+   "rolls": null,
+   "in_head": true,
+   "extension": true,
+   "faction": {
+    "key": "Faction_14",
+    "role": "Vengeful"
    }
   },
   "Faction_15_Aligned": {
@@ -24485,6 +25765,38 @@
     "grade": "Annoyed"
    }
   },
+  "Faction_15_Calls_Backup": {
+   "versions": [
+    "RCK"
+   ],
+   "kind": "designer",
+   "namespace": "RCK.Traits.Rel_Faction",
+   "bases": [
+    "T_Rel_Faction",
+    "T_Relationships",
+    "T_DesignerTrait",
+    "CustomTrait"
+   ],
+   "path": "RCK/Systems/Designer Traits/Relationships/Relationships - Faction/Faction_15_Calls_Backup.cs",
+   "display_en": "[RCK+] Rel Faction - Faction 15 Calls Backup",
+   "unlock_class": "TU_DesignerUnlock",
+   "unlock": {
+    "Cancellations": [],
+    "CharacterCreationCost": 0,
+    "IsAvailable": false,
+    "IsAvailableInCC": {
+     "expr": "Core.designerEdition"
+    },
+    "UnlockCost": 0
+   },
+   "rolls": null,
+   "in_head": true,
+   "extension": true,
+   "faction": {
+    "key": "Faction_15",
+    "role": "Calls_Backup"
+   }
+  },
   "Faction_15_Friendly": {
    "versions": [
     "RCK"
@@ -24561,6 +25873,38 @@
     "grade": "Hostile"
    }
   },
+  "Faction_15_Leader": {
+   "versions": [
+    "RCK"
+   ],
+   "kind": "designer",
+   "namespace": "RCK.Traits.Rel_Faction",
+   "bases": [
+    "T_Rel_Faction",
+    "T_Relationships",
+    "T_DesignerTrait",
+    "CustomTrait"
+   ],
+   "path": "RCK/Systems/Designer Traits/Relationships/Relationships - Faction/Faction_15_Leader.cs",
+   "display_en": "[RCK+] Rel Faction - Faction 15 Leader",
+   "unlock_class": "TU_DesignerUnlock",
+   "unlock": {
+    "Cancellations": [],
+    "CharacterCreationCost": 0,
+    "IsAvailable": false,
+    "IsAvailableInCC": {
+     "expr": "Core.designerEdition"
+    },
+    "UnlockCost": 0
+   },
+   "rolls": null,
+   "in_head": true,
+   "extension": true,
+   "faction": {
+    "key": "Faction_15",
+    "role": "Leader"
+   }
+  },
   "Faction_15_Member": {
    "versions": [
     "RCK"
@@ -24631,6 +25975,38 @@
     "grade": "Neutral"
    }
   },
+  "Faction_15_Reinforcement": {
+   "versions": [
+    "RCK"
+   ],
+   "kind": "designer",
+   "namespace": "RCK.Traits.Rel_Faction",
+   "bases": [
+    "T_Rel_Faction",
+    "T_Relationships",
+    "T_DesignerTrait",
+    "CustomTrait"
+   ],
+   "path": "RCK/Systems/Designer Traits/Relationships/Relationships - Faction/Faction_15_Reinforcement.cs",
+   "display_en": "[RCK+] Rel Faction - Faction 15 Reinforcement",
+   "unlock_class": "TU_DesignerUnlock",
+   "unlock": {
+    "Cancellations": [],
+    "CharacterCreationCost": 0,
+    "IsAvailable": false,
+    "IsAvailableInCC": {
+     "expr": "Core.designerEdition"
+    },
+    "UnlockCost": 0
+   },
+   "rolls": null,
+   "in_head": true,
+   "extension": true,
+   "faction": {
+    "key": "Faction_15",
+    "role": "Reinforcement"
+   }
+  },
   "Faction_15_Territorial": {
    "versions": [
     "RCK"
@@ -24667,6 +26043,38 @@
    "faction": {
     "key": "Faction_15",
     "grade": "Territorial"
+   }
+  },
+  "Faction_15_Vengeful": {
+   "versions": [
+    "RCK"
+   ],
+   "kind": "designer",
+   "namespace": "RCK.Traits.Rel_Faction",
+   "bases": [
+    "T_Rel_Faction",
+    "T_Relationships",
+    "T_DesignerTrait",
+    "CustomTrait"
+   ],
+   "path": "RCK/Systems/Designer Traits/Relationships/Relationships - Faction/Faction_15_Vengeful.cs",
+   "display_en": "[RCK+] Rel Faction - Faction 15 Vengeful",
+   "unlock_class": "TU_DesignerUnlock",
+   "unlock": {
+    "Cancellations": [],
+    "CharacterCreationCost": 0,
+    "IsAvailable": false,
+    "IsAvailableInCC": {
+     "expr": "Core.designerEdition"
+    },
+    "UnlockCost": 0
+   },
+   "rolls": null,
+   "in_head": true,
+   "extension": true,
+   "faction": {
+    "key": "Faction_15",
+    "role": "Vengeful"
    }
   },
   "Faction_16_Aligned": {
@@ -24745,6 +26153,38 @@
     "grade": "Annoyed"
    }
   },
+  "Faction_16_Calls_Backup": {
+   "versions": [
+    "RCK"
+   ],
+   "kind": "designer",
+   "namespace": "RCK.Traits.Rel_Faction",
+   "bases": [
+    "T_Rel_Faction",
+    "T_Relationships",
+    "T_DesignerTrait",
+    "CustomTrait"
+   ],
+   "path": "RCK/Systems/Designer Traits/Relationships/Relationships - Faction/Faction_16_Calls_Backup.cs",
+   "display_en": "[RCK+] Rel Faction - Faction 16 Calls Backup",
+   "unlock_class": "TU_DesignerUnlock",
+   "unlock": {
+    "Cancellations": [],
+    "CharacterCreationCost": 0,
+    "IsAvailable": false,
+    "IsAvailableInCC": {
+     "expr": "Core.designerEdition"
+    },
+    "UnlockCost": 0
+   },
+   "rolls": null,
+   "in_head": true,
+   "extension": true,
+   "faction": {
+    "key": "Faction_16",
+    "role": "Calls_Backup"
+   }
+  },
   "Faction_16_Friendly": {
    "versions": [
     "RCK"
@@ -24821,6 +26261,38 @@
     "grade": "Hostile"
    }
   },
+  "Faction_16_Leader": {
+   "versions": [
+    "RCK"
+   ],
+   "kind": "designer",
+   "namespace": "RCK.Traits.Rel_Faction",
+   "bases": [
+    "T_Rel_Faction",
+    "T_Relationships",
+    "T_DesignerTrait",
+    "CustomTrait"
+   ],
+   "path": "RCK/Systems/Designer Traits/Relationships/Relationships - Faction/Faction_16_Leader.cs",
+   "display_en": "[RCK+] Rel Faction - Faction 16 Leader",
+   "unlock_class": "TU_DesignerUnlock",
+   "unlock": {
+    "Cancellations": [],
+    "CharacterCreationCost": 0,
+    "IsAvailable": false,
+    "IsAvailableInCC": {
+     "expr": "Core.designerEdition"
+    },
+    "UnlockCost": 0
+   },
+   "rolls": null,
+   "in_head": true,
+   "extension": true,
+   "faction": {
+    "key": "Faction_16",
+    "role": "Leader"
+   }
+  },
   "Faction_16_Member": {
    "versions": [
     "RCK"
@@ -24891,6 +26363,38 @@
     "grade": "Neutral"
    }
   },
+  "Faction_16_Reinforcement": {
+   "versions": [
+    "RCK"
+   ],
+   "kind": "designer",
+   "namespace": "RCK.Traits.Rel_Faction",
+   "bases": [
+    "T_Rel_Faction",
+    "T_Relationships",
+    "T_DesignerTrait",
+    "CustomTrait"
+   ],
+   "path": "RCK/Systems/Designer Traits/Relationships/Relationships - Faction/Faction_16_Reinforcement.cs",
+   "display_en": "[RCK+] Rel Faction - Faction 16 Reinforcement",
+   "unlock_class": "TU_DesignerUnlock",
+   "unlock": {
+    "Cancellations": [],
+    "CharacterCreationCost": 0,
+    "IsAvailable": false,
+    "IsAvailableInCC": {
+     "expr": "Core.designerEdition"
+    },
+    "UnlockCost": 0
+   },
+   "rolls": null,
+   "in_head": true,
+   "extension": true,
+   "faction": {
+    "key": "Faction_16",
+    "role": "Reinforcement"
+   }
+  },
   "Faction_16_Territorial": {
    "versions": [
     "RCK"
@@ -24927,6 +26431,38 @@
    "faction": {
     "key": "Faction_16",
     "grade": "Territorial"
+   }
+  },
+  "Faction_16_Vengeful": {
+   "versions": [
+    "RCK"
+   ],
+   "kind": "designer",
+   "namespace": "RCK.Traits.Rel_Faction",
+   "bases": [
+    "T_Rel_Faction",
+    "T_Relationships",
+    "T_DesignerTrait",
+    "CustomTrait"
+   ],
+   "path": "RCK/Systems/Designer Traits/Relationships/Relationships - Faction/Faction_16_Vengeful.cs",
+   "display_en": "[RCK+] Rel Faction - Faction 16 Vengeful",
+   "unlock_class": "TU_DesignerUnlock",
+   "unlock": {
+    "Cancellations": [],
+    "CharacterCreationCost": 0,
+    "IsAvailable": false,
+    "IsAvailableInCC": {
+     "expr": "Core.designerEdition"
+    },
+    "UnlockCost": 0
+   },
+   "rolls": null,
+   "in_head": true,
+   "extension": true,
+   "faction": {
+    "key": "Faction_16",
+    "role": "Vengeful"
    }
   },
   "Faction_17_Aligned": {
@@ -25005,6 +26541,38 @@
     "grade": "Annoyed"
    }
   },
+  "Faction_17_Calls_Backup": {
+   "versions": [
+    "RCK"
+   ],
+   "kind": "designer",
+   "namespace": "RCK.Traits.Rel_Faction",
+   "bases": [
+    "T_Rel_Faction",
+    "T_Relationships",
+    "T_DesignerTrait",
+    "CustomTrait"
+   ],
+   "path": "RCK/Systems/Designer Traits/Relationships/Relationships - Faction/Faction_17_Calls_Backup.cs",
+   "display_en": "[RCK+] Rel Faction - Faction 17 Calls Backup",
+   "unlock_class": "TU_DesignerUnlock",
+   "unlock": {
+    "Cancellations": [],
+    "CharacterCreationCost": 0,
+    "IsAvailable": false,
+    "IsAvailableInCC": {
+     "expr": "Core.designerEdition"
+    },
+    "UnlockCost": 0
+   },
+   "rolls": null,
+   "in_head": true,
+   "extension": true,
+   "faction": {
+    "key": "Faction_17",
+    "role": "Calls_Backup"
+   }
+  },
   "Faction_17_Friendly": {
    "versions": [
     "RCK"
@@ -25081,6 +26649,38 @@
     "grade": "Hostile"
    }
   },
+  "Faction_17_Leader": {
+   "versions": [
+    "RCK"
+   ],
+   "kind": "designer",
+   "namespace": "RCK.Traits.Rel_Faction",
+   "bases": [
+    "T_Rel_Faction",
+    "T_Relationships",
+    "T_DesignerTrait",
+    "CustomTrait"
+   ],
+   "path": "RCK/Systems/Designer Traits/Relationships/Relationships - Faction/Faction_17_Leader.cs",
+   "display_en": "[RCK+] Rel Faction - Faction 17 Leader",
+   "unlock_class": "TU_DesignerUnlock",
+   "unlock": {
+    "Cancellations": [],
+    "CharacterCreationCost": 0,
+    "IsAvailable": false,
+    "IsAvailableInCC": {
+     "expr": "Core.designerEdition"
+    },
+    "UnlockCost": 0
+   },
+   "rolls": null,
+   "in_head": true,
+   "extension": true,
+   "faction": {
+    "key": "Faction_17",
+    "role": "Leader"
+   }
+  },
   "Faction_17_Member": {
    "versions": [
     "RCK"
@@ -25151,6 +26751,38 @@
     "grade": "Neutral"
    }
   },
+  "Faction_17_Reinforcement": {
+   "versions": [
+    "RCK"
+   ],
+   "kind": "designer",
+   "namespace": "RCK.Traits.Rel_Faction",
+   "bases": [
+    "T_Rel_Faction",
+    "T_Relationships",
+    "T_DesignerTrait",
+    "CustomTrait"
+   ],
+   "path": "RCK/Systems/Designer Traits/Relationships/Relationships - Faction/Faction_17_Reinforcement.cs",
+   "display_en": "[RCK+] Rel Faction - Faction 17 Reinforcement",
+   "unlock_class": "TU_DesignerUnlock",
+   "unlock": {
+    "Cancellations": [],
+    "CharacterCreationCost": 0,
+    "IsAvailable": false,
+    "IsAvailableInCC": {
+     "expr": "Core.designerEdition"
+    },
+    "UnlockCost": 0
+   },
+   "rolls": null,
+   "in_head": true,
+   "extension": true,
+   "faction": {
+    "key": "Faction_17",
+    "role": "Reinforcement"
+   }
+  },
   "Faction_17_Territorial": {
    "versions": [
     "RCK"
@@ -25187,6 +26819,38 @@
    "faction": {
     "key": "Faction_17",
     "grade": "Territorial"
+   }
+  },
+  "Faction_17_Vengeful": {
+   "versions": [
+    "RCK"
+   ],
+   "kind": "designer",
+   "namespace": "RCK.Traits.Rel_Faction",
+   "bases": [
+    "T_Rel_Faction",
+    "T_Relationships",
+    "T_DesignerTrait",
+    "CustomTrait"
+   ],
+   "path": "RCK/Systems/Designer Traits/Relationships/Relationships - Faction/Faction_17_Vengeful.cs",
+   "display_en": "[RCK+] Rel Faction - Faction 17 Vengeful",
+   "unlock_class": "TU_DesignerUnlock",
+   "unlock": {
+    "Cancellations": [],
+    "CharacterCreationCost": 0,
+    "IsAvailable": false,
+    "IsAvailableInCC": {
+     "expr": "Core.designerEdition"
+    },
+    "UnlockCost": 0
+   },
+   "rolls": null,
+   "in_head": true,
+   "extension": true,
+   "faction": {
+    "key": "Faction_17",
+    "role": "Vengeful"
    }
   },
   "Faction_18_Aligned": {
@@ -25265,6 +26929,38 @@
     "grade": "Annoyed"
    }
   },
+  "Faction_18_Calls_Backup": {
+   "versions": [
+    "RCK"
+   ],
+   "kind": "designer",
+   "namespace": "RCK.Traits.Rel_Faction",
+   "bases": [
+    "T_Rel_Faction",
+    "T_Relationships",
+    "T_DesignerTrait",
+    "CustomTrait"
+   ],
+   "path": "RCK/Systems/Designer Traits/Relationships/Relationships - Faction/Faction_18_Calls_Backup.cs",
+   "display_en": "[RCK+] Rel Faction - Faction 18 Calls Backup",
+   "unlock_class": "TU_DesignerUnlock",
+   "unlock": {
+    "Cancellations": [],
+    "CharacterCreationCost": 0,
+    "IsAvailable": false,
+    "IsAvailableInCC": {
+     "expr": "Core.designerEdition"
+    },
+    "UnlockCost": 0
+   },
+   "rolls": null,
+   "in_head": true,
+   "extension": true,
+   "faction": {
+    "key": "Faction_18",
+    "role": "Calls_Backup"
+   }
+  },
   "Faction_18_Friendly": {
    "versions": [
     "RCK"
@@ -25341,6 +27037,38 @@
     "grade": "Hostile"
    }
   },
+  "Faction_18_Leader": {
+   "versions": [
+    "RCK"
+   ],
+   "kind": "designer",
+   "namespace": "RCK.Traits.Rel_Faction",
+   "bases": [
+    "T_Rel_Faction",
+    "T_Relationships",
+    "T_DesignerTrait",
+    "CustomTrait"
+   ],
+   "path": "RCK/Systems/Designer Traits/Relationships/Relationships - Faction/Faction_18_Leader.cs",
+   "display_en": "[RCK+] Rel Faction - Faction 18 Leader",
+   "unlock_class": "TU_DesignerUnlock",
+   "unlock": {
+    "Cancellations": [],
+    "CharacterCreationCost": 0,
+    "IsAvailable": false,
+    "IsAvailableInCC": {
+     "expr": "Core.designerEdition"
+    },
+    "UnlockCost": 0
+   },
+   "rolls": null,
+   "in_head": true,
+   "extension": true,
+   "faction": {
+    "key": "Faction_18",
+    "role": "Leader"
+   }
+  },
   "Faction_18_Member": {
    "versions": [
     "RCK"
@@ -25411,6 +27139,38 @@
     "grade": "Neutral"
    }
   },
+  "Faction_18_Reinforcement": {
+   "versions": [
+    "RCK"
+   ],
+   "kind": "designer",
+   "namespace": "RCK.Traits.Rel_Faction",
+   "bases": [
+    "T_Rel_Faction",
+    "T_Relationships",
+    "T_DesignerTrait",
+    "CustomTrait"
+   ],
+   "path": "RCK/Systems/Designer Traits/Relationships/Relationships - Faction/Faction_18_Reinforcement.cs",
+   "display_en": "[RCK+] Rel Faction - Faction 18 Reinforcement",
+   "unlock_class": "TU_DesignerUnlock",
+   "unlock": {
+    "Cancellations": [],
+    "CharacterCreationCost": 0,
+    "IsAvailable": false,
+    "IsAvailableInCC": {
+     "expr": "Core.designerEdition"
+    },
+    "UnlockCost": 0
+   },
+   "rolls": null,
+   "in_head": true,
+   "extension": true,
+   "faction": {
+    "key": "Faction_18",
+    "role": "Reinforcement"
+   }
+  },
   "Faction_18_Territorial": {
    "versions": [
     "RCK"
@@ -25447,6 +27207,38 @@
    "faction": {
     "key": "Faction_18",
     "grade": "Territorial"
+   }
+  },
+  "Faction_18_Vengeful": {
+   "versions": [
+    "RCK"
+   ],
+   "kind": "designer",
+   "namespace": "RCK.Traits.Rel_Faction",
+   "bases": [
+    "T_Rel_Faction",
+    "T_Relationships",
+    "T_DesignerTrait",
+    "CustomTrait"
+   ],
+   "path": "RCK/Systems/Designer Traits/Relationships/Relationships - Faction/Faction_18_Vengeful.cs",
+   "display_en": "[RCK+] Rel Faction - Faction 18 Vengeful",
+   "unlock_class": "TU_DesignerUnlock",
+   "unlock": {
+    "Cancellations": [],
+    "CharacterCreationCost": 0,
+    "IsAvailable": false,
+    "IsAvailableInCC": {
+     "expr": "Core.designerEdition"
+    },
+    "UnlockCost": 0
+   },
+   "rolls": null,
+   "in_head": true,
+   "extension": true,
+   "faction": {
+    "key": "Faction_18",
+    "role": "Vengeful"
    }
   },
   "Faction_19_Aligned": {
@@ -25525,6 +27317,38 @@
     "grade": "Annoyed"
    }
   },
+  "Faction_19_Calls_Backup": {
+   "versions": [
+    "RCK"
+   ],
+   "kind": "designer",
+   "namespace": "RCK.Traits.Rel_Faction",
+   "bases": [
+    "T_Rel_Faction",
+    "T_Relationships",
+    "T_DesignerTrait",
+    "CustomTrait"
+   ],
+   "path": "RCK/Systems/Designer Traits/Relationships/Relationships - Faction/Faction_19_Calls_Backup.cs",
+   "display_en": "[RCK+] Rel Faction - Faction 19 Calls Backup",
+   "unlock_class": "TU_DesignerUnlock",
+   "unlock": {
+    "Cancellations": [],
+    "CharacterCreationCost": 0,
+    "IsAvailable": false,
+    "IsAvailableInCC": {
+     "expr": "Core.designerEdition"
+    },
+    "UnlockCost": 0
+   },
+   "rolls": null,
+   "in_head": true,
+   "extension": true,
+   "faction": {
+    "key": "Faction_19",
+    "role": "Calls_Backup"
+   }
+  },
   "Faction_19_Friendly": {
    "versions": [
     "RCK"
@@ -25601,6 +27425,38 @@
     "grade": "Hostile"
    }
   },
+  "Faction_19_Leader": {
+   "versions": [
+    "RCK"
+   ],
+   "kind": "designer",
+   "namespace": "RCK.Traits.Rel_Faction",
+   "bases": [
+    "T_Rel_Faction",
+    "T_Relationships",
+    "T_DesignerTrait",
+    "CustomTrait"
+   ],
+   "path": "RCK/Systems/Designer Traits/Relationships/Relationships - Faction/Faction_19_Leader.cs",
+   "display_en": "[RCK+] Rel Faction - Faction 19 Leader",
+   "unlock_class": "TU_DesignerUnlock",
+   "unlock": {
+    "Cancellations": [],
+    "CharacterCreationCost": 0,
+    "IsAvailable": false,
+    "IsAvailableInCC": {
+     "expr": "Core.designerEdition"
+    },
+    "UnlockCost": 0
+   },
+   "rolls": null,
+   "in_head": true,
+   "extension": true,
+   "faction": {
+    "key": "Faction_19",
+    "role": "Leader"
+   }
+  },
   "Faction_19_Member": {
    "versions": [
     "RCK"
@@ -25671,6 +27527,38 @@
     "grade": "Neutral"
    }
   },
+  "Faction_19_Reinforcement": {
+   "versions": [
+    "RCK"
+   ],
+   "kind": "designer",
+   "namespace": "RCK.Traits.Rel_Faction",
+   "bases": [
+    "T_Rel_Faction",
+    "T_Relationships",
+    "T_DesignerTrait",
+    "CustomTrait"
+   ],
+   "path": "RCK/Systems/Designer Traits/Relationships/Relationships - Faction/Faction_19_Reinforcement.cs",
+   "display_en": "[RCK+] Rel Faction - Faction 19 Reinforcement",
+   "unlock_class": "TU_DesignerUnlock",
+   "unlock": {
+    "Cancellations": [],
+    "CharacterCreationCost": 0,
+    "IsAvailable": false,
+    "IsAvailableInCC": {
+     "expr": "Core.designerEdition"
+    },
+    "UnlockCost": 0
+   },
+   "rolls": null,
+   "in_head": true,
+   "extension": true,
+   "faction": {
+    "key": "Faction_19",
+    "role": "Reinforcement"
+   }
+  },
   "Faction_19_Territorial": {
    "versions": [
     "RCK"
@@ -25707,6 +27595,38 @@
    "faction": {
     "key": "Faction_19",
     "grade": "Territorial"
+   }
+  },
+  "Faction_19_Vengeful": {
+   "versions": [
+    "RCK"
+   ],
+   "kind": "designer",
+   "namespace": "RCK.Traits.Rel_Faction",
+   "bases": [
+    "T_Rel_Faction",
+    "T_Relationships",
+    "T_DesignerTrait",
+    "CustomTrait"
+   ],
+   "path": "RCK/Systems/Designer Traits/Relationships/Relationships - Faction/Faction_19_Vengeful.cs",
+   "display_en": "[RCK+] Rel Faction - Faction 19 Vengeful",
+   "unlock_class": "TU_DesignerUnlock",
+   "unlock": {
+    "Cancellations": [],
+    "CharacterCreationCost": 0,
+    "IsAvailable": false,
+    "IsAvailableInCC": {
+     "expr": "Core.designerEdition"
+    },
+    "UnlockCost": 0
+   },
+   "rolls": null,
+   "in_head": true,
+   "extension": true,
+   "faction": {
+    "key": "Faction_19",
+    "role": "Vengeful"
    }
   },
   "Faction_1_Annoyed": {
@@ -25747,6 +27667,38 @@
     "grade": "Annoyed"
    }
   },
+  "Faction_1_Calls_Backup": {
+   "versions": [
+    "RCK"
+   ],
+   "kind": "designer",
+   "namespace": "RCK.Traits.Rel_Faction",
+   "bases": [
+    "T_Rel_Faction",
+    "T_Relationships",
+    "T_DesignerTrait",
+    "CustomTrait"
+   ],
+   "path": "RCK/Systems/Designer Traits/Relationships/Relationships - Faction/Faction_1_Calls_Backup.cs",
+   "display_en": "[RCK+] Rel Faction - Faction 1 Calls Backup",
+   "unlock_class": "TU_DesignerUnlock",
+   "unlock": {
+    "Cancellations": [],
+    "CharacterCreationCost": 0,
+    "IsAvailable": false,
+    "IsAvailableInCC": {
+     "expr": "Core.designerEdition"
+    },
+    "UnlockCost": 0
+   },
+   "rolls": null,
+   "in_head": true,
+   "extension": true,
+   "faction": {
+    "key": "Faction_1",
+    "role": "Calls_Backup"
+   }
+  },
   "Faction_1_Friendly": {
    "versions": [
     "RCK"
@@ -25783,6 +27735,38 @@
    "faction": {
     "key": "Faction_1",
     "grade": "Friendly"
+   }
+  },
+  "Faction_1_Leader": {
+   "versions": [
+    "RCK"
+   ],
+   "kind": "designer",
+   "namespace": "RCK.Traits.Rel_Faction",
+   "bases": [
+    "T_Rel_Faction",
+    "T_Relationships",
+    "T_DesignerTrait",
+    "CustomTrait"
+   ],
+   "path": "RCK/Systems/Designer Traits/Relationships/Relationships - Faction/Faction_1_Leader.cs",
+   "display_en": "[RCK+] Rel Faction - Faction 1 Leader",
+   "unlock_class": "TU_DesignerUnlock",
+   "unlock": {
+    "Cancellations": [],
+    "CharacterCreationCost": 0,
+    "IsAvailable": false,
+    "IsAvailableInCC": {
+     "expr": "Core.designerEdition"
+    },
+    "UnlockCost": 0
+   },
+   "rolls": null,
+   "in_head": true,
+   "extension": true,
+   "faction": {
+    "key": "Faction_1",
+    "role": "Leader"
    }
   },
   "Faction_1_Member": {
@@ -25855,6 +27839,38 @@
     "grade": "Neutral"
    }
   },
+  "Faction_1_Reinforcement": {
+   "versions": [
+    "RCK"
+   ],
+   "kind": "designer",
+   "namespace": "RCK.Traits.Rel_Faction",
+   "bases": [
+    "T_Rel_Faction",
+    "T_Relationships",
+    "T_DesignerTrait",
+    "CustomTrait"
+   ],
+   "path": "RCK/Systems/Designer Traits/Relationships/Relationships - Faction/Faction_1_Reinforcement.cs",
+   "display_en": "[RCK+] Rel Faction - Faction 1 Reinforcement",
+   "unlock_class": "TU_DesignerUnlock",
+   "unlock": {
+    "Cancellations": [],
+    "CharacterCreationCost": 0,
+    "IsAvailable": false,
+    "IsAvailableInCC": {
+     "expr": "Core.designerEdition"
+    },
+    "UnlockCost": 0
+   },
+   "rolls": null,
+   "in_head": true,
+   "extension": true,
+   "faction": {
+    "key": "Faction_1",
+    "role": "Reinforcement"
+   }
+  },
   "Faction_1_Territorial": {
    "versions": [
     "RCK"
@@ -25891,6 +27907,38 @@
    "faction": {
     "key": "Faction_1",
     "grade": "Territorial"
+   }
+  },
+  "Faction_1_Vengeful": {
+   "versions": [
+    "RCK"
+   ],
+   "kind": "designer",
+   "namespace": "RCK.Traits.Rel_Faction",
+   "bases": [
+    "T_Rel_Faction",
+    "T_Relationships",
+    "T_DesignerTrait",
+    "CustomTrait"
+   ],
+   "path": "RCK/Systems/Designer Traits/Relationships/Relationships - Faction/Faction_1_Vengeful.cs",
+   "display_en": "[RCK+] Rel Faction - Faction 1 Vengeful",
+   "unlock_class": "TU_DesignerUnlock",
+   "unlock": {
+    "Cancellations": [],
+    "CharacterCreationCost": 0,
+    "IsAvailable": false,
+    "IsAvailableInCC": {
+     "expr": "Core.designerEdition"
+    },
+    "UnlockCost": 0
+   },
+   "rolls": null,
+   "in_head": true,
+   "extension": true,
+   "faction": {
+    "key": "Faction_1",
+    "role": "Vengeful"
    }
   },
   "Faction_20_Aligned": {
@@ -25969,6 +28017,38 @@
     "grade": "Annoyed"
    }
   },
+  "Faction_20_Calls_Backup": {
+   "versions": [
+    "RCK"
+   ],
+   "kind": "designer",
+   "namespace": "RCK.Traits.Rel_Faction",
+   "bases": [
+    "T_Rel_Faction",
+    "T_Relationships",
+    "T_DesignerTrait",
+    "CustomTrait"
+   ],
+   "path": "RCK/Systems/Designer Traits/Relationships/Relationships - Faction/Faction_20_Calls_Backup.cs",
+   "display_en": "[RCK+] Rel Faction - Faction 20 Calls Backup",
+   "unlock_class": "TU_DesignerUnlock",
+   "unlock": {
+    "Cancellations": [],
+    "CharacterCreationCost": 0,
+    "IsAvailable": false,
+    "IsAvailableInCC": {
+     "expr": "Core.designerEdition"
+    },
+    "UnlockCost": 0
+   },
+   "rolls": null,
+   "in_head": true,
+   "extension": true,
+   "faction": {
+    "key": "Faction_20",
+    "role": "Calls_Backup"
+   }
+  },
   "Faction_20_Friendly": {
    "versions": [
     "RCK"
@@ -26045,6 +28125,38 @@
     "grade": "Hostile"
    }
   },
+  "Faction_20_Leader": {
+   "versions": [
+    "RCK"
+   ],
+   "kind": "designer",
+   "namespace": "RCK.Traits.Rel_Faction",
+   "bases": [
+    "T_Rel_Faction",
+    "T_Relationships",
+    "T_DesignerTrait",
+    "CustomTrait"
+   ],
+   "path": "RCK/Systems/Designer Traits/Relationships/Relationships - Faction/Faction_20_Leader.cs",
+   "display_en": "[RCK+] Rel Faction - Faction 20 Leader",
+   "unlock_class": "TU_DesignerUnlock",
+   "unlock": {
+    "Cancellations": [],
+    "CharacterCreationCost": 0,
+    "IsAvailable": false,
+    "IsAvailableInCC": {
+     "expr": "Core.designerEdition"
+    },
+    "UnlockCost": 0
+   },
+   "rolls": null,
+   "in_head": true,
+   "extension": true,
+   "faction": {
+    "key": "Faction_20",
+    "role": "Leader"
+   }
+  },
   "Faction_20_Member": {
    "versions": [
     "RCK"
@@ -26115,6 +28227,38 @@
     "grade": "Neutral"
    }
   },
+  "Faction_20_Reinforcement": {
+   "versions": [
+    "RCK"
+   ],
+   "kind": "designer",
+   "namespace": "RCK.Traits.Rel_Faction",
+   "bases": [
+    "T_Rel_Faction",
+    "T_Relationships",
+    "T_DesignerTrait",
+    "CustomTrait"
+   ],
+   "path": "RCK/Systems/Designer Traits/Relationships/Relationships - Faction/Faction_20_Reinforcement.cs",
+   "display_en": "[RCK+] Rel Faction - Faction 20 Reinforcement",
+   "unlock_class": "TU_DesignerUnlock",
+   "unlock": {
+    "Cancellations": [],
+    "CharacterCreationCost": 0,
+    "IsAvailable": false,
+    "IsAvailableInCC": {
+     "expr": "Core.designerEdition"
+    },
+    "UnlockCost": 0
+   },
+   "rolls": null,
+   "in_head": true,
+   "extension": true,
+   "faction": {
+    "key": "Faction_20",
+    "role": "Reinforcement"
+   }
+  },
   "Faction_20_Territorial": {
    "versions": [
     "RCK"
@@ -26151,6 +28295,38 @@
    "faction": {
     "key": "Faction_20",
     "grade": "Territorial"
+   }
+  },
+  "Faction_20_Vengeful": {
+   "versions": [
+    "RCK"
+   ],
+   "kind": "designer",
+   "namespace": "RCK.Traits.Rel_Faction",
+   "bases": [
+    "T_Rel_Faction",
+    "T_Relationships",
+    "T_DesignerTrait",
+    "CustomTrait"
+   ],
+   "path": "RCK/Systems/Designer Traits/Relationships/Relationships - Faction/Faction_20_Vengeful.cs",
+   "display_en": "[RCK+] Rel Faction - Faction 20 Vengeful",
+   "unlock_class": "TU_DesignerUnlock",
+   "unlock": {
+    "Cancellations": [],
+    "CharacterCreationCost": 0,
+    "IsAvailable": false,
+    "IsAvailableInCC": {
+     "expr": "Core.designerEdition"
+    },
+    "UnlockCost": 0
+   },
+   "rolls": null,
+   "in_head": true,
+   "extension": true,
+   "faction": {
+    "key": "Faction_20",
+    "role": "Vengeful"
    }
   },
   "Faction_2_Annoyed": {
@@ -26191,6 +28367,38 @@
     "grade": "Annoyed"
    }
   },
+  "Faction_2_Calls_Backup": {
+   "versions": [
+    "RCK"
+   ],
+   "kind": "designer",
+   "namespace": "RCK.Traits.Rel_Faction",
+   "bases": [
+    "T_Rel_Faction",
+    "T_Relationships",
+    "T_DesignerTrait",
+    "CustomTrait"
+   ],
+   "path": "RCK/Systems/Designer Traits/Relationships/Relationships - Faction/Faction_2_Calls_Backup.cs",
+   "display_en": "[RCK+] Rel Faction - Faction 2 Calls Backup",
+   "unlock_class": "TU_DesignerUnlock",
+   "unlock": {
+    "Cancellations": [],
+    "CharacterCreationCost": 0,
+    "IsAvailable": false,
+    "IsAvailableInCC": {
+     "expr": "Core.designerEdition"
+    },
+    "UnlockCost": 0
+   },
+   "rolls": null,
+   "in_head": true,
+   "extension": true,
+   "faction": {
+    "key": "Faction_2",
+    "role": "Calls_Backup"
+   }
+  },
   "Faction_2_Friendly": {
    "versions": [
     "RCK"
@@ -26227,6 +28435,38 @@
    "faction": {
     "key": "Faction_2",
     "grade": "Friendly"
+   }
+  },
+  "Faction_2_Leader": {
+   "versions": [
+    "RCK"
+   ],
+   "kind": "designer",
+   "namespace": "RCK.Traits.Rel_Faction",
+   "bases": [
+    "T_Rel_Faction",
+    "T_Relationships",
+    "T_DesignerTrait",
+    "CustomTrait"
+   ],
+   "path": "RCK/Systems/Designer Traits/Relationships/Relationships - Faction/Faction_2_Leader.cs",
+   "display_en": "[RCK+] Rel Faction - Faction 2 Leader",
+   "unlock_class": "TU_DesignerUnlock",
+   "unlock": {
+    "Cancellations": [],
+    "CharacterCreationCost": 0,
+    "IsAvailable": false,
+    "IsAvailableInCC": {
+     "expr": "Core.designerEdition"
+    },
+    "UnlockCost": 0
+   },
+   "rolls": null,
+   "in_head": true,
+   "extension": true,
+   "faction": {
+    "key": "Faction_2",
+    "role": "Leader"
    }
   },
   "Faction_2_Member": {
@@ -26299,6 +28539,38 @@
     "grade": "Neutral"
    }
   },
+  "Faction_2_Reinforcement": {
+   "versions": [
+    "RCK"
+   ],
+   "kind": "designer",
+   "namespace": "RCK.Traits.Rel_Faction",
+   "bases": [
+    "T_Rel_Faction",
+    "T_Relationships",
+    "T_DesignerTrait",
+    "CustomTrait"
+   ],
+   "path": "RCK/Systems/Designer Traits/Relationships/Relationships - Faction/Faction_2_Reinforcement.cs",
+   "display_en": "[RCK+] Rel Faction - Faction 2 Reinforcement",
+   "unlock_class": "TU_DesignerUnlock",
+   "unlock": {
+    "Cancellations": [],
+    "CharacterCreationCost": 0,
+    "IsAvailable": false,
+    "IsAvailableInCC": {
+     "expr": "Core.designerEdition"
+    },
+    "UnlockCost": 0
+   },
+   "rolls": null,
+   "in_head": true,
+   "extension": true,
+   "faction": {
+    "key": "Faction_2",
+    "role": "Reinforcement"
+   }
+  },
   "Faction_2_Territorial": {
    "versions": [
     "RCK"
@@ -26335,6 +28607,38 @@
    "faction": {
     "key": "Faction_2",
     "grade": "Territorial"
+   }
+  },
+  "Faction_2_Vengeful": {
+   "versions": [
+    "RCK"
+   ],
+   "kind": "designer",
+   "namespace": "RCK.Traits.Rel_Faction",
+   "bases": [
+    "T_Rel_Faction",
+    "T_Relationships",
+    "T_DesignerTrait",
+    "CustomTrait"
+   ],
+   "path": "RCK/Systems/Designer Traits/Relationships/Relationships - Faction/Faction_2_Vengeful.cs",
+   "display_en": "[RCK+] Rel Faction - Faction 2 Vengeful",
+   "unlock_class": "TU_DesignerUnlock",
+   "unlock": {
+    "Cancellations": [],
+    "CharacterCreationCost": 0,
+    "IsAvailable": false,
+    "IsAvailableInCC": {
+     "expr": "Core.designerEdition"
+    },
+    "UnlockCost": 0
+   },
+   "rolls": null,
+   "in_head": true,
+   "extension": true,
+   "faction": {
+    "key": "Faction_2",
+    "role": "Vengeful"
    }
   },
   "Faction_3_Annoyed": {
@@ -26375,6 +28679,38 @@
     "grade": "Annoyed"
    }
   },
+  "Faction_3_Calls_Backup": {
+   "versions": [
+    "RCK"
+   ],
+   "kind": "designer",
+   "namespace": "RCK.Traits.Rel_Faction",
+   "bases": [
+    "T_Rel_Faction",
+    "T_Relationships",
+    "T_DesignerTrait",
+    "CustomTrait"
+   ],
+   "path": "RCK/Systems/Designer Traits/Relationships/Relationships - Faction/Faction_3_Calls_Backup.cs",
+   "display_en": "[RCK+] Rel Faction - Faction 3 Calls Backup",
+   "unlock_class": "TU_DesignerUnlock",
+   "unlock": {
+    "Cancellations": [],
+    "CharacterCreationCost": 0,
+    "IsAvailable": false,
+    "IsAvailableInCC": {
+     "expr": "Core.designerEdition"
+    },
+    "UnlockCost": 0
+   },
+   "rolls": null,
+   "in_head": true,
+   "extension": true,
+   "faction": {
+    "key": "Faction_3",
+    "role": "Calls_Backup"
+   }
+  },
   "Faction_3_Friendly": {
    "versions": [
     "RCK"
@@ -26411,6 +28747,38 @@
    "faction": {
     "key": "Faction_3",
     "grade": "Friendly"
+   }
+  },
+  "Faction_3_Leader": {
+   "versions": [
+    "RCK"
+   ],
+   "kind": "designer",
+   "namespace": "RCK.Traits.Rel_Faction",
+   "bases": [
+    "T_Rel_Faction",
+    "T_Relationships",
+    "T_DesignerTrait",
+    "CustomTrait"
+   ],
+   "path": "RCK/Systems/Designer Traits/Relationships/Relationships - Faction/Faction_3_Leader.cs",
+   "display_en": "[RCK+] Rel Faction - Faction 3 Leader",
+   "unlock_class": "TU_DesignerUnlock",
+   "unlock": {
+    "Cancellations": [],
+    "CharacterCreationCost": 0,
+    "IsAvailable": false,
+    "IsAvailableInCC": {
+     "expr": "Core.designerEdition"
+    },
+    "UnlockCost": 0
+   },
+   "rolls": null,
+   "in_head": true,
+   "extension": true,
+   "faction": {
+    "key": "Faction_3",
+    "role": "Leader"
    }
   },
   "Faction_3_Member": {
@@ -26483,6 +28851,38 @@
     "grade": "Neutral"
    }
   },
+  "Faction_3_Reinforcement": {
+   "versions": [
+    "RCK"
+   ],
+   "kind": "designer",
+   "namespace": "RCK.Traits.Rel_Faction",
+   "bases": [
+    "T_Rel_Faction",
+    "T_Relationships",
+    "T_DesignerTrait",
+    "CustomTrait"
+   ],
+   "path": "RCK/Systems/Designer Traits/Relationships/Relationships - Faction/Faction_3_Reinforcement.cs",
+   "display_en": "[RCK+] Rel Faction - Faction 3 Reinforcement",
+   "unlock_class": "TU_DesignerUnlock",
+   "unlock": {
+    "Cancellations": [],
+    "CharacterCreationCost": 0,
+    "IsAvailable": false,
+    "IsAvailableInCC": {
+     "expr": "Core.designerEdition"
+    },
+    "UnlockCost": 0
+   },
+   "rolls": null,
+   "in_head": true,
+   "extension": true,
+   "faction": {
+    "key": "Faction_3",
+    "role": "Reinforcement"
+   }
+  },
   "Faction_3_Territorial": {
    "versions": [
     "RCK"
@@ -26519,6 +28919,38 @@
    "faction": {
     "key": "Faction_3",
     "grade": "Territorial"
+   }
+  },
+  "Faction_3_Vengeful": {
+   "versions": [
+    "RCK"
+   ],
+   "kind": "designer",
+   "namespace": "RCK.Traits.Rel_Faction",
+   "bases": [
+    "T_Rel_Faction",
+    "T_Relationships",
+    "T_DesignerTrait",
+    "CustomTrait"
+   ],
+   "path": "RCK/Systems/Designer Traits/Relationships/Relationships - Faction/Faction_3_Vengeful.cs",
+   "display_en": "[RCK+] Rel Faction - Faction 3 Vengeful",
+   "unlock_class": "TU_DesignerUnlock",
+   "unlock": {
+    "Cancellations": [],
+    "CharacterCreationCost": 0,
+    "IsAvailable": false,
+    "IsAvailableInCC": {
+     "expr": "Core.designerEdition"
+    },
+    "UnlockCost": 0
+   },
+   "rolls": null,
+   "in_head": true,
+   "extension": true,
+   "faction": {
+    "key": "Faction_3",
+    "role": "Vengeful"
    }
   },
   "Faction_4_Annoyed": {
@@ -26559,6 +28991,38 @@
     "grade": "Annoyed"
    }
   },
+  "Faction_4_Calls_Backup": {
+   "versions": [
+    "RCK"
+   ],
+   "kind": "designer",
+   "namespace": "RCK.Traits.Rel_Faction",
+   "bases": [
+    "T_Rel_Faction",
+    "T_Relationships",
+    "T_DesignerTrait",
+    "CustomTrait"
+   ],
+   "path": "RCK/Systems/Designer Traits/Relationships/Relationships - Faction/Faction_4_Calls_Backup.cs",
+   "display_en": "[RCK+] Rel Faction - Faction 4 Calls Backup",
+   "unlock_class": "TU_DesignerUnlock",
+   "unlock": {
+    "Cancellations": [],
+    "CharacterCreationCost": 0,
+    "IsAvailable": false,
+    "IsAvailableInCC": {
+     "expr": "Core.designerEdition"
+    },
+    "UnlockCost": 0
+   },
+   "rolls": null,
+   "in_head": true,
+   "extension": true,
+   "faction": {
+    "key": "Faction_4",
+    "role": "Calls_Backup"
+   }
+  },
   "Faction_4_Friendly": {
    "versions": [
     "RCK"
@@ -26595,6 +29059,38 @@
    "faction": {
     "key": "Faction_4",
     "grade": "Friendly"
+   }
+  },
+  "Faction_4_Leader": {
+   "versions": [
+    "RCK"
+   ],
+   "kind": "designer",
+   "namespace": "RCK.Traits.Rel_Faction",
+   "bases": [
+    "T_Rel_Faction",
+    "T_Relationships",
+    "T_DesignerTrait",
+    "CustomTrait"
+   ],
+   "path": "RCK/Systems/Designer Traits/Relationships/Relationships - Faction/Faction_4_Leader.cs",
+   "display_en": "[RCK+] Rel Faction - Faction 4 Leader",
+   "unlock_class": "TU_DesignerUnlock",
+   "unlock": {
+    "Cancellations": [],
+    "CharacterCreationCost": 0,
+    "IsAvailable": false,
+    "IsAvailableInCC": {
+     "expr": "Core.designerEdition"
+    },
+    "UnlockCost": 0
+   },
+   "rolls": null,
+   "in_head": true,
+   "extension": true,
+   "faction": {
+    "key": "Faction_4",
+    "role": "Leader"
    }
   },
   "Faction_4_Member": {
@@ -26667,6 +29163,38 @@
     "grade": "Neutral"
    }
   },
+  "Faction_4_Reinforcement": {
+   "versions": [
+    "RCK"
+   ],
+   "kind": "designer",
+   "namespace": "RCK.Traits.Rel_Faction",
+   "bases": [
+    "T_Rel_Faction",
+    "T_Relationships",
+    "T_DesignerTrait",
+    "CustomTrait"
+   ],
+   "path": "RCK/Systems/Designer Traits/Relationships/Relationships - Faction/Faction_4_Reinforcement.cs",
+   "display_en": "[RCK+] Rel Faction - Faction 4 Reinforcement",
+   "unlock_class": "TU_DesignerUnlock",
+   "unlock": {
+    "Cancellations": [],
+    "CharacterCreationCost": 0,
+    "IsAvailable": false,
+    "IsAvailableInCC": {
+     "expr": "Core.designerEdition"
+    },
+    "UnlockCost": 0
+   },
+   "rolls": null,
+   "in_head": true,
+   "extension": true,
+   "faction": {
+    "key": "Faction_4",
+    "role": "Reinforcement"
+   }
+  },
   "Faction_4_Territorial": {
    "versions": [
     "RCK"
@@ -26703,6 +29231,38 @@
    "faction": {
     "key": "Faction_4",
     "grade": "Territorial"
+   }
+  },
+  "Faction_4_Vengeful": {
+   "versions": [
+    "RCK"
+   ],
+   "kind": "designer",
+   "namespace": "RCK.Traits.Rel_Faction",
+   "bases": [
+    "T_Rel_Faction",
+    "T_Relationships",
+    "T_DesignerTrait",
+    "CustomTrait"
+   ],
+   "path": "RCK/Systems/Designer Traits/Relationships/Relationships - Faction/Faction_4_Vengeful.cs",
+   "display_en": "[RCK+] Rel Faction - Faction 4 Vengeful",
+   "unlock_class": "TU_DesignerUnlock",
+   "unlock": {
+    "Cancellations": [],
+    "CharacterCreationCost": 0,
+    "IsAvailable": false,
+    "IsAvailableInCC": {
+     "expr": "Core.designerEdition"
+    },
+    "UnlockCost": 0
+   },
+   "rolls": null,
+   "in_head": true,
+   "extension": true,
+   "faction": {
+    "key": "Faction_4",
+    "role": "Vengeful"
    }
   },
   "Faction_5_Aligned": {
@@ -26781,6 +29341,38 @@
     "grade": "Annoyed"
    }
   },
+  "Faction_5_Calls_Backup": {
+   "versions": [
+    "RCK"
+   ],
+   "kind": "designer",
+   "namespace": "RCK.Traits.Rel_Faction",
+   "bases": [
+    "T_Rel_Faction",
+    "T_Relationships",
+    "T_DesignerTrait",
+    "CustomTrait"
+   ],
+   "path": "RCK/Systems/Designer Traits/Relationships/Relationships - Faction/Faction_5_Calls_Backup.cs",
+   "display_en": "[RCK+] Rel Faction - Faction 5 Calls Backup",
+   "unlock_class": "TU_DesignerUnlock",
+   "unlock": {
+    "Cancellations": [],
+    "CharacterCreationCost": 0,
+    "IsAvailable": false,
+    "IsAvailableInCC": {
+     "expr": "Core.designerEdition"
+    },
+    "UnlockCost": 0
+   },
+   "rolls": null,
+   "in_head": true,
+   "extension": true,
+   "faction": {
+    "key": "Faction_5",
+    "role": "Calls_Backup"
+   }
+  },
   "Faction_5_Friendly": {
    "versions": [
     "RCK"
@@ -26857,6 +29449,38 @@
     "grade": "Hostile"
    }
   },
+  "Faction_5_Leader": {
+   "versions": [
+    "RCK"
+   ],
+   "kind": "designer",
+   "namespace": "RCK.Traits.Rel_Faction",
+   "bases": [
+    "T_Rel_Faction",
+    "T_Relationships",
+    "T_DesignerTrait",
+    "CustomTrait"
+   ],
+   "path": "RCK/Systems/Designer Traits/Relationships/Relationships - Faction/Faction_5_Leader.cs",
+   "display_en": "[RCK+] Rel Faction - Faction 5 Leader",
+   "unlock_class": "TU_DesignerUnlock",
+   "unlock": {
+    "Cancellations": [],
+    "CharacterCreationCost": 0,
+    "IsAvailable": false,
+    "IsAvailableInCC": {
+     "expr": "Core.designerEdition"
+    },
+    "UnlockCost": 0
+   },
+   "rolls": null,
+   "in_head": true,
+   "extension": true,
+   "faction": {
+    "key": "Faction_5",
+    "role": "Leader"
+   }
+  },
   "Faction_5_Member": {
    "versions": [
     "RCK"
@@ -26927,6 +29551,38 @@
     "grade": "Neutral"
    }
   },
+  "Faction_5_Reinforcement": {
+   "versions": [
+    "RCK"
+   ],
+   "kind": "designer",
+   "namespace": "RCK.Traits.Rel_Faction",
+   "bases": [
+    "T_Rel_Faction",
+    "T_Relationships",
+    "T_DesignerTrait",
+    "CustomTrait"
+   ],
+   "path": "RCK/Systems/Designer Traits/Relationships/Relationships - Faction/Faction_5_Reinforcement.cs",
+   "display_en": "[RCK+] Rel Faction - Faction 5 Reinforcement",
+   "unlock_class": "TU_DesignerUnlock",
+   "unlock": {
+    "Cancellations": [],
+    "CharacterCreationCost": 0,
+    "IsAvailable": false,
+    "IsAvailableInCC": {
+     "expr": "Core.designerEdition"
+    },
+    "UnlockCost": 0
+   },
+   "rolls": null,
+   "in_head": true,
+   "extension": true,
+   "faction": {
+    "key": "Faction_5",
+    "role": "Reinforcement"
+   }
+  },
   "Faction_5_Territorial": {
    "versions": [
     "RCK"
@@ -26963,6 +29619,38 @@
    "faction": {
     "key": "Faction_5",
     "grade": "Territorial"
+   }
+  },
+  "Faction_5_Vengeful": {
+   "versions": [
+    "RCK"
+   ],
+   "kind": "designer",
+   "namespace": "RCK.Traits.Rel_Faction",
+   "bases": [
+    "T_Rel_Faction",
+    "T_Relationships",
+    "T_DesignerTrait",
+    "CustomTrait"
+   ],
+   "path": "RCK/Systems/Designer Traits/Relationships/Relationships - Faction/Faction_5_Vengeful.cs",
+   "display_en": "[RCK+] Rel Faction - Faction 5 Vengeful",
+   "unlock_class": "TU_DesignerUnlock",
+   "unlock": {
+    "Cancellations": [],
+    "CharacterCreationCost": 0,
+    "IsAvailable": false,
+    "IsAvailableInCC": {
+     "expr": "Core.designerEdition"
+    },
+    "UnlockCost": 0
+   },
+   "rolls": null,
+   "in_head": true,
+   "extension": true,
+   "faction": {
+    "key": "Faction_5",
+    "role": "Vengeful"
    }
   },
   "Faction_6_Aligned": {
@@ -27041,6 +29729,38 @@
     "grade": "Annoyed"
    }
   },
+  "Faction_6_Calls_Backup": {
+   "versions": [
+    "RCK"
+   ],
+   "kind": "designer",
+   "namespace": "RCK.Traits.Rel_Faction",
+   "bases": [
+    "T_Rel_Faction",
+    "T_Relationships",
+    "T_DesignerTrait",
+    "CustomTrait"
+   ],
+   "path": "RCK/Systems/Designer Traits/Relationships/Relationships - Faction/Faction_6_Calls_Backup.cs",
+   "display_en": "[RCK+] Rel Faction - Faction 6 Calls Backup",
+   "unlock_class": "TU_DesignerUnlock",
+   "unlock": {
+    "Cancellations": [],
+    "CharacterCreationCost": 0,
+    "IsAvailable": false,
+    "IsAvailableInCC": {
+     "expr": "Core.designerEdition"
+    },
+    "UnlockCost": 0
+   },
+   "rolls": null,
+   "in_head": true,
+   "extension": true,
+   "faction": {
+    "key": "Faction_6",
+    "role": "Calls_Backup"
+   }
+  },
   "Faction_6_Friendly": {
    "versions": [
     "RCK"
@@ -27117,6 +29837,38 @@
     "grade": "Hostile"
    }
   },
+  "Faction_6_Leader": {
+   "versions": [
+    "RCK"
+   ],
+   "kind": "designer",
+   "namespace": "RCK.Traits.Rel_Faction",
+   "bases": [
+    "T_Rel_Faction",
+    "T_Relationships",
+    "T_DesignerTrait",
+    "CustomTrait"
+   ],
+   "path": "RCK/Systems/Designer Traits/Relationships/Relationships - Faction/Faction_6_Leader.cs",
+   "display_en": "[RCK+] Rel Faction - Faction 6 Leader",
+   "unlock_class": "TU_DesignerUnlock",
+   "unlock": {
+    "Cancellations": [],
+    "CharacterCreationCost": 0,
+    "IsAvailable": false,
+    "IsAvailableInCC": {
+     "expr": "Core.designerEdition"
+    },
+    "UnlockCost": 0
+   },
+   "rolls": null,
+   "in_head": true,
+   "extension": true,
+   "faction": {
+    "key": "Faction_6",
+    "role": "Leader"
+   }
+  },
   "Faction_6_Member": {
    "versions": [
     "RCK"
@@ -27187,6 +29939,38 @@
     "grade": "Neutral"
    }
   },
+  "Faction_6_Reinforcement": {
+   "versions": [
+    "RCK"
+   ],
+   "kind": "designer",
+   "namespace": "RCK.Traits.Rel_Faction",
+   "bases": [
+    "T_Rel_Faction",
+    "T_Relationships",
+    "T_DesignerTrait",
+    "CustomTrait"
+   ],
+   "path": "RCK/Systems/Designer Traits/Relationships/Relationships - Faction/Faction_6_Reinforcement.cs",
+   "display_en": "[RCK+] Rel Faction - Faction 6 Reinforcement",
+   "unlock_class": "TU_DesignerUnlock",
+   "unlock": {
+    "Cancellations": [],
+    "CharacterCreationCost": 0,
+    "IsAvailable": false,
+    "IsAvailableInCC": {
+     "expr": "Core.designerEdition"
+    },
+    "UnlockCost": 0
+   },
+   "rolls": null,
+   "in_head": true,
+   "extension": true,
+   "faction": {
+    "key": "Faction_6",
+    "role": "Reinforcement"
+   }
+  },
   "Faction_6_Territorial": {
    "versions": [
     "RCK"
@@ -27223,6 +30007,38 @@
    "faction": {
     "key": "Faction_6",
     "grade": "Territorial"
+   }
+  },
+  "Faction_6_Vengeful": {
+   "versions": [
+    "RCK"
+   ],
+   "kind": "designer",
+   "namespace": "RCK.Traits.Rel_Faction",
+   "bases": [
+    "T_Rel_Faction",
+    "T_Relationships",
+    "T_DesignerTrait",
+    "CustomTrait"
+   ],
+   "path": "RCK/Systems/Designer Traits/Relationships/Relationships - Faction/Faction_6_Vengeful.cs",
+   "display_en": "[RCK+] Rel Faction - Faction 6 Vengeful",
+   "unlock_class": "TU_DesignerUnlock",
+   "unlock": {
+    "Cancellations": [],
+    "CharacterCreationCost": 0,
+    "IsAvailable": false,
+    "IsAvailableInCC": {
+     "expr": "Core.designerEdition"
+    },
+    "UnlockCost": 0
+   },
+   "rolls": null,
+   "in_head": true,
+   "extension": true,
+   "faction": {
+    "key": "Faction_6",
+    "role": "Vengeful"
    }
   },
   "Faction_7_Aligned": {
@@ -27301,6 +30117,38 @@
     "grade": "Annoyed"
    }
   },
+  "Faction_7_Calls_Backup": {
+   "versions": [
+    "RCK"
+   ],
+   "kind": "designer",
+   "namespace": "RCK.Traits.Rel_Faction",
+   "bases": [
+    "T_Rel_Faction",
+    "T_Relationships",
+    "T_DesignerTrait",
+    "CustomTrait"
+   ],
+   "path": "RCK/Systems/Designer Traits/Relationships/Relationships - Faction/Faction_7_Calls_Backup.cs",
+   "display_en": "[RCK+] Rel Faction - Faction 7 Calls Backup",
+   "unlock_class": "TU_DesignerUnlock",
+   "unlock": {
+    "Cancellations": [],
+    "CharacterCreationCost": 0,
+    "IsAvailable": false,
+    "IsAvailableInCC": {
+     "expr": "Core.designerEdition"
+    },
+    "UnlockCost": 0
+   },
+   "rolls": null,
+   "in_head": true,
+   "extension": true,
+   "faction": {
+    "key": "Faction_7",
+    "role": "Calls_Backup"
+   }
+  },
   "Faction_7_Friendly": {
    "versions": [
     "RCK"
@@ -27377,6 +30225,38 @@
     "grade": "Hostile"
    }
   },
+  "Faction_7_Leader": {
+   "versions": [
+    "RCK"
+   ],
+   "kind": "designer",
+   "namespace": "RCK.Traits.Rel_Faction",
+   "bases": [
+    "T_Rel_Faction",
+    "T_Relationships",
+    "T_DesignerTrait",
+    "CustomTrait"
+   ],
+   "path": "RCK/Systems/Designer Traits/Relationships/Relationships - Faction/Faction_7_Leader.cs",
+   "display_en": "[RCK+] Rel Faction - Faction 7 Leader",
+   "unlock_class": "TU_DesignerUnlock",
+   "unlock": {
+    "Cancellations": [],
+    "CharacterCreationCost": 0,
+    "IsAvailable": false,
+    "IsAvailableInCC": {
+     "expr": "Core.designerEdition"
+    },
+    "UnlockCost": 0
+   },
+   "rolls": null,
+   "in_head": true,
+   "extension": true,
+   "faction": {
+    "key": "Faction_7",
+    "role": "Leader"
+   }
+  },
   "Faction_7_Member": {
    "versions": [
     "RCK"
@@ -27447,6 +30327,38 @@
     "grade": "Neutral"
    }
   },
+  "Faction_7_Reinforcement": {
+   "versions": [
+    "RCK"
+   ],
+   "kind": "designer",
+   "namespace": "RCK.Traits.Rel_Faction",
+   "bases": [
+    "T_Rel_Faction",
+    "T_Relationships",
+    "T_DesignerTrait",
+    "CustomTrait"
+   ],
+   "path": "RCK/Systems/Designer Traits/Relationships/Relationships - Faction/Faction_7_Reinforcement.cs",
+   "display_en": "[RCK+] Rel Faction - Faction 7 Reinforcement",
+   "unlock_class": "TU_DesignerUnlock",
+   "unlock": {
+    "Cancellations": [],
+    "CharacterCreationCost": 0,
+    "IsAvailable": false,
+    "IsAvailableInCC": {
+     "expr": "Core.designerEdition"
+    },
+    "UnlockCost": 0
+   },
+   "rolls": null,
+   "in_head": true,
+   "extension": true,
+   "faction": {
+    "key": "Faction_7",
+    "role": "Reinforcement"
+   }
+  },
   "Faction_7_Territorial": {
    "versions": [
     "RCK"
@@ -27483,6 +30395,38 @@
    "faction": {
     "key": "Faction_7",
     "grade": "Territorial"
+   }
+  },
+  "Faction_7_Vengeful": {
+   "versions": [
+    "RCK"
+   ],
+   "kind": "designer",
+   "namespace": "RCK.Traits.Rel_Faction",
+   "bases": [
+    "T_Rel_Faction",
+    "T_Relationships",
+    "T_DesignerTrait",
+    "CustomTrait"
+   ],
+   "path": "RCK/Systems/Designer Traits/Relationships/Relationships - Faction/Faction_7_Vengeful.cs",
+   "display_en": "[RCK+] Rel Faction - Faction 7 Vengeful",
+   "unlock_class": "TU_DesignerUnlock",
+   "unlock": {
+    "Cancellations": [],
+    "CharacterCreationCost": 0,
+    "IsAvailable": false,
+    "IsAvailableInCC": {
+     "expr": "Core.designerEdition"
+    },
+    "UnlockCost": 0
+   },
+   "rolls": null,
+   "in_head": true,
+   "extension": true,
+   "faction": {
+    "key": "Faction_7",
+    "role": "Vengeful"
    }
   },
   "Faction_8_Aligned": {
@@ -27561,6 +30505,38 @@
     "grade": "Annoyed"
    }
   },
+  "Faction_8_Calls_Backup": {
+   "versions": [
+    "RCK"
+   ],
+   "kind": "designer",
+   "namespace": "RCK.Traits.Rel_Faction",
+   "bases": [
+    "T_Rel_Faction",
+    "T_Relationships",
+    "T_DesignerTrait",
+    "CustomTrait"
+   ],
+   "path": "RCK/Systems/Designer Traits/Relationships/Relationships - Faction/Faction_8_Calls_Backup.cs",
+   "display_en": "[RCK+] Rel Faction - Faction 8 Calls Backup",
+   "unlock_class": "TU_DesignerUnlock",
+   "unlock": {
+    "Cancellations": [],
+    "CharacterCreationCost": 0,
+    "IsAvailable": false,
+    "IsAvailableInCC": {
+     "expr": "Core.designerEdition"
+    },
+    "UnlockCost": 0
+   },
+   "rolls": null,
+   "in_head": true,
+   "extension": true,
+   "faction": {
+    "key": "Faction_8",
+    "role": "Calls_Backup"
+   }
+  },
   "Faction_8_Friendly": {
    "versions": [
     "RCK"
@@ -27637,6 +30613,38 @@
     "grade": "Hostile"
    }
   },
+  "Faction_8_Leader": {
+   "versions": [
+    "RCK"
+   ],
+   "kind": "designer",
+   "namespace": "RCK.Traits.Rel_Faction",
+   "bases": [
+    "T_Rel_Faction",
+    "T_Relationships",
+    "T_DesignerTrait",
+    "CustomTrait"
+   ],
+   "path": "RCK/Systems/Designer Traits/Relationships/Relationships - Faction/Faction_8_Leader.cs",
+   "display_en": "[RCK+] Rel Faction - Faction 8 Leader",
+   "unlock_class": "TU_DesignerUnlock",
+   "unlock": {
+    "Cancellations": [],
+    "CharacterCreationCost": 0,
+    "IsAvailable": false,
+    "IsAvailableInCC": {
+     "expr": "Core.designerEdition"
+    },
+    "UnlockCost": 0
+   },
+   "rolls": null,
+   "in_head": true,
+   "extension": true,
+   "faction": {
+    "key": "Faction_8",
+    "role": "Leader"
+   }
+  },
   "Faction_8_Member": {
    "versions": [
     "RCK"
@@ -27707,6 +30715,38 @@
     "grade": "Neutral"
    }
   },
+  "Faction_8_Reinforcement": {
+   "versions": [
+    "RCK"
+   ],
+   "kind": "designer",
+   "namespace": "RCK.Traits.Rel_Faction",
+   "bases": [
+    "T_Rel_Faction",
+    "T_Relationships",
+    "T_DesignerTrait",
+    "CustomTrait"
+   ],
+   "path": "RCK/Systems/Designer Traits/Relationships/Relationships - Faction/Faction_8_Reinforcement.cs",
+   "display_en": "[RCK+] Rel Faction - Faction 8 Reinforcement",
+   "unlock_class": "TU_DesignerUnlock",
+   "unlock": {
+    "Cancellations": [],
+    "CharacterCreationCost": 0,
+    "IsAvailable": false,
+    "IsAvailableInCC": {
+     "expr": "Core.designerEdition"
+    },
+    "UnlockCost": 0
+   },
+   "rolls": null,
+   "in_head": true,
+   "extension": true,
+   "faction": {
+    "key": "Faction_8",
+    "role": "Reinforcement"
+   }
+  },
   "Faction_8_Territorial": {
    "versions": [
     "RCK"
@@ -27743,6 +30783,38 @@
    "faction": {
     "key": "Faction_8",
     "grade": "Territorial"
+   }
+  },
+  "Faction_8_Vengeful": {
+   "versions": [
+    "RCK"
+   ],
+   "kind": "designer",
+   "namespace": "RCK.Traits.Rel_Faction",
+   "bases": [
+    "T_Rel_Faction",
+    "T_Relationships",
+    "T_DesignerTrait",
+    "CustomTrait"
+   ],
+   "path": "RCK/Systems/Designer Traits/Relationships/Relationships - Faction/Faction_8_Vengeful.cs",
+   "display_en": "[RCK+] Rel Faction - Faction 8 Vengeful",
+   "unlock_class": "TU_DesignerUnlock",
+   "unlock": {
+    "Cancellations": [],
+    "CharacterCreationCost": 0,
+    "IsAvailable": false,
+    "IsAvailableInCC": {
+     "expr": "Core.designerEdition"
+    },
+    "UnlockCost": 0
+   },
+   "rolls": null,
+   "in_head": true,
+   "extension": true,
+   "faction": {
+    "key": "Faction_8",
+    "role": "Vengeful"
    }
   },
   "Faction_9_Aligned": {
@@ -27821,6 +30893,38 @@
     "grade": "Annoyed"
    }
   },
+  "Faction_9_Calls_Backup": {
+   "versions": [
+    "RCK"
+   ],
+   "kind": "designer",
+   "namespace": "RCK.Traits.Rel_Faction",
+   "bases": [
+    "T_Rel_Faction",
+    "T_Relationships",
+    "T_DesignerTrait",
+    "CustomTrait"
+   ],
+   "path": "RCK/Systems/Designer Traits/Relationships/Relationships - Faction/Faction_9_Calls_Backup.cs",
+   "display_en": "[RCK+] Rel Faction - Faction 9 Calls Backup",
+   "unlock_class": "TU_DesignerUnlock",
+   "unlock": {
+    "Cancellations": [],
+    "CharacterCreationCost": 0,
+    "IsAvailable": false,
+    "IsAvailableInCC": {
+     "expr": "Core.designerEdition"
+    },
+    "UnlockCost": 0
+   },
+   "rolls": null,
+   "in_head": true,
+   "extension": true,
+   "faction": {
+    "key": "Faction_9",
+    "role": "Calls_Backup"
+   }
+  },
   "Faction_9_Friendly": {
    "versions": [
     "RCK"
@@ -27897,6 +31001,38 @@
     "grade": "Hostile"
    }
   },
+  "Faction_9_Leader": {
+   "versions": [
+    "RCK"
+   ],
+   "kind": "designer",
+   "namespace": "RCK.Traits.Rel_Faction",
+   "bases": [
+    "T_Rel_Faction",
+    "T_Relationships",
+    "T_DesignerTrait",
+    "CustomTrait"
+   ],
+   "path": "RCK/Systems/Designer Traits/Relationships/Relationships - Faction/Faction_9_Leader.cs",
+   "display_en": "[RCK+] Rel Faction - Faction 9 Leader",
+   "unlock_class": "TU_DesignerUnlock",
+   "unlock": {
+    "Cancellations": [],
+    "CharacterCreationCost": 0,
+    "IsAvailable": false,
+    "IsAvailableInCC": {
+     "expr": "Core.designerEdition"
+    },
+    "UnlockCost": 0
+   },
+   "rolls": null,
+   "in_head": true,
+   "extension": true,
+   "faction": {
+    "key": "Faction_9",
+    "role": "Leader"
+   }
+  },
   "Faction_9_Member": {
    "versions": [
     "RCK"
@@ -27967,6 +31103,38 @@
     "grade": "Neutral"
    }
   },
+  "Faction_9_Reinforcement": {
+   "versions": [
+    "RCK"
+   ],
+   "kind": "designer",
+   "namespace": "RCK.Traits.Rel_Faction",
+   "bases": [
+    "T_Rel_Faction",
+    "T_Relationships",
+    "T_DesignerTrait",
+    "CustomTrait"
+   ],
+   "path": "RCK/Systems/Designer Traits/Relationships/Relationships - Faction/Faction_9_Reinforcement.cs",
+   "display_en": "[RCK+] Rel Faction - Faction 9 Reinforcement",
+   "unlock_class": "TU_DesignerUnlock",
+   "unlock": {
+    "Cancellations": [],
+    "CharacterCreationCost": 0,
+    "IsAvailable": false,
+    "IsAvailableInCC": {
+     "expr": "Core.designerEdition"
+    },
+    "UnlockCost": 0
+   },
+   "rolls": null,
+   "in_head": true,
+   "extension": true,
+   "faction": {
+    "key": "Faction_9",
+    "role": "Reinforcement"
+   }
+  },
   "Faction_9_Territorial": {
    "versions": [
     "RCK"
@@ -28005,6 +31173,38 @@
     "grade": "Territorial"
    }
   },
+  "Faction_9_Vengeful": {
+   "versions": [
+    "RCK"
+   ],
+   "kind": "designer",
+   "namespace": "RCK.Traits.Rel_Faction",
+   "bases": [
+    "T_Rel_Faction",
+    "T_Relationships",
+    "T_DesignerTrait",
+    "CustomTrait"
+   ],
+   "path": "RCK/Systems/Designer Traits/Relationships/Relationships - Faction/Faction_9_Vengeful.cs",
+   "display_en": "[RCK+] Rel Faction - Faction 9 Vengeful",
+   "unlock_class": "TU_DesignerUnlock",
+   "unlock": {
+    "Cancellations": [],
+    "CharacterCreationCost": 0,
+    "IsAvailable": false,
+    "IsAvailableInCC": {
+     "expr": "Core.designerEdition"
+    },
+    "UnlockCost": 0
+   },
+   "rolls": null,
+   "in_head": true,
+   "extension": true,
+   "faction": {
+    "key": "Faction_9",
+    "role": "Vengeful"
+   }
+  },
   "Firefighter_Annoyed": {
    "versions": [
     "RCK"
@@ -28041,6 +31241,38 @@
    "faction": {
     "key": "Firefighter",
     "grade": "Annoyed"
+   }
+  },
+  "Firefighter_Calls_Backup": {
+   "versions": [
+    "RCK"
+   ],
+   "kind": "designer",
+   "namespace": "RCK.Traits.Rel_Faction",
+   "bases": [
+    "T_Rel_Faction",
+    "T_Relationships",
+    "T_DesignerTrait",
+    "CustomTrait"
+   ],
+   "path": "RCK/Systems/Designer Traits/Relationships/Relationships - Faction/Firefighter_Calls_Backup.cs",
+   "display_en": "[RCK+] Rel Faction - Firefighter Calls Backup",
+   "unlock_class": "TU_DesignerUnlock",
+   "unlock": {
+    "Cancellations": [],
+    "CharacterCreationCost": 0,
+    "IsAvailable": false,
+    "IsAvailableInCC": {
+     "expr": "Core.designerEdition"
+    },
+    "UnlockCost": 0
+   },
+   "rolls": null,
+   "in_head": true,
+   "extension": true,
+   "faction": {
+    "key": "Firefighter",
+    "role": "Calls_Backup"
    }
   },
   "Firefighter_Friendly": {
@@ -28119,6 +31351,38 @@
     "grade": "Hostile"
    }
   },
+  "Firefighter_Leader": {
+   "versions": [
+    "RCK"
+   ],
+   "kind": "designer",
+   "namespace": "RCK.Traits.Rel_Faction",
+   "bases": [
+    "T_Rel_Faction",
+    "T_Relationships",
+    "T_DesignerTrait",
+    "CustomTrait"
+   ],
+   "path": "RCK/Systems/Designer Traits/Relationships/Relationships - Faction/Firefighter_Leader.cs",
+   "display_en": "[RCK+] Rel Faction - Firefighter Leader",
+   "unlock_class": "TU_DesignerUnlock",
+   "unlock": {
+    "Cancellations": [],
+    "CharacterCreationCost": 0,
+    "IsAvailable": false,
+    "IsAvailableInCC": {
+     "expr": "Core.designerEdition"
+    },
+    "UnlockCost": 0
+   },
+   "rolls": null,
+   "in_head": true,
+   "extension": true,
+   "faction": {
+    "key": "Firefighter",
+    "role": "Leader"
+   }
+  },
   "Firefighter_Member": {
    "versions": [
     "RCK"
@@ -28189,6 +31453,38 @@
     "grade": "Neutral"
    }
   },
+  "Firefighter_Reinforcement": {
+   "versions": [
+    "RCK"
+   ],
+   "kind": "designer",
+   "namespace": "RCK.Traits.Rel_Faction",
+   "bases": [
+    "T_Rel_Faction",
+    "T_Relationships",
+    "T_DesignerTrait",
+    "CustomTrait"
+   ],
+   "path": "RCK/Systems/Designer Traits/Relationships/Relationships - Faction/Firefighter_Reinforcement.cs",
+   "display_en": "[RCK+] Rel Faction - Firefighter Reinforcement",
+   "unlock_class": "TU_DesignerUnlock",
+   "unlock": {
+    "Cancellations": [],
+    "CharacterCreationCost": 0,
+    "IsAvailable": false,
+    "IsAvailableInCC": {
+     "expr": "Core.designerEdition"
+    },
+    "UnlockCost": 0
+   },
+   "rolls": null,
+   "in_head": true,
+   "extension": true,
+   "faction": {
+    "key": "Firefighter",
+    "role": "Reinforcement"
+   }
+  },
   "Firefighter_Territorial": {
    "versions": [
     "RCK"
@@ -28225,6 +31521,38 @@
    "faction": {
     "key": "Firefighter",
     "grade": "Territorial"
+   }
+  },
+  "Firefighter_Vengeful": {
+   "versions": [
+    "RCK"
+   ],
+   "kind": "designer",
+   "namespace": "RCK.Traits.Rel_Faction",
+   "bases": [
+    "T_Rel_Faction",
+    "T_Relationships",
+    "T_DesignerTrait",
+    "CustomTrait"
+   ],
+   "path": "RCK/Systems/Designer Traits/Relationships/Relationships - Faction/Firefighter_Vengeful.cs",
+   "display_en": "[RCK+] Rel Faction - Firefighter Vengeful",
+   "unlock_class": "TU_DesignerUnlock",
+   "unlock": {
+    "Cancellations": [],
+    "CharacterCreationCost": 0,
+    "IsAvailable": false,
+    "IsAvailableInCC": {
+     "expr": "Core.designerEdition"
+    },
+    "UnlockCost": 0
+   },
+   "rolls": null,
+   "in_head": true,
+   "extension": true,
+   "faction": {
+    "key": "Firefighter",
+    "role": "Vengeful"
    }
   },
   "Gorilla_Annoyed": {
@@ -28265,6 +31593,38 @@
     "grade": "Annoyed"
    }
   },
+  "Gorilla_Calls_Backup": {
+   "versions": [
+    "RCK"
+   ],
+   "kind": "designer",
+   "namespace": "RCK.Traits.Rel_Faction",
+   "bases": [
+    "T_Rel_Faction",
+    "T_Relationships",
+    "T_DesignerTrait",
+    "CustomTrait"
+   ],
+   "path": "RCK/Systems/Designer Traits/Relationships/Relationships - Faction/Gorilla_Calls_Backup.cs",
+   "display_en": "[RCK+] Rel Faction - Gorilla Calls Backup",
+   "unlock_class": "TU_DesignerUnlock",
+   "unlock": {
+    "Cancellations": [],
+    "CharacterCreationCost": 0,
+    "IsAvailable": false,
+    "IsAvailableInCC": {
+     "expr": "Core.designerEdition"
+    },
+    "UnlockCost": 0
+   },
+   "rolls": null,
+   "in_head": true,
+   "extension": true,
+   "faction": {
+    "key": "Gorilla",
+    "role": "Calls_Backup"
+   }
+  },
   "Gorilla_Friendly": {
    "versions": [
     "RCK"
@@ -28301,6 +31661,38 @@
    "faction": {
     "key": "Gorilla",
     "grade": "Friendly"
+   }
+  },
+  "Gorilla_Leader": {
+   "versions": [
+    "RCK"
+   ],
+   "kind": "designer",
+   "namespace": "RCK.Traits.Rel_Faction",
+   "bases": [
+    "T_Rel_Faction",
+    "T_Relationships",
+    "T_DesignerTrait",
+    "CustomTrait"
+   ],
+   "path": "RCK/Systems/Designer Traits/Relationships/Relationships - Faction/Gorilla_Leader.cs",
+   "display_en": "[RCK+] Rel Faction - Gorilla Leader",
+   "unlock_class": "TU_DesignerUnlock",
+   "unlock": {
+    "Cancellations": [],
+    "CharacterCreationCost": 0,
+    "IsAvailable": false,
+    "IsAvailableInCC": {
+     "expr": "Core.designerEdition"
+    },
+    "UnlockCost": 0
+   },
+   "rolls": null,
+   "in_head": true,
+   "extension": true,
+   "faction": {
+    "key": "Gorilla",
+    "role": "Leader"
    }
   },
   "Gorilla_Member": {
@@ -28373,6 +31765,38 @@
     "grade": "Neutral"
    }
   },
+  "Gorilla_Reinforcement": {
+   "versions": [
+    "RCK"
+   ],
+   "kind": "designer",
+   "namespace": "RCK.Traits.Rel_Faction",
+   "bases": [
+    "T_Rel_Faction",
+    "T_Relationships",
+    "T_DesignerTrait",
+    "CustomTrait"
+   ],
+   "path": "RCK/Systems/Designer Traits/Relationships/Relationships - Faction/Gorilla_Reinforcement.cs",
+   "display_en": "[RCK+] Rel Faction - Gorilla Reinforcement",
+   "unlock_class": "TU_DesignerUnlock",
+   "unlock": {
+    "Cancellations": [],
+    "CharacterCreationCost": 0,
+    "IsAvailable": false,
+    "IsAvailableInCC": {
+     "expr": "Core.designerEdition"
+    },
+    "UnlockCost": 0
+   },
+   "rolls": null,
+   "in_head": true,
+   "extension": true,
+   "faction": {
+    "key": "Gorilla",
+    "role": "Reinforcement"
+   }
+  },
   "Gorilla_Territorial": {
    "versions": [
     "RCK"
@@ -28409,6 +31833,38 @@
    "faction": {
     "key": "Gorilla",
     "grade": "Territorial"
+   }
+  },
+  "Gorilla_Vengeful": {
+   "versions": [
+    "RCK"
+   ],
+   "kind": "designer",
+   "namespace": "RCK.Traits.Rel_Faction",
+   "bases": [
+    "T_Rel_Faction",
+    "T_Relationships",
+    "T_DesignerTrait",
+    "CustomTrait"
+   ],
+   "path": "RCK/Systems/Designer Traits/Relationships/Relationships - Faction/Gorilla_Vengeful.cs",
+   "display_en": "[RCK+] Rel Faction - Gorilla Vengeful",
+   "unlock_class": "TU_DesignerUnlock",
+   "unlock": {
+    "Cancellations": [],
+    "CharacterCreationCost": 0,
+    "IsAvailable": false,
+    "IsAvailableInCC": {
+     "expr": "Core.designerEdition"
+    },
+    "UnlockCost": 0
+   },
+   "rolls": null,
+   "in_head": true,
+   "extension": true,
+   "faction": {
+    "key": "Gorilla",
+    "role": "Vengeful"
    }
   },
   "Hacker_Aligned": {
@@ -28487,6 +31943,38 @@
     "grade": "Annoyed"
    }
   },
+  "Hacker_Calls_Backup": {
+   "versions": [
+    "RCK"
+   ],
+   "kind": "designer",
+   "namespace": "RCK.Traits.Rel_Faction",
+   "bases": [
+    "T_Rel_Faction",
+    "T_Relationships",
+    "T_DesignerTrait",
+    "CustomTrait"
+   ],
+   "path": "RCK/Systems/Designer Traits/Relationships/Relationships - Faction/Hacker_Calls_Backup.cs",
+   "display_en": "[RCK+] Rel Faction - Hacker Calls Backup",
+   "unlock_class": "TU_DesignerUnlock",
+   "unlock": {
+    "Cancellations": [],
+    "CharacterCreationCost": 0,
+    "IsAvailable": false,
+    "IsAvailableInCC": {
+     "expr": "Core.designerEdition"
+    },
+    "UnlockCost": 0
+   },
+   "rolls": null,
+   "in_head": true,
+   "extension": true,
+   "faction": {
+    "key": "Hacker",
+    "role": "Calls_Backup"
+   }
+  },
   "Hacker_Friendly": {
    "versions": [
     "RCK"
@@ -28563,6 +32051,38 @@
     "grade": "Hostile"
    }
   },
+  "Hacker_Leader": {
+   "versions": [
+    "RCK"
+   ],
+   "kind": "designer",
+   "namespace": "RCK.Traits.Rel_Faction",
+   "bases": [
+    "T_Rel_Faction",
+    "T_Relationships",
+    "T_DesignerTrait",
+    "CustomTrait"
+   ],
+   "path": "RCK/Systems/Designer Traits/Relationships/Relationships - Faction/Hacker_Leader.cs",
+   "display_en": "[RCK+] Rel Faction - Hacker Leader",
+   "unlock_class": "TU_DesignerUnlock",
+   "unlock": {
+    "Cancellations": [],
+    "CharacterCreationCost": 0,
+    "IsAvailable": false,
+    "IsAvailableInCC": {
+     "expr": "Core.designerEdition"
+    },
+    "UnlockCost": 0
+   },
+   "rolls": null,
+   "in_head": true,
+   "extension": true,
+   "faction": {
+    "key": "Hacker",
+    "role": "Leader"
+   }
+  },
   "Hacker_Member": {
    "versions": [
     "RCK"
@@ -28633,6 +32153,38 @@
     "grade": "Neutral"
    }
   },
+  "Hacker_Reinforcement": {
+   "versions": [
+    "RCK"
+   ],
+   "kind": "designer",
+   "namespace": "RCK.Traits.Rel_Faction",
+   "bases": [
+    "T_Rel_Faction",
+    "T_Relationships",
+    "T_DesignerTrait",
+    "CustomTrait"
+   ],
+   "path": "RCK/Systems/Designer Traits/Relationships/Relationships - Faction/Hacker_Reinforcement.cs",
+   "display_en": "[RCK+] Rel Faction - Hacker Reinforcement",
+   "unlock_class": "TU_DesignerUnlock",
+   "unlock": {
+    "Cancellations": [],
+    "CharacterCreationCost": 0,
+    "IsAvailable": false,
+    "IsAvailableInCC": {
+     "expr": "Core.designerEdition"
+    },
+    "UnlockCost": 0
+   },
+   "rolls": null,
+   "in_head": true,
+   "extension": true,
+   "faction": {
+    "key": "Hacker",
+    "role": "Reinforcement"
+   }
+  },
   "Hacker_Territorial": {
    "versions": [
     "RCK"
@@ -28669,6 +32221,38 @@
    "faction": {
     "key": "Hacker",
     "grade": "Territorial"
+   }
+  },
+  "Hacker_Vengeful": {
+   "versions": [
+    "RCK"
+   ],
+   "kind": "designer",
+   "namespace": "RCK.Traits.Rel_Faction",
+   "bases": [
+    "T_Rel_Faction",
+    "T_Relationships",
+    "T_DesignerTrait",
+    "CustomTrait"
+   ],
+   "path": "RCK/Systems/Designer Traits/Relationships/Relationships - Faction/Hacker_Vengeful.cs",
+   "display_en": "[RCK+] Rel Faction - Hacker Vengeful",
+   "unlock_class": "TU_DesignerUnlock",
+   "unlock": {
+    "Cancellations": [],
+    "CharacterCreationCost": 0,
+    "IsAvailable": false,
+    "IsAvailableInCC": {
+     "expr": "Core.designerEdition"
+    },
+    "UnlockCost": 0
+   },
+   "rolls": null,
+   "in_head": true,
+   "extension": true,
+   "faction": {
+    "key": "Hacker",
+    "role": "Vengeful"
    }
   },
   "Mafia_Aligned": {
@@ -28747,6 +32331,38 @@
     "grade": "Annoyed"
    }
   },
+  "Mafia_Calls_Backup": {
+   "versions": [
+    "RCK"
+   ],
+   "kind": "designer",
+   "namespace": "RCK.Traits.Rel_Faction",
+   "bases": [
+    "T_Rel_Faction",
+    "T_Relationships",
+    "T_DesignerTrait",
+    "CustomTrait"
+   ],
+   "path": "RCK/Systems/Designer Traits/Relationships/Relationships - Faction/Mafia_Calls_Backup.cs",
+   "display_en": "[RCK+] Rel Faction - Mafia Calls Backup",
+   "unlock_class": "TU_DesignerUnlock",
+   "unlock": {
+    "Cancellations": [],
+    "CharacterCreationCost": 0,
+    "IsAvailable": false,
+    "IsAvailableInCC": {
+     "expr": "Core.designerEdition"
+    },
+    "UnlockCost": 0
+   },
+   "rolls": null,
+   "in_head": true,
+   "extension": true,
+   "faction": {
+    "key": "Mafia",
+    "role": "Calls_Backup"
+   }
+  },
   "Mafia_Friendly": {
    "versions": [
     "RCK"
@@ -28783,6 +32399,38 @@
    "faction": {
     "key": "Mafia",
     "grade": "Friendly"
+   }
+  },
+  "Mafia_Leader": {
+   "versions": [
+    "RCK"
+   ],
+   "kind": "designer",
+   "namespace": "RCK.Traits.Rel_Faction",
+   "bases": [
+    "T_Rel_Faction",
+    "T_Relationships",
+    "T_DesignerTrait",
+    "CustomTrait"
+   ],
+   "path": "RCK/Systems/Designer Traits/Relationships/Relationships - Faction/Mafia_Leader.cs",
+   "display_en": "[RCK+] Rel Faction - Mafia Leader",
+   "unlock_class": "TU_DesignerUnlock",
+   "unlock": {
+    "Cancellations": [],
+    "CharacterCreationCost": 0,
+    "IsAvailable": false,
+    "IsAvailableInCC": {
+     "expr": "Core.designerEdition"
+    },
+    "UnlockCost": 0
+   },
+   "rolls": null,
+   "in_head": true,
+   "extension": true,
+   "faction": {
+    "key": "Mafia",
+    "role": "Leader"
    }
   },
   "Mafia_Member": {
@@ -28855,6 +32503,38 @@
     "grade": "Neutral"
    }
   },
+  "Mafia_Reinforcement": {
+   "versions": [
+    "RCK"
+   ],
+   "kind": "designer",
+   "namespace": "RCK.Traits.Rel_Faction",
+   "bases": [
+    "T_Rel_Faction",
+    "T_Relationships",
+    "T_DesignerTrait",
+    "CustomTrait"
+   ],
+   "path": "RCK/Systems/Designer Traits/Relationships/Relationships - Faction/Mafia_Reinforcement.cs",
+   "display_en": "[RCK+] Rel Faction - Mafia Reinforcement",
+   "unlock_class": "TU_DesignerUnlock",
+   "unlock": {
+    "Cancellations": [],
+    "CharacterCreationCost": 0,
+    "IsAvailable": false,
+    "IsAvailableInCC": {
+     "expr": "Core.designerEdition"
+    },
+    "UnlockCost": 0
+   },
+   "rolls": null,
+   "in_head": true,
+   "extension": true,
+   "faction": {
+    "key": "Mafia",
+    "role": "Reinforcement"
+   }
+  },
   "Mafia_Territorial": {
    "versions": [
     "RCK"
@@ -28893,6 +32573,154 @@
     "grade": "Territorial"
    }
   },
+  "Mafia_Vengeful": {
+   "versions": [
+    "RCK"
+   ],
+   "kind": "designer",
+   "namespace": "RCK.Traits.Rel_Faction",
+   "bases": [
+    "T_Rel_Faction",
+    "T_Relationships",
+    "T_DesignerTrait",
+    "CustomTrait"
+   ],
+   "path": "RCK/Systems/Designer Traits/Relationships/Relationships - Faction/Mafia_Vengeful.cs",
+   "display_en": "[RCK+] Rel Faction - Mafia Vengeful",
+   "unlock_class": "TU_DesignerUnlock",
+   "unlock": {
+    "Cancellations": [],
+    "CharacterCreationCost": 0,
+    "IsAvailable": false,
+    "IsAvailableInCC": {
+     "expr": "Core.designerEdition"
+    },
+    "UnlockCost": 0
+   },
+   "rolls": null,
+   "in_head": true,
+   "extension": true,
+   "faction": {
+    "key": "Mafia",
+    "role": "Vengeful"
+   }
+  },
+  "RCK_Broker": {
+   "versions": [
+    "RCK"
+   ],
+   "kind": "designer",
+   "namespace": "RCK.Traits.Rel_Faction",
+   "bases": [
+    "T_Rel_Faction",
+    "T_Relationships",
+    "T_DesignerTrait",
+    "CustomTrait"
+   ],
+   "path": "RCK/Systems/Designer Traits/Relationships/Relationships - Faction/RCK_Broker.cs",
+   "display_en": "[RCK+] Rel Faction - Broker",
+   "unlock_class": "TU_DesignerUnlock",
+   "unlock": {
+    "Cancellations": [],
+    "CharacterCreationCost": 0,
+    "IsAvailable": false,
+    "IsAvailableInCC": {
+     "expr": "Core.designerEdition"
+    },
+    "UnlockCost": 0
+   },
+   "rolls": null,
+   "in_head": true,
+   "extension": true,
+   "broker": true
+  },
+  "RCK_Faction_Defector": {
+   "versions": [
+    "RCK"
+   ],
+   "kind": "designer",
+   "namespace": "RCK.Traits.Rel_Faction",
+   "bases": [
+    "T_Rel_Faction",
+    "T_Relationships",
+    "T_DesignerTrait",
+    "CustomTrait"
+   ],
+   "path": "RCK/Systems/Designer Traits/Relationships/Relationships - Faction/RCK_Faction_Defector.cs",
+   "display_en": "[RCK+] Rel Faction - Defector",
+   "unlock_class": "TU_DesignerUnlock",
+   "unlock": {
+    "Cancellations": [],
+    "CharacterCreationCost": 0,
+    "IsAvailable": false,
+    "IsAvailableInCC": {
+     "expr": "Core.designerEdition"
+    },
+    "UnlockCost": 0
+   },
+   "rolls": null,
+   "in_head": true,
+   "extension": true,
+   "defector": true
+  },
+  "RCK_Faction_Medic": {
+   "versions": [
+    "RCK"
+   ],
+   "kind": "designer",
+   "namespace": "RCK.Traits.Rel_Faction",
+   "bases": [
+    "T_Rel_Faction",
+    "T_Relationships",
+    "T_DesignerTrait",
+    "CustomTrait"
+   ],
+   "path": "RCK/Systems/Designer Traits/Relationships/Relationships - Faction/RCK_Faction_Medic.cs",
+   "display_en": "[RCK+] Rel Faction - Medic",
+   "unlock_class": "TU_DesignerUnlock",
+   "unlock": {
+    "Cancellations": [],
+    "CharacterCreationCost": 0,
+    "IsAvailable": false,
+    "IsAvailableInCC": {
+     "expr": "Core.designerEdition"
+    },
+    "UnlockCost": 0
+   },
+   "rolls": null,
+   "in_head": true,
+   "extension": true,
+   "medic": true
+  },
+  "RCK_Faction_Racketeer": {
+   "versions": [
+    "RCK"
+   ],
+   "kind": "designer",
+   "namespace": "RCK.Traits.Rel_Faction",
+   "bases": [
+    "T_Rel_Faction",
+    "T_Relationships",
+    "T_DesignerTrait",
+    "CustomTrait"
+   ],
+   "path": "RCK/Systems/Designer Traits/Relationships/Relationships - Faction/RCK_Faction_Racketeer.cs",
+   "display_en": "[RCK+] Rel Faction - Racketeer",
+   "unlock_class": "TU_DesignerUnlock",
+   "unlock": {
+    "Cancellations": [],
+    "CharacterCreationCost": 0,
+    "IsAvailable": false,
+    "IsAvailableInCC": {
+     "expr": "Core.designerEdition"
+    },
+    "UnlockCost": 0
+   },
+   "rolls": null,
+   "in_head": true,
+   "extension": true,
+   "racketeer": true
+  },
   "RCK_Innocent_Until_Caught": {
    "versions": [
     "RCK"
@@ -28921,6 +32749,36 @@
    "in_head": true,
    "extension": true,
    "street_innocence": true
+  },
+  "RCK_No_Quests": {
+   "versions": [
+    "RCK"
+   ],
+   "kind": "designer",
+   "namespace": "RCK.Traits.Quests",
+   "bases": [
+    "T_Quests",
+    "T_DesignerTrait",
+    "CustomTrait"
+   ],
+   "path": "RCK/Systems/Designer Traits/Quests/RCK_No_Quests.cs",
+   "display_en": "[RCK+] Quests - No Quests",
+   "unlock_class": "TU_DesignerUnlock",
+   "unlock": {
+    "Cancellations": [
+     "RCK_Radiant_Quest_Giver"
+    ],
+    "CharacterCreationCost": 0,
+    "IsAvailable": false,
+    "IsAvailableInCC": {
+     "expr": "Core.designerEdition"
+    },
+    "UnlockCost": 0
+   },
+   "rolls": null,
+   "in_head": true,
+   "extension": true,
+   "quests": true
   },
   "RCK_Not_Recruitable": {
    "versions": [
@@ -28954,6 +32812,148 @@
    "recruit": {
     "policy": "Off"
    }
+  },
+  "RCK_Quest_Target_A": {
+   "versions": [
+    "RCK"
+   ],
+   "kind": "designer",
+   "namespace": "RCK.Traits.Quests",
+   "bases": [
+    "T_Quests",
+    "T_DesignerTrait",
+    "CustomTrait"
+   ],
+   "path": "RCK/Systems/Designer Traits/Quests/RCK_Quest_Target_A.cs",
+   "display_en": "[RCK+] Quests - Quest Target A",
+   "unlock_class": "TU_DesignerUnlock",
+   "unlock": {
+    "Cancellations": [],
+    "CharacterCreationCost": 0,
+    "IsAvailable": false,
+    "IsAvailableInCC": {
+     "expr": "Core.designerEdition"
+    },
+    "UnlockCost": 0
+   },
+   "rolls": null,
+   "in_head": true,
+   "extension": true,
+   "quests": true
+  },
+  "RCK_Quest_Target_B": {
+   "versions": [
+    "RCK"
+   ],
+   "kind": "designer",
+   "namespace": "RCK.Traits.Quests",
+   "bases": [
+    "T_Quests",
+    "T_DesignerTrait",
+    "CustomTrait"
+   ],
+   "path": "RCK/Systems/Designer Traits/Quests/RCK_Quest_Target_B.cs",
+   "display_en": "[RCK+] Quests - Quest Target B",
+   "unlock_class": "TU_DesignerUnlock",
+   "unlock": {
+    "Cancellations": [],
+    "CharacterCreationCost": 0,
+    "IsAvailable": false,
+    "IsAvailableInCC": {
+     "expr": "Core.designerEdition"
+    },
+    "UnlockCost": 0
+   },
+   "rolls": null,
+   "in_head": true,
+   "extension": true,
+   "quests": true
+  },
+  "RCK_Quest_Target_C": {
+   "versions": [
+    "RCK"
+   ],
+   "kind": "designer",
+   "namespace": "RCK.Traits.Quests",
+   "bases": [
+    "T_Quests",
+    "T_DesignerTrait",
+    "CustomTrait"
+   ],
+   "path": "RCK/Systems/Designer Traits/Quests/RCK_Quest_Target_C.cs",
+   "display_en": "[RCK+] Quests - Quest Target C",
+   "unlock_class": "TU_DesignerUnlock",
+   "unlock": {
+    "Cancellations": [],
+    "CharacterCreationCost": 0,
+    "IsAvailable": false,
+    "IsAvailableInCC": {
+     "expr": "Core.designerEdition"
+    },
+    "UnlockCost": 0
+   },
+   "rolls": null,
+   "in_head": true,
+   "extension": true,
+   "quests": true
+  },
+  "RCK_Quest_Target_D": {
+   "versions": [
+    "RCK"
+   ],
+   "kind": "designer",
+   "namespace": "RCK.Traits.Quests",
+   "bases": [
+    "T_Quests",
+    "T_DesignerTrait",
+    "CustomTrait"
+   ],
+   "path": "RCK/Systems/Designer Traits/Quests/RCK_Quest_Target_D.cs",
+   "display_en": "[RCK+] Quests - Quest Target D",
+   "unlock_class": "TU_DesignerUnlock",
+   "unlock": {
+    "Cancellations": [],
+    "CharacterCreationCost": 0,
+    "IsAvailable": false,
+    "IsAvailableInCC": {
+     "expr": "Core.designerEdition"
+    },
+    "UnlockCost": 0
+   },
+   "rolls": null,
+   "in_head": true,
+   "extension": true,
+   "quests": true
+  },
+  "RCK_Radiant_Quest_Giver": {
+   "versions": [
+    "RCK"
+   ],
+   "kind": "designer",
+   "namespace": "RCK.Traits.Quests",
+   "bases": [
+    "T_Quests",
+    "T_DesignerTrait",
+    "CustomTrait"
+   ],
+   "path": "RCK/Systems/Designer Traits/Quests/RCK_Radiant_Quest_Giver.cs",
+   "display_en": "[RCK+] Quests - Radiant Quest Giver",
+   "unlock_class": "TU_DesignerUnlock",
+   "unlock": {
+    "Cancellations": [
+     "RCK_No_Quests"
+    ],
+    "CharacterCreationCost": 0,
+    "IsAvailable": false,
+    "IsAvailableInCC": {
+     "expr": "Core.designerEdition"
+    },
+    "UnlockCost": 0
+   },
+   "rolls": null,
+   "in_head": true,
+   "extension": true,
+   "quests": true
   },
   "RCK_Recruit_Free": {
    "versions": [
@@ -29097,6 +33097,38 @@
     "grade": "Annoyed"
    }
   },
+  "Scientist_Calls_Backup": {
+   "versions": [
+    "RCK"
+   ],
+   "kind": "designer",
+   "namespace": "RCK.Traits.Rel_Faction",
+   "bases": [
+    "T_Rel_Faction",
+    "T_Relationships",
+    "T_DesignerTrait",
+    "CustomTrait"
+   ],
+   "path": "RCK/Systems/Designer Traits/Relationships/Relationships - Faction/Scientist_Calls_Backup.cs",
+   "display_en": "[RCK+] Rel Faction - Scientist Calls Backup",
+   "unlock_class": "TU_DesignerUnlock",
+   "unlock": {
+    "Cancellations": [],
+    "CharacterCreationCost": 0,
+    "IsAvailable": false,
+    "IsAvailableInCC": {
+     "expr": "Core.designerEdition"
+    },
+    "UnlockCost": 0
+   },
+   "rolls": null,
+   "in_head": true,
+   "extension": true,
+   "faction": {
+    "key": "Scientist",
+    "role": "Calls_Backup"
+   }
+  },
   "Scientist_Friendly": {
    "versions": [
     "RCK"
@@ -29133,6 +33165,38 @@
    "faction": {
     "key": "Scientist",
     "grade": "Friendly"
+   }
+  },
+  "Scientist_Leader": {
+   "versions": [
+    "RCK"
+   ],
+   "kind": "designer",
+   "namespace": "RCK.Traits.Rel_Faction",
+   "bases": [
+    "T_Rel_Faction",
+    "T_Relationships",
+    "T_DesignerTrait",
+    "CustomTrait"
+   ],
+   "path": "RCK/Systems/Designer Traits/Relationships/Relationships - Faction/Scientist_Leader.cs",
+   "display_en": "[RCK+] Rel Faction - Scientist Leader",
+   "unlock_class": "TU_DesignerUnlock",
+   "unlock": {
+    "Cancellations": [],
+    "CharacterCreationCost": 0,
+    "IsAvailable": false,
+    "IsAvailableInCC": {
+     "expr": "Core.designerEdition"
+    },
+    "UnlockCost": 0
+   },
+   "rolls": null,
+   "in_head": true,
+   "extension": true,
+   "faction": {
+    "key": "Scientist",
+    "role": "Leader"
    }
   },
   "Scientist_Member": {
@@ -29205,6 +33269,38 @@
     "grade": "Neutral"
    }
   },
+  "Scientist_Reinforcement": {
+   "versions": [
+    "RCK"
+   ],
+   "kind": "designer",
+   "namespace": "RCK.Traits.Rel_Faction",
+   "bases": [
+    "T_Rel_Faction",
+    "T_Relationships",
+    "T_DesignerTrait",
+    "CustomTrait"
+   ],
+   "path": "RCK/Systems/Designer Traits/Relationships/Relationships - Faction/Scientist_Reinforcement.cs",
+   "display_en": "[RCK+] Rel Faction - Scientist Reinforcement",
+   "unlock_class": "TU_DesignerUnlock",
+   "unlock": {
+    "Cancellations": [],
+    "CharacterCreationCost": 0,
+    "IsAvailable": false,
+    "IsAvailableInCC": {
+     "expr": "Core.designerEdition"
+    },
+    "UnlockCost": 0
+   },
+   "rolls": null,
+   "in_head": true,
+   "extension": true,
+   "faction": {
+    "key": "Scientist",
+    "role": "Reinforcement"
+   }
+  },
   "Scientist_Territorial": {
    "versions": [
     "RCK"
@@ -29241,6 +33337,38 @@
    "faction": {
     "key": "Scientist",
     "grade": "Territorial"
+   }
+  },
+  "Scientist_Vengeful": {
+   "versions": [
+    "RCK"
+   ],
+   "kind": "designer",
+   "namespace": "RCK.Traits.Rel_Faction",
+   "bases": [
+    "T_Rel_Faction",
+    "T_Relationships",
+    "T_DesignerTrait",
+    "CustomTrait"
+   ],
+   "path": "RCK/Systems/Designer Traits/Relationships/Relationships - Faction/Scientist_Vengeful.cs",
+   "display_en": "[RCK+] Rel Faction - Scientist Vengeful",
+   "unlock_class": "TU_DesignerUnlock",
+   "unlock": {
+    "Cancellations": [],
+    "CharacterCreationCost": 0,
+    "IsAvailable": false,
+    "IsAvailableInCC": {
+     "expr": "Core.designerEdition"
+    },
+    "UnlockCost": 0
+   },
+   "rolls": null,
+   "in_head": true,
+   "extension": true,
+   "faction": {
+    "key": "Scientist",
+    "role": "Vengeful"
    }
   },
   "Slavemaster_Aligned": {
@@ -29319,6 +33447,38 @@
     "grade": "Annoyed"
    }
   },
+  "Slavemaster_Calls_Backup": {
+   "versions": [
+    "RCK"
+   ],
+   "kind": "designer",
+   "namespace": "RCK.Traits.Rel_Faction",
+   "bases": [
+    "T_Rel_Faction",
+    "T_Relationships",
+    "T_DesignerTrait",
+    "CustomTrait"
+   ],
+   "path": "RCK/Systems/Designer Traits/Relationships/Relationships - Faction/Slavemaster_Calls_Backup.cs",
+   "display_en": "[RCK+] Rel Faction - Slavemaster Calls Backup",
+   "unlock_class": "TU_DesignerUnlock",
+   "unlock": {
+    "Cancellations": [],
+    "CharacterCreationCost": 0,
+    "IsAvailable": false,
+    "IsAvailableInCC": {
+     "expr": "Core.designerEdition"
+    },
+    "UnlockCost": 0
+   },
+   "rolls": null,
+   "in_head": true,
+   "extension": true,
+   "faction": {
+    "key": "Slavemaster",
+    "role": "Calls_Backup"
+   }
+  },
   "Slavemaster_Friendly": {
    "versions": [
     "RCK"
@@ -29355,6 +33515,38 @@
    "faction": {
     "key": "Slavemaster",
     "grade": "Friendly"
+   }
+  },
+  "Slavemaster_Leader": {
+   "versions": [
+    "RCK"
+   ],
+   "kind": "designer",
+   "namespace": "RCK.Traits.Rel_Faction",
+   "bases": [
+    "T_Rel_Faction",
+    "T_Relationships",
+    "T_DesignerTrait",
+    "CustomTrait"
+   ],
+   "path": "RCK/Systems/Designer Traits/Relationships/Relationships - Faction/Slavemaster_Leader.cs",
+   "display_en": "[RCK+] Rel Faction - Slavemaster Leader",
+   "unlock_class": "TU_DesignerUnlock",
+   "unlock": {
+    "Cancellations": [],
+    "CharacterCreationCost": 0,
+    "IsAvailable": false,
+    "IsAvailableInCC": {
+     "expr": "Core.designerEdition"
+    },
+    "UnlockCost": 0
+   },
+   "rolls": null,
+   "in_head": true,
+   "extension": true,
+   "faction": {
+    "key": "Slavemaster",
+    "role": "Leader"
    }
   },
   "Slavemaster_Member": {
@@ -29427,6 +33619,38 @@
     "grade": "Neutral"
    }
   },
+  "Slavemaster_Reinforcement": {
+   "versions": [
+    "RCK"
+   ],
+   "kind": "designer",
+   "namespace": "RCK.Traits.Rel_Faction",
+   "bases": [
+    "T_Rel_Faction",
+    "T_Relationships",
+    "T_DesignerTrait",
+    "CustomTrait"
+   ],
+   "path": "RCK/Systems/Designer Traits/Relationships/Relationships - Faction/Slavemaster_Reinforcement.cs",
+   "display_en": "[RCK+] Rel Faction - Slavemaster Reinforcement",
+   "unlock_class": "TU_DesignerUnlock",
+   "unlock": {
+    "Cancellations": [],
+    "CharacterCreationCost": 0,
+    "IsAvailable": false,
+    "IsAvailableInCC": {
+     "expr": "Core.designerEdition"
+    },
+    "UnlockCost": 0
+   },
+   "rolls": null,
+   "in_head": true,
+   "extension": true,
+   "faction": {
+    "key": "Slavemaster",
+    "role": "Reinforcement"
+   }
+  },
   "Slavemaster_Territorial": {
    "versions": [
     "RCK"
@@ -29463,6 +33687,38 @@
    "faction": {
     "key": "Slavemaster",
     "grade": "Territorial"
+   }
+  },
+  "Slavemaster_Vengeful": {
+   "versions": [
+    "RCK"
+   ],
+   "kind": "designer",
+   "namespace": "RCK.Traits.Rel_Faction",
+   "bases": [
+    "T_Rel_Faction",
+    "T_Relationships",
+    "T_DesignerTrait",
+    "CustomTrait"
+   ],
+   "path": "RCK/Systems/Designer Traits/Relationships/Relationships - Faction/Slavemaster_Vengeful.cs",
+   "display_en": "[RCK+] Rel Faction - Slavemaster Vengeful",
+   "unlock_class": "TU_DesignerUnlock",
+   "unlock": {
+    "Cancellations": [],
+    "CharacterCreationCost": 0,
+    "IsAvailable": false,
+    "IsAvailableInCC": {
+     "expr": "Core.designerEdition"
+    },
+    "UnlockCost": 0
+   },
+   "rolls": null,
+   "in_head": true,
+   "extension": true,
+   "faction": {
+    "key": "Slavemaster",
+    "role": "Vengeful"
    }
   },
   "Soldier_Annoyed": {
@@ -29503,6 +33759,38 @@
     "grade": "Annoyed"
    }
   },
+  "Soldier_Calls_Backup": {
+   "versions": [
+    "RCK"
+   ],
+   "kind": "designer",
+   "namespace": "RCK.Traits.Rel_Faction",
+   "bases": [
+    "T_Rel_Faction",
+    "T_Relationships",
+    "T_DesignerTrait",
+    "CustomTrait"
+   ],
+   "path": "RCK/Systems/Designer Traits/Relationships/Relationships - Faction/Soldier_Calls_Backup.cs",
+   "display_en": "[RCK+] Rel Faction - Soldier Calls Backup",
+   "unlock_class": "TU_DesignerUnlock",
+   "unlock": {
+    "Cancellations": [],
+    "CharacterCreationCost": 0,
+    "IsAvailable": false,
+    "IsAvailableInCC": {
+     "expr": "Core.designerEdition"
+    },
+    "UnlockCost": 0
+   },
+   "rolls": null,
+   "in_head": true,
+   "extension": true,
+   "faction": {
+    "key": "Soldier",
+    "role": "Calls_Backup"
+   }
+  },
   "Soldier_Friendly": {
    "versions": [
     "RCK"
@@ -29539,6 +33827,38 @@
    "faction": {
     "key": "Soldier",
     "grade": "Friendly"
+   }
+  },
+  "Soldier_Leader": {
+   "versions": [
+    "RCK"
+   ],
+   "kind": "designer",
+   "namespace": "RCK.Traits.Rel_Faction",
+   "bases": [
+    "T_Rel_Faction",
+    "T_Relationships",
+    "T_DesignerTrait",
+    "CustomTrait"
+   ],
+   "path": "RCK/Systems/Designer Traits/Relationships/Relationships - Faction/Soldier_Leader.cs",
+   "display_en": "[RCK+] Rel Faction - Soldier Leader",
+   "unlock_class": "TU_DesignerUnlock",
+   "unlock": {
+    "Cancellations": [],
+    "CharacterCreationCost": 0,
+    "IsAvailable": false,
+    "IsAvailableInCC": {
+     "expr": "Core.designerEdition"
+    },
+    "UnlockCost": 0
+   },
+   "rolls": null,
+   "in_head": true,
+   "extension": true,
+   "faction": {
+    "key": "Soldier",
+    "role": "Leader"
    }
   },
   "Soldier_Member": {
@@ -29611,6 +33931,38 @@
     "grade": "Neutral"
    }
   },
+  "Soldier_Reinforcement": {
+   "versions": [
+    "RCK"
+   ],
+   "kind": "designer",
+   "namespace": "RCK.Traits.Rel_Faction",
+   "bases": [
+    "T_Rel_Faction",
+    "T_Relationships",
+    "T_DesignerTrait",
+    "CustomTrait"
+   ],
+   "path": "RCK/Systems/Designer Traits/Relationships/Relationships - Faction/Soldier_Reinforcement.cs",
+   "display_en": "[RCK+] Rel Faction - Soldier Reinforcement",
+   "unlock_class": "TU_DesignerUnlock",
+   "unlock": {
+    "Cancellations": [],
+    "CharacterCreationCost": 0,
+    "IsAvailable": false,
+    "IsAvailableInCC": {
+     "expr": "Core.designerEdition"
+    },
+    "UnlockCost": 0
+   },
+   "rolls": null,
+   "in_head": true,
+   "extension": true,
+   "faction": {
+    "key": "Soldier",
+    "role": "Reinforcement"
+   }
+  },
   "Soldier_Territorial": {
    "versions": [
     "RCK"
@@ -29647,6 +33999,38 @@
    "faction": {
     "key": "Soldier",
     "grade": "Territorial"
+   }
+  },
+  "Soldier_Vengeful": {
+   "versions": [
+    "RCK"
+   ],
+   "kind": "designer",
+   "namespace": "RCK.Traits.Rel_Faction",
+   "bases": [
+    "T_Rel_Faction",
+    "T_Relationships",
+    "T_DesignerTrait",
+    "CustomTrait"
+   ],
+   "path": "RCK/Systems/Designer Traits/Relationships/Relationships - Faction/Soldier_Vengeful.cs",
+   "display_en": "[RCK+] Rel Faction - Soldier Vengeful",
+   "unlock_class": "TU_DesignerUnlock",
+   "unlock": {
+    "Cancellations": [],
+    "CharacterCreationCost": 0,
+    "IsAvailable": false,
+    "IsAvailableInCC": {
+     "expr": "Core.designerEdition"
+    },
+    "UnlockCost": 0
+   },
+   "rolls": null,
+   "in_head": true,
+   "extension": true,
+   "faction": {
+    "key": "Soldier",
+    "role": "Vengeful"
    }
   },
   "Thief_Aligned": {
@@ -29725,6 +34109,38 @@
     "grade": "Annoyed"
    }
   },
+  "Thief_Calls_Backup": {
+   "versions": [
+    "RCK"
+   ],
+   "kind": "designer",
+   "namespace": "RCK.Traits.Rel_Faction",
+   "bases": [
+    "T_Rel_Faction",
+    "T_Relationships",
+    "T_DesignerTrait",
+    "CustomTrait"
+   ],
+   "path": "RCK/Systems/Designer Traits/Relationships/Relationships - Faction/Thief_Calls_Backup.cs",
+   "display_en": "[RCK+] Rel Faction - Thief Calls Backup",
+   "unlock_class": "TU_DesignerUnlock",
+   "unlock": {
+    "Cancellations": [],
+    "CharacterCreationCost": 0,
+    "IsAvailable": false,
+    "IsAvailableInCC": {
+     "expr": "Core.designerEdition"
+    },
+    "UnlockCost": 0
+   },
+   "rolls": null,
+   "in_head": true,
+   "extension": true,
+   "faction": {
+    "key": "Thief",
+    "role": "Calls_Backup"
+   }
+  },
   "Thief_Friendly": {
    "versions": [
     "RCK"
@@ -29801,6 +34217,38 @@
     "grade": "Hostile"
    }
   },
+  "Thief_Leader": {
+   "versions": [
+    "RCK"
+   ],
+   "kind": "designer",
+   "namespace": "RCK.Traits.Rel_Faction",
+   "bases": [
+    "T_Rel_Faction",
+    "T_Relationships",
+    "T_DesignerTrait",
+    "CustomTrait"
+   ],
+   "path": "RCK/Systems/Designer Traits/Relationships/Relationships - Faction/Thief_Leader.cs",
+   "display_en": "[RCK+] Rel Faction - Thief Leader",
+   "unlock_class": "TU_DesignerUnlock",
+   "unlock": {
+    "Cancellations": [],
+    "CharacterCreationCost": 0,
+    "IsAvailable": false,
+    "IsAvailableInCC": {
+     "expr": "Core.designerEdition"
+    },
+    "UnlockCost": 0
+   },
+   "rolls": null,
+   "in_head": true,
+   "extension": true,
+   "faction": {
+    "key": "Thief",
+    "role": "Leader"
+   }
+  },
   "Thief_Member": {
    "versions": [
     "RCK"
@@ -29871,6 +34319,38 @@
     "grade": "Neutral"
    }
   },
+  "Thief_Reinforcement": {
+   "versions": [
+    "RCK"
+   ],
+   "kind": "designer",
+   "namespace": "RCK.Traits.Rel_Faction",
+   "bases": [
+    "T_Rel_Faction",
+    "T_Relationships",
+    "T_DesignerTrait",
+    "CustomTrait"
+   ],
+   "path": "RCK/Systems/Designer Traits/Relationships/Relationships - Faction/Thief_Reinforcement.cs",
+   "display_en": "[RCK+] Rel Faction - Thief Reinforcement",
+   "unlock_class": "TU_DesignerUnlock",
+   "unlock": {
+    "Cancellations": [],
+    "CharacterCreationCost": 0,
+    "IsAvailable": false,
+    "IsAvailableInCC": {
+     "expr": "Core.designerEdition"
+    },
+    "UnlockCost": 0
+   },
+   "rolls": null,
+   "in_head": true,
+   "extension": true,
+   "faction": {
+    "key": "Thief",
+    "role": "Reinforcement"
+   }
+  },
   "Thief_Territorial": {
    "versions": [
     "RCK"
@@ -29907,6 +34387,38 @@
    "faction": {
     "key": "Thief",
     "grade": "Territorial"
+   }
+  },
+  "Thief_Vengeful": {
+   "versions": [
+    "RCK"
+   ],
+   "kind": "designer",
+   "namespace": "RCK.Traits.Rel_Faction",
+   "bases": [
+    "T_Rel_Faction",
+    "T_Relationships",
+    "T_DesignerTrait",
+    "CustomTrait"
+   ],
+   "path": "RCK/Systems/Designer Traits/Relationships/Relationships - Faction/Thief_Vengeful.cs",
+   "display_en": "[RCK+] Rel Faction - Thief Vengeful",
+   "unlock_class": "TU_DesignerUnlock",
+   "unlock": {
+    "Cancellations": [],
+    "CharacterCreationCost": 0,
+    "IsAvailable": false,
+    "IsAvailableInCC": {
+     "expr": "Core.designerEdition"
+    },
+    "UnlockCost": 0
+   },
+   "rolls": null,
+   "in_head": true,
+   "extension": true,
+   "faction": {
+    "key": "Thief",
+    "role": "Vengeful"
    }
   },
   "Upper_Cruster_Aligned": {
@@ -29985,6 +34497,38 @@
     "grade": "Annoyed"
    }
   },
+  "Upper_Cruster_Calls_Backup": {
+   "versions": [
+    "RCK"
+   ],
+   "kind": "designer",
+   "namespace": "RCK.Traits.Rel_Faction",
+   "bases": [
+    "T_Rel_Faction",
+    "T_Relationships",
+    "T_DesignerTrait",
+    "CustomTrait"
+   ],
+   "path": "RCK/Systems/Designer Traits/Relationships/Relationships - Faction/Upper_Cruster_Calls_Backup.cs",
+   "display_en": "[RCK+] Rel Faction - Upper Cruster Calls Backup",
+   "unlock_class": "TU_DesignerUnlock",
+   "unlock": {
+    "Cancellations": [],
+    "CharacterCreationCost": 0,
+    "IsAvailable": false,
+    "IsAvailableInCC": {
+     "expr": "Core.designerEdition"
+    },
+    "UnlockCost": 0
+   },
+   "rolls": null,
+   "in_head": true,
+   "extension": true,
+   "faction": {
+    "key": "Upper_Cruster",
+    "role": "Calls_Backup"
+   }
+  },
   "Upper_Cruster_Friendly": {
    "versions": [
     "RCK"
@@ -30021,6 +34565,38 @@
    "faction": {
     "key": "Upper_Cruster",
     "grade": "Friendly"
+   }
+  },
+  "Upper_Cruster_Leader": {
+   "versions": [
+    "RCK"
+   ],
+   "kind": "designer",
+   "namespace": "RCK.Traits.Rel_Faction",
+   "bases": [
+    "T_Rel_Faction",
+    "T_Relationships",
+    "T_DesignerTrait",
+    "CustomTrait"
+   ],
+   "path": "RCK/Systems/Designer Traits/Relationships/Relationships - Faction/Upper_Cruster_Leader.cs",
+   "display_en": "[RCK+] Rel Faction - Upper Cruster Leader",
+   "unlock_class": "TU_DesignerUnlock",
+   "unlock": {
+    "Cancellations": [],
+    "CharacterCreationCost": 0,
+    "IsAvailable": false,
+    "IsAvailableInCC": {
+     "expr": "Core.designerEdition"
+    },
+    "UnlockCost": 0
+   },
+   "rolls": null,
+   "in_head": true,
+   "extension": true,
+   "faction": {
+    "key": "Upper_Cruster",
+    "role": "Leader"
    }
   },
   "Upper_Cruster_Member": {
@@ -30093,6 +34669,38 @@
     "grade": "Neutral"
    }
   },
+  "Upper_Cruster_Reinforcement": {
+   "versions": [
+    "RCK"
+   ],
+   "kind": "designer",
+   "namespace": "RCK.Traits.Rel_Faction",
+   "bases": [
+    "T_Rel_Faction",
+    "T_Relationships",
+    "T_DesignerTrait",
+    "CustomTrait"
+   ],
+   "path": "RCK/Systems/Designer Traits/Relationships/Relationships - Faction/Upper_Cruster_Reinforcement.cs",
+   "display_en": "[RCK+] Rel Faction - Upper Cruster Reinforcement",
+   "unlock_class": "TU_DesignerUnlock",
+   "unlock": {
+    "Cancellations": [],
+    "CharacterCreationCost": 0,
+    "IsAvailable": false,
+    "IsAvailableInCC": {
+     "expr": "Core.designerEdition"
+    },
+    "UnlockCost": 0
+   },
+   "rolls": null,
+   "in_head": true,
+   "extension": true,
+   "faction": {
+    "key": "Upper_Cruster",
+    "role": "Reinforcement"
+   }
+  },
   "Upper_Cruster_Territorial": {
    "versions": [
     "RCK"
@@ -30129,6 +34737,38 @@
    "faction": {
     "key": "Upper_Cruster",
     "grade": "Territorial"
+   }
+  },
+  "Upper_Cruster_Vengeful": {
+   "versions": [
+    "RCK"
+   ],
+   "kind": "designer",
+   "namespace": "RCK.Traits.Rel_Faction",
+   "bases": [
+    "T_Rel_Faction",
+    "T_Relationships",
+    "T_DesignerTrait",
+    "CustomTrait"
+   ],
+   "path": "RCK/Systems/Designer Traits/Relationships/Relationships - Faction/Upper_Cruster_Vengeful.cs",
+   "display_en": "[RCK+] Rel Faction - Upper Cruster Vengeful",
+   "unlock_class": "TU_DesignerUnlock",
+   "unlock": {
+    "Cancellations": [],
+    "CharacterCreationCost": 0,
+    "IsAvailable": false,
+    "IsAvailableInCC": {
+     "expr": "Core.designerEdition"
+    },
+    "UnlockCost": 0
+   },
+   "rolls": null,
+   "in_head": true,
+   "extension": true,
+   "faction": {
+    "key": "Upper_Cruster",
+    "role": "Vengeful"
    }
   },
   "Vampire_Aligned": {
@@ -30207,6 +34847,38 @@
     "grade": "Annoyed"
    }
   },
+  "Vampire_Calls_Backup": {
+   "versions": [
+    "RCK"
+   ],
+   "kind": "designer",
+   "namespace": "RCK.Traits.Rel_Faction",
+   "bases": [
+    "T_Rel_Faction",
+    "T_Relationships",
+    "T_DesignerTrait",
+    "CustomTrait"
+   ],
+   "path": "RCK/Systems/Designer Traits/Relationships/Relationships - Faction/Vampire_Calls_Backup.cs",
+   "display_en": "[RCK+] Rel Faction - Vampire Calls Backup",
+   "unlock_class": "TU_DesignerUnlock",
+   "unlock": {
+    "Cancellations": [],
+    "CharacterCreationCost": 0,
+    "IsAvailable": false,
+    "IsAvailableInCC": {
+     "expr": "Core.designerEdition"
+    },
+    "UnlockCost": 0
+   },
+   "rolls": null,
+   "in_head": true,
+   "extension": true,
+   "faction": {
+    "key": "Vampire",
+    "role": "Calls_Backup"
+   }
+  },
   "Vampire_Friendly": {
    "versions": [
     "RCK"
@@ -30243,6 +34915,38 @@
    "faction": {
     "key": "Vampire",
     "grade": "Friendly"
+   }
+  },
+  "Vampire_Leader": {
+   "versions": [
+    "RCK"
+   ],
+   "kind": "designer",
+   "namespace": "RCK.Traits.Rel_Faction",
+   "bases": [
+    "T_Rel_Faction",
+    "T_Relationships",
+    "T_DesignerTrait",
+    "CustomTrait"
+   ],
+   "path": "RCK/Systems/Designer Traits/Relationships/Relationships - Faction/Vampire_Leader.cs",
+   "display_en": "[RCK+] Rel Faction - Vampire Leader",
+   "unlock_class": "TU_DesignerUnlock",
+   "unlock": {
+    "Cancellations": [],
+    "CharacterCreationCost": 0,
+    "IsAvailable": false,
+    "IsAvailableInCC": {
+     "expr": "Core.designerEdition"
+    },
+    "UnlockCost": 0
+   },
+   "rolls": null,
+   "in_head": true,
+   "extension": true,
+   "faction": {
+    "key": "Vampire",
+    "role": "Leader"
    }
   },
   "Vampire_Member": {
@@ -30315,6 +35019,38 @@
     "grade": "Neutral"
    }
   },
+  "Vampire_Reinforcement": {
+   "versions": [
+    "RCK"
+   ],
+   "kind": "designer",
+   "namespace": "RCK.Traits.Rel_Faction",
+   "bases": [
+    "T_Rel_Faction",
+    "T_Relationships",
+    "T_DesignerTrait",
+    "CustomTrait"
+   ],
+   "path": "RCK/Systems/Designer Traits/Relationships/Relationships - Faction/Vampire_Reinforcement.cs",
+   "display_en": "[RCK+] Rel Faction - Vampire Reinforcement",
+   "unlock_class": "TU_DesignerUnlock",
+   "unlock": {
+    "Cancellations": [],
+    "CharacterCreationCost": 0,
+    "IsAvailable": false,
+    "IsAvailableInCC": {
+     "expr": "Core.designerEdition"
+    },
+    "UnlockCost": 0
+   },
+   "rolls": null,
+   "in_head": true,
+   "extension": true,
+   "faction": {
+    "key": "Vampire",
+    "role": "Reinforcement"
+   }
+  },
   "Vampire_Territorial": {
    "versions": [
     "RCK"
@@ -30351,6 +35087,38 @@
    "faction": {
     "key": "Vampire",
     "grade": "Territorial"
+   }
+  },
+  "Vampire_Vengeful": {
+   "versions": [
+    "RCK"
+   ],
+   "kind": "designer",
+   "namespace": "RCK.Traits.Rel_Faction",
+   "bases": [
+    "T_Rel_Faction",
+    "T_Relationships",
+    "T_DesignerTrait",
+    "CustomTrait"
+   ],
+   "path": "RCK/Systems/Designer Traits/Relationships/Relationships - Faction/Vampire_Vengeful.cs",
+   "display_en": "[RCK+] Rel Faction - Vampire Vengeful",
+   "unlock_class": "TU_DesignerUnlock",
+   "unlock": {
+    "Cancellations": [],
+    "CharacterCreationCost": 0,
+    "IsAvailable": false,
+    "IsAvailableInCC": {
+     "expr": "Core.designerEdition"
+    },
+    "UnlockCost": 0
+   },
+   "rolls": null,
+   "in_head": true,
+   "extension": true,
+   "faction": {
+    "key": "Vampire",
+    "role": "Vengeful"
    }
   },
   "Werewolf_Aligned": {
@@ -30429,6 +35197,38 @@
     "grade": "Annoyed"
    }
   },
+  "Werewolf_Calls_Backup": {
+   "versions": [
+    "RCK"
+   ],
+   "kind": "designer",
+   "namespace": "RCK.Traits.Rel_Faction",
+   "bases": [
+    "T_Rel_Faction",
+    "T_Relationships",
+    "T_DesignerTrait",
+    "CustomTrait"
+   ],
+   "path": "RCK/Systems/Designer Traits/Relationships/Relationships - Faction/Werewolf_Calls_Backup.cs",
+   "display_en": "[RCK+] Rel Faction - Werewolf Calls Backup",
+   "unlock_class": "TU_DesignerUnlock",
+   "unlock": {
+    "Cancellations": [],
+    "CharacterCreationCost": 0,
+    "IsAvailable": false,
+    "IsAvailableInCC": {
+     "expr": "Core.designerEdition"
+    },
+    "UnlockCost": 0
+   },
+   "rolls": null,
+   "in_head": true,
+   "extension": true,
+   "faction": {
+    "key": "Werewolf",
+    "role": "Calls_Backup"
+   }
+  },
   "Werewolf_Friendly": {
    "versions": [
     "RCK"
@@ -30465,6 +35265,38 @@
    "faction": {
     "key": "Werewolf",
     "grade": "Friendly"
+   }
+  },
+  "Werewolf_Leader": {
+   "versions": [
+    "RCK"
+   ],
+   "kind": "designer",
+   "namespace": "RCK.Traits.Rel_Faction",
+   "bases": [
+    "T_Rel_Faction",
+    "T_Relationships",
+    "T_DesignerTrait",
+    "CustomTrait"
+   ],
+   "path": "RCK/Systems/Designer Traits/Relationships/Relationships - Faction/Werewolf_Leader.cs",
+   "display_en": "[RCK+] Rel Faction - Werewolf Leader",
+   "unlock_class": "TU_DesignerUnlock",
+   "unlock": {
+    "Cancellations": [],
+    "CharacterCreationCost": 0,
+    "IsAvailable": false,
+    "IsAvailableInCC": {
+     "expr": "Core.designerEdition"
+    },
+    "UnlockCost": 0
+   },
+   "rolls": null,
+   "in_head": true,
+   "extension": true,
+   "faction": {
+    "key": "Werewolf",
+    "role": "Leader"
    }
   },
   "Werewolf_Member": {
@@ -30537,6 +35369,38 @@
     "grade": "Neutral"
    }
   },
+  "Werewolf_Reinforcement": {
+   "versions": [
+    "RCK"
+   ],
+   "kind": "designer",
+   "namespace": "RCK.Traits.Rel_Faction",
+   "bases": [
+    "T_Rel_Faction",
+    "T_Relationships",
+    "T_DesignerTrait",
+    "CustomTrait"
+   ],
+   "path": "RCK/Systems/Designer Traits/Relationships/Relationships - Faction/Werewolf_Reinforcement.cs",
+   "display_en": "[RCK+] Rel Faction - Werewolf Reinforcement",
+   "unlock_class": "TU_DesignerUnlock",
+   "unlock": {
+    "Cancellations": [],
+    "CharacterCreationCost": 0,
+    "IsAvailable": false,
+    "IsAvailableInCC": {
+     "expr": "Core.designerEdition"
+    },
+    "UnlockCost": 0
+   },
+   "rolls": null,
+   "in_head": true,
+   "extension": true,
+   "faction": {
+    "key": "Werewolf",
+    "role": "Reinforcement"
+   }
+  },
   "Werewolf_Territorial": {
    "versions": [
     "RCK"
@@ -30573,6 +35437,38 @@
    "faction": {
     "key": "Werewolf",
     "grade": "Territorial"
+   }
+  },
+  "Werewolf_Vengeful": {
+   "versions": [
+    "RCK"
+   ],
+   "kind": "designer",
+   "namespace": "RCK.Traits.Rel_Faction",
+   "bases": [
+    "T_Rel_Faction",
+    "T_Relationships",
+    "T_DesignerTrait",
+    "CustomTrait"
+   ],
+   "path": "RCK/Systems/Designer Traits/Relationships/Relationships - Faction/Werewolf_Vengeful.cs",
+   "display_en": "[RCK+] Rel Faction - Werewolf Vengeful",
+   "unlock_class": "TU_DesignerUnlock",
+   "unlock": {
+    "Cancellations": [],
+    "CharacterCreationCost": 0,
+    "IsAvailable": false,
+    "IsAvailableInCC": {
+     "expr": "Core.designerEdition"
+    },
+    "UnlockCost": 0
+   },
+   "rolls": null,
+   "in_head": true,
+   "extension": true,
+   "faction": {
+    "key": "Werewolf",
+    "role": "Vengeful"
    }
   },
   "Zombie_Aligned": {
@@ -30651,6 +35547,38 @@
     "grade": "Annoyed"
    }
   },
+  "Zombie_Calls_Backup": {
+   "versions": [
+    "RCK"
+   ],
+   "kind": "designer",
+   "namespace": "RCK.Traits.Rel_Faction",
+   "bases": [
+    "T_Rel_Faction",
+    "T_Relationships",
+    "T_DesignerTrait",
+    "CustomTrait"
+   ],
+   "path": "RCK/Systems/Designer Traits/Relationships/Relationships - Faction/Zombie_Calls_Backup.cs",
+   "display_en": "[RCK+] Rel Faction - Zombie Calls Backup",
+   "unlock_class": "TU_DesignerUnlock",
+   "unlock": {
+    "Cancellations": [],
+    "CharacterCreationCost": 0,
+    "IsAvailable": false,
+    "IsAvailableInCC": {
+     "expr": "Core.designerEdition"
+    },
+    "UnlockCost": 0
+   },
+   "rolls": null,
+   "in_head": true,
+   "extension": true,
+   "faction": {
+    "key": "Zombie",
+    "role": "Calls_Backup"
+   }
+  },
   "Zombie_Friendly": {
    "versions": [
     "RCK"
@@ -30727,6 +35655,38 @@
     "grade": "Hostile"
    }
   },
+  "Zombie_Leader": {
+   "versions": [
+    "RCK"
+   ],
+   "kind": "designer",
+   "namespace": "RCK.Traits.Rel_Faction",
+   "bases": [
+    "T_Rel_Faction",
+    "T_Relationships",
+    "T_DesignerTrait",
+    "CustomTrait"
+   ],
+   "path": "RCK/Systems/Designer Traits/Relationships/Relationships - Faction/Zombie_Leader.cs",
+   "display_en": "[RCK+] Rel Faction - Zombie Leader",
+   "unlock_class": "TU_DesignerUnlock",
+   "unlock": {
+    "Cancellations": [],
+    "CharacterCreationCost": 0,
+    "IsAvailable": false,
+    "IsAvailableInCC": {
+     "expr": "Core.designerEdition"
+    },
+    "UnlockCost": 0
+   },
+   "rolls": null,
+   "in_head": true,
+   "extension": true,
+   "faction": {
+    "key": "Zombie",
+    "role": "Leader"
+   }
+  },
   "Zombie_Member": {
    "versions": [
     "RCK"
@@ -30797,6 +35757,38 @@
     "grade": "Neutral"
    }
   },
+  "Zombie_Reinforcement": {
+   "versions": [
+    "RCK"
+   ],
+   "kind": "designer",
+   "namespace": "RCK.Traits.Rel_Faction",
+   "bases": [
+    "T_Rel_Faction",
+    "T_Relationships",
+    "T_DesignerTrait",
+    "CustomTrait"
+   ],
+   "path": "RCK/Systems/Designer Traits/Relationships/Relationships - Faction/Zombie_Reinforcement.cs",
+   "display_en": "[RCK+] Rel Faction - Zombie Reinforcement",
+   "unlock_class": "TU_DesignerUnlock",
+   "unlock": {
+    "Cancellations": [],
+    "CharacterCreationCost": 0,
+    "IsAvailable": false,
+    "IsAvailableInCC": {
+     "expr": "Core.designerEdition"
+    },
+    "UnlockCost": 0
+   },
+   "rolls": null,
+   "in_head": true,
+   "extension": true,
+   "faction": {
+    "key": "Zombie",
+    "role": "Reinforcement"
+   }
+  },
   "Zombie_Territorial": {
    "versions": [
     "RCK"
@@ -30833,6 +35825,38 @@
    "faction": {
     "key": "Zombie",
     "grade": "Territorial"
+   }
+  },
+  "Zombie_Vengeful": {
+   "versions": [
+    "RCK"
+   ],
+   "kind": "designer",
+   "namespace": "RCK.Traits.Rel_Faction",
+   "bases": [
+    "T_Rel_Faction",
+    "T_Relationships",
+    "T_DesignerTrait",
+    "CustomTrait"
+   ],
+   "path": "RCK/Systems/Designer Traits/Relationships/Relationships - Faction/Zombie_Vengeful.cs",
+   "display_en": "[RCK+] Rel Faction - Zombie Vengeful",
+   "unlock_class": "TU_DesignerUnlock",
+   "unlock": {
+    "Cancellations": [],
+    "CharacterCreationCost": 0,
+    "IsAvailable": false,
+    "IsAvailableInCC": {
+     "expr": "Core.designerEdition"
+    },
+    "UnlockCost": 0
+   },
+   "rolls": null,
+   "in_head": true,
+   "extension": true,
+   "faction": {
+    "key": "Zombie",
+    "role": "Vengeful"
    }
   }
  },
@@ -31109,12 +36133,48 @@
    "display_en": "No Open Carry",
    "in_head": true
   },
+  "RCK_Commander": {
+   "versions": [
+    "RCK"
+   ],
+   "class": "MutatorUnlock",
+   "path": "RCK/Systems/Social/Commander/Command.cs",
+   "bases": [],
+   "display_en": "[RCK+] Commander",
+   "description_en": "You lead your faction in the turf war: spend control points on squads and send them to capture and defend turf from the commander console (T).",
+   "in_head": true,
+   "extension": true
+  },
+  "RCK_Faction_Disguises": {
+   "versions": [
+    "RCK"
+   ],
+   "class": "MutatorUnlock",
+   "path": "RCK/Systems/Social/Relations/Disguises.cs",
+   "bases": [],
+   "display_en": "[RCK+] Faction Disguises",
+   "description_en": "A player wearing a faction's headpiece passes for one of its members until they give themselves away. Fallen members drop theirs.",
+   "in_head": true,
+   "extension": true
+  },
+  "RCK_Faction_Raids": {
+   "versions": [
+    "RCK"
+   ],
+   "class": "MutatorUnlock",
+   "path": "RCK/Systems/Social/War/FactionRaids.cs",
+   "bases": [],
+   "display_en": "[RCK+] Faction Raids",
+   "description_en": "Every few minutes a squad from one faction raids a rival it hates: they march over, fight, search the place and go home.",
+   "in_head": true,
+   "extension": true
+  },
   "RCK_Faction_Recruit_Free": {
    "versions": [
     "RCK"
    ],
    "class": "MutatorUnlock",
-   "path": "RCK/Systems/Social/FactionRecruit.cs",
+   "path": "RCK/Systems/Social/Relations/FactionRecruit.cs",
    "bases": [],
    "display_en": "[RCK+] Faction Recruiting - Free",
    "description_en": "Players can recruit NPCs from their own factions for free (\"Join me\").",
@@ -31129,7 +36189,7 @@
     "RCK"
    ],
    "class": "MutatorUnlock",
-   "path": "RCK/Systems/Social/FactionRecruit.cs",
+   "path": "RCK/Systems/Social/Relations/FactionRecruit.cs",
    "bases": [],
    "display_en": "[RCK+] Faction Recruiting - Paid",
    "description_en": "Players can hire NPCs from their own factions as protection, at the gang-hire price.",
@@ -31139,15 +36199,87 @@
     "policy": "Paid"
    }
   },
+  "RCK_Faction_Respawn": {
+   "versions": [
+    "RCK"
+   ],
+   "class": "MutatorUnlock",
+   "path": "RCK/Systems/Social/War/FactionRespawn.cs",
+   "bases": [],
+   "display_en": "[RCK+] Faction Respawn",
+   "description_en": "Factions that hold turf send fresh squads to it when their numbers run low, until they've lost all their turf.",
+   "in_head": true,
+   "extension": true
+  },
+  "RCK_No_Infighting": {
+   "versions": [
+    "RCK"
+   ],
+   "class": "MutatorUnlock",
+   "path": "RCK/Systems/Social/Relations/NoInfighting.cs",
+   "bases": [],
+   "display_en": "[RCK+] No In-Fighting",
+   "description_en": "Every NPC gets No In-Fighting: aligned NPCs, and a player's followers, stop hurting each other in crossfire.",
+   "in_head": true,
+   "extension": true
+  },
+  "RCK_Radiant_Quests": {
+   "versions": [
+    "RCK"
+   ],
+   "class": "MutatorUnlock",
+   "path": "RCK/Systems/Quests/QuestsModule.cs",
+   "bases": [],
+   "display_en": "[RCK+] Radiant Quests",
+   "description_en": "A few NPCs offer generated odd jobs: faction members want rivals' leaders hit, their numbers thinned, stolen goods recovered, gear wrecked or messages run; civilians want pickpockets dealt with and parcels delivered.",
+   "in_head": true,
+   "extension": true
+  },
   "RCK_Street_Innocence": {
    "versions": [
     "RCK"
    ],
    "class": "MutatorUnlock",
-   "path": "RCK/Systems/Social/StreetInnocence.cs",
+   "path": "RCK/Systems/Social/Relations/StreetInnocence.cs",
    "bases": [],
    "display_en": "[RCK+] Street Innocence",
    "description_en": "NPCs that start on the street are innocent until caught: their hostile faction rules and Guilty trait wait until another NPC sees them start a fight.",
+   "in_head": true,
+   "extension": true
+  },
+  "RCK_Turf_Capture": {
+   "versions": [
+    "RCK"
+   ],
+   "class": "MutatorUnlock",
+   "path": "RCK/Systems/Social/Turf/TurfWar.cs",
+   "bases": [],
+   "display_en": "[RCK+] Turf Capture",
+   "description_en": "When every holder of a faction's turf falls, the turf changes hands: the faction that took it moves in to guard it.",
+   "in_head": true,
+   "extension": true
+  },
+  "RCK_Turf_Expansion": {
+   "versions": [
+    "RCK"
+   ],
+   "class": "MutatorUnlock",
+   "path": "RCK/Systems/Social/Turf/TurfExpansion.cs",
+   "bases": [],
+   "display_en": "[RCK+] Turf Expansion",
+   "description_en": "Factions that hold turf send small parties to take empty turf and run protection rackets on the commoners' places near their own.",
+   "in_head": true,
+   "extension": true
+  },
+  "RCK_War_Panel": {
+   "versions": [
+    "RCK"
+   ],
+   "class": "MutatorUnlock",
+   "path": "RCK/Systems/Social/Commander/WarPanel.cs",
+   "bases": [],
+   "display_en": "[RCK+] War Panel",
+   "description_en": "Shows the turf-war panel from the start: each faction's turf, men, control points and power.",
    "in_head": true,
    "extension": true
   }
@@ -31668,10 +36800,472 @@
  },
  "extensions": {
   "note": "RCK additions, not part of CCU. Faction traits extend CCU's `Faction_<N>_<Grade>` and `<Group>_<Grade>` patterns; every other addition uses the `RCK_` prefix.",
+  "party_peace": "Party-mates never fight each other. Two agents are party-mates when one employs the other or both have the same employer; the leader can be a player or an NPC, and Random Teleport squads count. Relationship rules skip party-mates: their own relationship traits, faction traits and the matrix, `Hostile_to_Guilty`, trait gates and street innocence. The pair keeps the Loyal, Aligned or Submissive link the game set when it joined, also when followers carry over to the next level. When an agent joins a party, any Territorial standoff, hate, and Annoyed or Hateful relationship between it and the leader or the other party-mates is cleared. `Relationless` still applies.",
   "street_innocence": {
-   "rules": "An innocent NPC's Hostile, Territorial and Annoyed faction rules (traits or matrix), both ways, and its `Guilty` trait (for `Hostile_to_Guilty`) don't apply: the pair keeps its vanilla relationship. Friendly, Aligned and Neutral faction rules still apply. An NPC is innocent while it holds `RCK_Innocent_Until_Caught`, or while the `RCK_Street_Innocence` mutator is on and it started street-side: its default goal is WanderFar or a Random Teleport, or it owns nothing and started on unowned floor. It is caught when another NPC sees it strike first: an attack on someone who didn't hit it first and isn't fighting it. Property crimes don't catch it. Then its held-back rules apply for the rest of the level, only ever making a relationship worse. `Drug_Dealer` holders and vanilla Drug Dealers stay Guilty.",
+   "rules": "An innocent NPC's Hostile, Territorial and Annoyed faction rules (traits or matrix), both ways, and its `Guilty` trait (for `Hostile_to_Guilty`) don't apply: the pair keeps its vanilla relationship. Friendly, Aligned and Neutral faction rules still apply. An NPC is innocent while it holds `RCK_Innocent_Until_Caught`, or while the `RCK_Street_Innocence` mutator is on and it started street-side: its default goal is WanderFar, Random Patrol (Map) or a Random Teleport, or it owns nothing and started on unowned floor. It is caught when another NPC sees it strike first: an attack on someone who didn't hit it first and isn't fighting it. Property crimes don't catch it. Then its held-back rules apply for the rest of the level, only ever making a relationship worse. `Drug_Dealer` holders and vanilla Drug Dealers stay Guilty.",
    "trait": "RCK_Innocent_Until_Caught",
    "mutator": "RCK_Street_Innocence"
+  },
+  "disguises": {
+   "rules": "On with the `RCK_Faction_Disguises` mutator or any `[RCK]Disguise::` map. A player wearing a mapped headpiece (worn, not the character's own starting look, and not for a faction the player already belongs to) counts as `<key>_Member` of that faction: welcome in its private rooms, exempt from its turf, recruitable-with, and its members who were Annoyed or Hateful toward the player turn Neutral (their old feelings come back when the headpiece comes off). A disguise is blown for the rest of the level, for every player, when a member of the faction turns on the wearer in play (caught stealing, trespassing, breaking in and so on), when the wearer hits a member, or when a member sees the wearer hit anyone. A member a Vengeful grudge already turned against the wearer isn't fooled. Cameras, turrets and other factions never are. A faction member wearing its own mapped headpiece as its look drops a copy when a player's side fells it, at most 3 per faction per level (vanilla never drops look headpieces).",
+   "mutator": "RCK_Faction_Disguises",
+   "prefix": "[RCK]Disguise::",
+   "defaults": {
+    "CopHat": "Cop",
+    "Cop2Hat": "Cop",
+    "HatBlue": "Crepe",
+    "HatRed": "Blahd",
+    "SoldierHelmet": "Soldier",
+    "ThiefHat": "Thief",
+    "HackerGlasses": "Hacker",
+    "FireHelmet": "Firefighter",
+    "Fedora": "Mafia",
+    "DoctorHeadLamp": "Scientist"
+   },
+   "format": "`[RCK]Disguise::` followed by `;`-separated entries `Item=faction` (a faction number or key); `Item=None` takes a default off. Later entries win. The defaults apply under either spelling."
+  },
+  "faction_names": {
+   "prefix": "[RCK]FactionName::",
+   "format": "`[RCK]FactionName::` followed by `;`-separated entries `faction=Name` (`1=The Contractor;2=The Summit`). On-screen messages (disguises, quests, turf, raids, brokers) use the name; otherwise a key reads as itself without underscores (`Faction 3`, `Upper Cruster`)."
+  },
+  "quests": {
+   "rules": "An NPC whose Talk text starts with `rck-quest:::` is a quest giver: the text is a script of one or more jobs (stages), separated by `---` lines. Each stage is `Key: value` lines; a line that doesn't start with a key continues the previous value, so texts can span lines. Stages are offered one at a time in order. The giver shows `Hear them out` and `Take the job (Title)`; while the job runs, `About the job`; once it's done, `Report back` (the reward), unless `Report: Auto` pays the moment it's done (a Deliver or Talk pays at the recipient). A stage with `After: id+id` waits (showing its Wait text) until those jobs are done this level, which can chain givers. The job fails, and the chain stops, if the giver falls or turns hostile, or every Deliver/Talk recipient falls; the giver then says the Fail text. Jobs are marked on the map but never added to the quest list: a giver with an offer shows a `!` (faded while its job runs, a tick when it's time to report), and targets, recipients and item holders a yellow arrow (up to 8 per job); host only. A stage whose target can't be found yet shows its Wait text instead of an offer. Givers that are Hostile or Annoyed toward the player offer nothing. Paying turns the giver Friendly. Texts are cut to 600 characters with the job and reward lines. Invalid stages are dropped and logged. Jobs are per level and run on the host; in multiplayer the host takes them.",
+   "prefix": "rck-quest:::",
+   "format": "`rck-quest:::` then stage lines. Keys: `Id` (for After and the gate; default: the title slugged), `Title`, `Type` (Kill, Retrieve, Destroy, Deliver, Talk), `Target` (see targets), `Item`, `Count` (1 to 99), `Reward` (comma-separated, see rewards), `Report` (Giver or Auto), `After` (ids joined with `+` or `,`), and the texts `Offer`, `Accept`, `Remind`, `Done`, `Fail`, `Target text` (what a Deliver/Talk recipient says), `Wait` (before After is met) and `Idle` (once, anywhere: what the giver says after the last stage). Keys ignore case, spaces, `_` and `-`. Texts may use the placeholders; a capitalised one (`{Target}`) capitalises the value.",
+   "keys": [
+    "Id",
+    "Title",
+    "Type",
+    "Target",
+    "Item",
+    "Count",
+    "Reward",
+    "Report",
+    "After",
+    "Offer",
+    "Accept",
+    "Remind",
+    "Done",
+    "Fail",
+    "Target text",
+    "Wait",
+    "Idle"
+   ],
+   "types": {
+    "Kill": "Take down the target set (killed, knocked out, arrested, ghosted or zombified all count). Aliases Neutralize, Hit.",
+    "Retrieve": "Bring the giver Count (default 1) of Item. With a Target, the item is put on the first living matching NPC (or into the first intact matching object) when the job is taken; without one, the player finds it. Always reported to the giver. Aliases Fetch, Steal.",
+    "Destroy": "Wreck the matching objects (an Object target). Alias Sabotage.",
+    "Deliver": "The giver hands the player Count (default 1) of Item (default Briefcase) on accepting; hand them to any living matching NPC. A full inventory refuses the job.",
+    "Talk": "Talk to any living matching NPC (its `Pass on the word` button). Alias Message."
+   },
+   "targets": {
+    "Label:A": "Every NPC with `RCK_Quest_Target_A` (A to D) in the level.",
+    "Agent:Name": "NPCs whose name (agentRealName) or agent type is Name, case-insensitive.",
+    "Agent:#id": "The NPC with that agent ID (radiant jobs use this).",
+    "Leader:<faction>": "The faction's `<key>_Leader` holders. `Leader:Rival` picks the giver's bitterest rival faction present with a leader standing.",
+    "Faction:<faction>": "The faction's living members when the job is taken (a Kill needs Count, default 3, of them). `Faction:Rival` picks the bitterest rival with members standing.",
+    "Object:Name[@owner]": "Objects named Name; `@<faction>` only those owned by the faction's members (same owner ID and chunk), `@Rival` the bitterest rival's, `@Giver` the giver's own."
+   },
+   "rewards": {
+    "$N": "Money (also `Money:N`), 1 to 100000.",
+    "Item:Name": "An item (`Item:Banana x3` or `Item:Banana*3` for several). What doesn't fit drops at the player's feet.",
+    "XP": "Experience, as a vanilla completed mission.",
+    "Recruit": "The giver joins the party (a leader sends its nearest non-leader member instead), within vanilla's follower cap.",
+    "Standing": "Every member of the giver's faction turns Friendly toward the player."
+   },
+   "placeholders": {
+    "giver": "The giver's name (`the Bartender` for an unnamed NPC).",
+    "faction": "The giver's faction as a group (`the Crepes`, or a `[RCK]FactionName::` name); `my people` without.",
+    "rival": "The rival faction the job is about, as a group; `the competition` without.",
+    "target": "The target set (`Big Tony`, `the Blahd leader`, `3 Blahds`, `the Generator`); for a Retrieve, who or what holds the item.",
+    "item": "The item's display name.",
+    "count": "How many are needed.",
+    "reward": "The reward list (`$150, Revolver and experience`).",
+    "objective": "What the job asks (`take down 3 of the Blahds`, `bring back the Briefcase (Big Tony has it)`)."
+   },
+   "max_text": 600,
+   "gate_switch": {
+    "name": "Quest",
+    "rules": "`Quest=id+id`: true once every listed job id is done (paid) this level. Radiant job ids are `radiant-<agentID>`."
+   },
+   "traits": {
+    "RCK_Radiant_Quest_Giver": "Always offers a generated job for this level (its Talk text comes back once the job is over), with or without the Radiant Quests mutator.",
+    "RCK_No_Quests": "Never picked to give a generated job.",
+    "RCK_Quest_Target_A": "Marks the NPC for quest scripts' `Target: Label:A` (every holder in the level).",
+    "RCK_Quest_Target_B": "Marks the NPC for quest scripts' `Target: Label:B` (every holder in the level).",
+    "RCK_Quest_Target_C": "Marks the NPC for quest scripts' `Target: Label:C` (every holder in the level).",
+    "RCK_Quest_Target_D": "Marks the NPC for quest scripts' `Target: Label:D` (every holder in the level)."
+   },
+   "target_labels": [
+    "A",
+    "B",
+    "C",
+    "D"
+   ],
+   "radiant": {
+    "mutator": "RCK_Radiant_Quests",
+    "trait": "RCK_Radiant_Quest_Giver",
+    "rules": "With the `RCK_Radiant_Quests` mutator, up to 4 NPCs (6.4 units apart, faction members with a rival first) get one generated job at level start; `RCK_Radiant_Quest_Giver` holders always get one on top. Never picked: NPCs with Talk text (unless they hold the trait), quest givers, targets and prisoners, hired NPCs, `RCK_No_Quests` holders, NPCs hostile or annoyed toward a player, and Zombie, Gorilla, CopBot, ButlerBot, Robot, Alien, Ghost, WerewolfB, Assassin, ShapeShifter or Slave. A faction member with a rival present offers Hit (the rival's leader), Thin (3 of the rival), Recover (an item from a rival member), Sabotage (a rival-owned machine), or runs Courier/Word to a fellow member; anyone else offers Pickpocket/Pest (a Thief, Cannibal, Slavemaster or Vampire) or Parcel/CheckIn (another civilian). Pay is $60 + $20 per level times the job's multiplier, plus XP, plus Standing for rival jobs."
+   }
+  },
+  "goals": {
+   "rules": "CCU lists these default goals in the editor; RCK makes them work. The game runs each as its own WanderFar, so the NPC fights, flees, investigates and reacts like any wanderer; RCK picks every stop. A stop at an NPC, an object or a patrol spot lasts 2 to 4.5 s. With nobody or nothing to visit, a Wander Between goal patrols its start chunk instead. Doors, windows, bars, security, hazards, plants and fixtures are never stops. Only the host picks stops, as with vanilla goals.",
+   "goals": {
+    "Random Patrol (Chunk)": "Walks between random spots in its start chunk.",
+    "Random Patrol (Map)": "Crosses the map: each stop is a random public spot at least a chunk away, with a 1 to 2 s pause. Street-side for street innocence, like WanderFar.",
+    "Wander Between Agents": "Walks up to a random NPC within 2 chunks of its start (never a player, nor one it's Hostile or Annoyed toward), then another.",
+    "Wander Between Agents (Owner)": "The same, among the NPCs of its owner group (same owner ID and start chunk), wherever they are.",
+    "Wander Between Agents (Non-Owner)": "The same, among the NPCs within 2 chunks outside its owner group.",
+    "Wander Between Objects (Owner)": "Walks between the objects its owner group owns (same owner ID and chunk).",
+    "Wander Between Objects (Non-Owner)": "Walks between the objects within 2 chunks that its owner group doesn't own."
+   }
+  },
+  "gates": {
+   "rules": "RCK reads more than CCU's Agent switches in a `[CCU]LevelGate::` or `[RCK]LevelGate::` string. `Label`, `Switch` and `Logic` work as in CCU, and labels are optional. `Count=N` replaces the logic: at least N of the label agents resolved (dead, knocked out, arrested, hired, zombified and so on). Every other `Name=value` pair is a condition, and the exit opens when the label part (if any) and every condition hold. A gate with an unknown condition stays shut, and the BepInEx log says so. When the exit refuses, the log lists what isn't met yet. The conditions are checked on the host.",
+   "prefixes": [
+    "[CCU]LevelGate::",
+    "[RCK]LevelGate::"
+   ],
+   "keys": {
+    "Type": "`Entry` (the default); other types aren't gates.",
+    "Label": "Agent switch labels `A` to `D` (or 1 to 4), comma-separated; also `Labels`.",
+    "Switch": "`Agent`; also `Switches`. Labels are ignored unless it lists Agent.",
+    "Logic": "AND (default), OR, NAND, NOR, XOR or XNOR over the label agents.",
+    "Count": "1 to 99: at least that many label agents resolved; replaces Logic.",
+    "Open": "Text (up to 120 characters, no `;`) the host's players see once, in the turf-message style, the first time every part of the gate holds (checked every second). Not a condition."
+   },
+   "conditions": {
+    "Routed": "`Routed=Crepe` (or `Crepe+Blahd`, all of them): the faction's last `<key>_Leader` fell this level.",
+    "Destroyed": "`Destroyed=Generator` (or `Generator+PowerBox`): at least one object of that name was destroyed this level and none is left standing.",
+    "Holding": "`Holding=Briefcase` (`Briefcase*2`, `Briefcase+Key`): the player at the exit carries them.",
+    "Quest": "`Quest=id+id`: every listed RCK quest is done and paid this level.",
+    "TurfTaken": "`TurfTaken=Blahd` (`Blahd+Crepe`: all of them): the faction held at least one turf when the level loaded and holds none now."
+   },
+   "examples": [
+    "[CCU]LevelGate::Type=Entry;Label=A;Count=3;",
+    "[RCK]LevelGate::Routed=Faction_2;Destroyed=Generator;",
+    "[RCK]LevelGate::Label=A,B;Logic=OR;Holding=Briefcase;Quest=loose-lips;",
+    "[RCK]LevelGate::TurfTaken=Blahd+Crepe;",
+    "[RCK]LevelGate::Type=Entry;TurfTaken=Blahd+Mafia;Open=The Crepes run the city. The exit is open.;"
+   ]
+  },
+  "turf": {
+   "rules": "A turf is the owned floor one crew holds: the NPCs with the same owner ID and start chunk that defend it (a `<key>_Territorial` trait or a `=Territorial` matrix entry) and belong to a faction. RCK lists the turfs once the level has loaded. A turf falls when every holder is dead, knocked out, arrested, zombified, gone, hired by a player or routed (see `<key>_Leader`). With the `RCK_Turf_Capture` mutator it then changes hands, to the faction of whoever took down the last holder: a player or a follower takes it for the player's faction (`<key>_Member`, `<key>_Aligned` or the class's own), an NPC for its own. A fall with no taker (an accident, infighting) just clears it. The new owner moves in: up to 3 of its NPC members that own nothing and stand nearby (the one that took it first) become the turf's guards, else 2 of its squad units (see `squads`) walk in (a squad). Guards take the old holders' posts and owner ID, so the ones with Territorial traits defend it as the old holders did, and a turf can change hands again. The players on the host see a short message (`Blahd turf taken by the Crepes`) and the BepInEx log gets a line. Without the mutator nothing changes hands, but the `TurfTaken` gate switch still counts falls.",
+   "mutator": "RCK_Turf_Capture",
+   "gate_switch": {
+    "name": "TurfTaken",
+    "rules": "`TurfTaken=Blahd` (`Blahd+Crepe`: all of them): the faction held at least one turf when the level loaded and holds none now."
+   },
+   "overlay": {
+    "rules": "Whenever the level has turfs (see `rules`), the big map (the quest sheet's map) shows who holds them, with no mutator needed. Each turf's floor (the tiles of its owner ID and start chunk) is tinted in its holder's colour with a stronger outline; the players' own factions get a white outline. A cleared turf is grey, a turf shared by several factions is checkered in their colours, and a turf with no owned floor shows as a small disc around its posts. A contested turf, held while one of its holders is fighting, is striped. A legend in the map's top-left corner lists every faction that held turf at load (or holds some now) with its swatch, name (`[RCK]FactionName::` names apply), `(you)` for the players' factions and turfs held now; a routed faction or one holding none is greyed out. With rackets on (see `extensions.expansion`) each racket is dotted rather than solid: sand while it's free, its racketeers' colour while it's run, and gone once it's ruined; each legend row adds the rackets the faction runs, and a last row counts the free ones. It updates live while the map is open. The toggle key (F8 by default) hides and shows it. Host only: clients don't know the turfs. Not shown on streaming or home base levels.",
+    "config": {
+     "Map.TurfOverlay": "true (default) shows the overlay; false hides it until toggled.",
+     "Map.TurfOverlayKey": "The toggle key, a Unity KeyCode name (F8 by default; F7 is UnityExplorer's). The log warns when the key is also bound in the player's SoR controls."
+    },
+    "colors": {
+     "Crepe": "blue",
+     "Blahd": "red",
+     "Mafia": "charcoal, gold outline",
+     "Cop": "navy, light blue outline",
+     "Thief": "purple",
+     "Hacker": "green",
+     "Faction_1 to Faction_20": "a fixed palette (orange, teal, pink, olive, cyan, magenta, brown, lime and so on)",
+     "other named factions": "the same palette, by key",
+     "cleared": "grey",
+     "free racket": "sand, dotted",
+     "run racket": "the racketeers' colour, dotted"
+    },
+    "host_only": true
+   }
+  },
+  "no_infighting": {
+   "rules": "Every NPC gets the vanilla trait `DontHitAligned` (No In-Fighting) as it's set up: placed vanilla agents and customs, squads (raids, backup, guard copies, respawns) and anything spawned later (alarm cops, summons). NPCs that already have it are skipped, and a sweep every 2 s gives it back to an NPC whose traits were reset. Vanilla needs the trait on one side of a hit only: hits between two Aligned, Loyal or Submissive agents do no harm, nor do a follower's hits on its employer's allies. Players don't get it (on them it only adds co-op immunity, and it would show on the HUD and carry over to later levels); their followers are NPCs, so they're covered. The rule works both ways, so a player can't hurt an NPC that's Aligned, Loyal or Submissive to them either, until it turns hostile. Live quest kill targets can still be hit, as in vanilla. Runs on every peer.",
+   "mutator": "RCK_No_Infighting",
+   "trait": "DontHitAligned"
+  },
+  "raids": {
+   "rules": "A raid squad (see `squads`) of the raiding faction walks to one of the target's turfs (a holder's post; see `extensions.turf`), else to a random NPC member of the target, and raids it. The players on the host see `The Crepes are raiding the Blahds!`. With the `RCK_Faction_Raids` mutator raids also happen on their own: the first 90 to 150 s after the level loads, then every 150 to 240 s, at most 3 per level, each between a random pair of factions present where A is Hateful or Territorial toward B (by the members' traits or the matrix) and neither is routed. Scheduled entries and the mutator work together.",
+   "format": "`[RCK]FactionRaid::` followed by `;`-separated entries `A>B@T` or `A>B@TxN`: T seconds (0 to 3600) after the level loads, a squad of N (default 3, 1 to 6) members of A raids B. A and B are a faction number or key. Each entry fires once per level load, and is skipped when either side is routed or A has no one to send or B no one to hit.",
+   "mutator": "RCK_Faction_Raids",
+   "prefix": "[RCK]FactionRaid::",
+   "squads": "Raids, backup, turf guards that walk in and respawns are squads. A squad is made of the faction's designated units (see `extensions.respawn`) when it has any, else of copies of one of the faction's own NPC members (not a leader, backup caller, broker, quest giver or target, gate agent, Relationless or important NPC, nor one in a party). Raid and backup squads appear at the post of their faction's own turf nearest their target, out of the players' sight and clear of foes; with no such turf, or for other squads, next to a member out of the players' sight when there is one (respawns: see `extensions.respawn`). Every member is armed as the level loader arms a placed NPC: with the items its source was placed with, else its type's random weapon, items and money; a custom character still without a weapon then gets its character's starting items. A squad is never street-innocent. It's Hateful (hate 5) toward its targets, and targets that aren't street-innocent are Hateful back; innocent ones are only attacked, so they don't start fights of their own. Squad-mates keep their faction's own ties to each other. A raid or backup squad walks to its spot, fights, searches around three times, walks back to where it spawned and vanishes, like vanilla's alarm squads. At most 12 raid, backup and guard members are alive at once, and 24 respawned members on their own cap. Only the host spawns them.",
+   "max_squad_agents": 12,
+   "defaults": {
+    "size": 3,
+    "max_size": 6,
+    "first_seconds": [
+     90,
+     150
+    ],
+    "gap_seconds": [
+     150,
+     240
+    ],
+    "max_auto": 3
+   },
+   "examples": [
+    "[RCK]FactionRaid::Crepe>Blahd@120;",
+    "[RCK]FactionRaid::1>Blahd@60x5;Blahd>1@240;"
+   ]
+  },
+  "backup": {
+   "rules": "A `<key>_Calls_Backup` holder calls for help. When someone outside `<key>` really attacks it (a hit the game reports as an assault), or when it or an NPC of its owner group presses an Alarm Button against a criminal, `<key>` sends a squad (see `extensions.raids`) of 3 to the holder or the alarm. The squad is Hateful toward the attacker, searches, walks back and vanishes. A faction calls at most 2 squads per level, at least 30 s apart, and none once it's routed. Squad members never call backup themselves. When the attacker is a player or a follower, the players on the host see `The Blahds called for backup!`. The role doesn't make the holder a member.",
+   "role": "Calls_Backup",
+   "limits": {
+    "squad": 3,
+    "calls_per_level": 2,
+    "cooldown_seconds": 30
+   }
+  },
+  "respawn": {
+   "rules": "A faction that holds turf (see `extensions.turf`) keeps its numbers up. Its target is `Free + PerTurf x` the turfs it holds now, at most `Max`. Every 2 s the host counts its living NPC members (not zombies, ghosts or players' hires, but squads count). When that's under the target and its cooldown has passed (the first respawn comes one cooldown after the level loads), it respawns a squad (see `extensions.raids`) of up to `Size`, no more than it's missing. The squad appears at a post (where a holder stood at load) of one of its turfs that no player is within 13 units of, no holder is fighting at and no foe member is within 5 units of; turfs with empty posts come first. It first restaffs its faction's empty posts, the home turf's first, taking the post and the turf's owner ID like a holder. With `RCK_Turf_Capture` on, the rest march together on the nearest turf that's empty or held by a foe (a faction it's Hostile or Territorial toward by traits or matrix, not routed, without a truce). They fight their way in: when they take down the last holder the turf changes hands as usual, and an empty or undefended turf is theirs once one of them is within 2 units of a post (`Blahd turf taken by the Crepes`). Either way they hold it. Marchers pick a new target when theirs stops being a foe's or after 300 s, and hold their faction's nearest turf when there's none. Without `RCK_Turf_Capture` the rest become extra holders of the home turf. A faction's pool is unlimited (`inf`) or a number of members per level. A faction that holds no turf and has no one marching is finished for the level: no more respawns, and the players see `The Blahds have lost all their turf!`. A routed faction's turfs fall, so it's finished too. A faction without turf at load never respawns. At most 24 respawned members are alive at once, all factions together.",
+   "format": "The `RCK_Faction_Respawn` mutator turns respawn on for every faction that holds turf when the level loads, with the defaults and an unlimited pool. `[RCK]FactionRespawn::` followed by `;`-separated entries tunes it, and without the mutator turns it on for the factions it lists. `Faction=pool` or `Faction=pool:Unit+Unit` lists a faction (a number or key): the pool is `inf`, `off` (0: no respawns, though the units still apply) or 1 to 999 members per level, and the units are what its squads are made of (see `units`). `Setting=N` sets a default for the level and `Faction.Setting=N` one faction's own: `Free` (0 to 30), `PerTurf` (0 to 10), `Max` (1 to 30), `Cooldown` (10 to 600 s) and `Size` (1 to 6). Later entries win, and bad entries are skipped with a warning in the BepInEx log.",
+   "mutator": "RCK_Faction_Respawn",
+   "prefix": "[RCK]FactionRespawn::",
+   "role": "Reinforcement",
+   "units": "A faction's designated units are its placed NPCs holding `<key>_Reinforcement` (each counts once, so place two to double a unit's chance) plus the units its `[RCK]FactionRespawn::` entry names. A unit name is a custom character's name (one placed somewhere in the level, as its data lives there), a placed NPC's type or a vanilla agent type (`Gangbanger`, `Soldier`; any case). Leaders, gate agents, quest NPCs, brokers and Relationless NPCs are never units. Each unit is snapshotted when the level loads, so it keeps coming after the original dies, and the original stays a normal NPC. Every squad of the faction spawns from its units, one picked at random per member: raids, backup, guard copies and respawns. A unit that isn't a member of the faction (a vanilla type for a numbered faction) gets `<key>_Aligned`. A faction without designated units copies its members as before, and respawns from its plain members at load (see `squads`).",
+   "defaults": {
+    "Free": 2,
+    "PerTurf": 2,
+    "Max": 12,
+    "Cooldown": 60,
+    "Size": 3,
+    "pool": "inf"
+   },
+   "ranges": {
+    "Free": [
+     0,
+     30
+    ],
+    "PerTurf": [
+     0,
+     10
+    ],
+    "Max": [
+     1,
+     30
+    ],
+    "Cooldown": [
+     10,
+     600
+    ],
+    "Size": [
+     1,
+     6
+    ],
+    "pool": [
+     0,
+     999
+    ]
+   },
+   "limits": {
+    "max_respawned_alive": 24,
+    "max_units_per_entry": 12,
+    "tick_seconds": 2,
+    "player_clear": 13,
+    "foe_clear": 5,
+    "claim_radius": 2,
+    "march_seconds": 300,
+    "retry_seconds": 10
+   },
+   "examples": [
+    "[RCK]FactionRespawn::Crepe=inf;Blahd=20;",
+    "[RCK]FactionRespawn::Cooldown=45;Crepe=inf:Gangbanger+Crepe Heavy;Crepe.Size=4;",
+    "[RCK]FactionRespawn::Faction_1=40:Contractor Grunt;Free=4;PerTurf=1;Max=10;"
+   ]
+  },
+  "broker": {
+   "rules": "An NPC with `RCK_Broker` deals in faction politics. When it isn't Hostile or Annoyed toward the player and at least two factions have NPC members here (living, not routed, not in a party; `Common_Folk` only through its traits), it offers `Broker a truce`: the two chosen factions turn Neutral toward each other, both ways, for the rest of the level, with hate and turf standoffs cleared (not offered while the pair already has one). It also offers `Frame a faction`: the second faction turns Hateful toward the first for the rest of the level. `Change first faction` and `Change second faction` cycle the choices, which the broker keeps for the level. Both deals are level relationship rules: they beat faction traits and the matrix, but not Vengeful grudges or routs, and a frame holds back from street innocents until they're caught. The holder needs no faction.",
+   "trait": "RCK_Broker",
+   "buttons": [
+    "Broker a truce",
+    "Frame a faction",
+    "Change first faction",
+    "Change second faction"
+   ],
+   "prices": {
+    "Broker a truce": "$100 + $25 per level",
+    "Frame a faction": "$75 + $25 per level"
+   }
+  },
+  "expansion": {
+   "rules": "Every `Expand` seconds each faction that holds turf (see `extensions.turf`), isn't routed and isn't the one the player commands (see `extensions.command`) looks for the nearest empty turf, or free racket, within `Reach` tiles of one of its posts that none of its members is already marching on. It sends a party of up to `Party` members, nearest first: free roamers (NPC members that own nothing, are in no raid, backup or command squad and have no order) and spare holders (a second holder standing on the same post). The party marches over as a respawn squad does (see `extensions.respawn`): it's theirs once one of them is within 2 units of a post, and they hold it. Expansion is on with the `RCK_Turf_Expansion` mutator or any `[RCK]TurfWar::` entry, unless `Expand=0`, and it needs `RCK_Turf_Capture` or the commander for captures to stick.",
+   "format": "`[RCK]TurfWar::` followed by `;`-separated `Name=N` entries: `Expand` (seconds between a faction's moves, 0 for none or 15 to 600; under 15 counts as 15), `Racket` (1 lets factions run rackets, 0 stops it), `Reach` (tiles from a faction's own posts, 5 to 200), `Party` (members per move, 1 to 6) and `Reopen` (new owners a ruined racket gets per level, 0 to 9). Names are case-insensitive, later entries win, and bad entries are skipped with a warning in the BepInEx log.",
+   "mutator": "RCK_Turf_Expansion",
+   "prefix": "[RCK]TurfWar::",
+   "defaults": {
+    "Expand": 45,
+    "Racket": 1,
+    "Reach": 30,
+    "Party": 3,
+    "Reopen": 3
+   },
+   "ranges": {
+    "Expand": [
+     0,
+     600
+    ],
+    "Racket": [
+     0,
+     1
+    ],
+    "Reach": [
+     5,
+     200
+    ],
+    "Party": [
+     1,
+     6
+    ],
+    "Reopen": [
+     0,
+     9
+    ]
+   },
+   "limits": {
+    "min_expand_seconds": 15,
+    "claim_radius": 2
+   },
+   "rackets": "A racket is a place commoners own: a group of NPCs with the same owner ID and start chunk that belong to `Common_Folk` by their vanilla type and no other faction, where no faction member owns anything. RCK lists the rackets with the turfs; the commoners' spots are its posts, and the commoners never hold it. A free racket (sand on the map) is taken like empty turf: a faction walks in and guards it, by expansion or by command. While it's run, its commoners and the racketeers' NPC members are Aligned both ways, and the players see `The Crepes now run a protection racket`. The racket is broken (`Crepe racket broken`) when all its guards are resolved, and free again for anyone; it's ruined (`Crepe racket ruined`) when its commoners are all gone, and its guards go back to their faction's turf. A ruined racket gets a new, neutral owner 30 seconds later, once no player is within 8 tiles of its first post (or after 90 seconds regardless), up to `Reopen` times a level: the old owner's type if a Mobster can shake it down (Shopkeeper, Bartender, Clerk, DrugDealer or Athlete), else a Shopkeeper. The racket is free again, and the players see `A new owner took over a ruined racket`. Rackets never count as turf: not for respawn targets, raids, `TurfTaken`, finishing a faction or the legend's turf count. They pay control points (`PerCommon`) and weigh in the war panel's power. Rackets are on when expansion or the commander is, unless `Racket=0`.",
+   "examples": [
+    "[RCK]TurfWar::Expand=45;Racket=1;Reach=30;Party=3;",
+    "[RCK]TurfWar::Expand=0;Racket=1;",
+    "[RCK]TurfWar::Racket=0;Party=2;"
+   ]
+  },
+  "control_points": {
+   "rules": "Control points (CP) measure a faction's hold on the city and pay for the commander's recruits. Every `Interval` seconds each faction in the war (it held turf at load, holds or held some since, or is commanded) that isn't routed earns `Base + PerTurf x` its turfs `+ PerCommon x` its rackets, up to `Max`. A faction with no turf and no racket earns nothing, except the commanded one, which keeps `Base`. Taking a turf pays `Capture` (half for a racket). Taking down an NPC member of another faction pays `Kill` to the killer's side: a player's follower counts for the player, a player for the faction they command (else their own), and a squad member for its squad's faction. Every faction starts with `Start`. CP is on with any `[RCK]ControlPoints::` entry or the commander. Host only; the points belong to one level load.",
+   "format": "`[RCK]ControlPoints::` followed by `;`-separated `Name=N` entries: `Base`, `PerTurf` and `PerCommon` (0 to 50), `Capture` (0 to 500), `Kill` (0 to 100), `Max` (10 to 9999), `Interval` (5 to 120 s) and `Start` (0 to 9999, at most `Max`). Names are case-insensitive, later entries win, and bad entries are skipped with a warning.",
+   "prefix": "[RCK]ControlPoints::",
+   "defaults": {
+    "Base": 1,
+    "PerTurf": 2,
+    "PerCommon": 1,
+    "Capture": 10,
+    "Kill": 1,
+    "Max": 200,
+    "Interval": 10,
+    "Start": 30
+   },
+   "ranges": {
+    "Base": [
+     0,
+     50
+    ],
+    "PerTurf": [
+     0,
+     50
+    ],
+    "PerCommon": [
+     0,
+     50
+    ],
+    "Capture": [
+     0,
+     500
+    ],
+    "Kill": [
+     0,
+     100
+    ],
+    "Max": [
+     10,
+     9999
+    ],
+    "Interval": [
+     5,
+     120
+    ],
+    "Start": [
+     0,
+     9999
+    ]
+   },
+   "power": "Each faction's power is its share, in percent, of the sum over all factions of `10 x turfs + 4 x rackets + living NPC members + CP / 5` (CP counts 0 while points are off).",
+   "examples": [
+    "[RCK]ControlPoints::Start=50;PerTurf=3;",
+    "[RCK]ControlPoints::Interval=5;Kill=2;Capture=25;Max=400;"
+   ]
+  },
+  "command": {
+   "rules": "The host commands one faction for the level. It's the `Faction=` key, else the host's first faction that held turf at load, else the host's own faction (never `Common_Folk`); with none, the log says so and nothing changes. The commanded faction's automatic respawn, raids (scheduled ones too), backup calls and expansion stop; the other factions carry on as before. Turf capture (`RCK_Turf_Capture`), control points (see `extensions.control_points`) and rackets come on with it. The players see `You command the Crepes (T)` and the console opens. Recruiting a unit raises a squad of up to `Size`, fewer when the cap or the faction's CP runs short, for the unit's cost each. It appears at the post of the faction's own turf nearest the player that's clear of foes, else beside the player. Recruits are sworn to the commanded faction alone, whatever their type (a recruited Cop drops its ties to other cops), and first hold the nearest post of their faction's turf. Orders go to one squad or all of them: `Capture` (a foe's turf, an empty turf or a free racket; on the faction's own turf it's `Defend`), `Defend` (empty posts first), `Recall` (walk to the player and wait) and `Disband` (the members vanish and `Refund` percent of what they cost comes back). A turf held by a faction that isn't a foe needs a war declaration first: `Declare war` (two clicks within 4 s) makes the faction and the chosen one Hateful toward each other for the rest of the level, and the players see `War on the Blahds!`. A captured turf is held as usual. A manual order that hasn't finished in 600 s lapses and the squad holds its faction's nearest turf. A squad with nobody left is dropped (`Squad 2 wiped out`). The console is a window with a map of the whole level: walls and floors, every turf and racket in its holders' colours (striped while under attack, a white edge for the commanded faction's), the player, other factions' members as dots and the commanded squads as numbered discs with a line to where each is headed. Hovering shows what's under the mouse. Click a squad (on the map or its chip in the squad list), or `All squads`, then click a turf or racket to capture it (defend it if it's the faction's own), or open ground to `Move` there (walk and wait, holding nothing); right-click clears the pick. Beside the map are the recruit list, the squad list with `Recall` and `Disband` (two clicks within 3 s) for the pick, and `Declare war`. It uses the game's own font. The commander is on with the `RCK_Commander` mutator or any `[RCK]Command::` entry. Host only: only the host sees and uses the console.",
+   "format": "`[RCK]Command::` followed by `;`-separated entries. `Faction=key` (a number or key) picks the faction. `Units=A+B+C` lists up to 12 recruitable units of any faction: a custom character's name (placed somewhere in the level), a placed NPC's type or a vanilla agent type, as for respawn units (see `extensions.respawn`); `Name:N` gives one its own cost (0 to 500), and a colon not followed by digits stays in the name. Names are at most 64 characters. Without `Units` the console offers the faction's respawn units, else a copy of one of its members. `Cost=N` (0 to 500 CP per recruit), `Size=N` (1 to 6 per squad), `Cap=N` (1 to 24 recruits alive at once) and `Refund=N` (0 to 100 percent) tune it. Names are case-insensitive, later entries win, and bad entries are skipped with a warning.",
+   "mutator": "RCK_Commander",
+   "prefix": "[RCK]Command::",
+   "orders": {
+    "Recruit": "Raises a squad of a unit for its cost each.",
+    "Capture": "Marches on a foe's turf, an empty turf or a free racket and holds it once taken.",
+    "Defend": "Holds one of the faction's own turfs, empty posts first.",
+    "Recall": "Walks to the player and waits there.",
+    "Move": "Walks to a spot clicked on the map and waits there, holding nothing.",
+    "Disband": "Two clicks within 3 s: sends the members home for `Refund` percent of their cost.",
+    "Declare war": "Two clicks within 4 s: the commanded faction and the chosen one turn Hateful toward each other."
+   },
+   "defaults": {
+    "Faction": "the host's faction",
+    "Cost": 10,
+    "Size": 3,
+    "Cap": 12,
+    "Refund": 50
+   },
+   "ranges": {
+    "Cost": [
+     0,
+     500
+    ],
+    "Size": [
+     1,
+     6
+    ],
+    "Cap": [
+     1,
+     24
+    ],
+    "Refund": [
+     0,
+     100
+    ]
+   },
+   "limits": {
+    "max_units": 12,
+    "max_unit_name": 64,
+    "declare_confirm_seconds": 4,
+    "disband_confirm_seconds": 3,
+    "order_seconds": 600
+   },
+   "config": {
+    "Map.CommandConsoleKey": "Hides and shows the console (T by default, free in SoR's default controls; None turns the key off). A config from a build that used F9 moves to T once, and the console and the log warn when the key is also bound in the player's SoR controls."
+   },
+   "host_only": true,
+   "examples": [
+    "[RCK]Command::Faction=Crepe;",
+    "[RCK]Command::Faction=Crepe;Units=Gangbanger+Crepe Heavy:25;Cost=10;",
+    "[RCK]Command::Units=Faction_1 Grunt+Cop:20;Size=4;Cap=16;Refund=75;"
+   ]
+  },
+  "war_panel": {
+   "rules": "The war panel ranks every faction in the level's turf war, strongest first: its colour swatch, name (`[RCK]FactionName::` names apply; `(yours)` for the commanded faction, `(you)` for the players' own, `routed` once routed), the turfs it holds, rackets it runs, living members, CP (while points are on) and a bar of its power (see `extensions.control_points`). A faction with nothing left is greyed out, and the last line counts the free rackets. It refreshes every second. The commander console sits beside it. Both are windows that can be dragged by the title, scale with the screen height and hide behind the pause menu; clicks on them don't fire the player's weapon. The panel key (G by default) shows it in any level with a turf war; it opens by itself with the `RCK_War_Panel` mutator or the commander. Mouse only. Host only.",
+   "mutator": "RCK_War_Panel",
+   "config": {
+    "Map.WarPanelKey": "Hides and shows the war panel (G by default, free in SoR's default controls; None turns the key off). A config from a build that used F6 moves to G once, and the panel and the log warn when the key is also bound in the player's SoR controls."
+   },
+   "host_only": true
+  },
+  "medic": {
+   "rules": "An NPC with `RCK_Faction_Medic` patches up its friends. Every 5 s it heals the hurt friend within 3.2 units (5 tiles) with the lowest share of their health, itself included: `max(8, 15%` of the patient's most health`)`, no more than the patient is missing, with the vanilla heal sound. Friends are its employer and fellow followers, its own followers, the players while the medic belongs to the faction they command, and anyone sharing one of its factions; never someone it's Hostile or Annoyed toward. A dead, arrested or zombified medic doesn't heal, nor does a player. Works on recruits, squads and respawn units like any other trait. Host only.",
+   "trait": "RCK_Faction_Medic",
+   "limits": {
+    "range_units": 3.2,
+    "range_tiles": 5,
+    "cooldown_seconds": 5,
+    "heal_share": 0.15,
+    "min_heal": 8
+   }
+  },
+  "racketeer": {
+   "rules": "A player with `RCK_Faction_Racketeer` can lean on a free racket: talking to one of its commoners shows `Shake down for <faction> (n%)`, where the faction is the one the player commands, else the player's own (its `<key>_Member`/`_Aligned` traits first, then vanilla membership; never `Common_Folk` or a routed faction). The chance is vanilla's shakedown chance (the commoner's fear of the player), 100% if the commoner is at 40% health or less, Aligned with the player, or the player's slave. On success the commoner gives in and the racket joins that faction, exactly as if its squad had taken it (the commoners side with the faction, the turf overlay and control points follow); no money changes hands, and nobody is posted to guard it. On failure the commoner turns Hateful and attacks, and nearby police hear it, as in vanilla. Only free rackets (nobody runs it, not ruined), so only while rackets are on (turf expansion or the commander, and `Racket` isn't 0; see turf). Players only: an NPC with the trait does nothing. Host only.",
+   "trait": "RCK_Faction_Racketeer",
+   "host_only": true
   },
   "factions": {
    "numbered": 20,
@@ -31743,6 +37337,18 @@
    },
    "territorial": "Territorial starts the pair Annoyed. Each side turns Hateful (hate 5, for the rest of the level) toward the other when it sees the other on its own turf: floor whose owner is its ownerID (any owned floor for owner 99) in its starting chunk, not a wall or behind glass, the same test vanilla uses for trespassing. Anywhere else the pair stays Annoyed, so rival gangs defend their buildings without brawling across the street. A side that owns no floor (owner 0, a street NPC) never escalates. It doesn't escalate toward agents that live there (same owner and chunk), dead agents, or holders of a PropertyDeed. Unlike vanilla trespassing, enforcers and firefighters aren't exempt.",
    "member": "Member",
+   "roles": {
+    "Vengeful": "Turns Hateful toward anyone who attacks or kills a member (see the rules below).",
+    "Leader": "When the last one falls, the faction is routed (see the rules below).",
+    "Calls_Backup": "When attacked, or when its owner group raises an alarm, the faction sends a squad (see `extensions.backup`).",
+    "Reinforcement": "The holder's character is a unit its faction's squads are made of: raids, backup, guards and respawns spawn it (see `extensions.respawn`)."
+   },
+   "vengeful": "A `<key>_Vengeful` holder avenges the faction. When someone attacks or kills a member of `<key>` (through `<key>_Aligned`, `<key>_Member` or vanilla membership, so players can be members too), every living holder turns Hateful (hate 5) toward the attacker for the rest of the level, wherever it is and whether or not it saw the attack. Holders that spawn later in the level bear the same grudge. Only the attacker is targeted, not its party. An attack is a hit the game reports as an assault (melee, bullets, thrown items, explosions), or a kill, knockout or arrest the game credits to the attacker. As in vanilla, duels, zombies and fights between two players don't count. There's no revenge on a member of `<key>`, on the holder's own party-mates, or on an agent the holder is Aligned, Loyal or Submissive to, and `Relationless` holders take none. Once the faction is routed (see `<key>_Leader`) it takes no more revenge. The role doesn't make the holder a member; add `<key>_Aligned` for that.",
+   "leader": "A `<key>_Leader` holder keeps the faction together. When the last living holder of `<key>_Leader` in the level dies, is knocked out or is arrested, `<key>` is routed for the rest of the level. Every living NPC member outside a player's party turns Neutral toward the players and their followers, with hate, strikes and turf standoffs cleared (Aligned, Loyal, Friendly and Submissive links stay), and from then on flees fights instead of joining them, unless it's `Fearless`. Members that spawn later are routed too. A routed member that is attacked again turns hostile as usual, but runs, and one that joins a player's party stops running. Other factions' feelings don't change. A leader a scene setter puts down at the start of the level (`Dead`, `Knocked Out`, `Arrested` and the like) never led, so its fall doesn't count. The role doesn't make the holder a member; add `<key>_Aligned` for that.",
+   "defector": {
+    "trait": "RCK_Faction_Defector",
+    "rules": "`RCK_Faction_Defector` marks a turncoat. When the holder joins a player's party (hired, recruited, rescued, or following the player into the next level), the factions it belonged to disown it, except any the player belongs to as well: the holder and every living NPC member of those factions outside the player's party turn Hateful (hate 5) toward each other, even over an Aligned link, on this level and on later ones while it stays in the party. Its factions are its `<key>_Aligned` traits and its vanilla membership; `Common_Folk` counts only through `Common_Folk_Aligned`. Street innocence doesn't hold this back. Joining an NPC's party (a Random Teleport squad) doesn't count."
+   },
    "precedence": [
     "Hateful",
     "Territorial",
@@ -31751,6 +37357,7 @@
     "Aligned",
     "Neutral"
    ],
+   "private_access": "A player who joined a faction through `<key>_Member` or `<key>_Aligned` is welcome in the owned rooms of an NPC that shares one of those factions (the NPC through `<key>_Aligned` or vanilla membership), or whose factions are Friendly or Aligned toward the player's (matrix, else faction traits), while the NPC is Neutral or Friendly toward the player. So `Blahd_Member` is welcome in a vanilla Blahd base, but vanilla membership alone doesn't count for the player. The player's followers come in with the player. The NPC doesn't treat a welcome visitor as a trespasser: no \"get out\", and opening its doors isn't a crime. Theft, damage, hacking, fire, bombs, opening prison cells and attacks still are, and once the NPC is Annoyed or worse the visitor is a trespasser again. Security cameras, turrets and laser emitters, gang muggings, Cop Bots, the Mayor's guards and police lockdowns keep the vanilla rules.",
    "matrix": {
     "prefix": "[RCK]FactionRel::",
     "legacy_prefixes": [

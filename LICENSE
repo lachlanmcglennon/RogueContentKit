@@ -19,9 +19,3 @@ AUTHORS OR COPYRIGHT HOLDERS BE LIABLE FOR ANY CLAIM, DAMAGES OR OTHER
 LIABILITY, WHETHER IN AN ACTION OF CONTRACT, TORT OR OTHERWISE, ARISING FROM,
 OUT OF OR IN CONNECTION WITH THE SOFTWARE OR THE USE OR OTHER DEALINGS IN THE
 SOFTWARE.
-
-----------------------------------------------------------------------------
-
-This licence covers everything in this repository (RCK, RogueLibsPlus and the tools) except where a folder has its
-own LICENSE file, which then applies to that folder: RCK/LICENSE and RogueLibsPlus/LICENSE, both MIT as well.
-Third-party components and their licences are listed in THIRD-PARTY-NOTICES.md.

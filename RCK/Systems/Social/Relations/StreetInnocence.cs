@@ -4,6 +4,7 @@ using System.Collections.Generic;
 using System.Runtime.CompilerServices;
 using HarmonyLib;
 using UnityEngine;
+using static RCK.AgentText;
 
 namespace RCK.Social
 {
@@ -38,33 +39,33 @@ namespace RCK.Social
         }
 
         private static readonly ConditionalWeakTable<Agent, State> states = new ConditionalWeakTable<Agent, State>();
-        private static int level = int.MinValue;
         private static List<string> seenChallenges;
         private static int seenCount = -1;
         private static bool mutatorOn;
-        private static int logged;
+        private static readonly CappedLog capped = new CappedLog(MaxLogsPerLevel);
 
         /// <summary>True once any agent in this level has counted as innocent, so the attack hook costs one static read otherwise.</summary>
         public static bool Active;
 
+        static StreetInnocence() => LevelScope.Ended += Reset;
+
         public static void Initialize()
         {
             if (!Rck.IsRckTrait(Trait)) Rck.Log.LogError($"Factions: street innocence trait {Trait} is not registered.");
-            if (Array.FindIndex(RckData.ExtensionMutators, m => m.Name == Mutator) < 0) Rck.Log.LogError($"Factions: street innocence mutator {Mutator} is not in the generated data.");
+            LevelMutators.Require(Mutator, "Factions: street innocence mutator");
         }
 
-        private static void CheckLevel()
+        private static void Reset()
         {
-            GameController gc = GameController.gameController;
-            int current = gc != null && gc.sessionDataBig != null ? gc.sessionDataBig.curLevelEndless : 0;
-            List<string> challenges = gc?.challenges;
-            if (current != level)
-            {
-                level = current;
-                Active = false;
-                logged = 0;
-                seenChallenges = null;
-            }
+            Active = false;
+            capped.Reset();
+            seenChallenges = null;
+        }
+
+        private static void Refresh()
+        {
+            LevelScope.Check();
+            List<string> challenges = GameController.gameController?.challenges;
             if (challenges != seenChallenges || (challenges != null && challenges.Count != seenCount))
             {
                 seenChallenges = challenges;
@@ -73,18 +74,27 @@ namespace RCK.Social
             }
         }
 
+        // Per-agent state is keyed to LevelScope.Id, which stays the same from a level's start to its end.
         private static State StateOf(Agent agent)
         {
             State s = states.GetOrCreateValue(agent);
-            if (s.Level != level || s.AgentId != agent.agentID) s.Reset(level, agent.agentID);
+            if (s.Level != LevelScope.Id || s.AgentId != agent.agentID) s.Reset(LevelScope.Id, agent.agentID);
             return s;
+        }
+
+        /// <summary>Makes <paramref name="agent"/> guilty for the rest of the level (a raider or a squad sent to a fight).</summary>
+        public static void MarkCaught(Agent agent)
+        {
+            if (agent == null) return;
+            Refresh();
+            StateOf(agent).Caught = true;
         }
 
         /// <summary>True while <paramref name="agent"/>'s hostile faction rules and Guilty trait are held back.</summary>
         public static bool IsInnocent(Agent agent)
         {
             if (agent == null || agent.isPlayer != 0 || agent.objectAgent) return false;
-            CheckLevel();
+            Refresh();
             bool holder = SocialRules.Has(agent, Trait);
             if (!holder && !mutatorOn) return false;
             State s = StateOf(agent);
@@ -107,13 +117,13 @@ namespace RCK.Social
             => agent != null && (SocialRules.Has(agent, "Drug_Dealer") || agent.agentName == "DrugDealer");
 
         /// <summary>
-        ///   Street-side for the mutator: a wandering default goal (WanderFar or a Random Teleport goal), or no owner
+        ///   Street-side for the mutator: a wandering default goal (WanderFar, Random Patrol (Map) or a Random Teleport goal), or no owner
         ///   and a start on a tile nobody owns.
         /// </summary>
         private static bool StreetSide(Agent agent)
         {
             string goal = agent.defaultGoal;
-            if (goal == "WanderFar" || (goal != null && goal.StartsWith("Random Teleport", StringComparison.Ordinal))) return true;
+            if (goal == "WanderFar" || goal == "Random Patrol (Map)" || (goal != null && goal.StartsWith("Random Teleport", StringComparison.Ordinal))) return true;
             if (agent.ownerID != 0) return false;
             GameController gc = GameController.gameController;
             if (gc == null || gc.tileInfo == null) return false;
@@ -168,18 +178,12 @@ namespace RCK.Social
         private static void Catch(Agent agent, State s, string how, Agent witness)
         {
             s.Caught = true;
-            if (logged < MaxLogsPerLevel)
-            {
-                logged++;
-                Rck.Log.LogInfo($"Street innocence: {Describe(agent)} was caught ({how}, seen by {Describe(witness)}).");
-            }
+            capped.Info($"Street innocence: {Describe(agent)} was caught ({how}, seen by {Describe(witness)}).");
             GameController gc = GameController.gameController;
             if (gc == null || gc.agentList == null) return;
             // Applying rules runs vanilla relationship code, so the loop is over a copy. The catch line above explains
             // the new hostility, so the hostility diagnostics stay quiet.
-            bool quiet = HostilityDiagnostics.Suppress;
-            HostilityDiagnostics.Suppress = true;
-            try
+            using (RelOps.Quietly())
             {
                 foreach (Agent other in new List<Agent>(gc.agentList))
                 {
@@ -188,10 +192,7 @@ namespace RCK.Social
                     catch (Exception e) { SocialRules.LogOnce(agent, "innocence-caught", e); }
                 }
             }
-            finally { HostilityDiagnostics.Suppress = quiet; }
         }
-
-        private static string Describe(Agent agent) => agent == null ? "nobody" : $"{agent.agentName} #{agent.agentID}";
 
         internal static void Forget(Agent agent)
         {

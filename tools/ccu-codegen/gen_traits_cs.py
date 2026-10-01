@@ -187,6 +187,10 @@ namespace RCK
         /// <summary>Faction keys (an RCK addition): a faction's traits are <c>&lt;key&gt;_&lt;grade&gt;</c>.</summary>
         public static readonly string[] FactionKeys = {cs_arr(factions.get('keys'))};
         public static readonly string[] FactionGrades = {cs_arr(list(factions.get('grades') or []))};
+        /// <summary>Faction role suffixes: <c>&lt;key&gt;_&lt;role&gt;</c> traits that take part in faction events, not grades.</summary>
+        public static readonly string[] FactionRoles = {cs_arr(list(factions.get('roles') or []))};
+        /// <summary>The designer trait that makes an NPC a defector from its factions when it joins a player's party.</summary>
+        public const string FactionDefectorTrait = {cs((factions.get('defector') or {}).get('trait'))};
         /// <summary>Player-trait suffix for faction membership only: <c>&lt;key&gt;_&lt;suffix&gt;</c>.</summary>
         public const string FactionMemberSuffix = {cs(factions.get('member'))};
         /// <summary>Mutator prefix for a level or campaign faction relationship matrix.</summary>

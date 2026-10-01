@@ -61,6 +61,14 @@ namespace RogueLibsPlus
 
         private static readonly Dictionary<string, bool> knownItems = new Dictionary<string, bool>();
         private static readonly HashSet<string> warned = new HashSet<string>();
+        // Hats and armour that agents start with (ObjectMultAgent.convertArmorHeadToInt, convertArmorToInt). Several are
+        // neither unlockable nor in the item sprite list, but they're real items.
+        private static readonly HashSet<string> wearables = new HashSet<string>(StringComparer.Ordinal)
+        {
+            "CopHat", "Cop2Hat", "DoctorHeadLamp", "Fedora", "FireHelmet", "GasMask", "HackerGlasses", "HardHat", "HatBlue",
+            "HatRed", "Headphones", "MayorHat", "SlaveHelmet", "SoldierHelmet", "Sunglasses", "ThiefHat",
+            "BraceletStrength", "BulletproofVest", "CodPiece", "FireproofSuit", "MayorBadge", "MoodRing",
+        };
         /// <summary>
         ///   <para>Determines whether an item named <paramref name="itemName"/> exists, either in vanilla or in a loaded mod.</para>
         /// </summary>
@@ -76,7 +84,7 @@ namespace RogueLibsPlus
         }
         private static bool? CheckItem(string itemName)
         {
-            if (itemName == VanillaItems.Money) return true;
+            if (itemName == VanillaItems.Money || wearables.Contains(itemName)) return true;
             foreach (IHookFactory factory in RogueFramework.ItemFactories)
             {
                 if (factory is CustomItemFactory customFactory && ItemFactoryExtensions.CanListItems)

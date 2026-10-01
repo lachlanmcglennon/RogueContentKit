@@ -138,12 +138,12 @@ namespace RCK.Appearance
                 AddTrait(trait, pools, rules);
             }
 
-            var rng = new StableRng(agent, "Appearance");
+            var rng = new StableRng(agent, "Appearance", playersBySlot: true);
             // Pooled agents can keep a stale customCharacterData; the game only reads it for "Custom" agents.
             SaveCharacterData? data = agent.agentName == "Custom" ? agent.customCharacterData : null;
             AgentHitbox hitbox = agent.agentHitboxScript;
 
-            string skin = ChooseOrCurrent(pools.SkinColor, data?.skinColorName, hitbox.skinColorName, rng);
+            string skin = ChooseOrCurrent(pools.SkinColor, data?.skinColorName, hitbox.skinColorName, ref rng);
             string bodyColor = Current(data?.bodyColorName, "White");
             string legsColor = Current(data?.legsColorName, "White");
             string hairColor = Current(hitbox.hairColorName ?? data?.hairColorName, data?.hairColorName ?? "Brown");
@@ -160,7 +160,7 @@ namespace RCK.Appearance
             }
             if (pools.Hairstyle.Count > 0)
             {
-                hairType = PickHairType(pools.Hairstyle, rules, rng);
+                hairType = PickHairType(pools.Hairstyle, rules, ref rng);
             }
             bool mask = IsMask(hairType);
 
@@ -175,7 +175,7 @@ namespace RCK.Appearance
             }
             else if (rules.Shirtsome && bodyColor == skin && pools.BodyColor.Count > 1)
             {
-                bodyColor = PickNotEqual(pools.BodyColor, skin, rng, bodyColor);
+                bodyColor = PickNotEqual(pools.BodyColor, skin, ref rng, bodyColor);
             }
 
             if (pools.LegsColor.Count > 0)
@@ -192,7 +192,7 @@ namespace RCK.Appearance
             }
             else if (rules.Pantiful && legsColor == skin && pools.LegsColor.Count > 1)
             {
-                legsColor = PickNotEqual(pools.LegsColor, skin, rng, legsColor);
+                legsColor = PickNotEqual(pools.LegsColor, skin, ref rng, legsColor);
             }
 
             if (pools.HairColor.Count > 0)
@@ -346,7 +346,7 @@ namespace RCK.Appearance
             return grey;
         }
 
-        private static string PickHairType(List<string> pool, AppearanceRules rules, StableRng rng)
+        private static string PickHairType(List<string> pool, AppearanceRules rules, ref StableRng rng)
         {
             if (rules.MaskOverride || rules.Masks50)
             {
@@ -368,7 +368,7 @@ namespace RCK.Appearance
             return rng.Pick(pool);
         }
 
-        private static string PickNotEqual(List<string> pool, string avoid, StableRng rng, string fallback)
+        private static string PickNotEqual(List<string> pool, string avoid, ref StableRng rng, string fallback)
         {
             var filtered = new List<string>();
             foreach (string value in pool)
@@ -394,7 +394,7 @@ namespace RCK.Appearance
 
         private static bool IsMask(string hairType) => MaskHairTypes.Contains(hairType);
 
-        private static string ChooseOrCurrent(List<string> pool, string? primary, string? secondary, StableRng rng)
+        private static string ChooseOrCurrent(List<string> pool, string? primary, string? secondary, ref StableRng rng)
             => pool.Count > 0 ? rng.Pick(pool) : Current(primary, Current(secondary, "White"));
 
         private static string Current(string? value, string fallback)
@@ -611,80 +611,6 @@ namespace RCK.Appearance
             public bool LeftArmless;
             public bool Legless;
             public bool Shadowless;
-        }
-    }
-
-    internal struct StableRng
-    {
-        private uint state;
-
-        public StableRng(Agent agent, string salt)
-        {
-            state = 2166136261u;
-            Add(salt);
-            Add(agent.gc?.loadLevel?.randomSeedNum ?? 0);
-            if (agent.isPlayer == 0)
-            {
-                Add(agent.gc?.sessionDataBig?.curLevelEndless ?? 0);
-                Add(agent.agentID);
-                Add(agent.streamingChunkObjectID);
-                Add(agent.startingChunk);
-                Add(agent.startingSector);
-                Add((int)Math.Round(agent.originalPosReal.x * 100f));
-                Add((int)Math.Round(agent.originalPosReal.y * 100f));
-            }
-            else
-            {
-                Add(agent.isPlayer);
-            }
-            Add(agent.agentName);
-            Add(agent.agentRealName);
-            IReadOnlyCollection<string> traitNames = AgentTraits.Get(agent);
-            var sorted = new List<string>(traitNames);
-            sorted.Sort(StringComparer.Ordinal);
-            foreach (string trait in sorted)
-            {
-                Add(trait);
-            }
-        }
-
-        public string Pick(List<string> values) => values[Next(values.Count)];
-
-        public bool Chance(int percent) => percent >= 100 || (percent > 0 && Next(100) < percent);
-
-        private int Next(int exclusiveMax)
-        {
-            if (exclusiveMax <= 1)
-            {
-                return 0;
-            }
-            state ^= state << 13;
-            state ^= state >> 17;
-            state ^= state << 5;
-            return (int)(state % (uint)exclusiveMax);
-        }
-
-        private void Add(string? text)
-        {
-            if (string.IsNullOrEmpty(text))
-            {
-                Add(0);
-                return;
-            }
-            for (int i = 0; i < text!.Length; i++)
-            {
-                state ^= text[i];
-                state *= 16777619u;
-            }
-        }
-
-        private void Add(int value)
-        {
-            unchecked
-            {
-                state ^= (uint)value;
-                state *= 16777619u;
-            }
         }
     }
 }

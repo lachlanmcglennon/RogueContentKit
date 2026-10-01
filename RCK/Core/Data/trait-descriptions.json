@@ -483,7 +483,7 @@
     "id": "Blahd_Aligned",
     "en": "This NPC joins Blahds; members start aligned with each other.",
     "kind": "designer",
-    "source": "RCK\\Systems\\Social\\Factions.cs",
+    "source": "RCK\\Systems\\Social\\Factions\\Factions.cs",
     "dynamic": false,
     "confidence": "high"
   },
@@ -491,7 +491,15 @@
     "id": "Blahd_Annoyed",
     "en": "This NPC and members of Blahds start annoyed with each other.",
     "kind": "extension",
-    "source": "RCK\\Systems\\Social\\Factions.cs",
+    "source": "RCK\\Systems\\Social\\Factions\\Factions.cs",
+    "dynamic": false,
+    "confidence": "high"
+  },
+  {
+    "id": "Blahd_Calls_Backup",
+    "en": "When an outsider attacks this NPC, or its crew raises an alarm, a squad of Blahds comes to help (twice a level at most).",
+    "kind": "extension",
+    "source": "RCK\\Systems\\Social\\Roles\\FactionBackup.cs",
     "dynamic": false,
     "confidence": "high"
   },
@@ -499,7 +507,7 @@
     "id": "Blahd_Friendly",
     "en": "This NPC and members of Blahds start friendly toward each other.",
     "kind": "extension",
-    "source": "RCK\\Systems\\Social\\Factions.cs",
+    "source": "RCK\\Systems\\Social\\Factions\\Factions.cs",
     "dynamic": false,
     "confidence": "high"
   },
@@ -507,7 +515,15 @@
     "id": "Blahd_Hostile",
     "en": "This NPC and members of Blahds start hateful toward each other.",
     "kind": "designer",
-    "source": "RCK\\Systems\\Social\\Factions.cs",
+    "source": "RCK\\Systems\\Social\\Factions\\Factions.cs",
+    "dynamic": false,
+    "confidence": "high"
+  },
+  {
+    "id": "Blahd_Leader",
+    "en": "If this NPC is the last leader of Blahds and it falls, the rest give up on the players and flee from fights.",
+    "kind": "extension",
+    "source": "RCK\\Systems\\Social\\Roles\\FactionEvents.cs",
     "dynamic": false,
     "confidence": "high"
   },
@@ -515,7 +531,7 @@
     "id": "Blahd_Member",
     "en": "You count as a member of Blahds; other faction rules can then apply to you.",
     "kind": "extension",
-    "source": "RCK\\Systems\\Social\\Factions.cs",
+    "source": "RCK\\Systems\\Social\\Factions\\Factions.cs",
     "dynamic": false,
     "confidence": "high"
   },
@@ -523,7 +539,15 @@
     "id": "Blahd_Neutral",
     "en": "This NPC and members of Blahds start neutral, useful for truces.",
     "kind": "extension",
-    "source": "RCK\\Systems\\Social\\Factions.cs",
+    "source": "RCK\\Systems\\Social\\Factions\\Factions.cs",
+    "dynamic": false,
+    "confidence": "high"
+  },
+  {
+    "id": "Blahd_Reinforcement",
+    "en": "Squads of Blahds are made of this character: raids, backup, turf guards and respawns spawn it. It stays a normal NPC.",
+    "kind": "extension",
+    "source": "RCK\\Systems\\Social\\Squads\\SquadUnits.cs",
     "dynamic": false,
     "confidence": "high"
   },
@@ -531,7 +555,15 @@
     "id": "Blahd_Territorial",
     "en": "This NPC and members of Blahds start annoyed, then turn hostile on their own owned turf.",
     "kind": "extension",
-    "source": "RCK\\Systems\\Social\\Factions.cs",
+    "source": "RCK\\Systems\\Social\\Factions\\Factions.cs",
+    "dynamic": false,
+    "confidence": "high"
+  },
+  {
+    "id": "Blahd_Vengeful",
+    "en": "When anyone attacks or kills a member of Blahds, this NPC turns hostile to that attacker for the rest of the level.",
+    "kind": "extension",
+    "source": "RCK\\Systems\\Social\\Roles\\FactionEvents.cs",
     "dynamic": false,
     "confidence": "high"
   },
@@ -851,7 +883,7 @@
     "id": "Cannibal_Aligned",
     "en": "This NPC joins Cannibals; members start aligned with each other.",
     "kind": "designer",
-    "source": "RCK\\Systems\\Social\\Factions.cs",
+    "source": "RCK\\Systems\\Social\\Factions\\Factions.cs",
     "dynamic": false,
     "confidence": "high"
   },
@@ -859,7 +891,7 @@
     "id": "Cannibal_Annoyed",
     "en": "This NPC and members of Cannibals start annoyed with each other.",
     "kind": "extension",
-    "source": "RCK\\Systems\\Social\\Factions.cs",
+    "source": "RCK\\Systems\\Social\\Factions\\Factions.cs",
     "dynamic": false,
     "confidence": "high"
   },
@@ -880,6 +912,14 @@
     "confidence": "high"
   },
   {
+    "id": "Cannibal_Calls_Backup",
+    "en": "When an outsider attacks this NPC, or its crew raises an alarm, a squad of Cannibals comes to help (twice a level at most).",
+    "kind": "extension",
+    "source": "RCK\\Systems\\Social\\Roles\\FactionBackup.cs",
+    "dynamic": false,
+    "confidence": "high"
+  },
+  {
     "id": "Cannibal_Eyes",
     "en": "This NPC's appearance roll can use Cannibal Eyes.",
     "kind": "designer",
@@ -891,7 +931,7 @@
     "id": "Cannibal_Friendly",
     "en": "This NPC and members of Cannibals start friendly toward each other.",
     "kind": "extension",
-    "source": "RCK\\Systems\\Social\\Factions.cs",
+    "source": "RCK\\Systems\\Social\\Factions\\Factions.cs",
     "dynamic": false,
     "confidence": "high"
   },
@@ -899,7 +939,15 @@
     "id": "Cannibal_Hostile",
     "en": "This NPC and members of Cannibals start hateful toward each other.",
     "kind": "designer",
-    "source": "RCK\\Systems\\Social\\Factions.cs",
+    "source": "RCK\\Systems\\Social\\Factions\\Factions.cs",
+    "dynamic": false,
+    "confidence": "high"
+  },
+  {
+    "id": "Cannibal_Leader",
+    "en": "If this NPC is the last leader of Cannibals and it falls, the rest give up on the players and flee from fights.",
+    "kind": "extension",
+    "source": "RCK\\Systems\\Social\\Roles\\FactionEvents.cs",
     "dynamic": false,
     "confidence": "high"
   },
@@ -907,7 +955,7 @@
     "id": "Cannibal_Member",
     "en": "You count as a member of Cannibals; other faction rules can then apply to you.",
     "kind": "extension",
-    "source": "RCK\\Systems\\Social\\Factions.cs",
+    "source": "RCK\\Systems\\Social\\Factions\\Factions.cs",
     "dynamic": false,
     "confidence": "high"
   },
@@ -915,7 +963,15 @@
     "id": "Cannibal_Neutral",
     "en": "This NPC and members of Cannibals start neutral, useful for truces.",
     "kind": "extension",
-    "source": "RCK\\Systems\\Social\\Factions.cs",
+    "source": "RCK\\Systems\\Social\\Factions\\Factions.cs",
+    "dynamic": false,
+    "confidence": "high"
+  },
+  {
+    "id": "Cannibal_Reinforcement",
+    "en": "Squads of Cannibals are made of this character: raids, backup, turf guards and respawns spawn it. It stays a normal NPC.",
+    "kind": "extension",
+    "source": "RCK\\Systems\\Social\\Squads\\SquadUnits.cs",
     "dynamic": false,
     "confidence": "high"
   },
@@ -923,7 +979,15 @@
     "id": "Cannibal_Territorial",
     "en": "This NPC and members of Cannibals start annoyed, then turn hostile on their own owned turf.",
     "kind": "extension",
-    "source": "RCK\\Systems\\Social\\Factions.cs",
+    "source": "RCK\\Systems\\Social\\Factions\\Factions.cs",
+    "dynamic": false,
+    "confidence": "high"
+  },
+  {
+    "id": "Cannibal_Vengeful",
+    "en": "When anyone attacks or kills a member of Cannibals, this NPC turns hostile to that attacker for the rest of the level.",
+    "kind": "extension",
+    "source": "RCK\\Systems\\Social\\Roles\\FactionEvents.cs",
     "dynamic": false,
     "confidence": "high"
   },
@@ -1035,7 +1099,7 @@
     "id": "Common_Folk_Aligned",
     "en": "This NPC joins common folk; members start aligned with each other.",
     "kind": "extension",
-    "source": "RCK\\Systems\\Social\\Factions.cs",
+    "source": "RCK\\Systems\\Social\\Factions\\Factions.cs",
     "dynamic": false,
     "confidence": "high"
   },
@@ -1043,7 +1107,15 @@
     "id": "Common_Folk_Annoyed",
     "en": "This NPC and members of common folk start annoyed with each other.",
     "kind": "extension",
-    "source": "RCK\\Systems\\Social\\Factions.cs",
+    "source": "RCK\\Systems\\Social\\Factions\\Factions.cs",
+    "dynamic": false,
+    "confidence": "high"
+  },
+  {
+    "id": "Common_Folk_Calls_Backup",
+    "en": "When an outsider attacks this NPC, or its crew raises an alarm, a squad of common folk comes to help (twice a level at most).",
+    "kind": "extension",
+    "source": "RCK\\Systems\\Social\\Roles\\FactionBackup.cs",
     "dynamic": false,
     "confidence": "high"
   },
@@ -1051,7 +1123,7 @@
     "id": "Common_Folk_Friendly",
     "en": "This NPC and members of common folk start friendly toward each other.",
     "kind": "extension",
-    "source": "RCK\\Systems\\Social\\Factions.cs",
+    "source": "RCK\\Systems\\Social\\Factions\\Factions.cs",
     "dynamic": false,
     "confidence": "high"
   },
@@ -1059,7 +1131,15 @@
     "id": "Common_Folk_Hostile",
     "en": "This NPC and members of common folk start hateful toward each other.",
     "kind": "designer",
-    "source": "RCK\\Systems\\Social\\Factions.cs",
+    "source": "RCK\\Systems\\Social\\Factions\\Factions.cs",
+    "dynamic": false,
+    "confidence": "high"
+  },
+  {
+    "id": "Common_Folk_Leader",
+    "en": "If this NPC is the last leader of common folk and it falls, the rest give up on the players and flee from fights.",
+    "kind": "extension",
+    "source": "RCK\\Systems\\Social\\Roles\\FactionEvents.cs",
     "dynamic": false,
     "confidence": "high"
   },
@@ -1067,7 +1147,7 @@
     "id": "Common_Folk_Member",
     "en": "You count as a member of common folk; other faction rules can then apply to you.",
     "kind": "extension",
-    "source": "RCK\\Systems\\Social\\Factions.cs",
+    "source": "RCK\\Systems\\Social\\Factions\\Factions.cs",
     "dynamic": false,
     "confidence": "high"
   },
@@ -1075,7 +1155,15 @@
     "id": "Common_Folk_Neutral",
     "en": "This NPC and members of common folk start neutral, useful for truces.",
     "kind": "extension",
-    "source": "RCK\\Systems\\Social\\Factions.cs",
+    "source": "RCK\\Systems\\Social\\Factions\\Factions.cs",
+    "dynamic": false,
+    "confidence": "high"
+  },
+  {
+    "id": "Common_Folk_Reinforcement",
+    "en": "Squads of common folk are made of this character: raids, backup, turf guards and respawns spawn it. It stays a normal NPC.",
+    "kind": "extension",
+    "source": "RCK\\Systems\\Social\\Squads\\SquadUnits.cs",
     "dynamic": false,
     "confidence": "high"
   },
@@ -1083,7 +1171,15 @@
     "id": "Common_Folk_Territorial",
     "en": "This NPC and members of common folk start annoyed, then turn hostile on their own owned turf.",
     "kind": "extension",
-    "source": "RCK\\Systems\\Social\\Factions.cs",
+    "source": "RCK\\Systems\\Social\\Factions\\Factions.cs",
+    "dynamic": false,
+    "confidence": "high"
+  },
+  {
+    "id": "Common_Folk_Vengeful",
+    "en": "When anyone attacks or kills a member of common folk, this NPC turns hostile to that attacker for the rest of the level.",
+    "kind": "extension",
+    "source": "RCK\\Systems\\Social\\Roles\\FactionEvents.cs",
     "dynamic": false,
     "confidence": "high"
   },
@@ -1163,7 +1259,7 @@
     "id": "Cop_Aligned",
     "en": "This NPC joins the law; members start aligned with each other.",
     "kind": "extension",
-    "source": "RCK\\Systems\\Social\\Factions.cs",
+    "source": "RCK\\Systems\\Social\\Factions\\Factions.cs",
     "dynamic": false,
     "confidence": "high"
   },
@@ -1171,7 +1267,7 @@
     "id": "Cop_Annoyed",
     "en": "This NPC and members of the law start annoyed with each other.",
     "kind": "extension",
-    "source": "RCK\\Systems\\Social\\Factions.cs",
+    "source": "RCK\\Systems\\Social\\Factions\\Factions.cs",
     "dynamic": false,
     "confidence": "high"
   },
@@ -1224,6 +1320,14 @@
     "confidence": "high"
   },
   {
+    "id": "Cop_Calls_Backup",
+    "en": "When an outsider attacks this NPC, or its crew raises an alarm, a squad of the law comes to help (twice a level at most).",
+    "kind": "extension",
+    "source": "RCK\\Systems\\Social\\Roles\\FactionBackup.cs",
+    "dynamic": false,
+    "confidence": "high"
+  },
+  {
     "id": "Cop_Contraband",
     "en": "This NPC runs a Cop (Contraband) shop with stock such as Handcuffs, Pistol and Police Baton.",
     "kind": "designer",
@@ -1235,7 +1339,7 @@
     "id": "Cop_Friendly",
     "en": "This NPC and members of the law start friendly toward each other.",
     "kind": "extension",
-    "source": "RCK\\Systems\\Social\\Factions.cs",
+    "source": "RCK\\Systems\\Social\\Factions\\Factions.cs",
     "dynamic": false,
     "confidence": "high"
   },
@@ -1251,7 +1355,15 @@
     "id": "Cop_Hostile",
     "en": "This NPC and members of the law start hateful toward each other.",
     "kind": "extension",
-    "source": "RCK\\Systems\\Social\\Factions.cs",
+    "source": "RCK\\Systems\\Social\\Factions\\Factions.cs",
+    "dynamic": false,
+    "confidence": "high"
+  },
+  {
+    "id": "Cop_Leader",
+    "en": "If this NPC is the last leader of the law and it falls, the rest give up on the players and flee from fights.",
+    "kind": "extension",
+    "source": "RCK\\Systems\\Social\\Roles\\FactionEvents.cs",
     "dynamic": false,
     "confidence": "high"
   },
@@ -1259,7 +1371,7 @@
     "id": "Cop_Member",
     "en": "You count as a member of the law; other faction rules can then apply to you.",
     "kind": "extension",
-    "source": "RCK\\Systems\\Social\\Factions.cs",
+    "source": "RCK\\Systems\\Social\\Factions\\Factions.cs",
     "dynamic": false,
     "confidence": "high"
   },
@@ -1267,7 +1379,7 @@
     "id": "Cop_Neutral",
     "en": "This NPC and members of the law start neutral, useful for truces.",
     "kind": "extension",
-    "source": "RCK\\Systems\\Social\\Factions.cs",
+    "source": "RCK\\Systems\\Social\\Factions\\Factions.cs",
     "dynamic": false,
     "confidence": "high"
   },
@@ -1276,6 +1388,14 @@
     "en": "This NPC runs a Cop (Patrol) shop with stock such as Police Baton, Pistol and Handcuffs.",
     "kind": "designer",
     "source": "RCK\\Systems\\Merchants\\MerchantModule.cs",
+    "dynamic": false,
+    "confidence": "high"
+  },
+  {
+    "id": "Cop_Reinforcement",
+    "en": "Squads of the law are made of this character: raids, backup, turf guards and respawns spawn it. It stays a normal NPC.",
+    "kind": "extension",
+    "source": "RCK\\Systems\\Social\\Squads\\SquadUnits.cs",
     "dynamic": false,
     "confidence": "high"
   },
@@ -1291,7 +1411,15 @@
     "id": "Cop_Territorial",
     "en": "This NPC and members of the law start annoyed, then turn hostile on their own owned turf.",
     "kind": "extension",
-    "source": "RCK\\Systems\\Social\\Factions.cs",
+    "source": "RCK\\Systems\\Social\\Factions\\Factions.cs",
+    "dynamic": false,
+    "confidence": "high"
+  },
+  {
+    "id": "Cop_Vengeful",
+    "en": "When anyone attacks or kills a member of the law, this NPC turns hostile to that attacker for the rest of the level.",
+    "kind": "extension",
+    "source": "RCK\\Systems\\Social\\Roles\\FactionEvents.cs",
     "dynamic": false,
     "confidence": "high"
   },
@@ -1323,7 +1451,7 @@
     "id": "Crepe_Aligned",
     "en": "This NPC joins Crepes; members start aligned with each other.",
     "kind": "designer",
-    "source": "RCK\\Systems\\Social\\Factions.cs",
+    "source": "RCK\\Systems\\Social\\Factions\\Factions.cs",
     "dynamic": false,
     "confidence": "high"
   },
@@ -1331,7 +1459,15 @@
     "id": "Crepe_Annoyed",
     "en": "This NPC and members of Crepes start annoyed with each other.",
     "kind": "extension",
-    "source": "RCK\\Systems\\Social\\Factions.cs",
+    "source": "RCK\\Systems\\Social\\Factions\\Factions.cs",
+    "dynamic": false,
+    "confidence": "high"
+  },
+  {
+    "id": "Crepe_Calls_Backup",
+    "en": "When an outsider attacks this NPC, or its crew raises an alarm, a squad of Crepes comes to help (twice a level at most).",
+    "kind": "extension",
+    "source": "RCK\\Systems\\Social\\Roles\\FactionBackup.cs",
     "dynamic": false,
     "confidence": "high"
   },
@@ -1339,7 +1475,7 @@
     "id": "Crepe_Friendly",
     "en": "This NPC and members of Crepes start friendly toward each other.",
     "kind": "extension",
-    "source": "RCK\\Systems\\Social\\Factions.cs",
+    "source": "RCK\\Systems\\Social\\Factions\\Factions.cs",
     "dynamic": false,
     "confidence": "high"
   },
@@ -1347,7 +1483,15 @@
     "id": "Crepe_Hostile",
     "en": "This NPC and members of Crepes start hateful toward each other.",
     "kind": "designer",
-    "source": "RCK\\Systems\\Social\\Factions.cs",
+    "source": "RCK\\Systems\\Social\\Factions\\Factions.cs",
+    "dynamic": false,
+    "confidence": "high"
+  },
+  {
+    "id": "Crepe_Leader",
+    "en": "If this NPC is the last leader of Crepes and it falls, the rest give up on the players and flee from fights.",
+    "kind": "extension",
+    "source": "RCK\\Systems\\Social\\Roles\\FactionEvents.cs",
     "dynamic": false,
     "confidence": "high"
   },
@@ -1355,7 +1499,7 @@
     "id": "Crepe_Member",
     "en": "You count as a member of Crepes; other faction rules can then apply to you.",
     "kind": "extension",
-    "source": "RCK\\Systems\\Social\\Factions.cs",
+    "source": "RCK\\Systems\\Social\\Factions\\Factions.cs",
     "dynamic": false,
     "confidence": "high"
   },
@@ -1363,7 +1507,15 @@
     "id": "Crepe_Neutral",
     "en": "This NPC and members of Crepes start neutral, useful for truces.",
     "kind": "extension",
-    "source": "RCK\\Systems\\Social\\Factions.cs",
+    "source": "RCK\\Systems\\Social\\Factions\\Factions.cs",
+    "dynamic": false,
+    "confidence": "high"
+  },
+  {
+    "id": "Crepe_Reinforcement",
+    "en": "Squads of Crepes are made of this character: raids, backup, turf guards and respawns spawn it. It stays a normal NPC.",
+    "kind": "extension",
+    "source": "RCK\\Systems\\Social\\Squads\\SquadUnits.cs",
     "dynamic": false,
     "confidence": "high"
   },
@@ -1371,7 +1523,15 @@
     "id": "Crepe_Territorial",
     "en": "This NPC and members of Crepes start annoyed, then turn hostile on their own owned turf.",
     "kind": "extension",
-    "source": "RCK\\Systems\\Social\\Factions.cs",
+    "source": "RCK\\Systems\\Social\\Factions\\Factions.cs",
+    "dynamic": false,
+    "confidence": "high"
+  },
+  {
+    "id": "Crepe_Vengeful",
+    "en": "When anyone attacks or kills a member of Crepes, this NPC turns hostile to that attacker for the rest of the level.",
+    "kind": "extension",
+    "source": "RCK\\Systems\\Social\\Roles\\FactionEvents.cs",
     "dynamic": false,
     "confidence": "high"
   },
@@ -1747,7 +1907,7 @@
     "id": "Faction_10_Aligned",
     "en": "This NPC joins custom faction 10; members start aligned with each other.",
     "kind": "extension",
-    "source": "RCK\\Systems\\Social\\Factions.cs",
+    "source": "RCK\\Systems\\Social\\Factions\\Factions.cs",
     "dynamic": false,
     "confidence": "high"
   },
@@ -1755,7 +1915,15 @@
     "id": "Faction_10_Annoyed",
     "en": "This NPC and members of custom faction 10 start annoyed with each other.",
     "kind": "extension",
-    "source": "RCK\\Systems\\Social\\Factions.cs",
+    "source": "RCK\\Systems\\Social\\Factions\\Factions.cs",
+    "dynamic": false,
+    "confidence": "high"
+  },
+  {
+    "id": "Faction_10_Calls_Backup",
+    "en": "When an outsider attacks this NPC, or its crew raises an alarm, a squad of custom faction 10 comes to help (twice a level at most).",
+    "kind": "extension",
+    "source": "RCK\\Systems\\Social\\Roles\\FactionBackup.cs",
     "dynamic": false,
     "confidence": "high"
   },
@@ -1763,7 +1931,7 @@
     "id": "Faction_10_Friendly",
     "en": "This NPC and members of custom faction 10 start friendly toward each other.",
     "kind": "extension",
-    "source": "RCK\\Systems\\Social\\Factions.cs",
+    "source": "RCK\\Systems\\Social\\Factions\\Factions.cs",
     "dynamic": false,
     "confidence": "high"
   },
@@ -1771,7 +1939,15 @@
     "id": "Faction_10_Hostile",
     "en": "This NPC and members of custom faction 10 start hateful toward each other.",
     "kind": "extension",
-    "source": "RCK\\Systems\\Social\\Factions.cs",
+    "source": "RCK\\Systems\\Social\\Factions\\Factions.cs",
+    "dynamic": false,
+    "confidence": "high"
+  },
+  {
+    "id": "Faction_10_Leader",
+    "en": "If this NPC is the last leader of custom faction 10 and it falls, the rest give up on the players and flee from fights.",
+    "kind": "extension",
+    "source": "RCK\\Systems\\Social\\Roles\\FactionEvents.cs",
     "dynamic": false,
     "confidence": "high"
   },
@@ -1779,7 +1955,7 @@
     "id": "Faction_10_Member",
     "en": "You count as a member of custom faction 10; other faction rules can then apply to you.",
     "kind": "extension",
-    "source": "RCK\\Systems\\Social\\Factions.cs",
+    "source": "RCK\\Systems\\Social\\Factions\\Factions.cs",
     "dynamic": false,
     "confidence": "high"
   },
@@ -1787,7 +1963,15 @@
     "id": "Faction_10_Neutral",
     "en": "This NPC and members of custom faction 10 start neutral, useful for truces.",
     "kind": "extension",
-    "source": "RCK\\Systems\\Social\\Factions.cs",
+    "source": "RCK\\Systems\\Social\\Factions\\Factions.cs",
+    "dynamic": false,
+    "confidence": "high"
+  },
+  {
+    "id": "Faction_10_Reinforcement",
+    "en": "Squads of custom faction 10 are made of this character: raids, backup, turf guards and respawns spawn it. It stays a normal NPC.",
+    "kind": "extension",
+    "source": "RCK\\Systems\\Social\\Squads\\SquadUnits.cs",
     "dynamic": false,
     "confidence": "high"
   },
@@ -1795,7 +1979,15 @@
     "id": "Faction_10_Territorial",
     "en": "This NPC and members of custom faction 10 start annoyed, then turn hostile on their own owned turf.",
     "kind": "extension",
-    "source": "RCK\\Systems\\Social\\Factions.cs",
+    "source": "RCK\\Systems\\Social\\Factions\\Factions.cs",
+    "dynamic": false,
+    "confidence": "high"
+  },
+  {
+    "id": "Faction_10_Vengeful",
+    "en": "When anyone attacks or kills a member of custom faction 10, this NPC turns hostile to that attacker for the rest of the level.",
+    "kind": "extension",
+    "source": "RCK\\Systems\\Social\\Roles\\FactionEvents.cs",
     "dynamic": false,
     "confidence": "high"
   },
@@ -1803,7 +1995,7 @@
     "id": "Faction_11_Aligned",
     "en": "This NPC joins custom faction 11; members start aligned with each other.",
     "kind": "extension",
-    "source": "RCK\\Systems\\Social\\Factions.cs",
+    "source": "RCK\\Systems\\Social\\Factions\\Factions.cs",
     "dynamic": false,
     "confidence": "high"
   },
@@ -1811,7 +2003,15 @@
     "id": "Faction_11_Annoyed",
     "en": "This NPC and members of custom faction 11 start annoyed with each other.",
     "kind": "extension",
-    "source": "RCK\\Systems\\Social\\Factions.cs",
+    "source": "RCK\\Systems\\Social\\Factions\\Factions.cs",
+    "dynamic": false,
+    "confidence": "high"
+  },
+  {
+    "id": "Faction_11_Calls_Backup",
+    "en": "When an outsider attacks this NPC, or its crew raises an alarm, a squad of custom faction 11 comes to help (twice a level at most).",
+    "kind": "extension",
+    "source": "RCK\\Systems\\Social\\Roles\\FactionBackup.cs",
     "dynamic": false,
     "confidence": "high"
   },
@@ -1819,7 +2019,7 @@
     "id": "Faction_11_Friendly",
     "en": "This NPC and members of custom faction 11 start friendly toward each other.",
     "kind": "extension",
-    "source": "RCK\\Systems\\Social\\Factions.cs",
+    "source": "RCK\\Systems\\Social\\Factions\\Factions.cs",
     "dynamic": false,
     "confidence": "high"
   },
@@ -1827,7 +2027,15 @@
     "id": "Faction_11_Hostile",
     "en": "This NPC and members of custom faction 11 start hateful toward each other.",
     "kind": "extension",
-    "source": "RCK\\Systems\\Social\\Factions.cs",
+    "source": "RCK\\Systems\\Social\\Factions\\Factions.cs",
+    "dynamic": false,
+    "confidence": "high"
+  },
+  {
+    "id": "Faction_11_Leader",
+    "en": "If this NPC is the last leader of custom faction 11 and it falls, the rest give up on the players and flee from fights.",
+    "kind": "extension",
+    "source": "RCK\\Systems\\Social\\Roles\\FactionEvents.cs",
     "dynamic": false,
     "confidence": "high"
   },
@@ -1835,7 +2043,7 @@
     "id": "Faction_11_Member",
     "en": "You count as a member of custom faction 11; other faction rules can then apply to you.",
     "kind": "extension",
-    "source": "RCK\\Systems\\Social\\Factions.cs",
+    "source": "RCK\\Systems\\Social\\Factions\\Factions.cs",
     "dynamic": false,
     "confidence": "high"
   },
@@ -1843,7 +2051,15 @@
     "id": "Faction_11_Neutral",
     "en": "This NPC and members of custom faction 11 start neutral, useful for truces.",
     "kind": "extension",
-    "source": "RCK\\Systems\\Social\\Factions.cs",
+    "source": "RCK\\Systems\\Social\\Factions\\Factions.cs",
+    "dynamic": false,
+    "confidence": "high"
+  },
+  {
+    "id": "Faction_11_Reinforcement",
+    "en": "Squads of custom faction 11 are made of this character: raids, backup, turf guards and respawns spawn it. It stays a normal NPC.",
+    "kind": "extension",
+    "source": "RCK\\Systems\\Social\\Squads\\SquadUnits.cs",
     "dynamic": false,
     "confidence": "high"
   },
@@ -1851,7 +2067,15 @@
     "id": "Faction_11_Territorial",
     "en": "This NPC and members of custom faction 11 start annoyed, then turn hostile on their own owned turf.",
     "kind": "extension",
-    "source": "RCK\\Systems\\Social\\Factions.cs",
+    "source": "RCK\\Systems\\Social\\Factions\\Factions.cs",
+    "dynamic": false,
+    "confidence": "high"
+  },
+  {
+    "id": "Faction_11_Vengeful",
+    "en": "When anyone attacks or kills a member of custom faction 11, this NPC turns hostile to that attacker for the rest of the level.",
+    "kind": "extension",
+    "source": "RCK\\Systems\\Social\\Roles\\FactionEvents.cs",
     "dynamic": false,
     "confidence": "high"
   },
@@ -1859,7 +2083,7 @@
     "id": "Faction_12_Aligned",
     "en": "This NPC joins custom faction 12; members start aligned with each other.",
     "kind": "extension",
-    "source": "RCK\\Systems\\Social\\Factions.cs",
+    "source": "RCK\\Systems\\Social\\Factions\\Factions.cs",
     "dynamic": false,
     "confidence": "high"
   },
@@ -1867,7 +2091,15 @@
     "id": "Faction_12_Annoyed",
     "en": "This NPC and members of custom faction 12 start annoyed with each other.",
     "kind": "extension",
-    "source": "RCK\\Systems\\Social\\Factions.cs",
+    "source": "RCK\\Systems\\Social\\Factions\\Factions.cs",
+    "dynamic": false,
+    "confidence": "high"
+  },
+  {
+    "id": "Faction_12_Calls_Backup",
+    "en": "When an outsider attacks this NPC, or its crew raises an alarm, a squad of custom faction 12 comes to help (twice a level at most).",
+    "kind": "extension",
+    "source": "RCK\\Systems\\Social\\Roles\\FactionBackup.cs",
     "dynamic": false,
     "confidence": "high"
   },
@@ -1875,7 +2107,7 @@
     "id": "Faction_12_Friendly",
     "en": "This NPC and members of custom faction 12 start friendly toward each other.",
     "kind": "extension",
-    "source": "RCK\\Systems\\Social\\Factions.cs",
+    "source": "RCK\\Systems\\Social\\Factions\\Factions.cs",
     "dynamic": false,
     "confidence": "high"
   },
@@ -1883,7 +2115,15 @@
     "id": "Faction_12_Hostile",
     "en": "This NPC and members of custom faction 12 start hateful toward each other.",
     "kind": "extension",
-    "source": "RCK\\Systems\\Social\\Factions.cs",
+    "source": "RCK\\Systems\\Social\\Factions\\Factions.cs",
+    "dynamic": false,
+    "confidence": "high"
+  },
+  {
+    "id": "Faction_12_Leader",
+    "en": "If this NPC is the last leader of custom faction 12 and it falls, the rest give up on the players and flee from fights.",
+    "kind": "extension",
+    "source": "RCK\\Systems\\Social\\Roles\\FactionEvents.cs",
     "dynamic": false,
     "confidence": "high"
   },
@@ -1891,7 +2131,7 @@
     "id": "Faction_12_Member",
     "en": "You count as a member of custom faction 12; other faction rules can then apply to you.",
     "kind": "extension",
-    "source": "RCK\\Systems\\Social\\Factions.cs",
+    "source": "RCK\\Systems\\Social\\Factions\\Factions.cs",
     "dynamic": false,
     "confidence": "high"
   },
@@ -1899,7 +2139,15 @@
     "id": "Faction_12_Neutral",
     "en": "This NPC and members of custom faction 12 start neutral, useful for truces.",
     "kind": "extension",
-    "source": "RCK\\Systems\\Social\\Factions.cs",
+    "source": "RCK\\Systems\\Social\\Factions\\Factions.cs",
+    "dynamic": false,
+    "confidence": "high"
+  },
+  {
+    "id": "Faction_12_Reinforcement",
+    "en": "Squads of custom faction 12 are made of this character: raids, backup, turf guards and respawns spawn it. It stays a normal NPC.",
+    "kind": "extension",
+    "source": "RCK\\Systems\\Social\\Squads\\SquadUnits.cs",
     "dynamic": false,
     "confidence": "high"
   },
@@ -1907,7 +2155,15 @@
     "id": "Faction_12_Territorial",
     "en": "This NPC and members of custom faction 12 start annoyed, then turn hostile on their own owned turf.",
     "kind": "extension",
-    "source": "RCK\\Systems\\Social\\Factions.cs",
+    "source": "RCK\\Systems\\Social\\Factions\\Factions.cs",
+    "dynamic": false,
+    "confidence": "high"
+  },
+  {
+    "id": "Faction_12_Vengeful",
+    "en": "When anyone attacks or kills a member of custom faction 12, this NPC turns hostile to that attacker for the rest of the level.",
+    "kind": "extension",
+    "source": "RCK\\Systems\\Social\\Roles\\FactionEvents.cs",
     "dynamic": false,
     "confidence": "high"
   },
@@ -1915,7 +2171,7 @@
     "id": "Faction_13_Aligned",
     "en": "This NPC joins custom faction 13; members start aligned with each other.",
     "kind": "extension",
-    "source": "RCK\\Systems\\Social\\Factions.cs",
+    "source": "RCK\\Systems\\Social\\Factions\\Factions.cs",
     "dynamic": false,
     "confidence": "high"
   },
@@ -1923,7 +2179,15 @@
     "id": "Faction_13_Annoyed",
     "en": "This NPC and members of custom faction 13 start annoyed with each other.",
     "kind": "extension",
-    "source": "RCK\\Systems\\Social\\Factions.cs",
+    "source": "RCK\\Systems\\Social\\Factions\\Factions.cs",
+    "dynamic": false,
+    "confidence": "high"
+  },
+  {
+    "id": "Faction_13_Calls_Backup",
+    "en": "When an outsider attacks this NPC, or its crew raises an alarm, a squad of custom faction 13 comes to help (twice a level at most).",
+    "kind": "extension",
+    "source": "RCK\\Systems\\Social\\Roles\\FactionBackup.cs",
     "dynamic": false,
     "confidence": "high"
   },
@@ -1931,7 +2195,7 @@
     "id": "Faction_13_Friendly",
     "en": "This NPC and members of custom faction 13 start friendly toward each other.",
     "kind": "extension",
-    "source": "RCK\\Systems\\Social\\Factions.cs",
+    "source": "RCK\\Systems\\Social\\Factions\\Factions.cs",
     "dynamic": false,
     "confidence": "high"
   },
@@ -1939,7 +2203,15 @@
     "id": "Faction_13_Hostile",
     "en": "This NPC and members of custom faction 13 start hateful toward each other.",
     "kind": "extension",
-    "source": "RCK\\Systems\\Social\\Factions.cs",
+    "source": "RCK\\Systems\\Social\\Factions\\Factions.cs",
+    "dynamic": false,
+    "confidence": "high"
+  },
+  {
+    "id": "Faction_13_Leader",
+    "en": "If this NPC is the last leader of custom faction 13 and it falls, the rest give up on the players and flee from fights.",
+    "kind": "extension",
+    "source": "RCK\\Systems\\Social\\Roles\\FactionEvents.cs",
     "dynamic": false,
     "confidence": "high"
   },
@@ -1947,7 +2219,7 @@
     "id": "Faction_13_Member",
     "en": "You count as a member of custom faction 13; other faction rules can then apply to you.",
     "kind": "extension",
-    "source": "RCK\\Systems\\Social\\Factions.cs",
+    "source": "RCK\\Systems\\Social\\Factions\\Factions.cs",
     "dynamic": false,
     "confidence": "high"
   },
@@ -1955,7 +2227,15 @@
     "id": "Faction_13_Neutral",
     "en": "This NPC and members of custom faction 13 start neutral, useful for truces.",
     "kind": "extension",
-    "source": "RCK\\Systems\\Social\\Factions.cs",
+    "source": "RCK\\Systems\\Social\\Factions\\Factions.cs",
+    "dynamic": false,
+    "confidence": "high"
+  },
+  {
+    "id": "Faction_13_Reinforcement",
+    "en": "Squads of custom faction 13 are made of this character: raids, backup, turf guards and respawns spawn it. It stays a normal NPC.",
+    "kind": "extension",
+    "source": "RCK\\Systems\\Social\\Squads\\SquadUnits.cs",
     "dynamic": false,
     "confidence": "high"
   },
@@ -1963,7 +2243,15 @@
     "id": "Faction_13_Territorial",
     "en": "This NPC and members of custom faction 13 start annoyed, then turn hostile on their own owned turf.",
     "kind": "extension",
-    "source": "RCK\\Systems\\Social\\Factions.cs",
+    "source": "RCK\\Systems\\Social\\Factions\\Factions.cs",
+    "dynamic": false,
+    "confidence": "high"
+  },
+  {
+    "id": "Faction_13_Vengeful",
+    "en": "When anyone attacks or kills a member of custom faction 13, this NPC turns hostile to that attacker for the rest of the level.",
+    "kind": "extension",
+    "source": "RCK\\Systems\\Social\\Roles\\FactionEvents.cs",
     "dynamic": false,
     "confidence": "high"
   },
@@ -1971,7 +2259,7 @@
     "id": "Faction_14_Aligned",
     "en": "This NPC joins custom faction 14; members start aligned with each other.",
     "kind": "extension",
-    "source": "RCK\\Systems\\Social\\Factions.cs",
+    "source": "RCK\\Systems\\Social\\Factions\\Factions.cs",
     "dynamic": false,
     "confidence": "high"
   },
@@ -1979,7 +2267,15 @@
     "id": "Faction_14_Annoyed",
     "en": "This NPC and members of custom faction 14 start annoyed with each other.",
     "kind": "extension",
-    "source": "RCK\\Systems\\Social\\Factions.cs",
+    "source": "RCK\\Systems\\Social\\Factions\\Factions.cs",
+    "dynamic": false,
+    "confidence": "high"
+  },
+  {
+    "id": "Faction_14_Calls_Backup",
+    "en": "When an outsider attacks this NPC, or its crew raises an alarm, a squad of custom faction 14 comes to help (twice a level at most).",
+    "kind": "extension",
+    "source": "RCK\\Systems\\Social\\Roles\\FactionBackup.cs",
     "dynamic": false,
     "confidence": "high"
   },
@@ -1987,7 +2283,7 @@
     "id": "Faction_14_Friendly",
     "en": "This NPC and members of custom faction 14 start friendly toward each other.",
     "kind": "extension",
-    "source": "RCK\\Systems\\Social\\Factions.cs",
+    "source": "RCK\\Systems\\Social\\Factions\\Factions.cs",
     "dynamic": false,
     "confidence": "high"
   },
@@ -1995,7 +2291,15 @@
     "id": "Faction_14_Hostile",
     "en": "This NPC and members of custom faction 14 start hateful toward each other.",
     "kind": "extension",
-    "source": "RCK\\Systems\\Social\\Factions.cs",
+    "source": "RCK\\Systems\\Social\\Factions\\Factions.cs",
+    "dynamic": false,
+    "confidence": "high"
+  },
+  {
+    "id": "Faction_14_Leader",
+    "en": "If this NPC is the last leader of custom faction 14 and it falls, the rest give up on the players and flee from fights.",
+    "kind": "extension",
+    "source": "RCK\\Systems\\Social\\Roles\\FactionEvents.cs",
     "dynamic": false,
     "confidence": "high"
   },
@@ -2003,7 +2307,7 @@
     "id": "Faction_14_Member",
     "en": "You count as a member of custom faction 14; other faction rules can then apply to you.",
     "kind": "extension",
-    "source": "RCK\\Systems\\Social\\Factions.cs",
+    "source": "RCK\\Systems\\Social\\Factions\\Factions.cs",
     "dynamic": false,
     "confidence": "high"
   },
@@ -2011,7 +2315,15 @@
     "id": "Faction_14_Neutral",
     "en": "This NPC and members of custom faction 14 start neutral, useful for truces.",
     "kind": "extension",
-    "source": "RCK\\Systems\\Social\\Factions.cs",
+    "source": "RCK\\Systems\\Social\\Factions\\Factions.cs",
+    "dynamic": false,
+    "confidence": "high"
+  },
+  {
+    "id": "Faction_14_Reinforcement",
+    "en": "Squads of custom faction 14 are made of this character: raids, backup, turf guards and respawns spawn it. It stays a normal NPC.",
+    "kind": "extension",
+    "source": "RCK\\Systems\\Social\\Squads\\SquadUnits.cs",
     "dynamic": false,
     "confidence": "high"
   },
@@ -2019,7 +2331,15 @@
     "id": "Faction_14_Territorial",
     "en": "This NPC and members of custom faction 14 start annoyed, then turn hostile on their own owned turf.",
     "kind": "extension",
-    "source": "RCK\\Systems\\Social\\Factions.cs",
+    "source": "RCK\\Systems\\Social\\Factions\\Factions.cs",
+    "dynamic": false,
+    "confidence": "high"
+  },
+  {
+    "id": "Faction_14_Vengeful",
+    "en": "When anyone attacks or kills a member of custom faction 14, this NPC turns hostile to that attacker for the rest of the level.",
+    "kind": "extension",
+    "source": "RCK\\Systems\\Social\\Roles\\FactionEvents.cs",
     "dynamic": false,
     "confidence": "high"
   },
@@ -2027,7 +2347,7 @@
     "id": "Faction_15_Aligned",
     "en": "This NPC joins custom faction 15; members start aligned with each other.",
     "kind": "extension",
-    "source": "RCK\\Systems\\Social\\Factions.cs",
+    "source": "RCK\\Systems\\Social\\Factions\\Factions.cs",
     "dynamic": false,
     "confidence": "high"
   },
@@ -2035,7 +2355,15 @@
     "id": "Faction_15_Annoyed",
     "en": "This NPC and members of custom faction 15 start annoyed with each other.",
     "kind": "extension",
-    "source": "RCK\\Systems\\Social\\Factions.cs",
+    "source": "RCK\\Systems\\Social\\Factions\\Factions.cs",
+    "dynamic": false,
+    "confidence": "high"
+  },
+  {
+    "id": "Faction_15_Calls_Backup",
+    "en": "When an outsider attacks this NPC, or its crew raises an alarm, a squad of custom faction 15 comes to help (twice a level at most).",
+    "kind": "extension",
+    "source": "RCK\\Systems\\Social\\Roles\\FactionBackup.cs",
     "dynamic": false,
     "confidence": "high"
   },
@@ -2043,7 +2371,7 @@
     "id": "Faction_15_Friendly",
     "en": "This NPC and members of custom faction 15 start friendly toward each other.",
     "kind": "extension",
-    "source": "RCK\\Systems\\Social\\Factions.cs",
+    "source": "RCK\\Systems\\Social\\Factions\\Factions.cs",
     "dynamic": false,
     "confidence": "high"
   },
@@ -2051,7 +2379,15 @@
     "id": "Faction_15_Hostile",
     "en": "This NPC and members of custom faction 15 start hateful toward each other.",
     "kind": "extension",
-    "source": "RCK\\Systems\\Social\\Factions.cs",
+    "source": "RCK\\Systems\\Social\\Factions\\Factions.cs",
+    "dynamic": false,
+    "confidence": "high"
+  },
+  {
+    "id": "Faction_15_Leader",
+    "en": "If this NPC is the last leader of custom faction 15 and it falls, the rest give up on the players and flee from fights.",
+    "kind": "extension",
+    "source": "RCK\\Systems\\Social\\Roles\\FactionEvents.cs",
     "dynamic": false,
     "confidence": "high"
   },
@@ -2059,7 +2395,7 @@
     "id": "Faction_15_Member",
     "en": "You count as a member of custom faction 15; other faction rules can then apply to you.",
     "kind": "extension",
-    "source": "RCK\\Systems\\Social\\Factions.cs",
+    "source": "RCK\\Systems\\Social\\Factions\\Factions.cs",
     "dynamic": false,
     "confidence": "high"
   },
@@ -2067,7 +2403,15 @@
     "id": "Faction_15_Neutral",
     "en": "This NPC and members of custom faction 15 start neutral, useful for truces.",
     "kind": "extension",
-    "source": "RCK\\Systems\\Social\\Factions.cs",
+    "source": "RCK\\Systems\\Social\\Factions\\Factions.cs",
+    "dynamic": false,
+    "confidence": "high"
+  },
+  {
+    "id": "Faction_15_Reinforcement",
+    "en": "Squads of custom faction 15 are made of this character: raids, backup, turf guards and respawns spawn it. It stays a normal NPC.",
+    "kind": "extension",
+    "source": "RCK\\Systems\\Social\\Squads\\SquadUnits.cs",
     "dynamic": false,
     "confidence": "high"
   },
@@ -2075,7 +2419,15 @@
     "id": "Faction_15_Territorial",
     "en": "This NPC and members of custom faction 15 start annoyed, then turn hostile on their own owned turf.",
     "kind": "extension",
-    "source": "RCK\\Systems\\Social\\Factions.cs",
+    "source": "RCK\\Systems\\Social\\Factions\\Factions.cs",
+    "dynamic": false,
+    "confidence": "high"
+  },
+  {
+    "id": "Faction_15_Vengeful",
+    "en": "When anyone attacks or kills a member of custom faction 15, this NPC turns hostile to that attacker for the rest of the level.",
+    "kind": "extension",
+    "source": "RCK\\Systems\\Social\\Roles\\FactionEvents.cs",
     "dynamic": false,
     "confidence": "high"
   },
@@ -2083,7 +2435,7 @@
     "id": "Faction_16_Aligned",
     "en": "This NPC joins custom faction 16; members start aligned with each other.",
     "kind": "extension",
-    "source": "RCK\\Systems\\Social\\Factions.cs",
+    "source": "RCK\\Systems\\Social\\Factions\\Factions.cs",
     "dynamic": false,
     "confidence": "high"
   },
@@ -2091,7 +2443,15 @@
     "id": "Faction_16_Annoyed",
     "en": "This NPC and members of custom faction 16 start annoyed with each other.",
     "kind": "extension",
-    "source": "RCK\\Systems\\Social\\Factions.cs",
+    "source": "RCK\\Systems\\Social\\Factions\\Factions.cs",
+    "dynamic": false,
+    "confidence": "high"
+  },
+  {
+    "id": "Faction_16_Calls_Backup",
+    "en": "When an outsider attacks this NPC, or its crew raises an alarm, a squad of custom faction 16 comes to help (twice a level at most).",
+    "kind": "extension",
+    "source": "RCK\\Systems\\Social\\Roles\\FactionBackup.cs",
     "dynamic": false,
     "confidence": "high"
   },
@@ -2099,7 +2459,7 @@
     "id": "Faction_16_Friendly",
     "en": "This NPC and members of custom faction 16 start friendly toward each other.",
     "kind": "extension",
-    "source": "RCK\\Systems\\Social\\Factions.cs",
+    "source": "RCK\\Systems\\Social\\Factions\\Factions.cs",
     "dynamic": false,
     "confidence": "high"
   },
@@ -2107,7 +2467,15 @@
     "id": "Faction_16_Hostile",
     "en": "This NPC and members of custom faction 16 start hateful toward each other.",
     "kind": "extension",
-    "source": "RCK\\Systems\\Social\\Factions.cs",
+    "source": "RCK\\Systems\\Social\\Factions\\Factions.cs",
+    "dynamic": false,
+    "confidence": "high"
+  },
+  {
+    "id": "Faction_16_Leader",
+    "en": "If this NPC is the last leader of custom faction 16 and it falls, the rest give up on the players and flee from fights.",
+    "kind": "extension",
+    "source": "RCK\\Systems\\Social\\Roles\\FactionEvents.cs",
     "dynamic": false,
     "confidence": "high"
   },
@@ -2115,7 +2483,7 @@
     "id": "Faction_16_Member",
     "en": "You count as a member of custom faction 16; other faction rules can then apply to you.",
     "kind": "extension",
-    "source": "RCK\\Systems\\Social\\Factions.cs",
+    "source": "RCK\\Systems\\Social\\Factions\\Factions.cs",
     "dynamic": false,
     "confidence": "high"
   },
@@ -2123,7 +2491,15 @@
     "id": "Faction_16_Neutral",
     "en": "This NPC and members of custom faction 16 start neutral, useful for truces.",
     "kind": "extension",
-    "source": "RCK\\Systems\\Social\\Factions.cs",
+    "source": "RCK\\Systems\\Social\\Factions\\Factions.cs",
+    "dynamic": false,
+    "confidence": "high"
+  },
+  {
+    "id": "Faction_16_Reinforcement",
+    "en": "Squads of custom faction 16 are made of this character: raids, backup, turf guards and respawns spawn it. It stays a normal NPC.",
+    "kind": "extension",
+    "source": "RCK\\Systems\\Social\\Squads\\SquadUnits.cs",
     "dynamic": false,
     "confidence": "high"
   },
@@ -2131,7 +2507,15 @@
     "id": "Faction_16_Territorial",
     "en": "This NPC and members of custom faction 16 start annoyed, then turn hostile on their own owned turf.",
     "kind": "extension",
-    "source": "RCK\\Systems\\Social\\Factions.cs",
+    "source": "RCK\\Systems\\Social\\Factions\\Factions.cs",
+    "dynamic": false,
+    "confidence": "high"
+  },
+  {
+    "id": "Faction_16_Vengeful",
+    "en": "When anyone attacks or kills a member of custom faction 16, this NPC turns hostile to that attacker for the rest of the level.",
+    "kind": "extension",
+    "source": "RCK\\Systems\\Social\\Roles\\FactionEvents.cs",
     "dynamic": false,
     "confidence": "high"
   },
@@ -2139,7 +2523,7 @@
     "id": "Faction_17_Aligned",
     "en": "This NPC joins custom faction 17; members start aligned with each other.",
     "kind": "extension",
-    "source": "RCK\\Systems\\Social\\Factions.cs",
+    "source": "RCK\\Systems\\Social\\Factions\\Factions.cs",
     "dynamic": false,
     "confidence": "high"
   },
@@ -2147,7 +2531,15 @@
     "id": "Faction_17_Annoyed",
     "en": "This NPC and members of custom faction 17 start annoyed with each other.",
     "kind": "extension",
-    "source": "RCK\\Systems\\Social\\Factions.cs",
+    "source": "RCK\\Systems\\Social\\Factions\\Factions.cs",
+    "dynamic": false,
+    "confidence": "high"
+  },
+  {
+    "id": "Faction_17_Calls_Backup",
+    "en": "When an outsider attacks this NPC, or its crew raises an alarm, a squad of custom faction 17 comes to help (twice a level at most).",
+    "kind": "extension",
+    "source": "RCK\\Systems\\Social\\Roles\\FactionBackup.cs",
     "dynamic": false,
     "confidence": "high"
   },
@@ -2155,7 +2547,7 @@
     "id": "Faction_17_Friendly",
     "en": "This NPC and members of custom faction 17 start friendly toward each other.",
     "kind": "extension",
-    "source": "RCK\\Systems\\Social\\Factions.cs",
+    "source": "RCK\\Systems\\Social\\Factions\\Factions.cs",
     "dynamic": false,
     "confidence": "high"
   },
@@ -2163,7 +2555,15 @@
     "id": "Faction_17_Hostile",
     "en": "This NPC and members of custom faction 17 start hateful toward each other.",
     "kind": "extension",
-    "source": "RCK\\Systems\\Social\\Factions.cs",
+    "source": "RCK\\Systems\\Social\\Factions\\Factions.cs",
+    "dynamic": false,
+    "confidence": "high"
+  },
+  {
+    "id": "Faction_17_Leader",
+    "en": "If this NPC is the last leader of custom faction 17 and it falls, the rest give up on the players and flee from fights.",
+    "kind": "extension",
+    "source": "RCK\\Systems\\Social\\Roles\\FactionEvents.cs",
     "dynamic": false,
     "confidence": "high"
   },
@@ -2171,7 +2571,7 @@
     "id": "Faction_17_Member",
     "en": "You count as a member of custom faction 17; other faction rules can then apply to you.",
     "kind": "extension",
-    "source": "RCK\\Systems\\Social\\Factions.cs",
+    "source": "RCK\\Systems\\Social\\Factions\\Factions.cs",
     "dynamic": false,
     "confidence": "high"
   },
@@ -2179,7 +2579,15 @@
     "id": "Faction_17_Neutral",
     "en": "This NPC and members of custom faction 17 start neutral, useful for truces.",
     "kind": "extension",
-    "source": "RCK\\Systems\\Social\\Factions.cs",
+    "source": "RCK\\Systems\\Social\\Factions\\Factions.cs",
+    "dynamic": false,
+    "confidence": "high"
+  },
+  {
+    "id": "Faction_17_Reinforcement",
+    "en": "Squads of custom faction 17 are made of this character: raids, backup, turf guards and respawns spawn it. It stays a normal NPC.",
+    "kind": "extension",
+    "source": "RCK\\Systems\\Social\\Squads\\SquadUnits.cs",
     "dynamic": false,
     "confidence": "high"
   },
@@ -2187,7 +2595,15 @@
     "id": "Faction_17_Territorial",
     "en": "This NPC and members of custom faction 17 start annoyed, then turn hostile on their own owned turf.",
     "kind": "extension",
-    "source": "RCK\\Systems\\Social\\Factions.cs",
+    "source": "RCK\\Systems\\Social\\Factions\\Factions.cs",
+    "dynamic": false,
+    "confidence": "high"
+  },
+  {
+    "id": "Faction_17_Vengeful",
+    "en": "When anyone attacks or kills a member of custom faction 17, this NPC turns hostile to that attacker for the rest of the level.",
+    "kind": "extension",
+    "source": "RCK\\Systems\\Social\\Roles\\FactionEvents.cs",
     "dynamic": false,
     "confidence": "high"
   },
@@ -2195,7 +2611,7 @@
     "id": "Faction_18_Aligned",
     "en": "This NPC joins custom faction 18; members start aligned with each other.",
     "kind": "extension",
-    "source": "RCK\\Systems\\Social\\Factions.cs",
+    "source": "RCK\\Systems\\Social\\Factions\\Factions.cs",
     "dynamic": false,
     "confidence": "high"
   },
@@ -2203,7 +2619,15 @@
     "id": "Faction_18_Annoyed",
     "en": "This NPC and members of custom faction 18 start annoyed with each other.",
     "kind": "extension",
-    "source": "RCK\\Systems\\Social\\Factions.cs",
+    "source": "RCK\\Systems\\Social\\Factions\\Factions.cs",
+    "dynamic": false,
+    "confidence": "high"
+  },
+  {
+    "id": "Faction_18_Calls_Backup",
+    "en": "When an outsider attacks this NPC, or its crew raises an alarm, a squad of custom faction 18 comes to help (twice a level at most).",
+    "kind": "extension",
+    "source": "RCK\\Systems\\Social\\Roles\\FactionBackup.cs",
     "dynamic": false,
     "confidence": "high"
   },
@@ -2211,7 +2635,7 @@
     "id": "Faction_18_Friendly",
     "en": "This NPC and members of custom faction 18 start friendly toward each other.",
     "kind": "extension",
-    "source": "RCK\\Systems\\Social\\Factions.cs",
+    "source": "RCK\\Systems\\Social\\Factions\\Factions.cs",
     "dynamic": false,
     "confidence": "high"
   },
@@ -2219,7 +2643,15 @@
     "id": "Faction_18_Hostile",
     "en": "This NPC and members of custom faction 18 start hateful toward each other.",
     "kind": "extension",
-    "source": "RCK\\Systems\\Social\\Factions.cs",
+    "source": "RCK\\Systems\\Social\\Factions\\Factions.cs",
+    "dynamic": false,
+    "confidence": "high"
+  },
+  {
+    "id": "Faction_18_Leader",
+    "en": "If this NPC is the last leader of custom faction 18 and it falls, the rest give up on the players and flee from fights.",
+    "kind": "extension",
+    "source": "RCK\\Systems\\Social\\Roles\\FactionEvents.cs",
     "dynamic": false,
     "confidence": "high"
   },
@@ -2227,7 +2659,7 @@
     "id": "Faction_18_Member",
     "en": "You count as a member of custom faction 18; other faction rules can then apply to you.",
     "kind": "extension",
-    "source": "RCK\\Systems\\Social\\Factions.cs",
+    "source": "RCK\\Systems\\Social\\Factions\\Factions.cs",
     "dynamic": false,
     "confidence": "high"
   },
@@ -2235,7 +2667,15 @@
     "id": "Faction_18_Neutral",
     "en": "This NPC and members of custom faction 18 start neutral, useful for truces.",
     "kind": "extension",
-    "source": "RCK\\Systems\\Social\\Factions.cs",
+    "source": "RCK\\Systems\\Social\\Factions\\Factions.cs",
+    "dynamic": false,
+    "confidence": "high"
+  },
+  {
+    "id": "Faction_18_Reinforcement",
+    "en": "Squads of custom faction 18 are made of this character: raids, backup, turf guards and respawns spawn it. It stays a normal NPC.",
+    "kind": "extension",
+    "source": "RCK\\Systems\\Social\\Squads\\SquadUnits.cs",
     "dynamic": false,
     "confidence": "high"
   },
@@ -2243,7 +2683,15 @@
     "id": "Faction_18_Territorial",
     "en": "This NPC and members of custom faction 18 start annoyed, then turn hostile on their own owned turf.",
     "kind": "extension",
-    "source": "RCK\\Systems\\Social\\Factions.cs",
+    "source": "RCK\\Systems\\Social\\Factions\\Factions.cs",
+    "dynamic": false,
+    "confidence": "high"
+  },
+  {
+    "id": "Faction_18_Vengeful",
+    "en": "When anyone attacks or kills a member of custom faction 18, this NPC turns hostile to that attacker for the rest of the level.",
+    "kind": "extension",
+    "source": "RCK\\Systems\\Social\\Roles\\FactionEvents.cs",
     "dynamic": false,
     "confidence": "high"
   },
@@ -2251,7 +2699,7 @@
     "id": "Faction_19_Aligned",
     "en": "This NPC joins custom faction 19; members start aligned with each other.",
     "kind": "extension",
-    "source": "RCK\\Systems\\Social\\Factions.cs",
+    "source": "RCK\\Systems\\Social\\Factions\\Factions.cs",
     "dynamic": false,
     "confidence": "high"
   },
@@ -2259,7 +2707,15 @@
     "id": "Faction_19_Annoyed",
     "en": "This NPC and members of custom faction 19 start annoyed with each other.",
     "kind": "extension",
-    "source": "RCK\\Systems\\Social\\Factions.cs",
+    "source": "RCK\\Systems\\Social\\Factions\\Factions.cs",
+    "dynamic": false,
+    "confidence": "high"
+  },
+  {
+    "id": "Faction_19_Calls_Backup",
+    "en": "When an outsider attacks this NPC, or its crew raises an alarm, a squad of custom faction 19 comes to help (twice a level at most).",
+    "kind": "extension",
+    "source": "RCK\\Systems\\Social\\Roles\\FactionBackup.cs",
     "dynamic": false,
     "confidence": "high"
   },
@@ -2267,7 +2723,7 @@
     "id": "Faction_19_Friendly",
     "en": "This NPC and members of custom faction 19 start friendly toward each other.",
     "kind": "extension",
-    "source": "RCK\\Systems\\Social\\Factions.cs",
+    "source": "RCK\\Systems\\Social\\Factions\\Factions.cs",
     "dynamic": false,
     "confidence": "high"
   },
@@ -2275,7 +2731,15 @@
     "id": "Faction_19_Hostile",
     "en": "This NPC and members of custom faction 19 start hateful toward each other.",
     "kind": "extension",
-    "source": "RCK\\Systems\\Social\\Factions.cs",
+    "source": "RCK\\Systems\\Social\\Factions\\Factions.cs",
+    "dynamic": false,
+    "confidence": "high"
+  },
+  {
+    "id": "Faction_19_Leader",
+    "en": "If this NPC is the last leader of custom faction 19 and it falls, the rest give up on the players and flee from fights.",
+    "kind": "extension",
+    "source": "RCK\\Systems\\Social\\Roles\\FactionEvents.cs",
     "dynamic": false,
     "confidence": "high"
   },
@@ -2283,7 +2747,7 @@
     "id": "Faction_19_Member",
     "en": "You count as a member of custom faction 19; other faction rules can then apply to you.",
     "kind": "extension",
-    "source": "RCK\\Systems\\Social\\Factions.cs",
+    "source": "RCK\\Systems\\Social\\Factions\\Factions.cs",
     "dynamic": false,
     "confidence": "high"
   },
@@ -2291,7 +2755,15 @@
     "id": "Faction_19_Neutral",
     "en": "This NPC and members of custom faction 19 start neutral, useful for truces.",
     "kind": "extension",
-    "source": "RCK\\Systems\\Social\\Factions.cs",
+    "source": "RCK\\Systems\\Social\\Factions\\Factions.cs",
+    "dynamic": false,
+    "confidence": "high"
+  },
+  {
+    "id": "Faction_19_Reinforcement",
+    "en": "Squads of custom faction 19 are made of this character: raids, backup, turf guards and respawns spawn it. It stays a normal NPC.",
+    "kind": "extension",
+    "source": "RCK\\Systems\\Social\\Squads\\SquadUnits.cs",
     "dynamic": false,
     "confidence": "high"
   },
@@ -2299,7 +2771,15 @@
     "id": "Faction_19_Territorial",
     "en": "This NPC and members of custom faction 19 start annoyed, then turn hostile on their own owned turf.",
     "kind": "extension",
-    "source": "RCK\\Systems\\Social\\Factions.cs",
+    "source": "RCK\\Systems\\Social\\Factions\\Factions.cs",
+    "dynamic": false,
+    "confidence": "high"
+  },
+  {
+    "id": "Faction_19_Vengeful",
+    "en": "When anyone attacks or kills a member of custom faction 19, this NPC turns hostile to that attacker for the rest of the level.",
+    "kind": "extension",
+    "source": "RCK\\Systems\\Social\\Roles\\FactionEvents.cs",
     "dynamic": false,
     "confidence": "high"
   },
@@ -2307,7 +2787,7 @@
     "id": "Faction_1_Aligned",
     "en": "This NPC joins custom faction 1; members start aligned with each other.",
     "kind": "designer",
-    "source": "RCK\\Systems\\Social\\Factions.cs",
+    "source": "RCK\\Systems\\Social\\Factions\\Factions.cs",
     "dynamic": false,
     "confidence": "high"
   },
@@ -2315,7 +2795,15 @@
     "id": "Faction_1_Annoyed",
     "en": "This NPC and members of custom faction 1 start annoyed with each other.",
     "kind": "extension",
-    "source": "RCK\\Systems\\Social\\Factions.cs",
+    "source": "RCK\\Systems\\Social\\Factions\\Factions.cs",
+    "dynamic": false,
+    "confidence": "high"
+  },
+  {
+    "id": "Faction_1_Calls_Backup",
+    "en": "When an outsider attacks this NPC, or its crew raises an alarm, a squad of custom faction 1 comes to help (twice a level at most).",
+    "kind": "extension",
+    "source": "RCK\\Systems\\Social\\Roles\\FactionBackup.cs",
     "dynamic": false,
     "confidence": "high"
   },
@@ -2323,7 +2811,7 @@
     "id": "Faction_1_Friendly",
     "en": "This NPC and members of custom faction 1 start friendly toward each other.",
     "kind": "extension",
-    "source": "RCK\\Systems\\Social\\Factions.cs",
+    "source": "RCK\\Systems\\Social\\Factions\\Factions.cs",
     "dynamic": false,
     "confidence": "high"
   },
@@ -2331,7 +2819,15 @@
     "id": "Faction_1_Hostile",
     "en": "This NPC and members of custom faction 1 start hateful toward each other.",
     "kind": "designer",
-    "source": "RCK\\Systems\\Social\\Factions.cs",
+    "source": "RCK\\Systems\\Social\\Factions\\Factions.cs",
+    "dynamic": false,
+    "confidence": "high"
+  },
+  {
+    "id": "Faction_1_Leader",
+    "en": "If this NPC is the last leader of custom faction 1 and it falls, the rest give up on the players and flee from fights.",
+    "kind": "extension",
+    "source": "RCK\\Systems\\Social\\Roles\\FactionEvents.cs",
     "dynamic": false,
     "confidence": "high"
   },
@@ -2339,7 +2835,7 @@
     "id": "Faction_1_Member",
     "en": "You count as a member of custom faction 1; other faction rules can then apply to you.",
     "kind": "extension",
-    "source": "RCK\\Systems\\Social\\Factions.cs",
+    "source": "RCK\\Systems\\Social\\Factions\\Factions.cs",
     "dynamic": false,
     "confidence": "high"
   },
@@ -2347,7 +2843,15 @@
     "id": "Faction_1_Neutral",
     "en": "This NPC and members of custom faction 1 start neutral, useful for truces.",
     "kind": "extension",
-    "source": "RCK\\Systems\\Social\\Factions.cs",
+    "source": "RCK\\Systems\\Social\\Factions\\Factions.cs",
+    "dynamic": false,
+    "confidence": "high"
+  },
+  {
+    "id": "Faction_1_Reinforcement",
+    "en": "Squads of custom faction 1 are made of this character: raids, backup, turf guards and respawns spawn it. It stays a normal NPC.",
+    "kind": "extension",
+    "source": "RCK\\Systems\\Social\\Squads\\SquadUnits.cs",
     "dynamic": false,
     "confidence": "high"
   },
@@ -2355,7 +2859,15 @@
     "id": "Faction_1_Territorial",
     "en": "This NPC and members of custom faction 1 start annoyed, then turn hostile on their own owned turf.",
     "kind": "extension",
-    "source": "RCK\\Systems\\Social\\Factions.cs",
+    "source": "RCK\\Systems\\Social\\Factions\\Factions.cs",
+    "dynamic": false,
+    "confidence": "high"
+  },
+  {
+    "id": "Faction_1_Vengeful",
+    "en": "When anyone attacks or kills a member of custom faction 1, this NPC turns hostile to that attacker for the rest of the level.",
+    "kind": "extension",
+    "source": "RCK\\Systems\\Social\\Roles\\FactionEvents.cs",
     "dynamic": false,
     "confidence": "high"
   },
@@ -2363,7 +2875,7 @@
     "id": "Faction_20_Aligned",
     "en": "This NPC joins custom faction 20; members start aligned with each other.",
     "kind": "extension",
-    "source": "RCK\\Systems\\Social\\Factions.cs",
+    "source": "RCK\\Systems\\Social\\Factions\\Factions.cs",
     "dynamic": false,
     "confidence": "high"
   },
@@ -2371,7 +2883,15 @@
     "id": "Faction_20_Annoyed",
     "en": "This NPC and members of custom faction 20 start annoyed with each other.",
     "kind": "extension",
-    "source": "RCK\\Systems\\Social\\Factions.cs",
+    "source": "RCK\\Systems\\Social\\Factions\\Factions.cs",
+    "dynamic": false,
+    "confidence": "high"
+  },
+  {
+    "id": "Faction_20_Calls_Backup",
+    "en": "When an outsider attacks this NPC, or its crew raises an alarm, a squad of custom faction 20 comes to help (twice a level at most).",
+    "kind": "extension",
+    "source": "RCK\\Systems\\Social\\Roles\\FactionBackup.cs",
     "dynamic": false,
     "confidence": "high"
   },
@@ -2379,7 +2899,7 @@
     "id": "Faction_20_Friendly",
     "en": "This NPC and members of custom faction 20 start friendly toward each other.",
     "kind": "extension",
-    "source": "RCK\\Systems\\Social\\Factions.cs",
+    "source": "RCK\\Systems\\Social\\Factions\\Factions.cs",
     "dynamic": false,
     "confidence": "high"
   },
@@ -2387,7 +2907,15 @@
     "id": "Faction_20_Hostile",
     "en": "This NPC and members of custom faction 20 start hateful toward each other.",
     "kind": "extension",
-    "source": "RCK\\Systems\\Social\\Factions.cs",
+    "source": "RCK\\Systems\\Social\\Factions\\Factions.cs",
+    "dynamic": false,
+    "confidence": "high"
+  },
+  {
+    "id": "Faction_20_Leader",
+    "en": "If this NPC is the last leader of custom faction 20 and it falls, the rest give up on the players and flee from fights.",
+    "kind": "extension",
+    "source": "RCK\\Systems\\Social\\Roles\\FactionEvents.cs",
     "dynamic": false,
     "confidence": "high"
   },
@@ -2395,7 +2923,7 @@
     "id": "Faction_20_Member",
     "en": "You count as a member of custom faction 20; other faction rules can then apply to you.",
     "kind": "extension",
-    "source": "RCK\\Systems\\Social\\Factions.cs",
+    "source": "RCK\\Systems\\Social\\Factions\\Factions.cs",
     "dynamic": false,
     "confidence": "high"
   },
@@ -2403,7 +2931,15 @@
     "id": "Faction_20_Neutral",
     "en": "This NPC and members of custom faction 20 start neutral, useful for truces.",
     "kind": "extension",
-    "source": "RCK\\Systems\\Social\\Factions.cs",
+    "source": "RCK\\Systems\\Social\\Factions\\Factions.cs",
+    "dynamic": false,
+    "confidence": "high"
+  },
+  {
+    "id": "Faction_20_Reinforcement",
+    "en": "Squads of custom faction 20 are made of this character: raids, backup, turf guards and respawns spawn it. It stays a normal NPC.",
+    "kind": "extension",
+    "source": "RCK\\Systems\\Social\\Squads\\SquadUnits.cs",
     "dynamic": false,
     "confidence": "high"
   },
@@ -2411,7 +2947,15 @@
     "id": "Faction_20_Territorial",
     "en": "This NPC and members of custom faction 20 start annoyed, then turn hostile on their own owned turf.",
     "kind": "extension",
-    "source": "RCK\\Systems\\Social\\Factions.cs",
+    "source": "RCK\\Systems\\Social\\Factions\\Factions.cs",
+    "dynamic": false,
+    "confidence": "high"
+  },
+  {
+    "id": "Faction_20_Vengeful",
+    "en": "When anyone attacks or kills a member of custom faction 20, this NPC turns hostile to that attacker for the rest of the level.",
+    "kind": "extension",
+    "source": "RCK\\Systems\\Social\\Roles\\FactionEvents.cs",
     "dynamic": false,
     "confidence": "high"
   },
@@ -2419,7 +2963,7 @@
     "id": "Faction_2_Aligned",
     "en": "This NPC joins custom faction 2; members start aligned with each other.",
     "kind": "designer",
-    "source": "RCK\\Systems\\Social\\Factions.cs",
+    "source": "RCK\\Systems\\Social\\Factions\\Factions.cs",
     "dynamic": false,
     "confidence": "high"
   },
@@ -2427,7 +2971,15 @@
     "id": "Faction_2_Annoyed",
     "en": "This NPC and members of custom faction 2 start annoyed with each other.",
     "kind": "extension",
-    "source": "RCK\\Systems\\Social\\Factions.cs",
+    "source": "RCK\\Systems\\Social\\Factions\\Factions.cs",
+    "dynamic": false,
+    "confidence": "high"
+  },
+  {
+    "id": "Faction_2_Calls_Backup",
+    "en": "When an outsider attacks this NPC, or its crew raises an alarm, a squad of custom faction 2 comes to help (twice a level at most).",
+    "kind": "extension",
+    "source": "RCK\\Systems\\Social\\Roles\\FactionBackup.cs",
     "dynamic": false,
     "confidence": "high"
   },
@@ -2435,7 +2987,7 @@
     "id": "Faction_2_Friendly",
     "en": "This NPC and members of custom faction 2 start friendly toward each other.",
     "kind": "extension",
-    "source": "RCK\\Systems\\Social\\Factions.cs",
+    "source": "RCK\\Systems\\Social\\Factions\\Factions.cs",
     "dynamic": false,
     "confidence": "high"
   },
@@ -2443,7 +2995,15 @@
     "id": "Faction_2_Hostile",
     "en": "This NPC and members of custom faction 2 start hateful toward each other.",
     "kind": "designer",
-    "source": "RCK\\Systems\\Social\\Factions.cs",
+    "source": "RCK\\Systems\\Social\\Factions\\Factions.cs",
+    "dynamic": false,
+    "confidence": "high"
+  },
+  {
+    "id": "Faction_2_Leader",
+    "en": "If this NPC is the last leader of custom faction 2 and it falls, the rest give up on the players and flee from fights.",
+    "kind": "extension",
+    "source": "RCK\\Systems\\Social\\Roles\\FactionEvents.cs",
     "dynamic": false,
     "confidence": "high"
   },
@@ -2451,7 +3011,7 @@
     "id": "Faction_2_Member",
     "en": "You count as a member of custom faction 2; other faction rules can then apply to you.",
     "kind": "extension",
-    "source": "RCK\\Systems\\Social\\Factions.cs",
+    "source": "RCK\\Systems\\Social\\Factions\\Factions.cs",
     "dynamic": false,
     "confidence": "high"
   },
@@ -2459,7 +3019,15 @@
     "id": "Faction_2_Neutral",
     "en": "This NPC and members of custom faction 2 start neutral, useful for truces.",
     "kind": "extension",
-    "source": "RCK\\Systems\\Social\\Factions.cs",
+    "source": "RCK\\Systems\\Social\\Factions\\Factions.cs",
+    "dynamic": false,
+    "confidence": "high"
+  },
+  {
+    "id": "Faction_2_Reinforcement",
+    "en": "Squads of custom faction 2 are made of this character: raids, backup, turf guards and respawns spawn it. It stays a normal NPC.",
+    "kind": "extension",
+    "source": "RCK\\Systems\\Social\\Squads\\SquadUnits.cs",
     "dynamic": false,
     "confidence": "high"
   },
@@ -2467,7 +3035,15 @@
     "id": "Faction_2_Territorial",
     "en": "This NPC and members of custom faction 2 start annoyed, then turn hostile on their own owned turf.",
     "kind": "extension",
-    "source": "RCK\\Systems\\Social\\Factions.cs",
+    "source": "RCK\\Systems\\Social\\Factions\\Factions.cs",
+    "dynamic": false,
+    "confidence": "high"
+  },
+  {
+    "id": "Faction_2_Vengeful",
+    "en": "When anyone attacks or kills a member of custom faction 2, this NPC turns hostile to that attacker for the rest of the level.",
+    "kind": "extension",
+    "source": "RCK\\Systems\\Social\\Roles\\FactionEvents.cs",
     "dynamic": false,
     "confidence": "high"
   },
@@ -2475,7 +3051,7 @@
     "id": "Faction_3_Aligned",
     "en": "This NPC joins custom faction 3; members start aligned with each other.",
     "kind": "designer",
-    "source": "RCK\\Systems\\Social\\Factions.cs",
+    "source": "RCK\\Systems\\Social\\Factions\\Factions.cs",
     "dynamic": false,
     "confidence": "high"
   },
@@ -2483,7 +3059,15 @@
     "id": "Faction_3_Annoyed",
     "en": "This NPC and members of custom faction 3 start annoyed with each other.",
     "kind": "extension",
-    "source": "RCK\\Systems\\Social\\Factions.cs",
+    "source": "RCK\\Systems\\Social\\Factions\\Factions.cs",
+    "dynamic": false,
+    "confidence": "high"
+  },
+  {
+    "id": "Faction_3_Calls_Backup",
+    "en": "When an outsider attacks this NPC, or its crew raises an alarm, a squad of custom faction 3 comes to help (twice a level at most).",
+    "kind": "extension",
+    "source": "RCK\\Systems\\Social\\Roles\\FactionBackup.cs",
     "dynamic": false,
     "confidence": "high"
   },
@@ -2491,7 +3075,7 @@
     "id": "Faction_3_Friendly",
     "en": "This NPC and members of custom faction 3 start friendly toward each other.",
     "kind": "extension",
-    "source": "RCK\\Systems\\Social\\Factions.cs",
+    "source": "RCK\\Systems\\Social\\Factions\\Factions.cs",
     "dynamic": false,
     "confidence": "high"
   },
@@ -2499,7 +3083,15 @@
     "id": "Faction_3_Hostile",
     "en": "This NPC and members of custom faction 3 start hateful toward each other.",
     "kind": "designer",
-    "source": "RCK\\Systems\\Social\\Factions.cs",
+    "source": "RCK\\Systems\\Social\\Factions\\Factions.cs",
+    "dynamic": false,
+    "confidence": "high"
+  },
+  {
+    "id": "Faction_3_Leader",
+    "en": "If this NPC is the last leader of custom faction 3 and it falls, the rest give up on the players and flee from fights.",
+    "kind": "extension",
+    "source": "RCK\\Systems\\Social\\Roles\\FactionEvents.cs",
     "dynamic": false,
     "confidence": "high"
   },
@@ -2507,7 +3099,7 @@
     "id": "Faction_3_Member",
     "en": "You count as a member of custom faction 3; other faction rules can then apply to you.",
     "kind": "extension",
-    "source": "RCK\\Systems\\Social\\Factions.cs",
+    "source": "RCK\\Systems\\Social\\Factions\\Factions.cs",
     "dynamic": false,
     "confidence": "high"
   },
@@ -2515,7 +3107,15 @@
     "id": "Faction_3_Neutral",
     "en": "This NPC and members of custom faction 3 start neutral, useful for truces.",
     "kind": "extension",
-    "source": "RCK\\Systems\\Social\\Factions.cs",
+    "source": "RCK\\Systems\\Social\\Factions\\Factions.cs",
+    "dynamic": false,
+    "confidence": "high"
+  },
+  {
+    "id": "Faction_3_Reinforcement",
+    "en": "Squads of custom faction 3 are made of this character: raids, backup, turf guards and respawns spawn it. It stays a normal NPC.",
+    "kind": "extension",
+    "source": "RCK\\Systems\\Social\\Squads\\SquadUnits.cs",
     "dynamic": false,
     "confidence": "high"
   },
@@ -2523,7 +3123,15 @@
     "id": "Faction_3_Territorial",
     "en": "This NPC and members of custom faction 3 start annoyed, then turn hostile on their own owned turf.",
     "kind": "extension",
-    "source": "RCK\\Systems\\Social\\Factions.cs",
+    "source": "RCK\\Systems\\Social\\Factions\\Factions.cs",
+    "dynamic": false,
+    "confidence": "high"
+  },
+  {
+    "id": "Faction_3_Vengeful",
+    "en": "When anyone attacks or kills a member of custom faction 3, this NPC turns hostile to that attacker for the rest of the level.",
+    "kind": "extension",
+    "source": "RCK\\Systems\\Social\\Roles\\FactionEvents.cs",
     "dynamic": false,
     "confidence": "high"
   },
@@ -2531,7 +3139,7 @@
     "id": "Faction_4_Aligned",
     "en": "This NPC joins custom faction 4; members start aligned with each other.",
     "kind": "designer",
-    "source": "RCK\\Systems\\Social\\Factions.cs",
+    "source": "RCK\\Systems\\Social\\Factions\\Factions.cs",
     "dynamic": false,
     "confidence": "high"
   },
@@ -2539,7 +3147,15 @@
     "id": "Faction_4_Annoyed",
     "en": "This NPC and members of custom faction 4 start annoyed with each other.",
     "kind": "extension",
-    "source": "RCK\\Systems\\Social\\Factions.cs",
+    "source": "RCK\\Systems\\Social\\Factions\\Factions.cs",
+    "dynamic": false,
+    "confidence": "high"
+  },
+  {
+    "id": "Faction_4_Calls_Backup",
+    "en": "When an outsider attacks this NPC, or its crew raises an alarm, a squad of custom faction 4 comes to help (twice a level at most).",
+    "kind": "extension",
+    "source": "RCK\\Systems\\Social\\Roles\\FactionBackup.cs",
     "dynamic": false,
     "confidence": "high"
   },
@@ -2547,7 +3163,7 @@
     "id": "Faction_4_Friendly",
     "en": "This NPC and members of custom faction 4 start friendly toward each other.",
     "kind": "extension",
-    "source": "RCK\\Systems\\Social\\Factions.cs",
+    "source": "RCK\\Systems\\Social\\Factions\\Factions.cs",
     "dynamic": false,
     "confidence": "high"
   },
@@ -2555,7 +3171,15 @@
     "id": "Faction_4_Hostile",
     "en": "This NPC and members of custom faction 4 start hateful toward each other.",
     "kind": "designer",
-    "source": "RCK\\Systems\\Social\\Factions.cs",
+    "source": "RCK\\Systems\\Social\\Factions\\Factions.cs",
+    "dynamic": false,
+    "confidence": "high"
+  },
+  {
+    "id": "Faction_4_Leader",
+    "en": "If this NPC is the last leader of custom faction 4 and it falls, the rest give up on the players and flee from fights.",
+    "kind": "extension",
+    "source": "RCK\\Systems\\Social\\Roles\\FactionEvents.cs",
     "dynamic": false,
     "confidence": "high"
   },
@@ -2563,7 +3187,7 @@
     "id": "Faction_4_Member",
     "en": "You count as a member of custom faction 4; other faction rules can then apply to you.",
     "kind": "extension",
-    "source": "RCK\\Systems\\Social\\Factions.cs",
+    "source": "RCK\\Systems\\Social\\Factions\\Factions.cs",
     "dynamic": false,
     "confidence": "high"
   },
@@ -2571,7 +3195,15 @@
     "id": "Faction_4_Neutral",
     "en": "This NPC and members of custom faction 4 start neutral, useful for truces.",
     "kind": "extension",
-    "source": "RCK\\Systems\\Social\\Factions.cs",
+    "source": "RCK\\Systems\\Social\\Factions\\Factions.cs",
+    "dynamic": false,
+    "confidence": "high"
+  },
+  {
+    "id": "Faction_4_Reinforcement",
+    "en": "Squads of custom faction 4 are made of this character: raids, backup, turf guards and respawns spawn it. It stays a normal NPC.",
+    "kind": "extension",
+    "source": "RCK\\Systems\\Social\\Squads\\SquadUnits.cs",
     "dynamic": false,
     "confidence": "high"
   },
@@ -2579,7 +3211,15 @@
     "id": "Faction_4_Territorial",
     "en": "This NPC and members of custom faction 4 start annoyed, then turn hostile on their own owned turf.",
     "kind": "extension",
-    "source": "RCK\\Systems\\Social\\Factions.cs",
+    "source": "RCK\\Systems\\Social\\Factions\\Factions.cs",
+    "dynamic": false,
+    "confidence": "high"
+  },
+  {
+    "id": "Faction_4_Vengeful",
+    "en": "When anyone attacks or kills a member of custom faction 4, this NPC turns hostile to that attacker for the rest of the level.",
+    "kind": "extension",
+    "source": "RCK\\Systems\\Social\\Roles\\FactionEvents.cs",
     "dynamic": false,
     "confidence": "high"
   },
@@ -2587,7 +3227,7 @@
     "id": "Faction_5_Aligned",
     "en": "This NPC joins custom faction 5; members start aligned with each other.",
     "kind": "extension",
-    "source": "RCK\\Systems\\Social\\Factions.cs",
+    "source": "RCK\\Systems\\Social\\Factions\\Factions.cs",
     "dynamic": false,
     "confidence": "high"
   },
@@ -2595,7 +3235,15 @@
     "id": "Faction_5_Annoyed",
     "en": "This NPC and members of custom faction 5 start annoyed with each other.",
     "kind": "extension",
-    "source": "RCK\\Systems\\Social\\Factions.cs",
+    "source": "RCK\\Systems\\Social\\Factions\\Factions.cs",
+    "dynamic": false,
+    "confidence": "high"
+  },
+  {
+    "id": "Faction_5_Calls_Backup",
+    "en": "When an outsider attacks this NPC, or its crew raises an alarm, a squad of custom faction 5 comes to help (twice a level at most).",
+    "kind": "extension",
+    "source": "RCK\\Systems\\Social\\Roles\\FactionBackup.cs",
     "dynamic": false,
     "confidence": "high"
   },
@@ -2603,7 +3251,7 @@
     "id": "Faction_5_Friendly",
     "en": "This NPC and members of custom faction 5 start friendly toward each other.",
     "kind": "extension",
-    "source": "RCK\\Systems\\Social\\Factions.cs",
+    "source": "RCK\\Systems\\Social\\Factions\\Factions.cs",
     "dynamic": false,
     "confidence": "high"
   },
@@ -2611,7 +3259,15 @@
     "id": "Faction_5_Hostile",
     "en": "This NPC and members of custom faction 5 start hateful toward each other.",
     "kind": "extension",
-    "source": "RCK\\Systems\\Social\\Factions.cs",
+    "source": "RCK\\Systems\\Social\\Factions\\Factions.cs",
+    "dynamic": false,
+    "confidence": "high"
+  },
+  {
+    "id": "Faction_5_Leader",
+    "en": "If this NPC is the last leader of custom faction 5 and it falls, the rest give up on the players and flee from fights.",
+    "kind": "extension",
+    "source": "RCK\\Systems\\Social\\Roles\\FactionEvents.cs",
     "dynamic": false,
     "confidence": "high"
   },
@@ -2619,7 +3275,7 @@
     "id": "Faction_5_Member",
     "en": "You count as a member of custom faction 5; other faction rules can then apply to you.",
     "kind": "extension",
-    "source": "RCK\\Systems\\Social\\Factions.cs",
+    "source": "RCK\\Systems\\Social\\Factions\\Factions.cs",
     "dynamic": false,
     "confidence": "high"
   },
@@ -2627,7 +3283,15 @@
     "id": "Faction_5_Neutral",
     "en": "This NPC and members of custom faction 5 start neutral, useful for truces.",
     "kind": "extension",
-    "source": "RCK\\Systems\\Social\\Factions.cs",
+    "source": "RCK\\Systems\\Social\\Factions\\Factions.cs",
+    "dynamic": false,
+    "confidence": "high"
+  },
+  {
+    "id": "Faction_5_Reinforcement",
+    "en": "Squads of custom faction 5 are made of this character: raids, backup, turf guards and respawns spawn it. It stays a normal NPC.",
+    "kind": "extension",
+    "source": "RCK\\Systems\\Social\\Squads\\SquadUnits.cs",
     "dynamic": false,
     "confidence": "high"
   },
@@ -2635,7 +3299,15 @@
     "id": "Faction_5_Territorial",
     "en": "This NPC and members of custom faction 5 start annoyed, then turn hostile on their own owned turf.",
     "kind": "extension",
-    "source": "RCK\\Systems\\Social\\Factions.cs",
+    "source": "RCK\\Systems\\Social\\Factions\\Factions.cs",
+    "dynamic": false,
+    "confidence": "high"
+  },
+  {
+    "id": "Faction_5_Vengeful",
+    "en": "When anyone attacks or kills a member of custom faction 5, this NPC turns hostile to that attacker for the rest of the level.",
+    "kind": "extension",
+    "source": "RCK\\Systems\\Social\\Roles\\FactionEvents.cs",
     "dynamic": false,
     "confidence": "high"
   },
@@ -2643,7 +3315,7 @@
     "id": "Faction_6_Aligned",
     "en": "This NPC joins custom faction 6; members start aligned with each other.",
     "kind": "extension",
-    "source": "RCK\\Systems\\Social\\Factions.cs",
+    "source": "RCK\\Systems\\Social\\Factions\\Factions.cs",
     "dynamic": false,
     "confidence": "high"
   },
@@ -2651,7 +3323,15 @@
     "id": "Faction_6_Annoyed",
     "en": "This NPC and members of custom faction 6 start annoyed with each other.",
     "kind": "extension",
-    "source": "RCK\\Systems\\Social\\Factions.cs",
+    "source": "RCK\\Systems\\Social\\Factions\\Factions.cs",
+    "dynamic": false,
+    "confidence": "high"
+  },
+  {
+    "id": "Faction_6_Calls_Backup",
+    "en": "When an outsider attacks this NPC, or its crew raises an alarm, a squad of custom faction 6 comes to help (twice a level at most).",
+    "kind": "extension",
+    "source": "RCK\\Systems\\Social\\Roles\\FactionBackup.cs",
     "dynamic": false,
     "confidence": "high"
   },
@@ -2659,7 +3339,7 @@
     "id": "Faction_6_Friendly",
     "en": "This NPC and members of custom faction 6 start friendly toward each other.",
     "kind": "extension",
-    "source": "RCK\\Systems\\Social\\Factions.cs",
+    "source": "RCK\\Systems\\Social\\Factions\\Factions.cs",
     "dynamic": false,
     "confidence": "high"
   },
@@ -2667,7 +3347,15 @@
     "id": "Faction_6_Hostile",
     "en": "This NPC and members of custom faction 6 start hateful toward each other.",
     "kind": "extension",
-    "source": "RCK\\Systems\\Social\\Factions.cs",
+    "source": "RCK\\Systems\\Social\\Factions\\Factions.cs",
+    "dynamic": false,
+    "confidence": "high"
+  },
+  {
+    "id": "Faction_6_Leader",
+    "en": "If this NPC is the last leader of custom faction 6 and it falls, the rest give up on the players and flee from fights.",
+    "kind": "extension",
+    "source": "RCK\\Systems\\Social\\Roles\\FactionEvents.cs",
     "dynamic": false,
     "confidence": "high"
   },
@@ -2675,7 +3363,7 @@
     "id": "Faction_6_Member",
     "en": "You count as a member of custom faction 6; other faction rules can then apply to you.",
     "kind": "extension",
-    "source": "RCK\\Systems\\Social\\Factions.cs",
+    "source": "RCK\\Systems\\Social\\Factions\\Factions.cs",
     "dynamic": false,
     "confidence": "high"
   },
@@ -2683,7 +3371,15 @@
     "id": "Faction_6_Neutral",
     "en": "This NPC and members of custom faction 6 start neutral, useful for truces.",
     "kind": "extension",
-    "source": "RCK\\Systems\\Social\\Factions.cs",
+    "source": "RCK\\Systems\\Social\\Factions\\Factions.cs",
+    "dynamic": false,
+    "confidence": "high"
+  },
+  {
+    "id": "Faction_6_Reinforcement",
+    "en": "Squads of custom faction 6 are made of this character: raids, backup, turf guards and respawns spawn it. It stays a normal NPC.",
+    "kind": "extension",
+    "source": "RCK\\Systems\\Social\\Squads\\SquadUnits.cs",
     "dynamic": false,
     "confidence": "high"
   },
@@ -2691,7 +3387,15 @@
     "id": "Faction_6_Territorial",
     "en": "This NPC and members of custom faction 6 start annoyed, then turn hostile on their own owned turf.",
     "kind": "extension",
-    "source": "RCK\\Systems\\Social\\Factions.cs",
+    "source": "RCK\\Systems\\Social\\Factions\\Factions.cs",
+    "dynamic": false,
+    "confidence": "high"
+  },
+  {
+    "id": "Faction_6_Vengeful",
+    "en": "When anyone attacks or kills a member of custom faction 6, this NPC turns hostile to that attacker for the rest of the level.",
+    "kind": "extension",
+    "source": "RCK\\Systems\\Social\\Roles\\FactionEvents.cs",
     "dynamic": false,
     "confidence": "high"
   },
@@ -2699,7 +3403,7 @@
     "id": "Faction_7_Aligned",
     "en": "This NPC joins custom faction 7; members start aligned with each other.",
     "kind": "extension",
-    "source": "RCK\\Systems\\Social\\Factions.cs",
+    "source": "RCK\\Systems\\Social\\Factions\\Factions.cs",
     "dynamic": false,
     "confidence": "high"
   },
@@ -2707,7 +3411,15 @@
     "id": "Faction_7_Annoyed",
     "en": "This NPC and members of custom faction 7 start annoyed with each other.",
     "kind": "extension",
-    "source": "RCK\\Systems\\Social\\Factions.cs",
+    "source": "RCK\\Systems\\Social\\Factions\\Factions.cs",
+    "dynamic": false,
+    "confidence": "high"
+  },
+  {
+    "id": "Faction_7_Calls_Backup",
+    "en": "When an outsider attacks this NPC, or its crew raises an alarm, a squad of custom faction 7 comes to help (twice a level at most).",
+    "kind": "extension",
+    "source": "RCK\\Systems\\Social\\Roles\\FactionBackup.cs",
     "dynamic": false,
     "confidence": "high"
   },
@@ -2715,7 +3427,7 @@
     "id": "Faction_7_Friendly",
     "en": "This NPC and members of custom faction 7 start friendly toward each other.",
     "kind": "extension",
-    "source": "RCK\\Systems\\Social\\Factions.cs",
+    "source": "RCK\\Systems\\Social\\Factions\\Factions.cs",
     "dynamic": false,
     "confidence": "high"
   },
@@ -2723,7 +3435,15 @@
     "id": "Faction_7_Hostile",
     "en": "This NPC and members of custom faction 7 start hateful toward each other.",
     "kind": "extension",
-    "source": "RCK\\Systems\\Social\\Factions.cs",
+    "source": "RCK\\Systems\\Social\\Factions\\Factions.cs",
+    "dynamic": false,
+    "confidence": "high"
+  },
+  {
+    "id": "Faction_7_Leader",
+    "en": "If this NPC is the last leader of custom faction 7 and it falls, the rest give up on the players and flee from fights.",
+    "kind": "extension",
+    "source": "RCK\\Systems\\Social\\Roles\\FactionEvents.cs",
     "dynamic": false,
     "confidence": "high"
   },
@@ -2731,7 +3451,7 @@
     "id": "Faction_7_Member",
     "en": "You count as a member of custom faction 7; other faction rules can then apply to you.",
     "kind": "extension",
-    "source": "RCK\\Systems\\Social\\Factions.cs",
+    "source": "RCK\\Systems\\Social\\Factions\\Factions.cs",
     "dynamic": false,
     "confidence": "high"
   },
@@ -2739,7 +3459,15 @@
     "id": "Faction_7_Neutral",
     "en": "This NPC and members of custom faction 7 start neutral, useful for truces.",
     "kind": "extension",
-    "source": "RCK\\Systems\\Social\\Factions.cs",
+    "source": "RCK\\Systems\\Social\\Factions\\Factions.cs",
+    "dynamic": false,
+    "confidence": "high"
+  },
+  {
+    "id": "Faction_7_Reinforcement",
+    "en": "Squads of custom faction 7 are made of this character: raids, backup, turf guards and respawns spawn it. It stays a normal NPC.",
+    "kind": "extension",
+    "source": "RCK\\Systems\\Social\\Squads\\SquadUnits.cs",
     "dynamic": false,
     "confidence": "high"
   },
@@ -2747,7 +3475,15 @@
     "id": "Faction_7_Territorial",
     "en": "This NPC and members of custom faction 7 start annoyed, then turn hostile on their own owned turf.",
     "kind": "extension",
-    "source": "RCK\\Systems\\Social\\Factions.cs",
+    "source": "RCK\\Systems\\Social\\Factions\\Factions.cs",
+    "dynamic": false,
+    "confidence": "high"
+  },
+  {
+    "id": "Faction_7_Vengeful",
+    "en": "When anyone attacks or kills a member of custom faction 7, this NPC turns hostile to that attacker for the rest of the level.",
+    "kind": "extension",
+    "source": "RCK\\Systems\\Social\\Roles\\FactionEvents.cs",
     "dynamic": false,
     "confidence": "high"
   },
@@ -2755,7 +3491,7 @@
     "id": "Faction_8_Aligned",
     "en": "This NPC joins custom faction 8; members start aligned with each other.",
     "kind": "extension",
-    "source": "RCK\\Systems\\Social\\Factions.cs",
+    "source": "RCK\\Systems\\Social\\Factions\\Factions.cs",
     "dynamic": false,
     "confidence": "high"
   },
@@ -2763,7 +3499,15 @@
     "id": "Faction_8_Annoyed",
     "en": "This NPC and members of custom faction 8 start annoyed with each other.",
     "kind": "extension",
-    "source": "RCK\\Systems\\Social\\Factions.cs",
+    "source": "RCK\\Systems\\Social\\Factions\\Factions.cs",
+    "dynamic": false,
+    "confidence": "high"
+  },
+  {
+    "id": "Faction_8_Calls_Backup",
+    "en": "When an outsider attacks this NPC, or its crew raises an alarm, a squad of custom faction 8 comes to help (twice a level at most).",
+    "kind": "extension",
+    "source": "RCK\\Systems\\Social\\Roles\\FactionBackup.cs",
     "dynamic": false,
     "confidence": "high"
   },
@@ -2771,7 +3515,7 @@
     "id": "Faction_8_Friendly",
     "en": "This NPC and members of custom faction 8 start friendly toward each other.",
     "kind": "extension",
-    "source": "RCK\\Systems\\Social\\Factions.cs",
+    "source": "RCK\\Systems\\Social\\Factions\\Factions.cs",
     "dynamic": false,
     "confidence": "high"
   },
@@ -2779,7 +3523,15 @@
     "id": "Faction_8_Hostile",
     "en": "This NPC and members of custom faction 8 start hateful toward each other.",
     "kind": "extension",
-    "source": "RCK\\Systems\\Social\\Factions.cs",
+    "source": "RCK\\Systems\\Social\\Factions\\Factions.cs",
+    "dynamic": false,
+    "confidence": "high"
+  },
+  {
+    "id": "Faction_8_Leader",
+    "en": "If this NPC is the last leader of custom faction 8 and it falls, the rest give up on the players and flee from fights.",
+    "kind": "extension",
+    "source": "RCK\\Systems\\Social\\Roles\\FactionEvents.cs",
     "dynamic": false,
     "confidence": "high"
   },
@@ -2787,7 +3539,7 @@
     "id": "Faction_8_Member",
     "en": "You count as a member of custom faction 8; other faction rules can then apply to you.",
     "kind": "extension",
-    "source": "RCK\\Systems\\Social\\Factions.cs",
+    "source": "RCK\\Systems\\Social\\Factions\\Factions.cs",
     "dynamic": false,
     "confidence": "high"
   },
@@ -2795,7 +3547,15 @@
     "id": "Faction_8_Neutral",
     "en": "This NPC and members of custom faction 8 start neutral, useful for truces.",
     "kind": "extension",
-    "source": "RCK\\Systems\\Social\\Factions.cs",
+    "source": "RCK\\Systems\\Social\\Factions\\Factions.cs",
+    "dynamic": false,
+    "confidence": "high"
+  },
+  {
+    "id": "Faction_8_Reinforcement",
+    "en": "Squads of custom faction 8 are made of this character: raids, backup, turf guards and respawns spawn it. It stays a normal NPC.",
+    "kind": "extension",
+    "source": "RCK\\Systems\\Social\\Squads\\SquadUnits.cs",
     "dynamic": false,
     "confidence": "high"
   },
@@ -2803,7 +3563,15 @@
     "id": "Faction_8_Territorial",
     "en": "This NPC and members of custom faction 8 start annoyed, then turn hostile on their own owned turf.",
     "kind": "extension",
-    "source": "RCK\\Systems\\Social\\Factions.cs",
+    "source": "RCK\\Systems\\Social\\Factions\\Factions.cs",
+    "dynamic": false,
+    "confidence": "high"
+  },
+  {
+    "id": "Faction_8_Vengeful",
+    "en": "When anyone attacks or kills a member of custom faction 8, this NPC turns hostile to that attacker for the rest of the level.",
+    "kind": "extension",
+    "source": "RCK\\Systems\\Social\\Roles\\FactionEvents.cs",
     "dynamic": false,
     "confidence": "high"
   },
@@ -2811,7 +3579,7 @@
     "id": "Faction_9_Aligned",
     "en": "This NPC joins custom faction 9; members start aligned with each other.",
     "kind": "extension",
-    "source": "RCK\\Systems\\Social\\Factions.cs",
+    "source": "RCK\\Systems\\Social\\Factions\\Factions.cs",
     "dynamic": false,
     "confidence": "high"
   },
@@ -2819,7 +3587,15 @@
     "id": "Faction_9_Annoyed",
     "en": "This NPC and members of custom faction 9 start annoyed with each other.",
     "kind": "extension",
-    "source": "RCK\\Systems\\Social\\Factions.cs",
+    "source": "RCK\\Systems\\Social\\Factions\\Factions.cs",
+    "dynamic": false,
+    "confidence": "high"
+  },
+  {
+    "id": "Faction_9_Calls_Backup",
+    "en": "When an outsider attacks this NPC, or its crew raises an alarm, a squad of custom faction 9 comes to help (twice a level at most).",
+    "kind": "extension",
+    "source": "RCK\\Systems\\Social\\Roles\\FactionBackup.cs",
     "dynamic": false,
     "confidence": "high"
   },
@@ -2827,7 +3603,7 @@
     "id": "Faction_9_Friendly",
     "en": "This NPC and members of custom faction 9 start friendly toward each other.",
     "kind": "extension",
-    "source": "RCK\\Systems\\Social\\Factions.cs",
+    "source": "RCK\\Systems\\Social\\Factions\\Factions.cs",
     "dynamic": false,
     "confidence": "high"
   },
@@ -2835,7 +3611,15 @@
     "id": "Faction_9_Hostile",
     "en": "This NPC and members of custom faction 9 start hateful toward each other.",
     "kind": "extension",
-    "source": "RCK\\Systems\\Social\\Factions.cs",
+    "source": "RCK\\Systems\\Social\\Factions\\Factions.cs",
+    "dynamic": false,
+    "confidence": "high"
+  },
+  {
+    "id": "Faction_9_Leader",
+    "en": "If this NPC is the last leader of custom faction 9 and it falls, the rest give up on the players and flee from fights.",
+    "kind": "extension",
+    "source": "RCK\\Systems\\Social\\Roles\\FactionEvents.cs",
     "dynamic": false,
     "confidence": "high"
   },
@@ -2843,7 +3627,7 @@
     "id": "Faction_9_Member",
     "en": "You count as a member of custom faction 9; other faction rules can then apply to you.",
     "kind": "extension",
-    "source": "RCK\\Systems\\Social\\Factions.cs",
+    "source": "RCK\\Systems\\Social\\Factions\\Factions.cs",
     "dynamic": false,
     "confidence": "high"
   },
@@ -2851,7 +3635,15 @@
     "id": "Faction_9_Neutral",
     "en": "This NPC and members of custom faction 9 start neutral, useful for truces.",
     "kind": "extension",
-    "source": "RCK\\Systems\\Social\\Factions.cs",
+    "source": "RCK\\Systems\\Social\\Factions\\Factions.cs",
+    "dynamic": false,
+    "confidence": "high"
+  },
+  {
+    "id": "Faction_9_Reinforcement",
+    "en": "Squads of custom faction 9 are made of this character: raids, backup, turf guards and respawns spawn it. It stays a normal NPC.",
+    "kind": "extension",
+    "source": "RCK\\Systems\\Social\\Squads\\SquadUnits.cs",
     "dynamic": false,
     "confidence": "high"
   },
@@ -2859,7 +3651,15 @@
     "id": "Faction_9_Territorial",
     "en": "This NPC and members of custom faction 9 start annoyed, then turn hostile on their own owned turf.",
     "kind": "extension",
-    "source": "RCK\\Systems\\Social\\Factions.cs",
+    "source": "RCK\\Systems\\Social\\Factions\\Factions.cs",
+    "dynamic": false,
+    "confidence": "high"
+  },
+  {
+    "id": "Faction_9_Vengeful",
+    "en": "When anyone attacks or kills a member of custom faction 9, this NPC turns hostile to that attacker for the rest of the level.",
+    "kind": "extension",
+    "source": "RCK\\Systems\\Social\\Roles\\FactionEvents.cs",
     "dynamic": false,
     "confidence": "high"
   },
@@ -2977,7 +3777,7 @@
   },
   {
     "id": "Fire_Sale",
-    "en": "This NPC runs a Fire Sale shop with stock such as Matches, Cigarette Lighter and Molotov Cocktail.",
+    "en": "This NPC runs a Fire Sale shop with stock such as Cigarette Lighter, Rag and Molotov Cocktail.",
     "kind": "designer",
     "source": "RCK\\Systems\\Merchants\\MerchantModule.cs",
     "dynamic": false,
@@ -2995,7 +3795,7 @@
     "id": "Firefighter_Aligned",
     "en": "This NPC joins Firefighters; members start aligned with each other.",
     "kind": "designer",
-    "source": "RCK\\Systems\\Social\\Factions.cs",
+    "source": "RCK\\Systems\\Social\\Factions\\Factions.cs",
     "dynamic": false,
     "confidence": "high"
   },
@@ -3003,7 +3803,7 @@
     "id": "Firefighter_Annoyed",
     "en": "This NPC and members of Firefighters start annoyed with each other.",
     "kind": "extension",
-    "source": "RCK\\Systems\\Social\\Factions.cs",
+    "source": "RCK\\Systems\\Social\\Factions\\Factions.cs",
     "dynamic": false,
     "confidence": "high"
   },
@@ -3024,6 +3824,14 @@
     "confidence": "high"
   },
   {
+    "id": "Firefighter_Calls_Backup",
+    "en": "When an outsider attacks this NPC, or its crew raises an alarm, a squad of Firefighters comes to help (twice a level at most).",
+    "kind": "extension",
+    "source": "RCK\\Systems\\Social\\Roles\\FactionBackup.cs",
+    "dynamic": false,
+    "confidence": "high"
+  },
+  {
     "id": "Firefighter_Five_and_Dime",
     "en": "This NPC runs a Firefighter Five & Dime shop with stock such as Fire Extinguisher, Fireproof Suit and Hard Hat.",
     "kind": "designer",
@@ -3035,7 +3843,7 @@
     "id": "Firefighter_Friendly",
     "en": "This NPC and members of Firefighters start friendly toward each other.",
     "kind": "extension",
-    "source": "RCK\\Systems\\Social\\Factions.cs",
+    "source": "RCK\\Systems\\Social\\Factions\\Factions.cs",
     "dynamic": false,
     "confidence": "high"
   },
@@ -3043,7 +3851,15 @@
     "id": "Firefighter_Hostile",
     "en": "This NPC and members of Firefighters start hateful toward each other.",
     "kind": "extension",
-    "source": "RCK\\Systems\\Social\\Factions.cs",
+    "source": "RCK\\Systems\\Social\\Factions\\Factions.cs",
+    "dynamic": false,
+    "confidence": "high"
+  },
+  {
+    "id": "Firefighter_Leader",
+    "en": "If this NPC is the last leader of Firefighters and it falls, the rest give up on the players and flee from fights.",
+    "kind": "extension",
+    "source": "RCK\\Systems\\Social\\Roles\\FactionEvents.cs",
     "dynamic": false,
     "confidence": "high"
   },
@@ -3051,7 +3867,7 @@
     "id": "Firefighter_Member",
     "en": "You count as a member of Firefighters; other faction rules can then apply to you.",
     "kind": "extension",
-    "source": "RCK\\Systems\\Social\\Factions.cs",
+    "source": "RCK\\Systems\\Social\\Factions\\Factions.cs",
     "dynamic": false,
     "confidence": "high"
   },
@@ -3059,7 +3875,15 @@
     "id": "Firefighter_Neutral",
     "en": "This NPC and members of Firefighters start neutral, useful for truces.",
     "kind": "extension",
-    "source": "RCK\\Systems\\Social\\Factions.cs",
+    "source": "RCK\\Systems\\Social\\Factions\\Factions.cs",
+    "dynamic": false,
+    "confidence": "high"
+  },
+  {
+    "id": "Firefighter_Reinforcement",
+    "en": "Squads of Firefighters are made of this character: raids, backup, turf guards and respawns spawn it. It stays a normal NPC.",
+    "kind": "extension",
+    "source": "RCK\\Systems\\Social\\Squads\\SquadUnits.cs",
     "dynamic": false,
     "confidence": "high"
   },
@@ -3067,7 +3891,15 @@
     "id": "Firefighter_Territorial",
     "en": "This NPC and members of Firefighters start annoyed, then turn hostile on their own owned turf.",
     "kind": "extension",
-    "source": "RCK\\Systems\\Social\\Factions.cs",
+    "source": "RCK\\Systems\\Social\\Factions\\Factions.cs",
+    "dynamic": false,
+    "confidence": "high"
+  },
+  {
+    "id": "Firefighter_Vengeful",
+    "en": "When anyone attacks or kills a member of Firefighters, this NPC turns hostile to that attacker for the rest of the level.",
+    "kind": "extension",
+    "source": "RCK\\Systems\\Social\\Roles\\FactionEvents.cs",
     "dynamic": false,
     "confidence": "high"
   },
@@ -3291,7 +4123,7 @@
     "id": "Gorilla_Aligned",
     "en": "This NPC joins Gorillas; members start aligned with each other.",
     "kind": "designer",
-    "source": "RCK\\Systems\\Social\\Factions.cs",
+    "source": "RCK\\Systems\\Social\\Factions\\Factions.cs",
     "dynamic": false,
     "confidence": "high"
   },
@@ -3299,7 +4131,7 @@
     "id": "Gorilla_Annoyed",
     "en": "This NPC and members of Gorillas start annoyed with each other.",
     "kind": "extension",
-    "source": "RCK\\Systems\\Social\\Factions.cs",
+    "source": "RCK\\Systems\\Social\\Factions\\Factions.cs",
     "dynamic": false,
     "confidence": "high"
   },
@@ -3320,6 +4152,14 @@
     "confidence": "high"
   },
   {
+    "id": "Gorilla_Calls_Backup",
+    "en": "When an outsider attacks this NPC, or its crew raises an alarm, a squad of Gorillas comes to help (twice a level at most).",
+    "kind": "extension",
+    "source": "RCK\\Systems\\Social\\Roles\\FactionBackup.cs",
+    "dynamic": false,
+    "confidence": "high"
+  },
+  {
     "id": "Gorilla_Colored_Body",
     "en": "This NPC's appearance roll can use Gorilla Colored for body clothing color.",
     "kind": "designer",
@@ -3331,7 +4171,7 @@
     "id": "Gorilla_Friendly",
     "en": "This NPC and members of Gorillas start friendly toward each other.",
     "kind": "extension",
-    "source": "RCK\\Systems\\Social\\Factions.cs",
+    "source": "RCK\\Systems\\Social\\Factions\\Factions.cs",
     "dynamic": false,
     "confidence": "high"
   },
@@ -3347,7 +4187,15 @@
     "id": "Gorilla_Hostile",
     "en": "This NPC and members of Gorillas start hateful toward each other.",
     "kind": "designer",
-    "source": "RCK\\Systems\\Social\\Factions.cs",
+    "source": "RCK\\Systems\\Social\\Factions\\Factions.cs",
+    "dynamic": false,
+    "confidence": "high"
+  },
+  {
+    "id": "Gorilla_Leader",
+    "en": "If this NPC is the last leader of Gorillas and it falls, the rest give up on the players and flee from fights.",
+    "kind": "extension",
+    "source": "RCK\\Systems\\Social\\Roles\\FactionEvents.cs",
     "dynamic": false,
     "confidence": "high"
   },
@@ -3363,7 +4211,7 @@
     "id": "Gorilla_Member",
     "en": "You count as a member of Gorillas; other faction rules can then apply to you.",
     "kind": "extension",
-    "source": "RCK\\Systems\\Social\\Factions.cs",
+    "source": "RCK\\Systems\\Social\\Factions\\Factions.cs",
     "dynamic": false,
     "confidence": "high"
   },
@@ -3371,7 +4219,15 @@
     "id": "Gorilla_Neutral",
     "en": "This NPC and members of Gorillas start neutral, useful for truces.",
     "kind": "extension",
-    "source": "RCK\\Systems\\Social\\Factions.cs",
+    "source": "RCK\\Systems\\Social\\Factions\\Factions.cs",
+    "dynamic": false,
+    "confidence": "high"
+  },
+  {
+    "id": "Gorilla_Reinforcement",
+    "en": "Squads of Gorillas are made of this character: raids, backup, turf guards and respawns spawn it. It stays a normal NPC.",
+    "kind": "extension",
+    "source": "RCK\\Systems\\Social\\Squads\\SquadUnits.cs",
     "dynamic": false,
     "confidence": "high"
   },
@@ -3387,7 +4243,15 @@
     "id": "Gorilla_Territorial",
     "en": "This NPC and members of Gorillas start annoyed, then turn hostile on their own owned turf.",
     "kind": "extension",
-    "source": "RCK\\Systems\\Social\\Factions.cs",
+    "source": "RCK\\Systems\\Social\\Factions\\Factions.cs",
+    "dynamic": false,
+    "confidence": "high"
+  },
+  {
+    "id": "Gorilla_Vengeful",
+    "en": "When anyone attacks or kills a member of Gorillas, this NPC turns hostile to that attacker for the rest of the level.",
+    "kind": "extension",
+    "source": "RCK\\Systems\\Social\\Roles\\FactionEvents.cs",
     "dynamic": false,
     "confidence": "high"
   },
@@ -3587,7 +4451,7 @@
     "id": "Hacker_Aligned",
     "en": "This NPC joins Hackers; members start aligned with each other.",
     "kind": "extension",
-    "source": "RCK\\Systems\\Social\\Factions.cs",
+    "source": "RCK\\Systems\\Social\\Factions\\Factions.cs",
     "dynamic": false,
     "confidence": "high"
   },
@@ -3595,7 +4459,7 @@
     "id": "Hacker_Annoyed",
     "en": "This NPC and members of Hackers start annoyed with each other.",
     "kind": "extension",
-    "source": "RCK\\Systems\\Social\\Factions.cs",
+    "source": "RCK\\Systems\\Social\\Factions\\Factions.cs",
     "dynamic": false,
     "confidence": "high"
   },
@@ -3616,10 +4480,18 @@
     "confidence": "high"
   },
   {
+    "id": "Hacker_Calls_Backup",
+    "en": "When an outsider attacks this NPC, or its crew raises an alarm, a squad of Hackers comes to help (twice a level at most).",
+    "kind": "extension",
+    "source": "RCK\\Systems\\Social\\Roles\\FactionBackup.cs",
+    "dynamic": false,
+    "confidence": "high"
+  },
+  {
     "id": "Hacker_Friendly",
     "en": "This NPC and members of Hackers start friendly toward each other.",
     "kind": "extension",
-    "source": "RCK\\Systems\\Social\\Factions.cs",
+    "source": "RCK\\Systems\\Social\\Factions\\Factions.cs",
     "dynamic": false,
     "confidence": "high"
   },
@@ -3627,7 +4499,15 @@
     "id": "Hacker_Hostile",
     "en": "This NPC and members of Hackers start hateful toward each other.",
     "kind": "extension",
-    "source": "RCK\\Systems\\Social\\Factions.cs",
+    "source": "RCK\\Systems\\Social\\Factions\\Factions.cs",
+    "dynamic": false,
+    "confidence": "high"
+  },
+  {
+    "id": "Hacker_Leader",
+    "en": "If this NPC is the last leader of Hackers and it falls, the rest give up on the players and flee from fights.",
+    "kind": "extension",
+    "source": "RCK\\Systems\\Social\\Roles\\FactionEvents.cs",
     "dynamic": false,
     "confidence": "high"
   },
@@ -3635,7 +4515,7 @@
     "id": "Hacker_Member",
     "en": "You count as a member of Hackers; other faction rules can then apply to you.",
     "kind": "extension",
-    "source": "RCK\\Systems\\Social\\Factions.cs",
+    "source": "RCK\\Systems\\Social\\Factions\\Factions.cs",
     "dynamic": false,
     "confidence": "high"
   },
@@ -3643,7 +4523,15 @@
     "id": "Hacker_Neutral",
     "en": "This NPC and members of Hackers start neutral, useful for truces.",
     "kind": "extension",
-    "source": "RCK\\Systems\\Social\\Factions.cs",
+    "source": "RCK\\Systems\\Social\\Factions\\Factions.cs",
+    "dynamic": false,
+    "confidence": "high"
+  },
+  {
+    "id": "Hacker_Reinforcement",
+    "en": "Squads of Hackers are made of this character: raids, backup, turf guards and respawns spawn it. It stays a normal NPC.",
+    "kind": "extension",
+    "source": "RCK\\Systems\\Social\\Squads\\SquadUnits.cs",
     "dynamic": false,
     "confidence": "high"
   },
@@ -3651,7 +4539,15 @@
     "id": "Hacker_Territorial",
     "en": "This NPC and members of Hackers start annoyed, then turn hostile on their own owned turf.",
     "kind": "extension",
-    "source": "RCK\\Systems\\Social\\Factions.cs",
+    "source": "RCK\\Systems\\Social\\Factions\\Factions.cs",
+    "dynamic": false,
+    "confidence": "high"
+  },
+  {
+    "id": "Hacker_Vengeful",
+    "en": "When anyone attacks or kills a member of Hackers, this NPC turns hostile to that attacker for the rest of the level.",
+    "kind": "extension",
+    "source": "RCK\\Systems\\Social\\Roles\\FactionEvents.cs",
     "dynamic": false,
     "confidence": "high"
   },
@@ -4387,7 +5283,7 @@
     "id": "Mafia_Aligned",
     "en": "This NPC joins the Mafia; members start aligned with each other.",
     "kind": "extension",
-    "source": "RCK\\Systems\\Social\\Factions.cs",
+    "source": "RCK\\Systems\\Social\\Factions\\Factions.cs",
     "dynamic": false,
     "confidence": "high"
   },
@@ -4395,7 +5291,15 @@
     "id": "Mafia_Annoyed",
     "en": "This NPC and members of the Mafia start annoyed with each other.",
     "kind": "extension",
-    "source": "RCK\\Systems\\Social\\Factions.cs",
+    "source": "RCK\\Systems\\Social\\Factions\\Factions.cs",
+    "dynamic": false,
+    "confidence": "high"
+  },
+  {
+    "id": "Mafia_Calls_Backup",
+    "en": "When an outsider attacks this NPC, or its crew raises an alarm, a squad of the Mafia comes to help (twice a level at most).",
+    "kind": "extension",
+    "source": "RCK\\Systems\\Social\\Roles\\FactionBackup.cs",
     "dynamic": false,
     "confidence": "high"
   },
@@ -4403,7 +5307,7 @@
     "id": "Mafia_Friendly",
     "en": "This NPC and members of the Mafia start friendly toward each other.",
     "kind": "extension",
-    "source": "RCK\\Systems\\Social\\Factions.cs",
+    "source": "RCK\\Systems\\Social\\Factions\\Factions.cs",
     "dynamic": false,
     "confidence": "high"
   },
@@ -4411,7 +5315,15 @@
     "id": "Mafia_Hostile",
     "en": "This NPC and members of the Mafia start hateful toward each other.",
     "kind": "designer",
-    "source": "RCK\\Systems\\Social\\Factions.cs",
+    "source": "RCK\\Systems\\Social\\Factions\\Factions.cs",
+    "dynamic": false,
+    "confidence": "high"
+  },
+  {
+    "id": "Mafia_Leader",
+    "en": "If this NPC is the last leader of the Mafia and it falls, the rest give up on the players and flee from fights.",
+    "kind": "extension",
+    "source": "RCK\\Systems\\Social\\Roles\\FactionEvents.cs",
     "dynamic": false,
     "confidence": "high"
   },
@@ -4419,7 +5331,7 @@
     "id": "Mafia_Member",
     "en": "You count as a member of the Mafia; other faction rules can then apply to you.",
     "kind": "extension",
-    "source": "RCK\\Systems\\Social\\Factions.cs",
+    "source": "RCK\\Systems\\Social\\Factions\\Factions.cs",
     "dynamic": false,
     "confidence": "high"
   },
@@ -4427,7 +5339,15 @@
     "id": "Mafia_Neutral",
     "en": "This NPC and members of the Mafia start neutral, useful for truces.",
     "kind": "extension",
-    "source": "RCK\\Systems\\Social\\Factions.cs",
+    "source": "RCK\\Systems\\Social\\Factions\\Factions.cs",
+    "dynamic": false,
+    "confidence": "high"
+  },
+  {
+    "id": "Mafia_Reinforcement",
+    "en": "Squads of the Mafia are made of this character: raids, backup, turf guards and respawns spawn it. It stays a normal NPC.",
+    "kind": "extension",
+    "source": "RCK\\Systems\\Social\\Squads\\SquadUnits.cs",
     "dynamic": false,
     "confidence": "high"
   },
@@ -4435,7 +5355,15 @@
     "id": "Mafia_Territorial",
     "en": "This NPC and members of the Mafia start annoyed, then turn hostile on their own owned turf.",
     "kind": "extension",
-    "source": "RCK\\Systems\\Social\\Factions.cs",
+    "source": "RCK\\Systems\\Social\\Factions\\Factions.cs",
+    "dynamic": false,
+    "confidence": "high"
+  },
+  {
+    "id": "Mafia_Vengeful",
+    "en": "When anyone attacks or kills a member of the Mafia, this NPC turns hostile to that attacker for the rest of the level.",
+    "kind": "extension",
+    "source": "RCK\\Systems\\Social\\Roles\\FactionEvents.cs",
     "dynamic": false,
     "confidence": "high"
   },
@@ -4505,7 +5433,7 @@
   },
   {
     "id": "MapMarker_Pilot",
-    "en": "This NPC forces a minimap marker when it starts or reloads.",
+    "en": "Once you've seen this NPC, it shows on the map as a blue arrow with its name.",
     "kind": "designer",
     "source": "RCK\\Systems\\Interactions\\InteractionModule.cs",
     "dynamic": false,
@@ -5592,10 +6520,50 @@
     "confidence": "medium"
   },
   {
+    "id": "RCK_Broker",
+    "en": "Sells faction deals: pay to broker a truce between two factions, or to frame one for hitting another, for the rest of the level.",
+    "kind": "extension",
+    "source": "RCK\\Systems\\Social\\Roles\\Broker.cs",
+    "dynamic": false,
+    "confidence": "high"
+  },
+  {
+    "id": "RCK_Faction_Defector",
+    "en": "When a player takes this NPC into the party, its old factions (other than the player's) disown it, and both sides turn hostile.",
+    "kind": "extension",
+    "source": "RCK\\Systems\\Social\\Roles\\FactionEvents.cs",
+    "dynamic": false,
+    "confidence": "high"
+  },
+  {
+    "id": "RCK_Faction_Medic",
+    "en": "Every 5 seconds, heals the most hurt friend within 5 tiles (itself, its factions, its employer and followers) for 15% of their health, at least 8.",
+    "kind": "extension",
+    "source": "RCK\\Systems\\Social\\Roles\\FactionMedic.cs",
+    "dynamic": false,
+    "confidence": "high"
+  },
+  {
+    "id": "RCK_Faction_Racketeer",
+    "en": "Players only. Shake down a free racket's owner to make the racket join your faction (the one you command, else your own). Vanilla shakedown odds; no money.",
+    "kind": "extension",
+    "source": "RCK\\Systems\\Social\\Roles\\Racketeer.cs",
+    "dynamic": false,
+    "confidence": "high"
+  },
+  {
     "id": "RCK_Innocent_Until_Caught",
     "en": "This NPC's hostile faction rules and Guilty flag stay hidden until another NPC sees it strike first.",
     "kind": "extension",
-    "source": "RCK\\Systems\\Social\\StreetInnocence.cs",
+    "source": "RCK\\Systems\\Social\\Relations\\StreetInnocence.cs",
+    "dynamic": false,
+    "confidence": "high"
+  },
+  {
+    "id": "RCK_No_Quests",
+    "en": "Never picked to give a generated odd job.",
+    "kind": "extension",
+    "source": "RCK\\Systems\\Quests\\QuestsModule.cs",
     "dynamic": false,
     "confidence": "high"
   },
@@ -5603,7 +6571,47 @@
     "id": "RCK_Not_Recruitable",
     "en": "Faction recruiting never offers this NPC, though its normal hire traits still work.",
     "kind": "extension",
-    "source": "RCK\\Systems\\Social\\FactionRecruit.cs",
+    "source": "RCK\\Systems\\Social\\Relations\\FactionRecruit.cs",
+    "dynamic": false,
+    "confidence": "high"
+  },
+  {
+    "id": "RCK_Quest_Target_A",
+    "en": "A target for quest scripts that name Label:A.",
+    "kind": "extension",
+    "source": "RCK\\Systems\\Quests\\QuestsModule.cs",
+    "dynamic": false,
+    "confidence": "high"
+  },
+  {
+    "id": "RCK_Quest_Target_B",
+    "en": "A target for quest scripts that name Label:B.",
+    "kind": "extension",
+    "source": "RCK\\Systems\\Quests\\QuestsModule.cs",
+    "dynamic": false,
+    "confidence": "high"
+  },
+  {
+    "id": "RCK_Quest_Target_C",
+    "en": "A target for quest scripts that name Label:C.",
+    "kind": "extension",
+    "source": "RCK\\Systems\\Quests\\QuestsModule.cs",
+    "dynamic": false,
+    "confidence": "high"
+  },
+  {
+    "id": "RCK_Quest_Target_D",
+    "en": "A target for quest scripts that name Label:D.",
+    "kind": "extension",
+    "source": "RCK\\Systems\\Quests\\QuestsModule.cs",
+    "dynamic": false,
+    "confidence": "high"
+  },
+  {
+    "id": "RCK_Radiant_Quest_Giver",
+    "en": "Always offers a generated odd job this level. Its Talk text comes back once the job is over.",
+    "kind": "extension",
+    "source": "RCK\\Systems\\Quests\\QuestsModule.cs",
     "dynamic": false,
     "confidence": "high"
   },
@@ -5611,7 +6619,7 @@
     "id": "RCK_Recruit_Free",
     "en": "Players sharing a faction with this NPC can recruit it for free.",
     "kind": "extension",
-    "source": "RCK\\Systems\\Social\\FactionRecruit.cs",
+    "source": "RCK\\Systems\\Social\\Relations\\FactionRecruit.cs",
     "dynamic": false,
     "confidence": "high"
   },
@@ -5619,7 +6627,7 @@
     "id": "RCK_Recruit_Paid",
     "en": "Players sharing a faction with this NPC can hire it at the gang-hire price.",
     "kind": "extension",
-    "source": "RCK\\Systems\\Social\\FactionRecruit.cs",
+    "source": "RCK\\Systems\\Social\\Relations\\FactionRecruit.cs",
     "dynamic": false,
     "confidence": "high"
   },
@@ -5859,7 +6867,7 @@
     "id": "Scientist_Aligned",
     "en": "This NPC joins Scientists; members start aligned with each other.",
     "kind": "extension",
-    "source": "RCK\\Systems\\Social\\Factions.cs",
+    "source": "RCK\\Systems\\Social\\Factions\\Factions.cs",
     "dynamic": false,
     "confidence": "high"
   },
@@ -5867,7 +6875,7 @@
     "id": "Scientist_Annoyed",
     "en": "This NPC and members of Scientists start annoyed with each other.",
     "kind": "extension",
-    "source": "RCK\\Systems\\Social\\Factions.cs",
+    "source": "RCK\\Systems\\Social\\Factions\\Factions.cs",
     "dynamic": false,
     "confidence": "high"
   },
@@ -5888,10 +6896,18 @@
     "confidence": "high"
   },
   {
+    "id": "Scientist_Calls_Backup",
+    "en": "When an outsider attacks this NPC, or its crew raises an alarm, a squad of Scientists comes to help (twice a level at most).",
+    "kind": "extension",
+    "source": "RCK\\Systems\\Social\\Roles\\FactionBackup.cs",
+    "dynamic": false,
+    "confidence": "high"
+  },
+  {
     "id": "Scientist_Friendly",
     "en": "This NPC and members of Scientists start friendly toward each other.",
     "kind": "extension",
-    "source": "RCK\\Systems\\Social\\Factions.cs",
+    "source": "RCK\\Systems\\Social\\Factions\\Factions.cs",
     "dynamic": false,
     "confidence": "high"
   },
@@ -5899,7 +6915,15 @@
     "id": "Scientist_Hostile",
     "en": "This NPC and members of Scientists start hateful toward each other.",
     "kind": "designer",
-    "source": "RCK\\Systems\\Social\\Factions.cs",
+    "source": "RCK\\Systems\\Social\\Factions\\Factions.cs",
+    "dynamic": false,
+    "confidence": "high"
+  },
+  {
+    "id": "Scientist_Leader",
+    "en": "If this NPC is the last leader of Scientists and it falls, the rest give up on the players and flee from fights.",
+    "kind": "extension",
+    "source": "RCK\\Systems\\Social\\Roles\\FactionEvents.cs",
     "dynamic": false,
     "confidence": "high"
   },
@@ -5907,7 +6931,7 @@
     "id": "Scientist_Member",
     "en": "You count as a member of Scientists; other faction rules can then apply to you.",
     "kind": "extension",
-    "source": "RCK\\Systems\\Social\\Factions.cs",
+    "source": "RCK\\Systems\\Social\\Factions\\Factions.cs",
     "dynamic": false,
     "confidence": "high"
   },
@@ -5915,7 +6939,15 @@
     "id": "Scientist_Neutral",
     "en": "This NPC and members of Scientists start neutral, useful for truces.",
     "kind": "extension",
-    "source": "RCK\\Systems\\Social\\Factions.cs",
+    "source": "RCK\\Systems\\Social\\Factions\\Factions.cs",
+    "dynamic": false,
+    "confidence": "high"
+  },
+  {
+    "id": "Scientist_Reinforcement",
+    "en": "Squads of Scientists are made of this character: raids, backup, turf guards and respawns spawn it. It stays a normal NPC.",
+    "kind": "extension",
+    "source": "RCK\\Systems\\Social\\Squads\\SquadUnits.cs",
     "dynamic": false,
     "confidence": "high"
   },
@@ -5923,7 +6955,15 @@
     "id": "Scientist_Territorial",
     "en": "This NPC and members of Scientists start annoyed, then turn hostile on their own owned turf.",
     "kind": "extension",
-    "source": "RCK\\Systems\\Social\\Factions.cs",
+    "source": "RCK\\Systems\\Social\\Factions\\Factions.cs",
+    "dynamic": false,
+    "confidence": "high"
+  },
+  {
+    "id": "Scientist_Vengeful",
+    "en": "When anyone attacks or kills a member of Scientists, this NPC turns hostile to that attacker for the rest of the level.",
+    "kind": "extension",
+    "source": "RCK\\Systems\\Social\\Roles\\FactionEvents.cs",
     "dynamic": false,
     "confidence": "high"
   },
@@ -6283,7 +7323,7 @@
     "id": "Slavemaster_Aligned",
     "en": "This NPC joins Slavemasters; members start aligned with each other.",
     "kind": "extension",
-    "source": "RCK\\Systems\\Social\\Factions.cs",
+    "source": "RCK\\Systems\\Social\\Factions\\Factions.cs",
     "dynamic": false,
     "confidence": "high"
   },
@@ -6291,7 +7331,7 @@
     "id": "Slavemaster_Annoyed",
     "en": "This NPC and members of Slavemasters start annoyed with each other.",
     "kind": "extension",
-    "source": "RCK\\Systems\\Social\\Factions.cs",
+    "source": "RCK\\Systems\\Social\\Factions\\Factions.cs",
     "dynamic": false,
     "confidence": "high"
   },
@@ -6312,10 +7352,18 @@
     "confidence": "high"
   },
   {
+    "id": "Slavemaster_Calls_Backup",
+    "en": "When an outsider attacks this NPC, or its crew raises an alarm, a squad of Slavemasters comes to help (twice a level at most).",
+    "kind": "extension",
+    "source": "RCK\\Systems\\Social\\Roles\\FactionBackup.cs",
+    "dynamic": false,
+    "confidence": "high"
+  },
+  {
     "id": "Slavemaster_Friendly",
     "en": "This NPC and members of Slavemasters start friendly toward each other.",
     "kind": "extension",
-    "source": "RCK\\Systems\\Social\\Factions.cs",
+    "source": "RCK\\Systems\\Social\\Factions\\Factions.cs",
     "dynamic": false,
     "confidence": "high"
   },
@@ -6323,7 +7371,15 @@
     "id": "Slavemaster_Hostile",
     "en": "This NPC and members of Slavemasters start hateful toward each other.",
     "kind": "designer",
-    "source": "RCK\\Systems\\Social\\Factions.cs",
+    "source": "RCK\\Systems\\Social\\Factions\\Factions.cs",
+    "dynamic": false,
+    "confidence": "high"
+  },
+  {
+    "id": "Slavemaster_Leader",
+    "en": "If this NPC is the last leader of Slavemasters and it falls, the rest give up on the players and flee from fights.",
+    "kind": "extension",
+    "source": "RCK\\Systems\\Social\\Roles\\FactionEvents.cs",
     "dynamic": false,
     "confidence": "high"
   },
@@ -6339,7 +7395,7 @@
     "id": "Slavemaster_Member",
     "en": "You count as a member of Slavemasters; other faction rules can then apply to you.",
     "kind": "extension",
-    "source": "RCK\\Systems\\Social\\Factions.cs",
+    "source": "RCK\\Systems\\Social\\Factions\\Factions.cs",
     "dynamic": false,
     "confidence": "high"
   },
@@ -6347,7 +7403,15 @@
     "id": "Slavemaster_Neutral",
     "en": "This NPC and members of Slavemasters start neutral, useful for truces.",
     "kind": "extension",
-    "source": "RCK\\Systems\\Social\\Factions.cs",
+    "source": "RCK\\Systems\\Social\\Factions\\Factions.cs",
+    "dynamic": false,
+    "confidence": "high"
+  },
+  {
+    "id": "Slavemaster_Reinforcement",
+    "en": "Squads of Slavemasters are made of this character: raids, backup, turf guards and respawns spawn it. It stays a normal NPC.",
+    "kind": "extension",
+    "source": "RCK\\Systems\\Social\\Squads\\SquadUnits.cs",
     "dynamic": false,
     "confidence": "high"
   },
@@ -6355,7 +7419,15 @@
     "id": "Slavemaster_Territorial",
     "en": "This NPC and members of Slavemasters start annoyed, then turn hostile on their own owned turf.",
     "kind": "extension",
-    "source": "RCK\\Systems\\Social\\Factions.cs",
+    "source": "RCK\\Systems\\Social\\Factions\\Factions.cs",
+    "dynamic": false,
+    "confidence": "high"
+  },
+  {
+    "id": "Slavemaster_Vengeful",
+    "en": "When anyone attacks or kills a member of Slavemasters, this NPC turns hostile to that attacker for the rest of the level.",
+    "kind": "extension",
+    "source": "RCK\\Systems\\Social\\Roles\\FactionEvents.cs",
     "dynamic": false,
     "confidence": "high"
   },
@@ -6427,7 +7499,7 @@
     "id": "Soldier_Aligned",
     "en": "This NPC joins Soldiers; members start aligned with each other.",
     "kind": "designer",
-    "source": "RCK\\Systems\\Social\\Factions.cs",
+    "source": "RCK\\Systems\\Social\\Factions\\Factions.cs",
     "dynamic": false,
     "confidence": "high"
   },
@@ -6435,7 +7507,7 @@
     "id": "Soldier_Annoyed",
     "en": "This NPC and members of Soldiers start annoyed with each other.",
     "kind": "extension",
-    "source": "RCK\\Systems\\Social\\Factions.cs",
+    "source": "RCK\\Systems\\Social\\Factions\\Factions.cs",
     "dynamic": false,
     "confidence": "high"
   },
@@ -6456,10 +7528,18 @@
     "confidence": "high"
   },
   {
+    "id": "Soldier_Calls_Backup",
+    "en": "When an outsider attacks this NPC, or its crew raises an alarm, a squad of Soldiers comes to help (twice a level at most).",
+    "kind": "extension",
+    "source": "RCK\\Systems\\Social\\Roles\\FactionBackup.cs",
+    "dynamic": false,
+    "confidence": "high"
+  },
+  {
     "id": "Soldier_Friendly",
     "en": "This NPC and members of Soldiers start friendly toward each other.",
     "kind": "extension",
-    "source": "RCK\\Systems\\Social\\Factions.cs",
+    "source": "RCK\\Systems\\Social\\Factions\\Factions.cs",
     "dynamic": false,
     "confidence": "high"
   },
@@ -6467,7 +7547,15 @@
     "id": "Soldier_Hostile",
     "en": "This NPC and members of Soldiers start hateful toward each other.",
     "kind": "designer",
-    "source": "RCK\\Systems\\Social\\Factions.cs",
+    "source": "RCK\\Systems\\Social\\Factions\\Factions.cs",
+    "dynamic": false,
+    "confidence": "high"
+  },
+  {
+    "id": "Soldier_Leader",
+    "en": "If this NPC is the last leader of Soldiers and it falls, the rest give up on the players and flee from fights.",
+    "kind": "extension",
+    "source": "RCK\\Systems\\Social\\Roles\\FactionEvents.cs",
     "dynamic": false,
     "confidence": "high"
   },
@@ -6475,7 +7563,7 @@
     "id": "Soldier_Member",
     "en": "You count as a member of Soldiers; other faction rules can then apply to you.",
     "kind": "extension",
-    "source": "RCK\\Systems\\Social\\Factions.cs",
+    "source": "RCK\\Systems\\Social\\Factions\\Factions.cs",
     "dynamic": false,
     "confidence": "high"
   },
@@ -6483,7 +7571,15 @@
     "id": "Soldier_Neutral",
     "en": "This NPC and members of Soldiers start neutral, useful for truces.",
     "kind": "extension",
-    "source": "RCK\\Systems\\Social\\Factions.cs",
+    "source": "RCK\\Systems\\Social\\Factions\\Factions.cs",
+    "dynamic": false,
+    "confidence": "high"
+  },
+  {
+    "id": "Soldier_Reinforcement",
+    "en": "Squads of Soldiers are made of this character: raids, backup, turf guards and respawns spawn it. It stays a normal NPC.",
+    "kind": "extension",
+    "source": "RCK\\Systems\\Social\\Squads\\SquadUnits.cs",
     "dynamic": false,
     "confidence": "high"
   },
@@ -6491,7 +7587,15 @@
     "id": "Soldier_Territorial",
     "en": "This NPC and members of Soldiers start annoyed, then turn hostile on their own owned turf.",
     "kind": "extension",
-    "source": "RCK\\Systems\\Social\\Factions.cs",
+    "source": "RCK\\Systems\\Social\\Factions\\Factions.cs",
+    "dynamic": false,
+    "confidence": "high"
+  },
+  {
+    "id": "Soldier_Vengeful",
+    "en": "When anyone attacks or kills a member of Soldiers, this NPC turns hostile to that attacker for the rest of the level.",
+    "kind": "extension",
+    "source": "RCK\\Systems\\Social\\Roles\\FactionEvents.cs",
     "dynamic": false,
     "confidence": "high"
   },
@@ -6593,7 +7697,7 @@
   },
   {
     "id": "Sporting_Goods",
-    "en": "This NPC runs a Sporting Goods shop with stock such as Baseball Bat, Ballet Shoes and Grappling Hook.",
+    "en": "This NPC runs a Sporting Goods shop with stock such as Baseball Bat, Grappling Hook and Shuriken.",
     "kind": "designer",
     "source": "RCK\\Systems\\Merchants\\MerchantModule.cs",
     "dynamic": false,
@@ -6891,7 +7995,7 @@
     "id": "Thief_Aligned",
     "en": "This NPC joins Thieves; members start aligned with each other.",
     "kind": "extension",
-    "source": "RCK\\Systems\\Social\\Factions.cs",
+    "source": "RCK\\Systems\\Social\\Factions\\Factions.cs",
     "dynamic": false,
     "confidence": "high"
   },
@@ -6899,7 +8003,7 @@
     "id": "Thief_Annoyed",
     "en": "This NPC and members of Thieves start annoyed with each other.",
     "kind": "extension",
-    "source": "RCK\\Systems\\Social\\Factions.cs",
+    "source": "RCK\\Systems\\Social\\Factions\\Factions.cs",
     "dynamic": false,
     "confidence": "high"
   },
@@ -6920,10 +8024,18 @@
     "confidence": "high"
   },
   {
+    "id": "Thief_Calls_Backup",
+    "en": "When an outsider attacks this NPC, or its crew raises an alarm, a squad of Thieves comes to help (twice a level at most).",
+    "kind": "extension",
+    "source": "RCK\\Systems\\Social\\Roles\\FactionBackup.cs",
+    "dynamic": false,
+    "confidence": "high"
+  },
+  {
     "id": "Thief_Friendly",
     "en": "This NPC and members of Thieves start friendly toward each other.",
     "kind": "extension",
-    "source": "RCK\\Systems\\Social\\Factions.cs",
+    "source": "RCK\\Systems\\Social\\Factions\\Factions.cs",
     "dynamic": false,
     "confidence": "high"
   },
@@ -6931,7 +8043,15 @@
     "id": "Thief_Hostile",
     "en": "This NPC and members of Thieves start hateful toward each other.",
     "kind": "extension",
-    "source": "RCK\\Systems\\Social\\Factions.cs",
+    "source": "RCK\\Systems\\Social\\Factions\\Factions.cs",
+    "dynamic": false,
+    "confidence": "high"
+  },
+  {
+    "id": "Thief_Leader",
+    "en": "If this NPC is the last leader of Thieves and it falls, the rest give up on the players and flee from fights.",
+    "kind": "extension",
+    "source": "RCK\\Systems\\Social\\Roles\\FactionEvents.cs",
     "dynamic": false,
     "confidence": "high"
   },
@@ -6947,7 +8067,7 @@
     "id": "Thief_Member",
     "en": "You count as a member of Thieves; other faction rules can then apply to you.",
     "kind": "extension",
-    "source": "RCK\\Systems\\Social\\Factions.cs",
+    "source": "RCK\\Systems\\Social\\Factions\\Factions.cs",
     "dynamic": false,
     "confidence": "high"
   },
@@ -6955,7 +8075,15 @@
     "id": "Thief_Neutral",
     "en": "This NPC and members of Thieves start neutral, useful for truces.",
     "kind": "extension",
-    "source": "RCK\\Systems\\Social\\Factions.cs",
+    "source": "RCK\\Systems\\Social\\Factions\\Factions.cs",
+    "dynamic": false,
+    "confidence": "high"
+  },
+  {
+    "id": "Thief_Reinforcement",
+    "en": "Squads of Thieves are made of this character: raids, backup, turf guards and respawns spawn it. It stays a normal NPC.",
+    "kind": "extension",
+    "source": "RCK\\Systems\\Social\\Squads\\SquadUnits.cs",
     "dynamic": false,
     "confidence": "high"
   },
@@ -6963,7 +8091,15 @@
     "id": "Thief_Territorial",
     "en": "This NPC and members of Thieves start annoyed, then turn hostile on their own owned turf.",
     "kind": "extension",
-    "source": "RCK\\Systems\\Social\\Factions.cs",
+    "source": "RCK\\Systems\\Social\\Factions\\Factions.cs",
+    "dynamic": false,
+    "confidence": "high"
+  },
+  {
+    "id": "Thief_Vengeful",
+    "en": "When anyone attacks or kills a member of Thieves, this NPC turns hostile to that attacker for the rest of the level.",
+    "kind": "extension",
+    "source": "RCK\\Systems\\Social\\Roles\\FactionEvents.cs",
     "dynamic": false,
     "confidence": "high"
   },
@@ -7091,7 +8227,7 @@
     "id": "Upper_Cruster_Aligned",
     "en": "This NPC joins Upper Crusters; members start aligned with each other.",
     "kind": "extension",
-    "source": "RCK\\Systems\\Social\\Factions.cs",
+    "source": "RCK\\Systems\\Social\\Factions\\Factions.cs",
     "dynamic": false,
     "confidence": "high"
   },
@@ -7099,7 +8235,7 @@
     "id": "Upper_Cruster_Annoyed",
     "en": "This NPC and members of Upper Crusters start annoyed with each other.",
     "kind": "extension",
-    "source": "RCK\\Systems\\Social\\Factions.cs",
+    "source": "RCK\\Systems\\Social\\Factions\\Factions.cs",
     "dynamic": false,
     "confidence": "high"
   },
@@ -7120,10 +8256,18 @@
     "confidence": "high"
   },
   {
+    "id": "Upper_Cruster_Calls_Backup",
+    "en": "When an outsider attacks this NPC, or its crew raises an alarm, a squad of Upper Crusters comes to help (twice a level at most).",
+    "kind": "extension",
+    "source": "RCK\\Systems\\Social\\Roles\\FactionBackup.cs",
+    "dynamic": false,
+    "confidence": "high"
+  },
+  {
     "id": "Upper_Cruster_Friendly",
     "en": "This NPC and members of Upper Crusters start friendly toward each other.",
     "kind": "extension",
-    "source": "RCK\\Systems\\Social\\Factions.cs",
+    "source": "RCK\\Systems\\Social\\Factions\\Factions.cs",
     "dynamic": false,
     "confidence": "high"
   },
@@ -7131,7 +8275,15 @@
     "id": "Upper_Cruster_Hostile",
     "en": "This NPC and members of Upper Crusters start hateful toward each other.",
     "kind": "designer",
-    "source": "RCK\\Systems\\Social\\Factions.cs",
+    "source": "RCK\\Systems\\Social\\Factions\\Factions.cs",
+    "dynamic": false,
+    "confidence": "high"
+  },
+  {
+    "id": "Upper_Cruster_Leader",
+    "en": "If this NPC is the last leader of Upper Crusters and it falls, the rest give up on the players and flee from fights.",
+    "kind": "extension",
+    "source": "RCK\\Systems\\Social\\Roles\\FactionEvents.cs",
     "dynamic": false,
     "confidence": "high"
   },
@@ -7139,7 +8291,7 @@
     "id": "Upper_Cruster_Member",
     "en": "You count as a member of Upper Crusters; other faction rules can then apply to you.",
     "kind": "extension",
-    "source": "RCK\\Systems\\Social\\Factions.cs",
+    "source": "RCK\\Systems\\Social\\Factions\\Factions.cs",
     "dynamic": false,
     "confidence": "high"
   },
@@ -7147,7 +8299,15 @@
     "id": "Upper_Cruster_Neutral",
     "en": "This NPC and members of Upper Crusters start neutral, useful for truces.",
     "kind": "extension",
-    "source": "RCK\\Systems\\Social\\Factions.cs",
+    "source": "RCK\\Systems\\Social\\Factions\\Factions.cs",
+    "dynamic": false,
+    "confidence": "high"
+  },
+  {
+    "id": "Upper_Cruster_Reinforcement",
+    "en": "Squads of Upper Crusters are made of this character: raids, backup, turf guards and respawns spawn it. It stays a normal NPC.",
+    "kind": "extension",
+    "source": "RCK\\Systems\\Social\\Squads\\SquadUnits.cs",
     "dynamic": false,
     "confidence": "high"
   },
@@ -7155,7 +8315,15 @@
     "id": "Upper_Cruster_Territorial",
     "en": "This NPC and members of Upper Crusters start annoyed, then turn hostile on their own owned turf.",
     "kind": "extension",
-    "source": "RCK\\Systems\\Social\\Factions.cs",
+    "source": "RCK\\Systems\\Social\\Factions\\Factions.cs",
+    "dynamic": false,
+    "confidence": "high"
+  },
+  {
+    "id": "Upper_Cruster_Vengeful",
+    "en": "When anyone attacks or kills a member of Upper Crusters, this NPC turns hostile to that attacker for the rest of the level.",
+    "kind": "extension",
+    "source": "RCK\\Systems\\Social\\Roles\\FactionEvents.cs",
     "dynamic": false,
     "confidence": "high"
   },
@@ -7187,7 +8355,7 @@
     "id": "Vampire_Aligned",
     "en": "This NPC joins Vampires; members start aligned with each other.",
     "kind": "extension",
-    "source": "RCK\\Systems\\Social\\Factions.cs",
+    "source": "RCK\\Systems\\Social\\Factions\\Factions.cs",
     "dynamic": false,
     "confidence": "high"
   },
@@ -7195,7 +8363,7 @@
     "id": "Vampire_Annoyed",
     "en": "This NPC and members of Vampires start annoyed with each other.",
     "kind": "extension",
-    "source": "RCK\\Systems\\Social\\Factions.cs",
+    "source": "RCK\\Systems\\Social\\Factions\\Factions.cs",
     "dynamic": false,
     "confidence": "high"
   },
@@ -7216,10 +8384,18 @@
     "confidence": "high"
   },
   {
+    "id": "Vampire_Calls_Backup",
+    "en": "When an outsider attacks this NPC, or its crew raises an alarm, a squad of Vampires comes to help (twice a level at most).",
+    "kind": "extension",
+    "source": "RCK\\Systems\\Social\\Roles\\FactionBackup.cs",
+    "dynamic": false,
+    "confidence": "high"
+  },
+  {
     "id": "Vampire_Friendly",
     "en": "This NPC and members of Vampires start friendly toward each other.",
     "kind": "extension",
-    "source": "RCK\\Systems\\Social\\Factions.cs",
+    "source": "RCK\\Systems\\Social\\Factions\\Factions.cs",
     "dynamic": false,
     "confidence": "high"
   },
@@ -7227,7 +8403,15 @@
     "id": "Vampire_Hostile",
     "en": "This NPC and members of Vampires start hateful toward each other.",
     "kind": "designer",
-    "source": "RCK\\Systems\\Social\\Factions.cs",
+    "source": "RCK\\Systems\\Social\\Factions\\Factions.cs",
+    "dynamic": false,
+    "confidence": "high"
+  },
+  {
+    "id": "Vampire_Leader",
+    "en": "If this NPC is the last leader of Vampires and it falls, the rest give up on the players and flee from fights.",
+    "kind": "extension",
+    "source": "RCK\\Systems\\Social\\Roles\\FactionEvents.cs",
     "dynamic": false,
     "confidence": "high"
   },
@@ -7235,7 +8419,7 @@
     "id": "Vampire_Member",
     "en": "You count as a member of Vampires; other faction rules can then apply to you.",
     "kind": "extension",
-    "source": "RCK\\Systems\\Social\\Factions.cs",
+    "source": "RCK\\Systems\\Social\\Factions\\Factions.cs",
     "dynamic": false,
     "confidence": "high"
   },
@@ -7243,7 +8427,15 @@
     "id": "Vampire_Neutral",
     "en": "This NPC and members of Vampires start neutral, useful for truces.",
     "kind": "extension",
-    "source": "RCK\\Systems\\Social\\Factions.cs",
+    "source": "RCK\\Systems\\Social\\Factions\\Factions.cs",
+    "dynamic": false,
+    "confidence": "high"
+  },
+  {
+    "id": "Vampire_Reinforcement",
+    "en": "Squads of Vampires are made of this character: raids, backup, turf guards and respawns spawn it. It stays a normal NPC.",
+    "kind": "extension",
+    "source": "RCK\\Systems\\Social\\Squads\\SquadUnits.cs",
     "dynamic": false,
     "confidence": "high"
   },
@@ -7259,7 +8451,15 @@
     "id": "Vampire_Territorial",
     "en": "This NPC and members of Vampires start annoyed, then turn hostile on their own owned turf.",
     "kind": "extension",
-    "source": "RCK\\Systems\\Social\\Factions.cs",
+    "source": "RCK\\Systems\\Social\\Factions\\Factions.cs",
+    "dynamic": false,
+    "confidence": "high"
+  },
+  {
+    "id": "Vampire_Vengeful",
+    "en": "When anyone attacks or kills a member of Vampires, this NPC turns hostile to that attacker for the rest of the level.",
+    "kind": "extension",
+    "source": "RCK\\Systems\\Social\\Roles\\FactionEvents.cs",
     "dynamic": false,
     "confidence": "high"
   },
@@ -7403,7 +8603,7 @@
     "id": "Werewolf_Aligned",
     "en": "This NPC joins Werewolves; members start aligned with each other.",
     "kind": "extension",
-    "source": "RCK\\Systems\\Social\\Factions.cs",
+    "source": "RCK\\Systems\\Social\\Factions\\Factions.cs",
     "dynamic": false,
     "confidence": "high"
   },
@@ -7411,7 +8611,7 @@
     "id": "Werewolf_Annoyed",
     "en": "This NPC and members of Werewolves start annoyed with each other.",
     "kind": "extension",
-    "source": "RCK\\Systems\\Social\\Factions.cs",
+    "source": "RCK\\Systems\\Social\\Factions\\Factions.cs",
     "dynamic": false,
     "confidence": "high"
   },
@@ -7432,6 +8632,14 @@
     "confidence": "high"
   },
   {
+    "id": "Werewolf_Calls_Backup",
+    "en": "When an outsider attacks this NPC, or its crew raises an alarm, a squad of Werewolves comes to help (twice a level at most).",
+    "kind": "extension",
+    "source": "RCK\\Systems\\Social\\Roles\\FactionBackup.cs",
+    "dynamic": false,
+    "confidence": "high"
+  },
+  {
     "id": "Werewolf_Colored_Body",
     "en": "This NPC's appearance roll can use Werewolf Colored for body clothing color.",
     "kind": "designer",
@@ -7443,7 +8651,7 @@
     "id": "Werewolf_Friendly",
     "en": "This NPC and members of Werewolves start friendly toward each other.",
     "kind": "extension",
-    "source": "RCK\\Systems\\Social\\Factions.cs",
+    "source": "RCK\\Systems\\Social\\Factions\\Factions.cs",
     "dynamic": false,
     "confidence": "high"
   },
@@ -7459,7 +8667,15 @@
     "id": "Werewolf_Hostile",
     "en": "This NPC and members of Werewolves start hateful toward each other.",
     "kind": "designer",
-    "source": "RCK\\Systems\\Social\\Factions.cs",
+    "source": "RCK\\Systems\\Social\\Factions\\Factions.cs",
+    "dynamic": false,
+    "confidence": "high"
+  },
+  {
+    "id": "Werewolf_Leader",
+    "en": "If this NPC is the last leader of Werewolves and it falls, the rest give up on the players and flee from fights.",
+    "kind": "extension",
+    "source": "RCK\\Systems\\Social\\Roles\\FactionEvents.cs",
     "dynamic": false,
     "confidence": "high"
   },
@@ -7475,7 +8691,7 @@
     "id": "Werewolf_Member",
     "en": "You count as a member of Werewolves; other faction rules can then apply to you.",
     "kind": "extension",
-    "source": "RCK\\Systems\\Social\\Factions.cs",
+    "source": "RCK\\Systems\\Social\\Factions\\Factions.cs",
     "dynamic": false,
     "confidence": "high"
   },
@@ -7483,7 +8699,15 @@
     "id": "Werewolf_Neutral",
     "en": "This NPC and members of Werewolves start neutral, useful for truces.",
     "kind": "extension",
-    "source": "RCK\\Systems\\Social\\Factions.cs",
+    "source": "RCK\\Systems\\Social\\Factions\\Factions.cs",
+    "dynamic": false,
+    "confidence": "high"
+  },
+  {
+    "id": "Werewolf_Reinforcement",
+    "en": "Squads of Werewolves are made of this character: raids, backup, turf guards and respawns spawn it. It stays a normal NPC.",
+    "kind": "extension",
+    "source": "RCK\\Systems\\Social\\Squads\\SquadUnits.cs",
     "dynamic": false,
     "confidence": "high"
   },
@@ -7499,7 +8723,15 @@
     "id": "Werewolf_Territorial",
     "en": "This NPC and members of Werewolves start annoyed, then turn hostile on their own owned turf.",
     "kind": "extension",
-    "source": "RCK\\Systems\\Social\\Factions.cs",
+    "source": "RCK\\Systems\\Social\\Factions\\Factions.cs",
+    "dynamic": false,
+    "confidence": "high"
+  },
+  {
+    "id": "Werewolf_Vengeful",
+    "en": "When anyone attacks or kills a member of Werewolves, this NPC turns hostile to that attacker for the rest of the level.",
+    "kind": "extension",
+    "source": "RCK\\Systems\\Social\\Roles\\FactionEvents.cs",
     "dynamic": false,
     "confidence": "high"
   },
@@ -7715,7 +8947,7 @@
     "id": "Zombie_Aligned",
     "en": "This NPC joins Zombies; members start aligned with each other.",
     "kind": "extension",
-    "source": "RCK\\Systems\\Social\\Factions.cs",
+    "source": "RCK\\Systems\\Social\\Factions\\Factions.cs",
     "dynamic": false,
     "confidence": "high"
   },
@@ -7723,7 +8955,7 @@
     "id": "Zombie_Annoyed",
     "en": "This NPC and members of Zombies start annoyed with each other.",
     "kind": "extension",
-    "source": "RCK\\Systems\\Social\\Factions.cs",
+    "source": "RCK\\Systems\\Social\\Factions\\Factions.cs",
     "dynamic": false,
     "confidence": "high"
   },
@@ -7744,6 +8976,14 @@
     "confidence": "high"
   },
   {
+    "id": "Zombie_Calls_Backup",
+    "en": "When an outsider attacks this NPC, or its crew raises an alarm, a squad of Zombies comes to help (twice a level at most).",
+    "kind": "extension",
+    "source": "RCK\\Systems\\Social\\Roles\\FactionBackup.cs",
+    "dynamic": false,
+    "confidence": "high"
+  },
+  {
     "id": "Zombie_Eyes",
     "en": "This NPC's appearance roll can use Zombie Eyes.",
     "kind": "designer",
@@ -7755,7 +8995,7 @@
     "id": "Zombie_Friendly",
     "en": "This NPC and members of Zombies start friendly toward each other.",
     "kind": "extension",
-    "source": "RCK\\Systems\\Social\\Factions.cs",
+    "source": "RCK\\Systems\\Social\\Factions\\Factions.cs",
     "dynamic": false,
     "confidence": "high"
   },
@@ -7763,7 +9003,15 @@
     "id": "Zombie_Hostile",
     "en": "This NPC and members of Zombies start hateful toward each other.",
     "kind": "extension",
-    "source": "RCK\\Systems\\Social\\Factions.cs",
+    "source": "RCK\\Systems\\Social\\Factions\\Factions.cs",
+    "dynamic": false,
+    "confidence": "high"
+  },
+  {
+    "id": "Zombie_Leader",
+    "en": "If this NPC is the last leader of Zombies and it falls, the rest give up on the players and flee from fights.",
+    "kind": "extension",
+    "source": "RCK\\Systems\\Social\\Roles\\FactionEvents.cs",
     "dynamic": false,
     "confidence": "high"
   },
@@ -7787,7 +9035,7 @@
     "id": "Zombie_Member",
     "en": "You count as a member of Zombies; other faction rules can then apply to you.",
     "kind": "extension",
-    "source": "RCK\\Systems\\Social\\Factions.cs",
+    "source": "RCK\\Systems\\Social\\Factions\\Factions.cs",
     "dynamic": false,
     "confidence": "high"
   },
@@ -7795,7 +9043,15 @@
     "id": "Zombie_Neutral",
     "en": "This NPC and members of Zombies start neutral, useful for truces.",
     "kind": "extension",
-    "source": "RCK\\Systems\\Social\\Factions.cs",
+    "source": "RCK\\Systems\\Social\\Factions\\Factions.cs",
+    "dynamic": false,
+    "confidence": "high"
+  },
+  {
+    "id": "Zombie_Reinforcement",
+    "en": "Squads of Zombies are made of this character: raids, backup, turf guards and respawns spawn it. It stays a normal NPC.",
+    "kind": "extension",
+    "source": "RCK\\Systems\\Social\\Squads\\SquadUnits.cs",
     "dynamic": false,
     "confidence": "high"
   },
@@ -7827,7 +9083,15 @@
     "id": "Zombie_Territorial",
     "en": "This NPC and members of Zombies start annoyed, then turn hostile on their own owned turf.",
     "kind": "extension",
-    "source": "RCK\\Systems\\Social\\Factions.cs",
+    "source": "RCK\\Systems\\Social\\Factions\\Factions.cs",
+    "dynamic": false,
+    "confidence": "high"
+  },
+  {
+    "id": "Zombie_Vengeful",
+    "en": "When anyone attacks or kills a member of Zombies, this NPC turns hostile to that attacker for the rest of the level.",
+    "kind": "extension",
+    "source": "RCK\\Systems\\Social\\Roles\\FactionEvents.cs",
     "dynamic": false,
     "confidence": "high"
   },

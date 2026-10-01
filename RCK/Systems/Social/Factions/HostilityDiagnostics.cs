@@ -21,9 +21,17 @@ namespace RCK.Social
 
         private static readonly HashSet<string> seen = new HashSet<string>(StringComparer.Ordinal);
         private static readonly HashSet<long> territorialSeen = new HashSet<long>();
-        private static int level = int.MinValue;
         private static int logged;
         private static bool failed;
+
+        static HostilityDiagnostics() => LevelScope.Ended += Reset;
+
+        private static void Reset()
+        {
+            logged = 0;
+            seen.Clear();
+            territorialSeen.Clear();
+        }
 
         /// <summary>Set while RCK itself escalates a relationship it has already reported (Territorial, street innocence), so the hate prefixes stay quiet.</summary>
         internal static bool Suppress;
@@ -38,10 +46,7 @@ namespace RCK.Social
             npc = rels.GetComponent<Agent>();
             if (npc == null || npc.isPlayer != 0 || npc.dead || npc.objectAgent) return false;
             if (npc.interactingAgent != other && Vector2.Distance(npc.curPosition, other.curPosition) > MaxDistance) return false;
-            List<Relationship> list = rels.RelList2;
-            int id = other.agentID;
-            if (list == null || id < 0 || id >= list.Count) return false;
-            rel = list[id];
+            rel = RelOps.Of(rels, other);
             return rel != null;
         }
 
@@ -50,7 +55,7 @@ namespace RCK.Social
             try
             {
                 GameController gc = GameController.gameController;
-                CheckLevel(gc);
+                LevelScope.Check(gc);
                 if (logged >= MaxPerLevel || !seen.Add(npc.agentID + ">" + other.agentID + ":" + source)) return;
                 logged++;
 
@@ -80,23 +85,13 @@ namespace RCK.Social
             }
         }
 
-        private static void CheckLevel(GameController gc)
-        {
-            int current = gc != null && gc.sessionDataBig != null ? gc.sessionDataBig.curLevelEndless : 0;
-            if (current == level) return;
-            level = current;
-            logged = 0;
-            seen.Clear();
-            territorialSeen.Clear();
-        }
-
         /// <summary>One line per pair and level when a Territorial holder turns Hateful on someone on its turf (any agents, not just players).</summary>
         public static void ReportTerritorial(Agent holder, Agent other, Relationship rel, TileData tile)
         {
             if (failed) return;
             try
             {
-                CheckLevel(GameController.gameController);
+                LevelScope.Check();
                 if (territorialSeen.Count >= MaxTerritorialPerLevel || !territorialSeen.Add(((long)holder.agentID << 32) | (uint)other.agentID)) return;
                 StringBuilder sb = new StringBuilder(256);
                 sb.Append("[diag hostility] Territorial ").Append(rel.relType).Append("->Hateful")

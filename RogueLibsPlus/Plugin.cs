@@ -20,8 +20,13 @@ namespace RogueLibsPlus
         public const string GUID = "streetsofrogue.roguelibsplus";
         /// <summary>The plugin's name.</summary>
         public const string Name = "RogueLibsPlus";
-        /// <summary>The plugin's version.</summary>
-        public const string Version = "1.0.0";
+        /// <summary>The plugin's numeric version, X.Y.Z, for BepInEx. Generated from &lt;Version&gt; in RogueLibsPlus.csproj.</summary>
+        public const string Version = BuildInfo.PluginVersion;
+        /// <summary>
+        ///   The version the main menu and the log show: exactly X.Y.Z[-pre] for a build of an RCK Pack release tag,
+        ///   otherwise X.Y.Z[-pre]+N.g&lt;commit&gt; (N commits after the last release tag), with .dirty for uncommitted changes.
+        /// </summary>
+        public const string DisplayVersion = BuildInfo.DisplayVersion;
         /// <summary>The RogueLibs build whose internals the RogueLibs fixes were written against.</summary>
         public const string SupportedRogueLibs = "4.0.0-rc.3";
 
@@ -45,14 +50,17 @@ namespace RogueLibsPlus
             RunningRogueLibs = ReadRogueLibsVersion();
             RogueLibsSupported = RunningRogueLibs == SupportedRogueLibs;
             if (!RogueLibsSupported)
-                Log.LogWarning($"RogueLibs {RunningRogueLibs ?? "(unknown version)"} is running, but {Name} {Version} was written for "
+                Log.LogWarning($"RogueLibs {RunningRogueLibs ?? "(unknown version)"} is running, but {Name} {DisplayVersion} was written for "
                              + $"RogueLibs {SupportedRogueLibs}: its fixes to RogueLibs itself are skipped. The game fixes and the APIs still work.");
 
             Fixes.ApplyAll();
-            Log.LogInfo($"{Name} {Version} on RogueLibs {RunningRogueLibs}: {Fixes.Applied} fixes applied, {Fixes.Skipped} skipped.");
-            if (Fixes.Skipped > 0) MenuLines.SetProblem(MenuLineId, $"RL+ v{Version} ({Fixes.Skipped} fixes skipped, see BepInEx\\LogOutput.log)");
-            else MenuLines.Set(MenuLineId, $"RL+ v{Version}");
+            Log.LogInfo($"{Name} {DisplayVersion} on RogueLibs {RunningRogueLibs}: {Fixes.Applied} fixes applied, {Fixes.Skipped} skipped.");
+            if (Fixes.Skipped > 0) MenuLines.SetProblem(MenuLineId, MenuLineText + $" ({Fixes.Skipped} fixes skipped, see BepInEx\\LogOutput.log)");
+            else MenuLines.Set(MenuLineId, MenuLineText);
         }
+
+        /// <summary>The main-menu line: "RL+ v" and <see cref="DisplayVersion"/>.</summary>
+        internal const string MenuLineText = "RL+ v" + DisplayVersion;
 
         [MethodImpl(MethodImplOptions.NoInlining)]
         private static string? ReadRogueLibsVersion()

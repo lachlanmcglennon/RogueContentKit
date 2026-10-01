@@ -41,6 +41,7 @@ RCK.Objects lets campaign makers add investigate text and one-time searchable co
 - **Search** gives the item as a vanilla chest would: a loaded gun, full durability or charges, or a normal stack. A `Money` entry gives 11-25 cash, adjusted for co-op player count. A `Nugget` entry adds 1 nugget and does not need inventory space.
 - The player sees "Found: <item>".
 - If the inventory has no room, the item stays in the container for later.
-- Unknown item names are skipped and the object stays non-interactable.
+- Unknown item names are skipped and the object stays non-interactable. Hats and armour (`CopHat`, `Fedora`,
+  `BulletproofVest` and the like) are real items and work.
 - `Randomized` and `None` entries are ignored.
 - Containers remain searchable on later levels when pooled objects are reused.

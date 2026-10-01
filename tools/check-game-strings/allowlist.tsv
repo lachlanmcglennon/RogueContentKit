@@ -1,3 +1,6 @@
 # role	value	reason
 status_effect	RegenerateHealthWhenLow	Vanilla trait used as a timed Drug Warrior effect: AddStatusEffect adds the trait (StatusEffects.cs:4929), AddTrait starts its UpdateTrait regen (6453), RemoveStatusEffect removes it (5405)
 status_effect	RegenerateHealthWhenLow2	Vanilla trait used as a timed Drug Warrior effect: same AddStatusEffect/AddTrait/UpdateTrait path (StatusEffects.cs:4929, 6460, 5405)
+dialogue_key	Joined	Vanilla hire line: AgentInteractions.cs:5939 calls SayDialogue("Joined"), which reads the <agentName>_Joined Dialogue name (Agent.cs:7732)
+trait_name	_Aligned	RCK's own faction trait <key>_Aligned, built from Factions.Keys (Squads.SpawnUnits); all 37 are registered custom traits in RckData/TraitTypes.g.cs, not vanilla names
+agent_name_fragment	AgentPlayer	GameObject name of a player's agent, not an agent type: vanilla checks base.name.Contains("AgentPlayer") to spot an unflagged remote player (Agent.cs:2952, 2969)

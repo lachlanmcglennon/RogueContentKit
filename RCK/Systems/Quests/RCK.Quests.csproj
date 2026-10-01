@@ -1,0 +1,8 @@
+<Project Sdk="Microsoft.NET.Sdk">
+
+  <PropertyGroup>
+    <AssemblyName>RCK.Quests</AssemblyName>
+    <RootNamespace>RCK.Quests</RootNamespace>
+  </PropertyGroup>
+
+</Project>

@@ -13,6 +13,7 @@ namespace RCK.Combat
         public void Initialize()
         {
             Rck.TraitAdded += static (agent, _, __) => CombatRuntime.ApplyAgentTraits(agent);
+            SniperRifle.Initialize();
         }
     }
 
@@ -274,7 +275,7 @@ namespace RCK.Combat
         private static IEnumerator DeathExplosion(Agent agent, Agent? killer, string explosionType, float fuse)
         {
             GameController gc = Rck.gc;
-            int level = gc.sessionDataBig.curLevelEndless;
+            int level = LevelScope.CurrentId();
             int uid = agent.UID;
             Vector3 pos = agent.tr.position;
             try
@@ -283,7 +284,7 @@ namespace RCK.Combat
                 float elapsed = 0f;
                 while (true)
                 {
-                    if (gc == null || gc.levelEnded || gc.sessionDataBig.curLevelEndless != level) yield break;
+                    if (gc == null || gc.levelEnded || LevelScope.Id != level) yield break;
                     if (BodyStillThere(agent, uid)) pos = agent.tr.position;
                     if (elapsed >= fuse) break;
                     yield return null;

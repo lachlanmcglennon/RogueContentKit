@@ -28,7 +28,7 @@ Multiple merchant-type traits merge their item pools. Stock modifiers change dup
 | `Cop_SWAT` | Merchant type | This NPC runs a Cop (SWAT) shop with stock such as Machine Gun, Shotgun and Knocker Grenade. |
 | `Demolition_Depot` | Merchant type | This NPC runs a Demolition Depot shop with stock such as Grenade, EMP Grenade and Grenade Dizzy. |
 | `Drug_Dealer` | Merchant type | This NPC runs a Drug Dealer shop with stock such as Cocaine, Steroids and Syringe. |
-| `Fire_Sale` | Merchant type | This NPC runs a Fire Sale shop with stock such as Matches, Cigarette Lighter and Molotov Cocktail. |
+| `Fire_Sale` | Merchant type | This NPC runs a Fire Sale shop with stock such as Cigarette Lighter, Rag and Molotov Cocktail. |
 | `Firefighter_Five_and_Dime` | Merchant type | This NPC runs a Firefighter Five & Dime shop with stock such as Fire Extinguisher, Fireproof Suit and Hard Hat. |
 | `General_Store` | Merchant type | This NPC runs a General Store with stock such as First Aid Kit, Ham Sandwich and Beer. |
 | `Gun_Dealer` | Merchant type | This NPC runs a Gun Dealer shop with stock such as Pistol, Revolver and Machine Gun. |
@@ -58,7 +58,7 @@ Multiple merchant-type traits merge their item pools. Stock modifiers change dup
 | `Riot_Inc` | Merchant type | This NPC runs a Riot, Inc. shop with stock such as Molotov Cocktail, Grenade and Rock. |
 | `Slave_Shop` | Merchant type | This NPC runs a Slave Shop with stock such as Slave Helmet, Slave Helmet Remote and Slave Helmet Remover. |
 | `Slaves_Shop` | Merchant type | This NPC runs a Slaves' Shop with stock such as Slave Helmet, Slave Helmet Remote and Slave Helmet Remover. |
-| `Sporting_Goods` | Merchant type | This NPC runs a Sporting Goods shop with stock such as Baseball Bat, Ballet Shoes and Grappling Hook. |
+| `Sporting_Goods` | Merchant type | This NPC runs a Sporting Goods shop with stock such as Baseball Bat, Grappling Hook and Shuriken. |
 | `Sugar_Shack` | Merchant type | This NPC runs a Sugar Shack shop with stock such as Fud, Hot Fud and Bacon Cheeseburger. |
 | `Tech_Mart` | Merchant type | This NPC runs a Tech Mart shop with stock such as Hacking Tool, Laptop and Remote Control. |
 | `Teleportationist` | Merchant type | This NPC runs a Teleportationist shop with stock such as Teleporter, Item Teleporter and Quick Escape Teleporter. |
